@@ -1,0 +1,46 @@
+<g class="axis x-axis">
+	{#each ticks as tick, i}
+		<g class="tick tick-{ tick }" transform="translate({ $xScale(tick) },{ $yScale.range()[0] })">
+			{#if opts.gridlines !== false}
+				<line class="gridline" y1="{ $height * -1 }" y2="0" x1="0" x2="0"></line>
+			{/if}
+
+			<text y="16" text-anchor="{ opts.textAnchor || textAnchor(i) }">{ opts.formatTick ? opts.formatTick(tick) : tick }</text>
+		</g>
+	{/each}
+
+	{#if opts.baseline === true}
+		<line class="baseline" y1="{ $height }" y2="{ $height }" x1="0" x2="{ $width }"></line>
+	{/if}
+
+  {#if opts.label}
+    <text class="axis-label" x="{ $width / 2 }" y="{ $height + 34 }">{ opts.label }</text>
+  {/if}
+</g>
+
+<script>
+	export default {
+	  namespace: "svg",
+
+	  computed: {
+	    ticks: ({ $xScale, opts }) => {
+	      return opts.ticks || $xScale.ticks(opts.tickNumber);
+	    },
+
+	    textAnchor: ({ ticks, opts }) => {
+	      return function(i) {
+	        if (opts.snapTicks === true) {
+	          if (i === 0) {
+	            return "start";
+	          }
+	          if (i === ticks.length - 1) {
+	            return "end";
+	          }
+	        }
+
+	        return "middle";
+	      };
+	    }
+	  }
+	};
+</script>

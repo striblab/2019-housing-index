@@ -1,0 +1,66 @@
+<div class="chart-figure">
+  <div class="label" id="label-{ id }">{ title }</div>
+
+  <figure aria-labelledby="label-{ id }">
+    <div class="chart chart-histogram" ref:chart role="img" title="{ title }"></div>
+    <figcaption>
+      <slot>Needs caption slot</slot>
+    </figcaption>
+  </figure>
+</div>
+
+<script>
+  import LayerCake from "layercake";
+  import AxisX from "./_axis-x.svelte.html";
+  import AxisY from "./_axis-y.svelte.html";
+  import Column from "./_column.svelte.html";
+
+  export default {
+    oncreate() {
+      let p = this.get();
+
+      // Create layer cake store
+      const layercake = new LayerCake({
+        x: ["min", "max"],
+        y: "count",
+        data: p.data,
+        target: this.refs.chart,
+        padding: { top: 5, right: 5, bottom: 50, left: 50 }
+      }).svgLayers([
+        {
+          component: AxisX,
+          opts: {
+            gridlines: true,
+            baseline: true,
+            textAnchor: "start",
+            label: p.xLabel,
+            formatTick: d => {
+              return `$${Math.round(d / 1000)}k`;
+            }
+          }
+        },
+        {
+          component: AxisY,
+          opts: {
+            gridlines: true,
+            label: p.yLabel
+          }
+        },
+        {
+          component: Column,
+          opts: {}
+        }
+      ]);
+
+      layercake.render();
+      this.set({ layercake });
+    },
+
+    data() {
+      return {
+        id: `component-id-${Math.round(Math.random() * 100000)}`,
+        title: "Needs title"
+      };
+    }
+  };
+</script>

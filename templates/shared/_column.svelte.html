@@ -1,0 +1,30 @@
+
+{#each $data as d, i}
+	<rect class="chart-column" data-id="{ i }" x="{ x0(d) }" y="{ $yGet(d) }" width="{ width(d) }" height="{ height(d) }"></rect>
+{/each}
+
+<script>
+  export default {
+    namespace: "svg",
+    computed: {
+      x0: ({ $xGet }) => {
+        return d => {
+          return $xGet(d)[0];
+        };
+      },
+
+      width: ({ $xGet }) => {
+        return d => {
+          const val = $xGet(d);
+          return Math.max(0, val[1] - val[0]);
+        };
+      },
+
+      height: ({ $height, $yGet }) => {
+        return d => {
+          return $height - $yGet(d);
+        };
+      }
+    }
+  };
+</script>

@@ -12,7 +12,11 @@
  * options for processes.  This will allow moving away from
  * Gulp more easily if desired.
  */
-'use strict';
+
+// For support for ESM modules
+require = require('esm')(module, {
+  mainFields: ['main', 'module']
+});
 
 // Dependencies
 const gulp = require('gulp');

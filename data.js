@@ -155,6 +155,7 @@ function indexData() {
 // Exports
 module.exports = {
   index: {
-    data: indexData()
+    data: indexData(),
+    local: 'housing-index.json'
   }
 };

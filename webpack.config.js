@@ -77,7 +77,7 @@ module.exports = {
         use: [loaders.babel]
       },
       {
-        test: /\.(svelte\.html|svelte)$/,
+        test: /\.(svelte\.html|svelte|html)$/,
         use: [loaders.babel, loaders.svelte]
       }
     ]
