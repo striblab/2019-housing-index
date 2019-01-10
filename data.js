@@ -58,7 +58,7 @@ function indexData() {
       daysOnMarketChange: a.dom_diff,
       medianHomeValue: a.MedianValue,
       perPriceRecieved: a.pctorigprice,
-      perNewConstruction: a.pctorigprice,
+      perNewConstruction: a.NewConstruct,
       perDistressed: a.PctDistressed,
       perOwnerOccupied: a.PctOwner,
       perCostBurdened: a.PctCostBurdenedOwners,
