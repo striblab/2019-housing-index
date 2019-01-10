@@ -1,0 +1,165 @@
+
+<div class="place-details">
+  <h3>{ name }</h3>
+
+  <div class="place-index">
+    <figure>
+      <div class="placeholder placeholder-chart">Index chart</div>
+      <figcaption>Caption...</figcaption>
+    </figure>
+  </div>
+
+  <div class="row">
+    <div class="col col-66">
+      <p class="data-copy">
+        Located in <span>{ county } County</span>,
+        <span>{ name }</span> ranked <span><strong>{ rank }</strong></span> on the Star Tribune's Hot Housing Index for 2018.
+
+        Average price per square foot was
+        {#if pricePerSqFtChange === 0}
+          about the same
+        {:else}
+          { pricePerSqFtChange > 0 ? 'up' : 'down' }
+          <span>{ formatPercent(pricePerSqFtChange) } percent</span>
+        {/if}
+        compared to previous four-year average.
+
+        Houses sold, on average,
+        {#if daysOnMarketChange === 0}
+          about the same when compared to the previous year.
+        {:else}
+          <span>{  Math.round(daysOnMarketChange) } days</span>
+          { daysOnMarketChange > 0 ? 'faster' : 'slower' }
+          than the previous year.
+        {/if}
+
+        Sellers got, on average, <span>{ formatPercent(perPriceRecieved) } percent</span> of their original list price.
+
+        About <span>{ formatPercent(perNewConstruction) } percent</span> of the <span>{ closedSales.toLocaleString() }</span> sales were from new construction and <span>{ formatPercent(perDistressed) }</span> where short sales or foreclosures.
+      </p>
+    </div>
+
+    <div class="col col-33">
+      <figure>
+        <div class="placeholder placeholder-chart">Locator map</div>
+        <figcaption>Caption...</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <h4>Real-estate market data</h4>
+
+  <div class="row">
+    <div class="col col-50">
+      <Line
+        data="{ closedPerYear }"
+        title="Closed sales by year"
+        xLabel="Year"
+        yLabel="Closed sales"
+        yDomain="{ [0, Math.floor(index.stats.closedPerYear.max * 1.2)] }"
+      />
+    </div>
+
+    <div class="col col-50">
+      <Line
+        data="{ [ pricePerSqFtPerYear, metro.pricePerSqFtPerYear ] }"
+        title="Price per square feet by year"
+        xLabel="Year"
+        yLabel="Price"
+        yDomain="{ [0, Math.floor(index.stats.pricePerSqFtPerYear.max * 1.2)] }"
+      />
+    </div>
+
+    <div class="col col-50">
+      <Line
+        data="{ [ daysOnMarketPerYear, metro.daysOnMarketPerYear ] }"
+        title="Days on market by year"
+        xLabel="Year"
+        yLabel="Days"
+        yDomain="{ [0, Math.floor(index.stats.daysOnMarketPerYear.max * 1.2)] }"
+      />
+    </div>
+
+    <div class="col col-50">
+      <Line
+        data="{ inventoryPerYear }"
+        title="Inventory by year"
+        xLabel="Year"
+        yLabel="Inventory"
+        yDomain="{ [0, Math.floor(index.stats.inventoryPerYear.max * 1.2)] }"
+      />
+    </div>
+  </div>
+
+  <h4>About this place</h4>
+
+  <div class="row">
+    <div class="col col-50">
+      <Histogram
+        data="{ index.stats.medianHomeValue.histogram }"
+        xLabel="Median value"
+        yLabel="Number of places"
+        title="Median value of owner-occupied homes"
+        formatTick="{ d => { return `$${Math.round(d / 1000)}k`; }}"/>
+    </div>
+
+    <div class="col col-50">
+      <Histogram
+        data="{ index.stats.medianHouseholdIncome.histogram }"
+        xLabel="Median household income"
+        yLabel="Number of places"
+        title="Median household income"
+        formatTick="{ d => { return `$${Math.round(d / 1000)}k`; }}"/>
+    </div>
+
+    <div class="col col-50">
+      <Histogram
+        data="{ index.stats.perOwnerOccupied.histogram }"
+        xLabel="Percent owner-occupied homes"
+        yLabel="Number of places"
+        title="Percent owner-occupied homes"
+        formatTick="{ d => { return `${Math.round(d * 10000) / 100}%`; }}"/>
+    </div>
+
+    <div class="col col-50">
+      <Histogram
+        data="{ index.stats.perCostBurdened.histogram }"
+        xLabel="Percent cost-burdened owners"
+        yLabel="Number of places"
+        title="Percent cost-burdened owners"
+        formatTick="{ d => { return `${Math.round(d * 10000) / 100}%`; }}"/>
+    </div>
+  </div>
+</div>
+
+<script>
+  import Histogram from "./_chart-histogram.svelte.html";
+  import Line from "./_chart-line.svelte.html";
+  import { isNumber } from "lodash";
+
+  export default {
+    components: {
+      Histogram,
+      Line
+    },
+
+    oncreate() {},
+
+    helpers: {
+      formatPercent(input) {
+        if (!isNumber(input)) {
+          return "-";
+        }
+
+        input = input * 100;
+        if (input < 1 && input > 0) {
+          return "less than 1";
+        } else if (input > -1 && input < 0) {
+          return "less than 1";
+        }
+
+        return Math.round(input);
+      }
+    }
+  };
+</script>

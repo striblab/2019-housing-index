@@ -1,16 +1,127 @@
 
 <div class="strib-styles ssa ssb ssc">
-  <section class="container-lg">
-    <Histogram data="{ index.stats.medianHomeValue.histogram }" xLabel="Median household income" yLabel="Number of areas" />
-  </section>
+  <div class="container-md">
+    <div class="hero">
+      <h1>Housing index</h1>
+
+      <p class="lead container-sm">Here's a lead-in paragraph to let you know what about to happen.</p>
+
+      <div class="byline">
+        <address>By
+          <a rel="author" href="http://example.com/author">John Doe</a>
+          and
+          <a rel="author" href="http://example.com/author">Jane Doh</a>
+        </address>
+        <span class="spacer"></span>
+        Star Tribune
+        <span class="spacer-alt"></span>
+        <time pubdate datetime="2017-07-30T16:00:00">July 30, 2017 &mdash; 4:00pm</time>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-copy">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nec magna lectus. Nulla facilisi. Suspendisse tempus arcu volutpat magna finibus accumsan. Aenean convallis lacus at urna semper sodales. Suspendisse rutrum convallis feugiat. Fusce mauris elit, euismod quis fermentum vitae, hendrerit eu enim. In aliquam lectus eros, finibus finibus ipsum elementum sit amet. Phasellus egestas non odio eu commodo. Proin ac felis nec diam faucibus tempor vitae ac metus. Maecenas in odio et ipsum fermentum rutrum. Fusce hendrerit dolor id velit accumsan condimentum. Nullam vestibulum, magna nec mattis maximus, nulla elit porttitor libero, ut maximus leo elit a dolor. Nulla vehicula lobortis mauris, at auctor odio placerat vitae. Nulla facilisi.</p>
+
+    <p>Nam ac diam quis nisl feugiat vehicula. Fusce non porttitor est, tincidunt ornare magna. Duis porta neque eget ex imperdiet, vel hendrerit ex vehicula. Fusce ac tempus ante. Sed suscipit fermentum nisi non finibus. Duis eu cursus urna, non ornare dolor. Sed consectetur ipsum ut risus vehicula, sit amet tincidunt magna rhoncus. Sed feugiat suscipit est id ullamcorper. Donec tincidunt augue eu est porttitor congue. Cras ut venenatis lacus, sed iaculis nibh. Mauris porttitor eros mattis maximus tempor.</p>
+  </div>
+
+  <div class="container-lg aggregate-charts">
+    <div class="row">
+      <div class="col col-50">
+        <figure>
+          <div class="placeholder placeholder-chart">Aggregate chart</div>
+          <figcaption>Caption...</figcaption>
+        </figure>
+      </div>
+
+      <div class="col col-50">
+        <figure>
+          <div class="placeholder placeholder-chart">Aggregate chart</div>
+          <figcaption>Caption...</figcaption>
+        </figure>
+      </div>
+
+      <div class="col col-50">
+        <figure>
+          <div class="placeholder placeholder-chart">Aggregate chart</div>
+          <figcaption>Caption...</figcaption>
+        </figure>
+      </div>
+
+      <div class="col col-50">
+        <figure>
+          <div class="placeholder placeholder-chart">Aggregate chart</div>
+          <figcaption>Caption...</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="place-search-form container-copy">
+    <h3>Search places</h3>
+
+    <form class="form-compact">
+      <div class="form-item form-item-input">
+        <label class="sr-only" for="place-search">Search places</label>
+
+        <input bind:value="placeSearch" id="place-search" type="text" placeholder="Search for a place in the metro area" aria-describedby="place-search-help">
+
+        <small id="place-search-help">
+          Start typing to find places in the Twin Cities metro area.
+        </small>
+      </div>
+
+      <div class="form-item">
+        <button type="submit">Search</button>
+      </div>
+    <form>
+  </div>
+
+  <div class="container-lg">
+    {#if place}
+      <Place
+        {...place}
+        index="{ index }"
+        metro="{ metro }" />
+    {:else}
+      <p class="no-place-note">Search above for a city or neighborhood in the Twin Cities.</p>
+    {/if}
+  </div>
 </div>
 
 <script>
-  import Histogram from "./shared/_chart-histogram.svelte.html";
+  import Place from "./shared/_place.svelte.html";
+  import { find } from "lodash";
 
   export default {
     components: {
-      Histogram
+      Place
+    },
+
+    oncreate() {
+      console.log(this.get().index);
+    },
+
+    computed: {
+      metro({ index }) {
+        return find(index.areas, { geoid2: "2733460" });
+      },
+
+      place({ index, placeSearch }) {
+        if (!placeSearch) {
+          return;
+        }
+
+        console.log(find(index.areas, { name: placeSearch }));
+        return find(index.areas, { name: placeSearch });
+      }
+    },
+
+    data() {
+      return {
+        placeSearch: "Bloomington"
+      };
     }
   };
 </script>

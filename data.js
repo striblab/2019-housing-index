@@ -35,6 +35,13 @@ function indexData() {
   MedianValue = Median value of owner-occupied homes
   */
 
+  // Add entry for metro area
+  // TODO: Fix this in data
+  areas.push({
+    Place: 'Minneapolis-St. Paul Metro Area',
+    geoid2: '2733460'
+  });
+
   let parsed = _.map(areas, a => {
     let p = {
       geoid2: a.geoid2,
@@ -52,6 +59,7 @@ function indexData() {
       medianHomeValue: a.MedianValue,
       perPriceRecieved: a.pctorigprice,
       perNewConstruction: a.pctorigprice,
+      perDistressed: a.PctDistressed,
       perOwnerOccupied: a.PctOwner,
       perCostBurdened: a.PctCostBurdenedOwners,
       medianHouseholdIncome: a.MedianHHIncome
@@ -96,6 +104,9 @@ function indexData() {
     return p;
   });
 
+  // Sort
+  parsed = _.sortBy(parsed, 'name');
+
   // Make aggregate data
   let stats = {};
   _.each(
@@ -104,10 +115,24 @@ function indexData() {
       'pricePerSqFtChange',
       'daysOnMarketChange',
       'medianHomeValue',
-      'medianHouseholdIncome'
+      'medianHouseholdIncome',
+      'perOwnerOccupied',
+      'perCostBurdened',
+      // Timeseries
+      'closedPerYear',
+      'daysOnMarketPerYear',
+      'inventoryPerYear',
+      'pricePerSqFtPerYear'
     ],
     f => {
       let s = _.filter(_.map(parsed, f), d => !_.isUndefined(d));
+
+      // If timeseries
+      let timeseries = false;
+      if (_.isArray(s[0])) {
+        timeseries = true;
+        s = _.map(_.flatten(s), 'data');
+      }
 
       // Top level stats
       stats[f] = stats[f] || {};
@@ -119,30 +144,33 @@ function indexData() {
       stats[f].std = ss.standardDeviation(s);
 
       // Histogram numbers
-      let bins = Math.ceil(Math.sqrt(s.length));
-      let rawInterval = Math.abs((stats[f].max - stats[f].min) / bins);
-      let interval = parseFloat(rawInterval.toPrecision(1));
-      let intervalMin = parseFloat(stats[f].min.toPrecision(1));
-      // Manual fix
-      intervalMin = intervalMin < 2 ? 0 : intervalMin;
+      if (!timeseries) {
+        let bins = Math.max(Math.ceil(Math.sqrt(s.length)), 8);
+        let rawInterval = Math.abs((stats[f].max - stats[f].min) / bins);
+        let interval = parseFloat(rawInterval.toPrecision(1));
+        let intervalMin = parseFloat(stats[f].min.toPrecision(1));
 
-      let histogram = [];
-      let max = intervalMin + interval;
-      let min = intervalMin;
-      while (max < stats[f].max) {
-        histogram.push({
-          min,
-          max,
-          count: _.filter(s, d => {
-            return d >= min && d < max;
-          }).length
-        });
+        // Manual fix
+        intervalMin = intervalMin < 2 ? 0 : intervalMin;
 
-        min = max;
-        max = min + interval;
+        let histogram = [];
+        let max = intervalMin + interval;
+        let min = intervalMin;
+        while (max < stats[f].max) {
+          histogram.push({
+            min,
+            max,
+            count: _.filter(s, d => {
+              return d >= min && d < max;
+            }).length
+          });
+
+          min = max;
+          max = min + interval;
+        }
+
+        stats[f].histogram = histogram;
       }
-
-      stats[f].histogram = histogram;
     }
   );
 

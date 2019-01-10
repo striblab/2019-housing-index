@@ -2,4 +2,20 @@
  * Project specific styling.
  */
 
-@import "charts";
+.placeholder {
+  background-color: map-get($grays, "lighter");
+  min-height: 3em;
+}
+
+.placeholder-chart {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.aggregate-charts {
+  margin-bottom: 3em;
+}
+
+.data-copy {
+  @include font-styles("benton-sans");
+}
