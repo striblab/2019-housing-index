@@ -93,7 +93,7 @@
 
 <script>
   import Place from "./shared/_place.svelte.html";
-  import { find, orderBy } from "lodash";
+  import { find, orderBy, isObject } from "lodash";
 
   export default {
     components: {
@@ -104,8 +104,25 @@
       console.log(this.get().index);
     },
 
+    methods: {
+      setPlace(id, event) {
+        if (event && event.preventDefault) {
+          event.preventDefault();
+        }
+
+        id = isObject(id) ? id.id : id;
+        let p = find(this.get().index, { id });
+        if (p) {
+          this.set({
+            placeSearch: p.name
+          });
+        }
+      }
+    },
+
     computed: {
       metro({ index }) {
+        console.log(find(index.areas, { geoid2: "2733460" }));
         return find(index.areas, { geoid2: "2733460" });
       },
 
@@ -117,6 +134,7 @@
             })
             .map(a => {
               return {
+                id: a.id,
                 name: a.name,
                 rank: a.rank,
                 index: a.index

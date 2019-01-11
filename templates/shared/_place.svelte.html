@@ -4,13 +4,18 @@
 
   <div class="place-index">
       <Histogram
+        figureClass="metro-index-chart"
         data="{ ranked }"
         x="{ [a => a.i, a => a.i + 1] }"
         y="index"
         yDomain="{ [0, padMax(ranked, 'index')] }"
         title="Metro area cities ranked by hot housing index"
         xAxis="{ false }"
-      />
+        isHighlight="{ d => d.id === id }"
+        noLabel="{ true }"
+        noCaption="{ true }"
+        padding="{ { top: 10, right: 10, bottom: 10, left: 10 } }"
+      >Chart showing each city in the Twin Cities area metro and where they fall on the Star Tribune Hot Housing Index.</Histogram>
   </div>
 
   <div class="row">

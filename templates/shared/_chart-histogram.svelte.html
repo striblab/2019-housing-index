@@ -1,9 +1,9 @@
-<div class="chart-figure">
-  <div class="label" id="label-{ id }">{ title }</div>
+<div class="chart-figure { figureClass }">
+  <div class="label { noLabel ? 'sr-only' : '' }" id="label-{ id }">{ title }</div>
 
   <figure aria-labelledby="label-{ id }">
     <div class="chart chart-histogram" ref:chart role="img" title="{ title }"></div>
-    <figcaption>
+    <figcaption class="{ noCaption ? 'sr-only' : '' }">
       <slot>Needs caption slot</slot>
     </figcaption>
   </figure>
@@ -19,7 +19,7 @@
     oncreate() {
       let p = this.get();
 
-      // LAyer cake compoents
+      // Layer cake compoents
       let svgLayers = [];
       if (p.xAxis !== false) {
         svgLayers.push({
@@ -45,7 +45,9 @@
 
       svgLayers.push({
         component: Column,
-        opts: {}
+        opts: {
+          isHighlight: p.isHighlight
+        }
       });
 
       // Create layer cake store

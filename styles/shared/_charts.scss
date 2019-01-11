@@ -2,6 +2,9 @@
  * Chart styles
  */
 
+$metro-color: map-get($theme, "yellow-dark");
+$place-color: map-get($theme, "blue-dark");
+
 .chart {
   //@include aspect-ratio(4, 3);
   width: 100%;
@@ -45,7 +48,7 @@
   }
 
   .chart-column {
-    fill: map-get($theme, "red-dark");
+    fill: $metro-color;
   }
 
   &.chart-histogram .chart-column {
@@ -58,10 +61,20 @@
     stroke-linejoin: round;
     stroke-linecap: round;
     stroke-width: 2;
-    stroke: map-get($theme, "red-dark");
+    stroke: $place-color;
 
     &.chart-line-1 {
-      stroke: map-get($theme, "blue-dark");
+      stroke: $metro-color;
     }
+  }
+}
+
+.metro-index-chart {
+  .chart {
+    height: 7.5em;
+  }
+
+  .chart-column.highlight {
+    fill: $place-color;
   }
 }

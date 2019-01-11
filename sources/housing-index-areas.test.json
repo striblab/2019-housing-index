@@ -3,6 +3,7 @@
     "Place": "Andover",
     "geoid2": "2701486",
     "FullName": "Andover, MN",
+    "CityName": "Andover",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -18,12 +19,15 @@
     "PctOwner": 0.9174,
     "PctCostBurdenedOwners": 0.1658,
     "MedianHHIncome": 105270,
-    "MedianValue": 258400
+    "MedianValue": 258400,
+    "stribID": 1,
+    "type": "city"
   },
   {
     "Place": "Ramsey",
     "geoid2": "2753026",
     "FullName": "Ramsey, MN",
+    "CityName": "Ramsey",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -39,12 +43,15 @@
     "PctOwner": 0.8728,
     "PctCostBurdenedOwners": 0.1558,
     "MedianHHIncome": 92984,
-    "MedianValue": 221500
+    "MedianValue": 221500,
+    "stribID": 2,
+    "type": "city"
   },
   {
     "Place": "Oak Grove",
     "geoid2": "2747690",
     "FullName": "Oak Grove, MN",
+    "CityName": "Oak Grove",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -60,12 +67,15 @@
     "PctOwner": 0.9703,
     "PctCostBurdenedOwners": 0.1625,
     "MedianHHIncome": 97782,
-    "MedianValue": 255200
+    "MedianValue": 255200,
+    "stribID": 3,
+    "type": "city"
   },
   {
     "Place": "Nowthen",
     "geoid2": "2747536",
     "FullName": "Nowthen, MN",
+    "CityName": "Nowthen",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -78,12 +88,15 @@
     "PctOwner": 0.8725,
     "PctCostBurdenedOwners": 0.1893,
     "MedianHHIncome": 94904,
-    "MedianValue": 284800
+    "MedianValue": 284800,
+    "stribID": 4,
+    "type": "city"
   },
   {
     "Place": "Lino Lakes",
     "geoid2": "2737322",
     "FullName": "Lino Lakes, MN",
+    "CityName": "Lino Lakes",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -99,12 +112,15 @@
     "PctOwner": 0.9163,
     "PctCostBurdenedOwners": 0.1845,
     "MedianHHIncome": 107438,
-    "MedianValue": 268900
+    "MedianValue": 268900,
+    "stribID": 5,
+    "type": "city"
   },
   {
     "Place": "Lexington",
     "geoid2": "2736836",
     "FullName": "Lexington, MN",
+    "CityName": "Lexington",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -117,12 +133,15 @@
     "PctOwner": 0.6479,
     "PctCostBurdenedOwners": 0.2521,
     "MedianHHIncome": 53368,
-    "MedianValue": 162700
+    "MedianValue": 162700,
+    "stribID": 6,
+    "type": "city"
   },
   {
     "Place": "Hilltop",
     "geoid2": "2729258",
     "FullName": "Hilltop, MN",
+    "CityName": "Hilltop",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -133,12 +152,15 @@
     "PctOwner": 0.6352,
     "PctCostBurdenedOwners": 0.2461,
     "MedianHHIncome": 31116,
-    "MedianValue": 11900
+    "MedianValue": 11900,
+    "stribID": 7,
+    "type": "city"
   },
   {
     "Place": "Ham Lake",
     "geoid2": "2726738",
     "FullName": "Ham Lake, MN",
+    "CityName": "Ham Lake",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -154,12 +176,15 @@
     "PctOwner": 0.9312,
     "PctCostBurdenedOwners": 0.1637,
     "MedianHHIncome": 95962,
-    "MedianValue": 280000
+    "MedianValue": 280000,
+    "stribID": 8,
+    "type": "city"
   },
   {
     "Place": "Fridley",
     "geoid2": "2722814",
     "FullName": "Fridley, MN",
+    "CityName": "Fridley",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -175,12 +200,15 @@
     "PctOwner": 0.6148,
     "PctCostBurdenedOwners": 0.2103,
     "MedianHHIncome": 56583,
-    "MedianValue": 174000
+    "MedianValue": 174000,
+    "stribID": 9,
+    "type": "city"
   },
   {
     "Place": "East Bethel",
     "geoid2": "2717486",
     "FullName": "East Bethel, MN",
+    "CityName": "East Bethel",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -196,12 +224,15 @@
     "PctOwner": 0.9468,
     "PctCostBurdenedOwners": 0.1703,
     "MedianHHIncome": 86893,
-    "MedianValue": 223200
+    "MedianValue": 223200,
+    "stribID": 10,
+    "type": "city"
   },
   {
     "Place": "Coon Rapids",
     "geoid2": "2713114",
     "FullName": "Coon Rapids, MN",
+    "CityName": "Coon Rapids",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -217,12 +248,15 @@
     "PctOwner": 0.7618,
     "PctCostBurdenedOwners": 0.1828,
     "MedianHHIncome": 68586,
-    "MedianValue": 178400
+    "MedianValue": 178400,
+    "stribID": 11,
+    "type": "city"
   },
   {
     "Place": "Columbus",
     "geoid2": "2712718",
     "FullName": "Columbus, MN",
+    "CityName": "Columbus",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -235,12 +269,15 @@
     "PctOwner": 0.935,
     "PctCostBurdenedOwners": 0.2071,
     "MedianHHIncome": 84773,
-    "MedianValue": 245000
+    "MedianValue": 245000,
+    "stribID": 12,
+    "type": "city"
   },
   {
     "Place": "Columbia Heights",
     "geoid2": "2712700",
     "FullName": "Columbia Heights, MN",
+    "CityName": "Columbia Heights",
     "location": "inner suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -256,12 +293,15 @@
     "PctOwner": 0.639,
     "PctCostBurdenedOwners": 0.2467,
     "MedianHHIncome": 51071,
-    "MedianValue": 161100
+    "MedianValue": 161100,
+    "stribID": 13,
+    "type": "city"
   },
   {
     "Place": "Circle Pines",
     "geoid2": "2711494",
     "FullName": "Circle Pines, MN",
+    "CityName": "Circle Pines",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -277,12 +317,15 @@
     "PctOwner": 0.8107,
     "PctCostBurdenedOwners": 0.1411,
     "MedianHHIncome": 81672,
-    "MedianValue": 188200
+    "MedianValue": 188200,
+    "stribID": 14,
+    "type": "city"
   },
   {
     "Place": "Blaine",
     "geoid2": "2706382",
     "FullName": "Blaine, MN",
+    "CityName": "Blaine",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -298,12 +341,15 @@
     "PctOwner": 0.8611,
     "PctCostBurdenedOwners": 0.1747,
     "MedianHHIncome": 80423,
-    "MedianValue": 202000
+    "MedianValue": 202000,
+    "stribID": 15,
+    "type": "city"
   },
   {
     "Place": "Anoka",
     "geoid2": "2701720",
     "FullName": "Anoka, MN",
+    "CityName": "Anoka",
     "location": "outer suburbs",
     "COUNTY": "Anoka",
     "STATE": "MN",
@@ -319,12 +365,15 @@
     "PctOwner": 0.5051,
     "PctCostBurdenedOwners": 0.2356,
     "MedianHHIncome": 50625,
-    "MedianValue": 175200
+    "MedianValue": 175200,
+    "stribID": 16,
+    "type": "city"
   },
   {
     "Place": "Wyoming",
     "geoid2": "2772022",
     "FullName": "Wyoming, MN",
+    "CityName": "Wyoming",
     "location": "Exurbs",
     "COUNTY": "Anoka, Chisago",
     "STATE": "MN",
@@ -340,12 +389,15 @@
     "PctOwner": 0.8513,
     "PctCostBurdenedOwners": 0.2112,
     "MedianHHIncome": 85250,
-    "MedianValue": 210500
+    "MedianValue": 210500,
+    "stribID": 17,
+    "type": "city"
   },
   {
     "Place": "Stacy",
     "geoid2": "2762320",
     "FullName": "Stacy, MN",
+    "CityName": "Stacy",
     "location": "Exurbs",
     "COUNTY": "Anoka, Chisago, Isanti",
     "STATE": "MN",
@@ -359,12 +411,15 @@
     "PctOwner": 0.8153,
     "PctCostBurdenedOwners": 0.25,
     "MedianHHIncome": 62024,
-    "MedianValue": 155900
+    "MedianValue": 155900,
+    "stribID": 18,
+    "type": "city"
   },
   {
     "Place": "Forest Lake",
     "geoid2": "2721770",
     "FullName": "Forest Lake, MN",
+    "CityName": "Forest Lake",
     "location": "Exurbs",
     "COUNTY": "Anoka, Chisago, Washington",
     "STATE": "MN",
@@ -380,12 +435,15 @@
     "PctOwner": 0.7444,
     "PctCostBurdenedOwners": 0.1515,
     "MedianHHIncome": 74475,
-    "MedianValue": 244500
+    "MedianValue": 244500,
+    "stribID": 19,
+    "type": "city"
   },
   {
     "Place": "Saint Francis",
     "geoid2": "2756950",
     "FullName": "St. Francis, MN",
+    "CityName": "St. Francis",
     "location": "Exurbs",
     "COUNTY": "Anoka, Isanti",
     "STATE": "MN",
@@ -401,12 +459,15 @@
     "PctOwner": 0.8399,
     "PctCostBurdenedOwners": 0.2619,
     "MedianHHIncome": 77935,
-    "MedianValue": 172300
+    "MedianValue": 172300,
+    "stribID": 20,
+    "type": "city"
   },
   {
     "Place": "Bethel",
     "geoid2": "2705554",
     "FullName": "Bethel, MN",
+    "CityName": "Bethel",
     "location": "Exurbs",
     "COUNTY": "Anoka, Isanti",
     "STATE": "MN",
@@ -419,12 +480,15 @@
     "PctOwner": 0.8831,
     "PctCostBurdenedOwners": 0.2721,
     "MedianHHIncome": 62500,
-    "MedianValue": 161400
+    "MedianValue": 161400,
+    "stribID": 21,
+    "type": "city"
   },
   {
     "Place": "Spring Lake Park",
     "geoid2": "2761996",
     "FullName": "Spring Lake Park, MN",
+    "CityName": "Spring Lake Park",
     "location": "inner suburbs",
     "COUNTY": "Anoka, Ramsey",
     "STATE": "MN",
@@ -440,12 +504,15 @@
     "PctOwner": 0.7373,
     "PctCostBurdenedOwners": 0.2312,
     "MedianHHIncome": 57582,
-    "MedianValue": 167900
+    "MedianValue": 167900,
+    "stribID": 22,
+    "type": "city"
   },
   {
     "Place": "Elk River",
     "geoid2": "2718674",
     "FullName": "Elk River, MN",
+    "CityName": "Elk River",
     "location": "Exurbs",
     "COUNTY": "Anoka, Sherburne",
     "STATE": "MN",
@@ -461,12 +528,15 @@
     "PctOwner": 0.7718,
     "PctCostBurdenedOwners": 0.1727,
     "MedianHHIncome": 85974,
-    "MedianValue": 229000
+    "MedianValue": 229000,
+    "stribID": 23,
+    "type": "city"
   },
   {
     "Place": "Centerville",
     "geoid2": "2710648",
     "FullName": "Centerville, MN",
+    "CityName": "Centerville",
     "location": "outer suburbs",
     "COUNTY": "Anoka, Washington",
     "STATE": "MN",
@@ -480,12 +550,15 @@
     "PctOwner": 0.8875,
     "PctCostBurdenedOwners": 0.2432,
     "MedianHHIncome": 98214,
-    "MedianValue": 242800
+    "MedianValue": 242800,
+    "stribID": 24,
+    "type": "city"
   },
   {
     "Place": "Otsego",
     "geoid2": "2749138",
     "FullName": "Otsego, MN",
+    "CityName": "Otsego",
     "location": "Exurbs",
     "COUNTY": "Anoka, Wright",
     "STATE": "MN",
@@ -501,12 +574,15 @@
     "PctOwner": 0.9368,
     "PctCostBurdenedOwners": 0.147,
     "MedianHHIncome": 99037,
-    "MedianValue": 199600
+    "MedianValue": 199600,
+    "stribID": 25,
+    "type": "city"
   },
   {
     "Place": "Waconia",
     "geoid2": "2767432",
     "FullName": "Waconia, MN",
+    "CityName": "Waconia",
     "location": "outer suburbs",
     "COUNTY": "Carver",
     "STATE": "MN",
@@ -522,12 +598,15 @@
     "PctOwner": 0.7996,
     "PctCostBurdenedOwners": 0.1856,
     "MedianHHIncome": 89297,
-    "MedianValue": 265300
+    "MedianValue": 265300,
+    "stribID": 26,
+    "type": "city"
   },
   {
     "Place": "Victoria",
     "geoid2": "2767036",
     "FullName": "Victoria, MN",
+    "CityName": "Victoria",
     "location": "outer suburbs",
     "COUNTY": "Carver",
     "STATE": "MN",
@@ -543,12 +622,15 @@
     "PctOwner": 0.9383,
     "PctCostBurdenedOwners": 0.1385,
     "MedianHHIncome": 140889,
-    "MedianValue": 414700
+    "MedianValue": 414700,
+    "stribID": 27,
+    "type": "city"
   },
   {
     "Place": "Norwood Young America",
     "geoid2": "2747520",
     "FullName": "Norwood Young America, MN",
+    "CityName": "Norwood Young America",
     "location": "outer suburbs",
     "COUNTY": "Carver",
     "STATE": "MN",
@@ -564,12 +646,15 @@
     "PctOwner": 0.6403,
     "PctCostBurdenedOwners": 0.152,
     "MedianHHIncome": 65430,
-    "MedianValue": 172000
+    "MedianValue": 172000,
+    "stribID": 28,
+    "type": "city"
   },
   {
     "Place": "New Germany",
     "geoid2": "2745556",
     "FullName": "New Germany, MN",
+    "CityName": "New Germany",
     "location": "outer suburbs",
     "COUNTY": "Carver",
     "STATE": "MN",
@@ -582,12 +667,15 @@
     "PctOwner": 0.7278,
     "PctCostBurdenedOwners": 0.252,
     "MedianHHIncome": 57375,
-    "MedianValue": 135900
+    "MedianValue": 135900,
+    "stribID": 29,
+    "type": "city"
   },
   {
     "Place": "Mayer",
     "geoid2": "2741138",
     "FullName": "Mayer, MN",
+    "CityName": "Mayer",
     "location": "outer suburbs",
     "COUNTY": "Carver",
     "STATE": "MN",
@@ -600,12 +688,15 @@
     "PctOwner": 0.9061,
     "PctCostBurdenedOwners": 0.15,
     "MedianHHIncome": 93182,
-    "MedianValue": 210200
+    "MedianValue": 210200,
+    "stribID": 30,
+    "type": "city"
   },
   {
     "Place": "Cologne",
     "geoid2": "2712664",
     "FullName": "Cologne, MN",
+    "CityName": "Cologne",
     "location": "outer suburbs",
     "COUNTY": "Carver",
     "STATE": "MN",
@@ -618,12 +709,15 @@
     "PctOwner": 0.859,
     "PctCostBurdenedOwners": 0.2124,
     "MedianHHIncome": 84191,
-    "MedianValue": 216000
+    "MedianValue": 216000,
+    "stribID": 31,
+    "type": "city"
   },
   {
     "Place": "Carver",
     "geoid2": "2710144",
     "FullName": "Carver, MN",
+    "CityName": "Carver",
     "location": "outer suburbs",
     "COUNTY": "Carver",
     "STATE": "MN",
@@ -639,12 +733,15 @@
     "PctOwner": 0.9162,
     "PctCostBurdenedOwners": 0.1364,
     "MedianHHIncome": 109938,
-    "MedianValue": 309300
+    "MedianValue": 309300,
+    "stribID": 32,
+    "type": "city"
   },
   {
     "Place": "Chanhassen",
     "geoid2": "2710918",
     "FullName": "Chanhassen, MN",
+    "CityName": "Chanhassen",
     "location": "outer suburbs",
     "COUNTY": "Carver, Hennepin",
     "STATE": "MN",
@@ -660,12 +757,15 @@
     "PctOwner": 0.8695,
     "PctCostBurdenedOwners": 0.1865,
     "MedianHHIncome": 116569,
-    "MedianValue": 350600
+    "MedianValue": 350600,
+    "stribID": 33,
+    "type": "city"
   },
   {
     "Place": "Chaska",
     "geoid2": "2710972",
     "FullName": "Chaska, MN",
+    "CityName": "Chaska",
     "location": "outer suburbs",
     "COUNTY": "Carver, Scott",
     "STATE": "MN",
@@ -681,12 +781,15 @@
     "PctOwner": 0.6996,
     "PctCostBurdenedOwners": 0.1635,
     "MedianHHIncome": 81938,
-    "MedianValue": 249900
+    "MedianValue": 249900,
+    "stribID": 34,
+    "type": "city"
   },
   {
     "Place": "Hamburg",
     "geoid2": "2726666",
     "FullName": "Hamburg, MN",
+    "CityName": "Hamburg",
     "location": "Exurbs",
     "COUNTY": "Carver, Sibley",
     "STATE": "MN",
@@ -699,12 +802,15 @@
     "PctOwner": 0.7933,
     "PctCostBurdenedOwners": 0.0848,
     "MedianHHIncome": 72857,
-    "MedianValue": 144200
+    "MedianValue": 144200,
+    "stribID": 35,
+    "type": "city"
   },
   {
     "Place": "Watertown",
     "geoid2": "2768548",
     "FullName": "Watertown, MN",
+    "CityName": "Watertown",
     "location": "Exurbs",
     "COUNTY": "Carver, Wright",
     "STATE": "MN",
@@ -720,12 +826,15 @@
     "PctOwner": 0.7732,
     "PctCostBurdenedOwners": 0.1218,
     "MedianHHIncome": 63688,
-    "MedianValue": 176700
+    "MedianValue": 176700,
+    "stribID": 36,
+    "type": "city"
   },
   {
     "Place": "Delano",
     "geoid2": "2715454",
     "FullName": "Delano, MN",
+    "CityName": "Delano",
     "location": "Exurbs",
     "COUNTY": "Carver, Wright",
     "STATE": "MN",
@@ -741,12 +850,15 @@
     "PctOwner": 0.7619,
     "PctCostBurdenedOwners": 0.247,
     "MedianHHIncome": 74046,
-    "MedianValue": 246300
+    "MedianValue": 246300,
+    "stribID": 37,
+    "type": "city"
   },
   {
     "Place": "Rush City",
     "geoid2": "2756266",
     "FullName": "Rush City, MN",
+    "CityName": "Rush City",
     "location": "Exurbs",
     "COUNTY": "Chisago",
     "STATE": "MN",
@@ -761,12 +873,15 @@
     "PctOwner": 0.5559,
     "PctCostBurdenedOwners": 0.1818,
     "MedianHHIncome": 44605,
-    "MedianValue": 134100
+    "MedianValue": 134100,
+    "stribID": 40,
+    "type": "city"
   },
   {
     "Place": "Lindstrom",
     "geoid2": "2737304",
     "FullName": "Lindstrom, MN",
+    "CityName": "Lindstrom",
     "location": "Exurbs",
     "COUNTY": "Chisago",
     "STATE": "MN",
@@ -782,12 +897,15 @@
     "PctOwner": 0.8098,
     "PctCostBurdenedOwners": 0.2425,
     "MedianHHIncome": 77647,
-    "MedianValue": 185100
+    "MedianValue": 185100,
+    "stribID": 41,
+    "type": "city"
   },
   {
     "Place": "North Branch",
     "geoid2": "2746798",
     "FullName": "North Branch, MN",
+    "CityName": "North Branch",
     "location": "Exurbs",
     "COUNTY": "Chisago, Isanti",
     "STATE": "MN",
@@ -803,12 +921,15 @@
     "PctOwner": 0.8489,
     "PctCostBurdenedOwners": 0.2214,
     "MedianHHIncome": 73932,
-    "MedianValue": 172500
+    "MedianValue": 172500,
+    "stribID": 45,
+    "type": "city"
   },
   {
     "Place": "Cambridge",
     "geoid2": "2709370",
     "FullName": "Cambridge, MN",
+    "CityName": "Cambridge",
     "location": "Exurbs",
     "COUNTY": "Chisago, Isanti",
     "STATE": "MN",
@@ -824,12 +945,15 @@
     "PctOwner": 0.6336,
     "PctCostBurdenedOwners": 0.1858,
     "MedianHHIncome": 48995,
-    "MedianValue": 139300
+    "MedianValue": 139300,
+    "stribID": 46,
+    "type": "city"
   },
   {
     "Place": "Scandia",
     "geoid2": "2758900",
     "FullName": "Scandia, MN",
+    "CityName": "Scandia",
     "location": "Exurbs",
     "COUNTY": "Chisago, Washington",
     "STATE": "MN",
@@ -842,12 +966,15 @@
     "PctOwner": 0.8926,
     "PctCostBurdenedOwners": 0.2344,
     "MedianHHIncome": 87171,
-    "MedianValue": 342300
+    "MedianValue": 342300,
+    "stribID": 48,
+    "type": "city"
   },
   {
     "Place": "Vermillion",
     "geoid2": "2766802",
     "FullName": "Vermillion, MN",
+    "CityName": "Vermillion",
     "location": "outer suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -858,12 +985,15 @@
     "PctOwner": 0.8807,
     "PctCostBurdenedOwners": 0.1677,
     "MedianHHIncome": 77500,
-    "MedianValue": 187500
+    "MedianValue": 187500,
+    "stribID": 49,
+    "type": "city"
   },
   {
     "Place": "Sunfish Lake",
     "geoid2": "2763544",
     "FullName": "Sunfish Lake, MN",
+    "CityName": "Sunfish Lake",
     "location": "inner suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -875,12 +1005,15 @@
     "PctOwner": 0.9572,
     "PctCostBurdenedOwners": 0.257,
     "MedianHHIncome": 199375,
-    "MedianValue": 912200
+    "MedianValue": 912200,
+    "stribID": 50,
+    "type": "city"
   },
   {
     "Place": "South Saint Paul",
     "geoid2": "2761492",
     "FullName": "South St. Paul, MN",
+    "CityName": "South St. Paul",
     "location": "inner suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -896,12 +1029,15 @@
     "PctOwner": 0.6595,
     "PctCostBurdenedOwners": 0.2196,
     "MedianHHIncome": 58026,
-    "MedianValue": 169200
+    "MedianValue": 169200,
+    "stribID": 51,
+    "type": "city"
   },
   {
     "Place": "Rosemount",
     "geoid2": "2755726",
     "FullName": "Rosemount, MN",
+    "CityName": "Rosemount",
     "location": "outer suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -917,12 +1053,15 @@
     "PctOwner": 0.8585,
     "PctCostBurdenedOwners": 0.1625,
     "MedianHHIncome": 94341,
-    "MedianValue": 249600
+    "MedianValue": 249600,
+    "stribID": 52,
+    "type": "city"
   },
   {
     "Place": "Randolph",
     "geoid2": "2753098",
     "FullName": "Randolph, MN",
+    "CityName": "Randolph",
     "location": "outer suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -935,12 +1074,15 @@
     "PctOwner": 0.7976,
     "PctCostBurdenedOwners": 0.2164,
     "MedianHHIncome": 77000,
-    "MedianValue": 190000
+    "MedianValue": 190000,
+    "stribID": 53,
+    "type": "city"
   },
   {
     "Place": "New Trier",
     "geoid2": "2746024",
     "FullName": "New Trier, MN",
+    "CityName": "New Trier",
     "location": "outer suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -952,12 +1094,15 @@
     "PctOwner": 0.9714,
     "PctCostBurdenedOwners": 0.3235,
     "MedianHHIncome": 68750,
-    "MedianValue": 216700
+    "MedianValue": 216700,
+    "stribID": 54,
+    "type": "city"
   },
   {
     "Place": "Miesville",
     "geoid2": "2742092",
     "FullName": "Miesville, MN",
+    "CityName": "Miesville",
     "location": "outer suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -966,12 +1111,15 @@
     "PctOwner": 0.7937,
     "PctCostBurdenedOwners": 0.14,
     "MedianHHIncome": 76875,
-    "MedianValue": 222200
+    "MedianValue": 222200,
+    "stribID": 55,
+    "type": "city"
   },
   {
     "Place": "Mendota Heights",
     "geoid2": "2741696",
     "FullName": "Mendota Heights, MN",
+    "CityName": "Mendota Heights",
     "location": "inner suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -987,12 +1135,15 @@
     "PctOwner": 0.8715,
     "PctCostBurdenedOwners": 0.1756,
     "MedianHHIncome": 107865,
-    "MedianValue": 361600
+    "MedianValue": 361600,
+    "stribID": 56,
+    "type": "city"
   },
   {
     "Place": "Mendota",
     "geoid2": "2741678",
     "FullName": "Mendota, MN",
+    "CityName": "Mendota",
     "location": "inner suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -1002,12 +1153,15 @@
     "PctOwner": 0.5566,
     "PctCostBurdenedOwners": 0.2881,
     "MedianHHIncome": 65000,
-    "MedianValue": 203600
+    "MedianValue": 203600,
+    "stribID": 57,
+    "type": "city"
   },
   {
     "Place": "Lilydale",
     "geoid2": "2737016",
     "FullName": "Lilydale, MN",
+    "CityName": "Lilydale",
     "location": "inner suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -1020,12 +1174,15 @@
     "PctOwner": 0.5313,
     "PctCostBurdenedOwners": 0.2786,
     "MedianHHIncome": 74464,
-    "MedianValue": 296700
+    "MedianValue": 296700,
+    "stribID": 58,
+    "type": "city"
   },
   {
     "Place": "Hampton",
     "geoid2": "2726864",
     "FullName": "Hampton, MN",
+    "CityName": "Hampton",
     "location": "outer suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -1038,12 +1195,15 @@
     "PctOwner": 0.8359,
     "PctCostBurdenedOwners": 0.1636,
     "MedianHHIncome": 74444,
-    "MedianValue": 216800
+    "MedianValue": 216800,
+    "stribID": 59,
+    "type": "city"
   },
   {
     "Place": "Farmington",
     "geoid2": "2720618",
     "FullName": "Farmington, MN",
+    "CityName": "Farmington",
     "location": "outer suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -1059,12 +1219,15 @@
     "PctOwner": 0.8624,
     "PctCostBurdenedOwners": 0.2054,
     "MedianHHIncome": 88674,
-    "MedianValue": 224000
+    "MedianValue": 224000,
+    "stribID": 60,
+    "type": "city"
   },
   {
     "Place": "Eagan",
     "geoid2": "2717288",
     "FullName": "Eagan, MN",
+    "CityName": "Eagan",
     "location": "inner suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -1080,12 +1243,15 @@
     "PctOwner": 0.6912,
     "PctCostBurdenedOwners": 0.1555,
     "MedianHHIncome": 84756,
-    "MedianValue": 262500
+    "MedianValue": 262500,
+    "stribID": 61,
+    "type": "city"
   },
   {
     "Place": "Coates",
     "geoid2": "2712376",
     "FullName": "Coates, MN",
+    "CityName": "Coates",
     "location": "outer suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -1093,12 +1259,15 @@
     "PctOwner": 0.65,
     "PctCostBurdenedOwners": 0.0513,
     "MedianHHIncome": 70714,
-    "MedianValue": 212500
+    "MedianValue": 212500,
+    "stribID": 62,
+    "type": "city"
   },
   {
     "Place": "Burnsville",
     "geoid2": "2708794",
     "FullName": "Burnsville, MN",
+    "CityName": "Burnsville",
     "location": "inner suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -1114,12 +1283,15 @@
     "PctOwner": 0.6398,
     "PctCostBurdenedOwners": 0.1933,
     "MedianHHIncome": 67397,
-    "MedianValue": 224700
+    "MedianValue": 224700,
+    "stribID": 63,
+    "type": "city"
   },
   {
     "Place": "Apple Valley",
     "geoid2": "2701900",
     "FullName": "Apple Valley, MN",
+    "CityName": "Apple Valley",
     "location": "inner suburbs",
     "COUNTY": "Dakota",
     "STATE": "MN",
@@ -1135,12 +1307,15 @@
     "PctOwner": 0.7916,
     "PctCostBurdenedOwners": 0.1539,
     "MedianHHIncome": 85181,
-    "MedianValue": 230900
+    "MedianValue": 230900,
+    "stribID": 64,
+    "type": "city"
   },
   {
     "Place": "Inver Grove Heights",
     "geoid2": "2731076",
     "FullName": "Inver Grove Heights, MN",
+    "CityName": "Inver Grove Heights",
     "location": "inner suburbs",
     "COUNTY": "Dakota, Ramsey",
     "STATE": "MN",
@@ -1156,12 +1331,15 @@
     "PctOwner": 0.695,
     "PctCostBurdenedOwners": 0.2106,
     "MedianHHIncome": 73296,
-    "MedianValue": 226900
+    "MedianValue": 226900,
+    "stribID": 65,
+    "type": "city"
   },
   {
     "Place": "Lakeville",
     "geoid2": "2735180",
     "FullName": "Lakeville, MN",
+    "CityName": "Lakeville",
     "location": "outer suburbs",
     "COUNTY": "Dakota, Scott",
     "STATE": "MN",
@@ -1177,12 +1355,15 @@
     "PctOwner": 0.8692,
     "PctCostBurdenedOwners": 0.1814,
     "MedianHHIncome": 102943,
-    "MedianValue": 276500
+    "MedianValue": 276500,
+    "stribID": 66,
+    "type": "city"
   },
   {
     "Place": "Hastings",
     "geoid2": "2727530",
     "FullName": "Hastings, MN",
+    "CityName": "Hastings",
     "location": "outer suburbs",
     "COUNTY": "Dakota, Washington",
     "STATE": "MN",
@@ -1198,12 +1379,15 @@
     "PctOwner": 0.7196,
     "PctCostBurdenedOwners": 0.158,
     "MedianHHIncome": 66403,
-    "MedianValue": 192500
+    "MedianValue": 192500,
+    "stribID": 67,
+    "type": "city"
   },
   {
     "Place": "Woodland",
     "geoid2": "2771500",
     "FullName": "Woodland, MN",
+    "CityName": "Woodland",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1216,12 +1400,15 @@
     "PctOwner": 0.9767,
     "PctCostBurdenedOwners": 0.2857,
     "MedianHHIncome": 146875,
-    "MedianValue": 810600
+    "MedianValue": 810600,
+    "stribID": 68,
+    "type": "city"
   },
   {
     "Place": "Wayzata",
     "geoid2": "2768818",
     "FullName": "Wayzata, MN",
+    "CityName": "Wayzata",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1237,12 +1424,15 @@
     "PctOwner": 0.5645,
     "PctCostBurdenedOwners": 0.2888,
     "MedianHHIncome": 72965,
-    "MedianValue": 471500
+    "MedianValue": 471500,
+    "stribID": 69,
+    "type": "city"
   },
   {
     "Place": "Tonka Bay",
     "geoid2": "2765164",
     "FullName": "Tonka Bay, MN",
+    "CityName": "Tonka Bay",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1255,12 +1445,15 @@
     "PctOwner": 0.8743,
     "PctCostBurdenedOwners": 0.3121,
     "MedianHHIncome": 119779,
-    "MedianValue": 589300
+    "MedianValue": 589300,
+    "stribID": 70,
+    "type": "city"
   },
   {
     "Place": "Spring Park",
     "geoid2": "2762014",
     "FullName": "Spring Park, MN",
+    "CityName": "Spring Park",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1273,12 +1466,15 @@
     "PctOwner": 0.2398,
     "PctCostBurdenedOwners": 0.278,
     "MedianHHIncome": 48517,
-    "MedianValue": 382400
+    "MedianValue": 382400,
+    "stribID": 71,
+    "type": "city"
   },
   {
     "Place": "Shorewood",
     "geoid2": "2760016",
     "FullName": "Shorewood, MN",
+    "CityName": "Shorewood",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1294,12 +1490,15 @@
     "PctOwner": 0.935,
     "PctCostBurdenedOwners": 0.2464,
     "MedianHHIncome": 127361,
-    "MedianValue": 436100
+    "MedianValue": 436100,
+    "stribID": 72,
+    "type": "city"
   },
   {
     "Place": "Saint Louis Park",
     "geoid2": "2757220",
     "FullName": "St. Louis Park, MN",
+    "CityName": "St. Louis Park",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1315,12 +1514,15 @@
     "PctOwner": 0.5621,
     "PctCostBurdenedOwners": 0.205,
     "MedianHHIncome": 71346,
-    "MedianValue": 239800
+    "MedianValue": 239800,
+    "stribID": 73,
+    "type": "city"
   },
   {
     "Place": "Saint Bonifacius",
     "geoid2": "2756770",
     "FullName": "St. Bonifacius, MN",
+    "CityName": "St. Bonifacius",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1333,12 +1535,15 @@
     "PctOwner": 0.8769,
     "PctCostBurdenedOwners": 0.2632,
     "MedianHHIncome": 84375,
-    "MedianValue": 236700
+    "MedianValue": 236700,
+    "stribID": 74,
+    "type": "city"
   },
   {
     "Place": "Rogers",
     "geoid2": "2755186",
     "FullName": "Rogers, MN",
+    "CityName": "Rogers",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1354,12 +1559,15 @@
     "PctOwner": 0.8332,
     "PctCostBurdenedOwners": 0.093,
     "MedianHHIncome": 120602,
-    "MedianValue": 298700
+    "MedianValue": 298700,
+    "stribID": 75,
+    "type": "city"
   },
   {
     "Place": "Robbinsdale",
     "geoid2": "2754808",
     "FullName": "Robbinsdale, MN",
+    "CityName": "Robbinsdale",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1375,12 +1583,15 @@
     "PctOwner": 0.6428,
     "PctCostBurdenedOwners": 0.1983,
     "MedianHHIncome": 62891,
-    "MedianValue": 171800
+    "MedianValue": 171800,
+    "stribID": 76,
+    "type": "city"
   },
   {
     "Place": "Richfield",
     "geoid2": "2754214",
     "FullName": "Richfield, MN",
+    "CityName": "Richfield",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1396,12 +1607,15 @@
     "PctOwner": 0.6285,
     "PctCostBurdenedOwners": 0.2361,
     "MedianHHIncome": 59844,
-    "MedianValue": 197500
+    "MedianValue": 197500,
+    "stribID": 77,
+    "type": "city"
   },
   {
     "Place": "Plymouth",
     "geoid2": "2751730",
     "FullName": "Plymouth, MN",
+    "CityName": "Plymouth",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1417,12 +1631,15 @@
     "PctOwner": 0.7159,
     "PctCostBurdenedOwners": 0.1777,
     "MedianHHIncome": 91867,
-    "MedianValue": 327000
+    "MedianValue": 327000,
+    "stribID": 78,
+    "type": "city"
   },
   {
     "Place": "Osseo",
     "geoid2": "2749012",
     "FullName": "Osseo, MN",
+    "CityName": "Osseo",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1435,12 +1652,15 @@
     "PctOwner": 0.495,
     "PctCostBurdenedOwners": 0.1683,
     "MedianHHIncome": 52569,
-    "MedianValue": 171500
+    "MedianValue": 171500,
+    "stribID": 79,
+    "type": "city"
   },
   {
     "Place": "Orono",
     "geoid2": "2748580",
     "FullName": "Orono, MN",
+    "CityName": "Orono",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1456,12 +1676,15 @@
     "PctOwner": 0.8941,
     "PctCostBurdenedOwners": 0.2755,
     "MedianHHIncome": 130300,
-    "MedianValue": 563700
+    "MedianValue": 563700,
+    "stribID": 80,
+    "type": "city"
   },
   {
     "Place": "New Hope",
     "geoid2": "2745628",
     "FullName": "New Hope, MN",
+    "CityName": "New Hope",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1477,12 +1700,15 @@
     "PctOwner": 0.5539,
     "PctCostBurdenedOwners": 0.1872,
     "MedianHHIncome": 53228,
-    "MedianValue": 202400
+    "MedianValue": 202400,
+    "stribID": 81,
+    "type": "city"
   },
   {
     "Place": "Mound",
     "geoid2": "2744476",
     "FullName": "Mound, MN",
+    "CityName": "Mound",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1498,12 +1724,15 @@
     "PctOwner": 0.7177,
     "PctCostBurdenedOwners": 0.2356,
     "MedianHHIncome": 82010,
-    "MedianValue": 228100
+    "MedianValue": 228100,
+    "stribID": 82,
+    "type": "city"
   },
   {
     "Place": "Minnetrista",
     "geoid2": "2743306",
     "FullName": "Minnetrista, MN",
+    "CityName": "Minnetrista",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1519,12 +1748,15 @@
     "PctOwner": 0.9748,
     "PctCostBurdenedOwners": 0.1988,
     "MedianHHIncome": 148783,
-    "MedianValue": 445900
+    "MedianValue": 445900,
+    "stribID": 83,
+    "type": "city"
   },
   {
     "Place": "Minnetonka Beach",
     "geoid2": "2743270",
     "FullName": "Minnetonka Beach, MN",
+    "CityName": "Minnetonka Beach",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1537,12 +1769,15 @@
     "PctOwner": 0.9539,
     "PctCostBurdenedOwners": 0.256,
     "MedianHHIncome": 200469,
-    "MedianValue": 1156300
+    "MedianValue": 1156300,
+    "stribID": 84,
+    "type": "city"
   },
   {
     "Place": "Minnetonka",
     "geoid2": "2743252",
     "FullName": "Minnetonka, MN",
+    "CityName": "Minnetonka",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1558,12 +1793,15 @@
     "PctOwner": 0.6882,
     "PctCostBurdenedOwners": 0.2228,
     "MedianHHIncome": 86672,
-    "MedianValue": 315800
+    "MedianValue": 315800,
+    "stribID": 85,
+    "type": "city"
   },
   {
     "Place": "Minneapolis",
     "geoid2": "2743000",
     "FullName": "Minneapolis, MN",
+    "CityName": "Minneapolis",
     "location": "core cities",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1579,12 +1817,15 @@
     "PctOwner": 0.4735,
     "PctCostBurdenedOwners": 0.2306,
     "MedianHHIncome": 55720,
-    "MedianValue": 222600
+    "MedianValue": 222600,
+    "stribID": 86,
+    "type": "city"
   },
   {
     "Place": "Medina",
     "geoid2": "2741480",
     "FullName": "Medina, MN",
+    "CityName": "Medina",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1600,12 +1841,15 @@
     "PctOwner": 0.9374,
     "PctCostBurdenedOwners": 0.2512,
     "MedianHHIncome": 138125,
-    "MedianValue": 631000
+    "MedianValue": 631000,
+    "stribID": 87,
+    "type": "city"
   },
   {
     "Place": "Medicine Lake",
     "geoid2": "2741462",
     "FullName": "Medicine Lake, MN",
+    "CityName": "Medicine Lake",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1614,12 +1858,15 @@
     "PctOwner": 0.6407,
     "PctCostBurdenedOwners": 0.3551,
     "MedianHHIncome": 83750,
-    "MedianValue": 584500
+    "MedianValue": 584500,
+    "stribID": 88,
+    "type": "city"
   },
   {
     "Place": "Maple Plain",
     "geoid2": "2740256",
     "FullName": "Maple Plain, MN",
+    "CityName": "Maple Plain",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1632,12 +1879,15 @@
     "PctOwner": 0.6089,
     "PctCostBurdenedOwners": 0.2087,
     "MedianHHIncome": 65000,
-    "MedianValue": 223700
+    "MedianValue": 223700,
+    "stribID": 89,
+    "type": "city"
   },
   {
     "Place": "Maple Grove",
     "geoid2": "2740166",
     "FullName": "Maple Grove, MN",
+    "CityName": "Maple Grove",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1653,12 +1903,15 @@
     "PctOwner": 0.8495,
     "PctCostBurdenedOwners": 0.178,
     "MedianHHIncome": 101859,
-    "MedianValue": 266500
+    "MedianValue": 266500,
+    "stribID": 90,
+    "type": "city"
   },
   {
     "Place": "Loretto",
     "geoid2": "2738222",
     "FullName": "Loretto, MN",
+    "CityName": "Loretto",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1671,12 +1924,15 @@
     "PctOwner": 0.7969,
     "PctCostBurdenedOwners": 0.2115,
     "MedianHHIncome": 84219,
-    "MedianValue": 239400
+    "MedianValue": 239400,
+    "stribID": 91,
+    "type": "city"
   },
   {
     "Place": "Long Lake",
     "geoid2": "2738006",
     "FullName": "Long Lake, MN",
+    "CityName": "Long Lake",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1689,12 +1945,15 @@
     "PctOwner": 0.6909,
     "PctCostBurdenedOwners": 0.1809,
     "MedianHHIncome": 87500,
-    "MedianValue": 274100
+    "MedianValue": 274100,
+    "stribID": 92,
+    "type": "city"
   },
   {
     "Place": "Independence",
     "geoid2": "2730842",
     "FullName": "Independence, MN",
+    "CityName": "Independence",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1707,12 +1966,15 @@
     "PctOwner": 0.9753,
     "PctCostBurdenedOwners": 0.1848,
     "MedianHHIncome": 114700,
-    "MedianValue": 439700
+    "MedianValue": 439700,
+    "stribID": 93,
+    "type": "city"
   },
   {
     "Place": "Hopkins",
     "geoid2": "2730140",
     "FullName": "Hopkins, MN",
+    "CityName": "Hopkins",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1728,12 +1990,15 @@
     "PctOwner": 0.3272,
     "PctCostBurdenedOwners": 0.2556,
     "MedianHHIncome": 53027,
-    "MedianValue": 214200
+    "MedianValue": 214200,
+    "stribID": 94,
+    "type": "city"
   },
   {
     "Place": "Greenwood",
     "geoid2": "2725918",
     "FullName": "Greenwood, MN",
+    "CityName": "Greenwood",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1746,12 +2011,15 @@
     "PctOwner": 0.8899,
     "PctCostBurdenedOwners": 0.2887,
     "MedianHHIncome": 132344,
-    "MedianValue": 838500
+    "MedianValue": 838500,
+    "stribID": 95,
+    "type": "city"
   },
   {
     "Place": "Greenfield",
     "geoid2": "2725622",
     "FullName": "Greenfield, MN",
+    "CityName": "Greenfield",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1764,12 +2032,15 @@
     "PctOwner": 0.9384,
     "PctCostBurdenedOwners": 0.2233,
     "MedianHHIncome": 109175,
-    "MedianValue": 396100
+    "MedianValue": 396100,
+    "stribID": 96,
+    "type": "city"
   },
   {
     "Place": "Golden Valley",
     "geoid2": "2724308",
     "FullName": "Golden Valley, MN",
+    "CityName": "Golden Valley",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1785,12 +2056,15 @@
     "PctOwner": 0.7416,
     "PctCostBurdenedOwners": 0.2015,
     "MedianHHIncome": 87964,
-    "MedianValue": 278400
+    "MedianValue": 278400,
+    "stribID": 97,
+    "type": "city"
   },
   {
     "Place": "Excelsior",
     "geoid2": "2720078",
     "FullName": "Excelsior, MN",
+    "CityName": "Excelsior",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1803,12 +2077,15 @@
     "PctOwner": 0.4056,
     "PctCostBurdenedOwners": 0.2776,
     "MedianHHIncome": 55000,
-    "MedianValue": 462700
+    "MedianValue": 462700,
+    "stribID": 98,
+    "type": "city"
   },
   {
     "Place": "Edina",
     "geoid2": "2718188",
     "FullName": "Edina, MN",
+    "CityName": "Edina",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1824,12 +2101,15 @@
     "PctOwner": 0.7227,
     "PctCostBurdenedOwners": 0.2374,
     "MedianHHIncome": 96477,
-    "MedianValue": 438300
+    "MedianValue": 438300,
+    "stribID": 99,
+    "type": "city"
   },
   {
     "Place": "Eden Prairie",
     "geoid2": "2718116",
     "FullName": "Eden Prairie, MN",
+    "CityName": "Eden Prairie",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1845,12 +2125,15 @@
     "PctOwner": 0.7309,
     "PctCostBurdenedOwners": 0.1582,
     "MedianHHIncome": 103426,
-    "MedianValue": 334000
+    "MedianValue": 334000,
+    "stribID": 100,
+    "type": "city"
   },
   {
     "Place": "Deephaven",
     "geoid2": "2715148",
     "FullName": "Deephaven, MN",
+    "CityName": "Deephaven",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1863,12 +2146,15 @@
     "PctOwner": 0.9114,
     "PctCostBurdenedOwners": 0.1849,
     "MedianHHIncome": 136331,
-    "MedianValue": 550400
+    "MedianValue": 550400,
+    "stribID": 101,
+    "type": "city"
   },
   {
     "Place": "Crystal",
     "geoid2": "2714158",
     "FullName": "Crystal, MN",
+    "CityName": "Crystal",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1884,12 +2170,15 @@
     "PctOwner": 0.7327,
     "PctCostBurdenedOwners": 0.2181,
     "MedianHHIncome": 62831,
-    "MedianValue": 168200
+    "MedianValue": 168200,
+    "stribID": 102,
+    "type": "city"
   },
   {
     "Place": "Corcoran",
     "geoid2": "2713168",
     "FullName": "Corcoran, MN",
+    "CityName": "Corcoran",
     "location": "outer suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1903,12 +2192,15 @@
     "PctOwner": 0.9394,
     "PctCostBurdenedOwners": 0.2249,
     "MedianHHIncome": 102708,
-    "MedianValue": 304500
+    "MedianValue": 304500,
+    "stribID": 103,
+    "type": "city"
   },
   {
     "Place": "Champlin",
     "geoid2": "2710846",
     "FullName": "Champlin, MN",
+    "CityName": "Champlin",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1924,12 +2216,15 @@
     "PctOwner": 0.8535,
     "PctCostBurdenedOwners": 0.144,
     "MedianHHIncome": 89043,
-    "MedianValue": 219700
+    "MedianValue": 219700,
+    "stribID": 104,
+    "type": "city"
   },
   {
     "Place": "Brooklyn Park",
     "geoid2": "2707966",
     "FullName": "Brooklyn Park, MN",
+    "CityName": "Brooklyn Park",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1945,12 +2240,15 @@
     "PctOwner": 0.712,
     "PctCostBurdenedOwners": 0.2341,
     "MedianHHIncome": 68274,
-    "MedianValue": 194200
+    "MedianValue": 194200,
+    "stribID": 105,
+    "type": "city"
   },
   {
     "Place": "Brooklyn Center",
     "geoid2": "2707948",
     "FullName": "Brooklyn Center, MN",
+    "CityName": "Brooklyn Center",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1966,12 +2264,15 @@
     "PctOwner": 0.6175,
     "PctCostBurdenedOwners": 0.2439,
     "MedianHHIncome": 50618,
-    "MedianValue": 151500
+    "MedianValue": 151500,
+    "stribID": 106,
+    "type": "city"
   },
   {
     "Place": "Bloomington",
     "geoid2": "2706616",
     "FullName": "Bloomington, MN",
+    "CityName": "Bloomington",
     "location": "inner suburbs",
     "COUNTY": "Hennepin",
     "STATE": "MN",
@@ -1987,12 +2288,15 @@
     "PctOwner": 0.6761,
     "PctCostBurdenedOwners": 0.1897,
     "MedianHHIncome": 70512,
-    "MedianValue": 227900
+    "MedianValue": 227900,
+    "stribID": 107,
+    "type": "city"
   },
   {
     "Place": "Saint Anthony",
     "geoid2": "2756680",
     "FullName": "St. Anthony, MN",
+    "CityName": "St. Anthony",
     "location": "inner suburbs",
     "COUNTY": "Hennepin, Ramsey",
     "STATE": "MN",
@@ -2008,12 +2312,15 @@
     "PctOwner": 0.6204,
     "PctCostBurdenedOwners": 0.2168,
     "MedianHHIncome": 67910,
-    "MedianValue": 238000
+    "MedianValue": 238000,
+    "stribID": 108,
+    "type": "city"
   },
   {
     "Place": "Rockford",
     "geoid2": "2755006",
     "FullName": "Rockford, MN",
+    "CityName": "Rockford",
     "location": "Exurbs",
     "COUNTY": "Hennepin, Wright",
     "STATE": "MN",
@@ -2026,12 +2333,15 @@
     "PctOwner": 0.7559,
     "PctCostBurdenedOwners": 0.1484,
     "MedianHHIncome": 67813,
-    "MedianValue": 183500
+    "MedianValue": 183500,
+    "stribID": 109,
+    "type": "city"
   },
   {
     "Place": "Hanover",
     "geoid2": "2726990",
     "FullName": "Hanover, MN",
+    "CityName": "Hanover",
     "location": "Exurbs",
     "COUNTY": "Hennepin, Wright",
     "STATE": "MN",
@@ -2044,12 +2354,15 @@
     "PctOwner": 0.9647,
     "PctCostBurdenedOwners": 0.2541,
     "MedianHHIncome": 92875,
-    "MedianValue": 275700
+    "MedianValue": 275700,
+    "stribID": 110,
+    "type": "city"
   },
   {
     "Place": "Dayton",
     "geoid2": "2715022",
     "FullName": "Dayton, MN",
+    "CityName": "Dayton",
     "location": "Exurbs",
     "COUNTY": "Hennepin, Wright",
     "STATE": "MN",
@@ -2065,12 +2378,15 @@
     "PctOwner": 0.9399,
     "PctCostBurdenedOwners": 0.2026,
     "MedianHHIncome": 87966,
-    "MedianValue": 246800
+    "MedianValue": 246800,
+    "stribID": 111,
+    "type": "city"
   },
   {
     "Place": "Isanti",
     "geoid2": "2731328",
     "FullName": "Isanti, MN",
+    "CityName": "Isanti",
     "location": "Exurbs",
     "COUNTY": "Isanti",
     "STATE": "MN",
@@ -2086,12 +2402,15 @@
     "PctOwner": 0.7426,
     "PctCostBurdenedOwners": 0.2909,
     "MedianHHIncome": 70129,
-    "MedianValue": 147200
+    "MedianValue": 147200,
+    "stribID": 112,
+    "type": "city"
   },
   {
     "Place": "Princeton",
     "geoid2": "2752522",
     "FullName": "Princeton, MN",
+    "CityName": "Princeton",
     "location": "Exurbs",
     "COUNTY": "Isanti, Mille Lcs, Sherburne",
     "STATE": "MN",
@@ -2107,12 +2426,15 @@
     "PctOwner": 0.5401,
     "PctCostBurdenedOwners": 0.1941,
     "MedianHHIncome": 40930,
-    "MedianValue": 121700
+    "MedianValue": 121700,
+    "stribID": 113,
+    "type": "city"
   },
   {
     "Place": "River Falls",
     "geoid2": "5568275",
     "FullName": "River Falls, WI",
+    "CityName": "River Falls",
     "location": "Exurbs",
     "COUNTY": "Pierce, St. Croix",
     "STATE": "WI",
@@ -2128,12 +2450,15 @@
     "PctOwner": 0.4996,
     "PctCostBurdenedOwners": 0.1668,
     "MedianHHIncome": 54350,
-    "MedianValue": 177500
+    "MedianValue": 177500,
+    "stribID": 139,
+    "type": "city"
   },
   {
     "Place": "Vadnais Heights",
     "geoid2": "2766460",
     "FullName": "Vadnais Heights, MN",
+    "CityName": "Vadnais Heights",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2149,12 +2474,15 @@
     "PctOwner": 0.8248,
     "PctCostBurdenedOwners": 0.1652,
     "MedianHHIncome": 77855,
-    "MedianValue": 221200
+    "MedianValue": 221200,
+    "stribID": 140,
+    "type": "city"
   },
   {
     "Place": "Shoreview",
     "geoid2": "2759998",
     "FullName": "Shoreview, MN",
+    "CityName": "Shoreview",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2170,12 +2498,15 @@
     "PctOwner": 0.8168,
     "PctCostBurdenedOwners": 0.1791,
     "MedianHHIncome": 84362,
-    "MedianValue": 248600
+    "MedianValue": 248600,
+    "stribID": 141,
+    "type": "city"
   },
   {
     "Place": "Roseville",
     "geoid2": "2755852",
     "FullName": "Roseville, MN",
+    "CityName": "Roseville",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2191,12 +2522,15 @@
     "PctOwner": 0.6378,
     "PctCostBurdenedOwners": 0.2037,
     "MedianHHIncome": 67242,
-    "MedianValue": 232100
+    "MedianValue": 232100,
+    "stribID": 142,
+    "type": "city"
   },
   {
     "Place": "North Saint Paul",
     "geoid2": "2747221",
     "FullName": "North St. Paul, MN",
+    "CityName": "North St. Paul",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2212,12 +2546,15 @@
     "PctOwner": 0.681,
     "PctCostBurdenedOwners": 0.2046,
     "MedianHHIncome": 61225,
-    "MedianValue": 183300
+    "MedianValue": 183300,
+    "stribID": 143,
+    "type": "city"
   },
   {
     "Place": "North Oaks",
     "geoid2": "2747104",
     "FullName": "North Oaks, MN",
+    "CityName": "North Oaks",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2233,12 +2570,15 @@
     "PctOwner": 0.7854,
     "PctCostBurdenedOwners": 0.2792,
     "MedianHHIncome": 142083,
-    "MedianValue": 580900
+    "MedianValue": 580900,
+    "stribID": 144,
+    "type": "city"
   },
   {
     "Place": "New Brighton",
     "geoid2": "2745430",
     "FullName": "New Brighton, MN",
+    "CityName": "New Brighton",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2254,12 +2594,15 @@
     "PctOwner": 0.6115,
     "PctCostBurdenedOwners": 0.2054,
     "MedianHHIncome": 68775,
-    "MedianValue": 230200
+    "MedianValue": 230200,
+    "stribID": 145,
+    "type": "city"
   },
   {
     "Place": "Mounds View",
     "geoid2": "2744530",
     "FullName": "Mounds View, MN",
+    "CityName": "Mounds View",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2275,12 +2618,15 @@
     "PctOwner": 0.6926,
     "PctCostBurdenedOwners": 0.1831,
     "MedianHHIncome": 60184,
-    "MedianValue": 179300
+    "MedianValue": 179300,
+    "stribID": 146,
+    "type": "city"
   },
   {
     "Place": "Maplewood",
     "geoid2": "2740382",
     "FullName": "Maplewood, MN",
+    "CityName": "Maplewood",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2296,12 +2642,15 @@
     "PctOwner": 0.7061,
     "PctCostBurdenedOwners": 0.1955,
     "MedianHHIncome": 63941,
-    "MedianValue": 198400
+    "MedianValue": 198400,
+    "stribID": 147,
+    "type": "city"
   },
   {
     "Place": "Little Canada",
     "geoid2": "2737502",
     "FullName": "Little Canada, MN",
+    "CityName": "Little Canada",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2317,12 +2666,15 @@
     "PctOwner": 0.6285,
     "PctCostBurdenedOwners": 0.2342,
     "MedianHHIncome": 49750,
-    "MedianValue": 202700
+    "MedianValue": 202700,
+    "stribID": 148,
+    "type": "city"
   },
   {
     "Place": "Lauderdale",
     "geoid2": "2735738",
     "FullName": "Lauderdale, MN",
+    "CityName": "Lauderdale",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2335,12 +2687,15 @@
     "PctOwner": 0.4868,
     "PctCostBurdenedOwners": 0.1281,
     "MedianHHIncome": 47390,
-    "MedianValue": 175500
+    "MedianValue": 175500,
+    "stribID": 149,
+    "type": "city"
   },
   {
     "Place": "Gem Lake",
     "geoid2": "2723318",
     "FullName": "Gem Lake, MN",
+    "CityName": "Gem Lake",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2353,12 +2708,15 @@
     "PctOwner": 0.8629,
     "PctCostBurdenedOwners": 0.1457,
     "MedianHHIncome": 119375,
-    "MedianValue": 298900
+    "MedianValue": 298900,
+    "stribID": 150,
+    "type": "city"
   },
   {
     "Place": "Falcon Heights",
     "geoid2": "2720420",
     "FullName": "Falcon Heights, MN",
+    "CityName": "Falcon Heights",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2371,12 +2729,15 @@
     "PctOwner": 0.5561,
     "PctCostBurdenedOwners": 0.2309,
     "MedianHHIncome": 68654,
-    "MedianValue": 284900
+    "MedianValue": 284900,
+    "stribID": 151,
+    "type": "city"
   },
   {
     "Place": "Arden Hills",
     "geoid2": "2702026",
     "FullName": "Arden Hills, MN",
+    "CityName": "Arden Hills",
     "location": "inner suburbs",
     "COUNTY": "Ramsey",
     "STATE": "MN",
@@ -2392,12 +2753,15 @@
     "PctOwner": 0.8735,
     "PctCostBurdenedOwners": 0.1532,
     "MedianHHIncome": 89831,
-    "MedianValue": 283700
+    "MedianValue": 283700,
+    "stribID": 152,
+    "type": "city"
   },
   {
     "Place": "West Saint Paul",
     "geoid2": "2769700",
     "FullName": "West St. Paul, MN",
+    "CityName": "West St. Paul",
     "location": "inner suburbs",
     "COUNTY": "Ramsey, Dakota",
     "STATE": "MN",
@@ -2413,12 +2777,15 @@
     "PctOwner": 0.5753,
     "PctCostBurdenedOwners": 0.2351,
     "MedianHHIncome": 52144,
-    "MedianValue": 183300
+    "MedianValue": 183300,
+    "stribID": 153,
+    "type": "city"
   },
   {
     "Place": "Saint Paul",
     "geoid2": "2758000",
     "FullName": "St. Paul, MN",
+    "CityName": "St. Paul",
     "location": "Core cities",
     "COUNTY": "Ramsey, Dakota",
     "STATE": "MN",
@@ -2434,12 +2801,15 @@
     "PctOwner": 0.4993,
     "PctCostBurdenedOwners": 0.2167,
     "MedianHHIncome": 52841,
-    "MedianValue": 187400
+    "MedianValue": 187400,
+    "stribID": 154,
+    "type": "city"
   },
   {
     "Place": "White Bear Lake",
     "geoid2": "2769970",
     "FullName": "White Bear Lake, MN",
+    "CityName": "White Bear Lake",
     "location": "inner suburbs",
     "COUNTY": "Ramsey, Washington",
     "STATE": "MN",
@@ -2455,12 +2825,15 @@
     "PctOwner": 0.6859,
     "PctCostBurdenedOwners": 0.1877,
     "MedianHHIncome": 66662,
-    "MedianValue": 204900
+    "MedianValue": 204900,
+    "stribID": 155,
+    "type": "city"
   },
   {
     "Place": "Dellwood",
     "geoid2": "2715616",
     "FullName": "Dellwood, MN",
+    "CityName": "Dellwood",
     "location": "inner suburbs",
     "COUNTY": "Ramsey, Washington",
     "STATE": "MN",
@@ -2473,12 +2846,15 @@
     "PctOwner": 0.9692,
     "PctCostBurdenedOwners": 0.1804,
     "MedianHHIncome": 171750,
-    "MedianValue": 585500
+    "MedianValue": 585500,
+    "stribID": 156,
+    "type": "city"
   },
   {
     "Place": "Shakopee",
     "geoid2": "2759350",
     "FullName": "Shakopee, MN",
+    "CityName": "Shakopee",
     "location": "outer suburbs",
     "COUNTY": "Scott",
     "STATE": "MN",
@@ -2494,12 +2870,15 @@
     "PctOwner": 0.7544,
     "PctCostBurdenedOwners": 0.2203,
     "MedianHHIncome": 84400,
-    "MedianValue": 241100
+    "MedianValue": 241100,
+    "stribID": 157,
+    "type": "city"
   },
   {
     "Place": "Savage",
     "geoid2": "2758738",
     "FullName": "Savage, MN",
+    "CityName": "Savage",
     "location": "outer suburbs",
     "COUNTY": "Scott",
     "STATE": "MN",
@@ -2515,12 +2894,15 @@
     "PctOwner": 0.8461,
     "PctCostBurdenedOwners": 0.1735,
     "MedianHHIncome": 101899,
-    "MedianValue": 276100
+    "MedianValue": 276100,
+    "stribID": 158,
+    "type": "city"
   },
   {
     "Place": "Prior Lake",
     "geoid2": "2752594",
     "FullName": "Prior Lake, MN",
+    "CityName": "Prior Lake",
     "location": "outer suburbs",
     "COUNTY": "Scott",
     "STATE": "MN",
@@ -2536,12 +2918,15 @@
     "PctOwner": 0.8344,
     "PctCostBurdenedOwners": 0.2219,
     "MedianHHIncome": 100190,
-    "MedianValue": 286300
+    "MedianValue": 286300,
+    "stribID": 159,
+    "type": "city"
   },
   {
     "Place": "Jordan",
     "geoid2": "2732174",
     "FullName": "Jordan, MN",
+    "CityName": "Jordan",
     "location": "outer suburbs",
     "COUNTY": "Scott",
     "STATE": "MN",
@@ -2557,12 +2942,15 @@
     "PctOwner": 0.6925,
     "PctCostBurdenedOwners": 0.2587,
     "MedianHHIncome": 66194,
-    "MedianValue": 204100
+    "MedianValue": 204100,
+    "stribID": 160,
+    "type": "city"
   },
   {
     "Place": "Elko New Market",
     "geoid2": "2718662",
     "FullName": "Elko New Market, MN",
+    "CityName": "Elko New Market",
     "location": "outer suburbs",
     "COUNTY": "Scott",
     "STATE": "MN",
@@ -2578,12 +2966,15 @@
     "PctOwner": 0.9389,
     "PctCostBurdenedOwners": 0.0832,
     "MedianHHIncome": 118750,
-    "MedianValue": 280000
+    "MedianValue": 280000,
+    "stribID": 161,
+    "type": "city"
   },
   {
     "Place": "Belle Plaine",
     "geoid2": "2704834",
     "FullName": "Belle Plaine, MN",
+    "CityName": "Belle Plaine",
     "location": "Exurbs",
     "COUNTY": "Scott, Carver, Le Sueur, Sibley",
     "STATE": "MN",
@@ -2599,12 +2990,15 @@
     "PctOwner": 0.8768,
     "PctCostBurdenedOwners": 0.1933,
     "MedianHHIncome": 75903,
-    "MedianValue": 188000
+    "MedianValue": 188000,
+    "stribID": 162,
+    "type": "city"
   },
   {
     "Place": "Clear Lake",
     "geoid2": "2711764",
     "FullName": "Clear Lake, MN",
+    "CityName": "Clear Lake",
     "location": "Exurbs",
     "COUNTY": "Sherburne",
     "STATE": "MN",
@@ -2618,12 +3012,15 @@
     "PctOwner": 0.8534,
     "PctCostBurdenedOwners": 0.1534,
     "MedianHHIncome": 87813,
-    "MedianValue": 165800
+    "MedianValue": 165800,
+    "stribID": 163,
+    "type": "city"
   },
   {
     "Place": "Big Lake",
     "geoid2": "2705752",
     "FullName": "Big Lake, MN",
+    "CityName": "Big Lake",
     "location": "Exurbs",
     "COUNTY": "Sherburne",
     "STATE": "MN",
@@ -2639,12 +3036,15 @@
     "PctOwner": 0.8463,
     "PctCostBurdenedOwners": 0.2512,
     "MedianHHIncome": 72543,
-    "MedianValue": 172500
+    "MedianValue": 172500,
+    "stribID": 164,
+    "type": "city"
   },
   {
     "Place": "Becker",
     "geoid2": "2704618",
     "FullName": "Becker, MN",
+    "CityName": "Becker",
     "location": "Exurbs",
     "COUNTY": "Sherburne",
     "STATE": "MN",
@@ -2660,12 +3060,15 @@
     "PctOwner": 0.7705,
     "PctCostBurdenedOwners": 0.1943,
     "MedianHHIncome": 82596,
-    "MedianValue": 167100
+    "MedianValue": 167100,
+    "stribID": 165,
+    "type": "city"
   },
   {
     "Place": "Zimmerman",
     "geoid2": "2772238",
     "FullName": "Zimmerman, MN",
+    "CityName": "Zimmerman",
     "location": "Exurbs",
     "COUNTY": "Sherburne, Isanti",
     "STATE": "MN",
@@ -2681,12 +3084,15 @@
     "PctOwner": 0.8006,
     "PctCostBurdenedOwners": 0.1601,
     "MedianHHIncome": 73167,
-    "MedianValue": 161800
+    "MedianValue": 161800,
+    "stribID": 166,
+    "type": "city"
   },
   {
     "Place": "Somerset",
     "geoid2": "5574675",
     "FullName": "Somerset, WI",
+    "CityName": "Somerset",
     "location": "Exurbs",
     "COUNTY": "St. Croix",
     "STATE": "WI",
@@ -2702,12 +3108,15 @@
     "PctOwner": 0.5634,
     "PctCostBurdenedOwners": 0.1809,
     "MedianHHIncome": 61625,
-    "MedianValue": 150000
+    "MedianValue": 150000,
+    "stribID": 176,
+    "type": "city"
   },
   {
     "Place": "New Richmond",
     "geoid2": "5557100",
     "FullName": "New Richmond, WI",
+    "CityName": "New Richmond",
     "location": "Exurbs",
     "COUNTY": "St. Croix",
     "STATE": "WI",
@@ -2723,12 +3132,15 @@
     "PctOwner": 0.584,
     "PctCostBurdenedOwners": 0.1753,
     "MedianHHIncome": 57473,
-    "MedianValue": 158900
+    "MedianValue": 158900,
+    "stribID": 179,
+    "type": "city"
   },
   {
     "Place": "Hudson",
     "geoid2": "5536250",
     "FullName": "Hudson, WI",
+    "CityName": "Hudson",
     "location": "Exurbs",
     "COUNTY": "St. Croix",
     "STATE": "WI",
@@ -2744,12 +3156,15 @@
     "PctOwner": 0.5976,
     "PctCostBurdenedOwners": 0.2118,
     "MedianHHIncome": 69065,
-    "MedianValue": 231500
+    "MedianValue": 231500,
+    "stribID": 180,
+    "type": "city"
   },
   {
     "Place": "Hammond",
     "geoid2": "5532325",
     "FullName": "Hammond, WI",
+    "CityName": "Hammond",
     "location": "Exurbs",
     "COUNTY": "St. Croix",
     "STATE": "WI",
@@ -2763,12 +3178,15 @@
     "PctOwner": 0.6616,
     "PctCostBurdenedOwners": 0.2243,
     "MedianHHIncome": 66406,
-    "MedianValue": 141600
+    "MedianValue": 141600,
+    "stribID": 182,
+    "type": "city"
   },
   {
     "Place": "Woodbury",
     "geoid2": "2771428",
     "FullName": "Woodbury, MN",
+    "CityName": "Woodbury",
     "location": "inner suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2784,12 +3202,15 @@
     "PctOwner": 0.7894,
     "PctCostBurdenedOwners": 0.1674,
     "MedianHHIncome": 103308,
-    "MedianValue": 295200
+    "MedianValue": 295200,
+    "stribID": 187,
+    "type": "city"
   },
   {
     "Place": "Willernie",
     "geoid2": "2770366",
     "FullName": "Willernie, MN",
+    "CityName": "Willernie",
     "location": "inner suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2802,12 +3223,15 @@
     "PctOwner": 0.8,
     "PctCostBurdenedOwners": 0.2692,
     "MedianHHIncome": 50515,
-    "MedianValue": 145300
+    "MedianValue": 145300,
+    "stribID": 188,
+    "type": "city"
   },
   {
     "Place": "Stillwater",
     "geoid2": "2762824",
     "FullName": "Stillwater, MN",
+    "CityName": "Stillwater",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2823,12 +3247,15 @@
     "PctOwner": 0.787,
     "PctCostBurdenedOwners": 0.2008,
     "MedianHHIncome": 82205,
-    "MedianValue": 255900
+    "MedianValue": 255900,
+    "stribID": 189,
+    "type": "city"
   },
   {
     "Place": "Saint Paul Park",
     "geoid2": "2758018",
     "FullName": "St. Paul Park, MN",
+    "CityName": "St. Paul Park",
     "location": "inner suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2844,12 +3271,15 @@
     "PctOwner": 0.7758,
     "PctCostBurdenedOwners": 0.211,
     "MedianHHIncome": 70231,
-    "MedianValue": 167300
+    "MedianValue": 167300,
+    "stribID": 190,
+    "type": "city"
   },
   {
     "Place": "Saint Mary's Point",
     "geoid2": "2757292",
     "FullName": "St. Marys Point, MN",
+    "CityName": "St. Marys Point",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2862,12 +3292,15 @@
     "PctOwner": 0.84,
     "PctCostBurdenedOwners": 0.1825,
     "MedianHHIncome": 80000,
-    "MedianValue": 243500
+    "MedianValue": 243500,
+    "stribID": 191,
+    "type": "city"
   },
   {
     "Place": "Pine Springs",
     "geoid2": "2751316",
     "FullName": "Pine Springs, MN",
+    "CityName": "Pine Springs",
     "location": "inner suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2879,12 +3312,15 @@
     "PctOwner": 1,
     "PctCostBurdenedOwners": 0.1608,
     "MedianHHIncome": 128750,
-    "MedianValue": 410800
+    "MedianValue": 410800,
+    "stribID": 192,
+    "type": "city"
   },
   {
     "Place": "Oak Park Heights",
     "geoid2": "2747914",
     "FullName": "Oak Park Heights, MN",
+    "CityName": "Oak Park Heights",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2897,12 +3333,15 @@
     "PctOwner": 0.5037,
     "PctCostBurdenedOwners": 0.1334,
     "MedianHHIncome": 57655,
-    "MedianValue": 224300
+    "MedianValue": 224300,
+    "stribID": 193,
+    "type": "city"
   },
   {
     "Place": "Oakdale",
     "geoid2": "2747680",
     "FullName": "Oakdale, MN",
+    "CityName": "Oakdale",
     "location": "inner suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2918,12 +3357,15 @@
     "PctOwner": 0.7565,
     "PctCostBurdenedOwners": 0.1683,
     "MedianHHIncome": 69525,
-    "MedianValue": 205800
+    "MedianValue": 205800,
+    "stribID": 194,
+    "type": "city"
   },
   {
     "Place": "Newport",
     "geoid2": "2745790",
     "FullName": "Newport, MN",
+    "CityName": "Newport",
     "location": "inner suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2936,12 +3378,15 @@
     "PctOwner": 0.5995,
     "PctCostBurdenedOwners": 0.1942,
     "MedianHHIncome": 63445,
-    "MedianValue": 185500
+    "MedianValue": 185500,
+    "stribID": 195,
+    "type": "city"
   },
   {
     "Place": "Marine on Saint Croix",
     "geoid2": "2740562",
     "FullName": "Marine on St. Croix, MN",
+    "CityName": "Marine on St. Croix",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2954,12 +3399,15 @@
     "PctOwner": 0.8086,
     "PctCostBurdenedOwners": 0.1756,
     "MedianHHIncome": 101000,
-    "MedianValue": 373000
+    "MedianValue": 373000,
+    "stribID": 196,
+    "type": "city"
   },
   {
     "Place": "Mahtomedi",
     "geoid2": "2739428",
     "FullName": "Mahtomedi, MN",
+    "CityName": "Mahtomedi",
     "location": "inner suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2975,12 +3423,15 @@
     "PctOwner": 0.8431,
     "PctCostBurdenedOwners": 0.1746,
     "MedianHHIncome": 95592,
-    "MedianValue": 306000
+    "MedianValue": 306000,
+    "stribID": 197,
+    "type": "city"
   },
   {
     "Place": "Lake Saint Croix Beach",
     "geoid2": "2734865",
     "FullName": "Lake St. Croix Beach, MN",
+    "CityName": "Lake St. Croix Beach",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -2993,12 +3444,15 @@
     "PctOwner": 0.872,
     "PctCostBurdenedOwners": 0.2527,
     "MedianHHIncome": 63333,
-    "MedianValue": 188600
+    "MedianValue": 188600,
+    "stribID": 198,
+    "type": "city"
   },
   {
     "Place": "Lakeland Shores",
     "geoid2": "2734658",
     "FullName": "Lakeland Shores, MN",
+    "CityName": "Lakeland Shores",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -3011,12 +3465,15 @@
     "PctOwner": 0.904,
     "PctCostBurdenedOwners": 0.2566,
     "MedianHHIncome": 81563,
-    "MedianValue": 295600
+    "MedianValue": 295600,
+    "stribID": 199,
+    "type": "city"
   },
   {
     "Place": "Lakeland",
     "geoid2": "2734622",
     "FullName": "Lakeland, MN",
+    "CityName": "Lakeland",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -3029,12 +3486,15 @@
     "PctOwner": 0.929,
     "PctCostBurdenedOwners": 0.1328,
     "MedianHHIncome": 85294,
-    "MedianValue": 233100
+    "MedianValue": 233100,
+    "stribID": 200,
+    "type": "city"
   },
   {
     "Place": "Lake Elmo",
     "geoid2": "2734244",
     "FullName": "Lake Elmo, MN",
+    "CityName": "Lake Elmo",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -3050,12 +3510,15 @@
     "PctOwner": 0.9444,
     "PctCostBurdenedOwners": 0.2355,
     "MedianHHIncome": 101528,
-    "MedianValue": 394500
+    "MedianValue": 394500,
+    "stribID": 201,
+    "type": "city"
   },
   {
     "Place": "Hugo",
     "geoid2": "2730392",
     "FullName": "Hugo, MN",
+    "CityName": "Hugo",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -3071,12 +3534,15 @@
     "PctOwner": 0.8738,
     "PctCostBurdenedOwners": 0.1451,
     "MedianHHIncome": 88813,
-    "MedianValue": 249300
+    "MedianValue": 249300,
+    "stribID": 202,
+    "type": "city"
   },
   {
     "Place": "Grant",
     "geoid2": "2725334",
     "FullName": "Grant, MN",
+    "CityName": "Grant",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -3089,12 +3555,15 @@
     "PctOwner": 0.985,
     "PctCostBurdenedOwners": 0.1971,
     "MedianHHIncome": 110278,
-    "MedianValue": 444900
+    "MedianValue": 444900,
+    "stribID": 203,
+    "type": "city"
   },
   {
     "Place": "Cottage Grove",
     "geoid2": "2713456",
     "FullName": "Cottage Grove, MN",
+    "CityName": "Cottage Grove",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -3110,12 +3579,15 @@
     "PctOwner": 0.8772,
     "PctCostBurdenedOwners": 0.1726,
     "MedianHHIncome": 90337,
-    "MedianValue": 224300
+    "MedianValue": 224300,
+    "stribID": 204,
+    "type": "city"
   },
   {
     "Place": "Birchwood Village",
     "geoid2": "2706058",
     "FullName": "Birchwood Village, MN",
+    "CityName": "Birchwood Village",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -3128,12 +3600,15 @@
     "PctOwner": 0.894,
     "PctCostBurdenedOwners": 0.2401,
     "MedianHHIncome": 100000,
-    "MedianValue": 339500
+    "MedianValue": 339500,
+    "stribID": 205,
+    "type": "city"
   },
   {
     "Place": "Bayport",
     "geoid2": "2704114",
     "FullName": "Bayport, MN",
+    "CityName": "Bayport",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -3146,12 +3621,15 @@
     "PctOwner": 0.7213,
     "PctCostBurdenedOwners": 0.1963,
     "MedianHHIncome": 75815,
-    "MedianValue": 217100
+    "MedianValue": 217100,
+    "stribID": 206,
+    "type": "city"
   },
   {
     "Place": "Afton",
     "geoid2": "2700316",
     "FullName": "Afton, MN",
+    "CityName": "Afton",
     "location": "outer suburbs",
     "COUNTY": "Washington",
     "STATE": "MN",
@@ -3164,12 +3642,15 @@
     "PctOwner": 0.955,
     "PctCostBurdenedOwners": 0.1802,
     "MedianHHIncome": 109688,
-    "MedianValue": 427700
+    "MedianValue": 427700,
+    "stribID": 207,
+    "type": "city"
   },
   {
     "Place": "South Haven",
     "geoid2": "2761402",
     "FullName": "South Haven, MN",
+    "CityName": "South Haven",
     "location": "Exurbs",
     "COUNTY": "Wright",
     "STATE": "MN",
@@ -3182,12 +3663,15 @@
     "PctOwner": 0.8243,
     "PctCostBurdenedOwners": 0.2295,
     "MedianHHIncome": 48750,
-    "MedianValue": 104800
+    "MedianValue": 104800,
+    "stribID": 209,
+    "type": "city"
   },
   {
     "Place": "Saint Michael",
     "geoid2": "2757346",
     "FullName": "St. Michael, MN",
+    "CityName": "St. Michael",
     "location": "Exurbs",
     "COUNTY": "Wright",
     "STATE": "MN",
@@ -3203,12 +3687,15 @@
     "PctOwner": 0.8838,
     "PctCostBurdenedOwners": 0.1648,
     "MedianHHIncome": 102862,
-    "MedianValue": 232700
+    "MedianValue": 232700,
+    "stribID": 210,
+    "type": "city"
   },
   {
     "Place": "Montrose",
     "geoid2": "2743810",
     "FullName": "Montrose, MN",
+    "CityName": "Montrose",
     "location": "Exurbs",
     "COUNTY": "Wright",
     "STATE": "MN",
@@ -3224,12 +3711,15 @@
     "PctOwner": 0.8173,
     "PctCostBurdenedOwners": 0.236,
     "MedianHHIncome": 72455,
-    "MedianValue": 159200
+    "MedianValue": 159200,
+    "stribID": 211,
+    "type": "city"
   },
   {
     "Place": "Monticello",
     "geoid2": "2743774",
     "FullName": "Monticello, MN",
+    "CityName": "Monticello",
     "location": "Exurbs",
     "COUNTY": "Wright",
     "STATE": "MN",
@@ -3245,12 +3735,15 @@
     "PctOwner": 0.7247,
     "PctCostBurdenedOwners": 0.1682,
     "MedianHHIncome": 66478,
-    "MedianValue": 184600
+    "MedianValue": 184600,
+    "stribID": 212,
+    "type": "city"
   },
   {
     "Place": "Maple Lake",
     "geoid2": "2740220",
     "FullName": "Maple Lake, MN",
+    "CityName": "Maple Lake",
     "location": "Exurbs",
     "COUNTY": "Wright",
     "STATE": "MN",
@@ -3264,12 +3757,15 @@
     "PctOwner": 0.7335,
     "PctCostBurdenedOwners": 0.173,
     "MedianHHIncome": 68077,
-    "MedianValue": 145400
+    "MedianValue": 145400,
+    "stribID": 213,
+    "type": "city"
   },
   {
     "Place": "Cokato",
     "geoid2": "2712430",
     "FullName": "Cokato, MN",
+    "CityName": "Cokato",
     "location": "Exurbs",
     "COUNTY": "Wright",
     "STATE": "MN",
@@ -3282,12 +3778,15 @@
     "PctOwner": 0.6228,
     "PctCostBurdenedOwners": 0.1716,
     "MedianHHIncome": 52734,
-    "MedianValue": 136300
+    "MedianValue": 136300,
+    "stribID": 215,
+    "type": "city"
   },
   {
     "Place": "Clearwater",
     "geoid2": "2711800",
     "FullName": "Clearwater, MN",
+    "CityName": "Clearwater",
     "location": "Exurbs",
     "COUNTY": "Wright",
     "STATE": "MN",
@@ -3300,12 +3799,15 @@
     "PctOwner": 0.6913,
     "PctCostBurdenedOwners": 0.2115,
     "MedianHHIncome": 70541,
-    "MedianValue": 158000
+    "MedianValue": 158000,
+    "stribID": 216,
+    "type": "city"
   },
   {
     "Place": "Buffalo",
     "geoid2": "2708452",
     "FullName": "Buffalo, MN",
+    "CityName": "Buffalo",
     "location": "Exurbs",
     "COUNTY": "Wright",
     "STATE": "MN",
@@ -3321,12 +3823,15 @@
     "PctOwner": 0.6881,
     "PctCostBurdenedOwners": 0.1706,
     "MedianHHIncome": 66910,
-    "MedianValue": 185600
+    "MedianValue": 185600,
+    "stribID": 217,
+    "type": "city"
   },
   {
     "Place": "Annandale",
     "geoid2": "2701684",
     "FullName": "Annandale, MN",
+    "CityName": "Annandale",
     "location": "Exurbs",
     "COUNTY": "Wright",
     "STATE": "MN",
@@ -3342,12 +3847,15 @@
     "PctOwner": 0.7857,
     "PctCostBurdenedOwners": 0.3412,
     "MedianHHIncome": 39653,
-    "MedianValue": 141200
+    "MedianValue": 141200,
+    "stribID": 218,
+    "type": "city"
   },
   {
     "Place": "Albertville",
     "geoid2": "2700730",
     "FullName": "Albertville, MN",
+    "CityName": "Albertville",
     "location": "Exurbs",
     "COUNTY": "Wright",
     "STATE": "MN",
@@ -3363,6 +3871,1312 @@
     "PctOwner": 0.7904,
     "PctCostBurdenedOwners": 0.1773,
     "MedianHHIncome": 87974,
-    "MedianValue": 198700
+    "MedianValue": 198700,
+    "stribID": 219,
+    "type": "city"
+  },
+  {
+    "Place": "Armatage",
+    "FullName": "Armatage (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 104,
+    "ppsf_pctchange": 0.155,
+    "dom_diff": -1.5,
+    "stribID": 221,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Audubon Park",
+    "FullName": "Audubon Park (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 108,
+    "ppsf_pctchange": 0.2,
+    "dom_diff": -6,
+    "stribID": 222,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Bancroft",
+    "FullName": "Bancroft (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 65,
+    "ppsf_pctchange": 0.258,
+    "dom_diff": -16.5,
+    "stribID": 223,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Beltrami",
+    "FullName": "Beltrami (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 9,
+    "ppsf_pctchange": 0.25,
+    "stribID": 224,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Bottineau",
+    "FullName": "Bottineau (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 20,
+    "ppsf_pctchange": 0.256,
+    "stribID": 225,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Bryant",
+    "FullName": "Bryant (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 42,
+    "ppsf_pctchange": 0.222,
+    "dom_diff": 20,
+    "stribID": 226,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Bryn Mawr",
+    "FullName": "Bryn Mawr (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 54,
+    "ppsf_pctchange": 0.153,
+    "dom_diff": 9.5,
+    "stribID": 227,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Calhoun (CARAG)",
+    "FullName": "Calhoun (CARAG) (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 46,
+    "ppsf_pctchange": 0.069,
+    "dom_diff": 84,
+    "stribID": 228,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Cedar - Isles - Dean",
+    "FullName": "Cedar - Isles - Dean (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 80,
+    "ppsf_pctchange": 0.098,
+    "dom_diff": -16,
+    "stribID": 229,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Cedar-Riverside",
+    "FullName": "Cedar Riverside (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 28,
+    "ppsf_pctchange": 0.072,
+    "stribID": 230,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Central",
+    "FullName": "Central (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 59,
+    "ppsf_pctchange": 0.23,
+    "dom_diff": -7.5,
+    "stribID": 231,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Cleveland",
+    "FullName": "Cleveland (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 75,
+    "ppsf_pctchange": 0.443,
+    "dom_diff": 6,
+    "stribID": 232,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Columbia Park",
+    "FullName": "Columbia Park (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 30,
+    "ppsf_pctchange": 0.263,
+    "dom_diff": 1.5,
+    "stribID": 233,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Southeast Como",
+    "FullName": "Como (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 28,
+    "ppsf_pctchange": 0.287,
+    "dom_diff": -64,
+    "stribID": 234,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Como Park",
+    "FullName": "Como (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 261,
+    "ppsf_pctchange": 0.162,
+    "dom_diff": 4,
+    "stribID": 235,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Cooper",
+    "FullName": "Cooper (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 49,
+    "ppsf_pctchange": 0.224,
+    "dom_diff": 0.5,
+    "stribID": 236,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Corcoran Neighborhood",
+    "FullName": "Corcoran (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 31,
+    "ppsf_pctchange": 0.189,
+    "dom_diff": 2,
+    "stribID": 237,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Dayton's Bluff",
+    "FullName": "Dayton's Bluff (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 209,
+    "ppsf_pctchange": 0.324,
+    "dom_diff": -11.5,
+    "stribID": 238,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Diamond Lake",
+    "FullName": "Diamond Lake (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 78,
+    "ppsf_pctchange": 0.195,
+    "dom_diff": 30,
+    "stribID": 239,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Downtown",
+    "FullName": "Downtown (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 148,
+    "ppsf_pctchange": 0.219,
+    "dom_diff": 2.5,
+    "stribID": 240,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Downtown East",
+    "FullName": "Downtown East (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 184,
+    "ppsf_pctchange": 0.044,
+    "dom_diff": 8,
+    "stribID": 241,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Downtown West",
+    "FullName": "Downtown West (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 129,
+    "ppsf_pctchange": 0.123,
+    "dom_diff": -40,
+    "stribID": 242,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "East Calhoun (ECCO)",
+    "FullName": "East Calhoun (ECCO) (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 27,
+    "ppsf_pctchange": 0.075,
+    "dom_diff": 8,
+    "stribID": 243,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "East Harriet",
+    "FullName": "East Harriet (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 58,
+    "ppsf_pctchange": 0.153,
+    "dom_diff": -2.5,
+    "stribID": 244,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "East Isles",
+    "FullName": "East Isles (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 50,
+    "ppsf_pctchange": 0.148,
+    "dom_diff": 13,
+    "stribID": 245,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "East Phillips",
+    "FullName": "East Phillips (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 23,
+    "ppsf_pctchange": 0.35,
+    "dom_diff": 10.5,
+    "stribID": 246,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Elliot Park",
+    "FullName": "Elliot Park (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 77,
+    "ppsf_pctchange": 0.1,
+    "dom_diff": 34.5,
+    "stribID": 247,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Ericsson",
+    "FullName": "Ericsson (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 54,
+    "ppsf_pctchange": 0.171,
+    "dom_diff": -11,
+    "stribID": 248,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Field",
+    "FullName": "Field (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 40,
+    "ppsf_pctchange": 0.137,
+    "dom_diff": 17,
+    "stribID": 249,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Folwell",
+    "FullName": "Folwell (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 90,
+    "ppsf_pctchange": 0.531,
+    "dom_diff": -18.5,
+    "stribID": 250,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Fulton",
+    "FullName": "Fulton (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 101,
+    "ppsf_pctchange": 0.108,
+    "dom_diff": -7,
+    "stribID": 251,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Greater East Side",
+    "FullName": "Greater East Side (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 397,
+    "ppsf_pctchange": 0.285,
+    "dom_diff": -12.5,
+    "stribID": 252,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Hale",
+    "FullName": "Hale (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 60,
+    "ppsf_pctchange": 0.171,
+    "dom_diff": -3.5,
+    "stribID": 253,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Hamline-Midway",
+    "FullName": "Hamline-Midway (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 140,
+    "ppsf_pctchange": 0.251,
+    "dom_diff": -6,
+    "stribID": 254,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Harrison",
+    "FullName": "Harrison (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 18,
+    "ppsf_pctchange": 0.364,
+    "dom_diff": -23.5,
+    "stribID": 255,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Hawthorne",
+    "FullName": "Hawthorne (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 32,
+    "ppsf_pctchange": 0.425,
+    "dom_diff": -46,
+    "stribID": 256,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Hiawatha",
+    "FullName": "Hiawatha (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 100,
+    "ppsf_pctchange": 0.198,
+    "dom_diff": -7.5,
+    "stribID": 257,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Highland Park",
+    "FullName": "Highland Park (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 307,
+    "ppsf_pctchange": 0.136,
+    "dom_diff": -4.5,
+    "stribID": 258,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Holland",
+    "FullName": "Holland (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 44,
+    "ppsf_pctchange": 0.232,
+    "dom_diff": 15.5,
+    "stribID": 259,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Howe",
+    "FullName": "Howe (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 116,
+    "ppsf_pctchange": 0.255,
+    "dom_diff": -4,
+    "stribID": 260,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Jordan Neighborhood",
+    "FullName": "Jordan (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 117,
+    "ppsf_pctchange": 0.506,
+    "dom_diff": 25,
+    "stribID": 261,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Keewaydin",
+    "FullName": "Keewaydin (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 55,
+    "ppsf_pctchange": 0.203,
+    "dom_diff": -32,
+    "stribID": 262,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Kenny",
+    "FullName": "Kenny (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 73,
+    "ppsf_pctchange": 0.183,
+    "dom_diff": 6,
+    "stribID": 263,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Kenwood",
+    "FullName": "Kenwood (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 22,
+    "ppsf_pctchange": 0.11,
+    "dom_diff": 74,
+    "stribID": 264,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "King Field",
+    "FullName": "King Field (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 119,
+    "ppsf_pctchange": 0.18,
+    "dom_diff": -2.5,
+    "stribID": 265,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Lind-Bohanon",
+    "FullName": "Lind-Bohanon (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 132,
+    "ppsf_pctchange": 0.398,
+    "dom_diff": -3,
+    "stribID": 266,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Linden Hills",
+    "FullName": "Linden Hills (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 152,
+    "ppsf_pctchange": 0.071,
+    "dom_diff": 72,
+    "stribID": 267,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Logan Park",
+    "FullName": "Logan Park (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 11,
+    "ppsf_pctchange": 0.606,
+    "stribID": 268,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Longfellow",
+    "FullName": "Longfellow (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 51,
+    "ppsf_pctchange": 0.398,
+    "dom_diff": 0,
+    "stribID": 269,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Loring Park",
+    "FullName": "Loring Park (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 89,
+    "ppsf_pctchange": 0.09,
+    "dom_diff": 18,
+    "stribID": 270,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Lowry Hill",
+    "FullName": "Lowry Hill (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 82,
+    "ppsf_pctchange": 0.123,
+    "dom_diff": 2,
+    "stribID": 271,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Lowry Hill East",
+    "FullName": "Lowry Hill East (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 52,
+    "ppsf_pctchange": 0.1,
+    "dom_diff": 21.5,
+    "stribID": 272,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Lyndale",
+    "FullName": "Lyndale (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 53,
+    "ppsf_pctchange": 0.319,
+    "dom_diff": -21,
+    "stribID": 273,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Lynnhurst",
+    "FullName": "Lynnhurst (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 82,
+    "ppsf_pctchange": 0.098,
+    "dom_diff": 20,
+    "stribID": 274,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Macalester-Groveland",
+    "FullName": "Macalester-Groveland (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 283,
+    "ppsf_pctchange": 0.133,
+    "dom_diff": -3.5,
+    "stribID": 275,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Marcy Holmes",
+    "FullName": "Marcy Holmes (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 30,
+    "ppsf_pctchange": -0.125,
+    "dom_diff": -8,
+    "stribID": 276,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Marshall Terrace",
+    "FullName": "Marshall Terrace (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 15,
+    "ppsf_pctchange": 0.349,
+    "stribID": 277,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "McKinley",
+    "FullName": "McKinley (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 49,
+    "ppsf_pctchange": 0.424,
+    "dom_diff": -17,
+    "stribID": 278,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Mid - City Industrial",
+    "FullName": "Mid - City Industrial (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 22,
+    "ppsf_pctchange": 0.194,
+    "dom_diff": 22,
+    "stribID": 279,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Midtown Phillips",
+    "FullName": "Midtown Phillips (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 27,
+    "ppsf_pctchange": 0.185,
+    "dom_diff": 9,
+    "stribID": 280,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Minnehaha",
+    "FullName": "Minnehaha (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 89,
+    "ppsf_pctchange": 0.162,
+    "dom_diff": 6.5,
+    "stribID": 281,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Morris Park",
+    "FullName": "Morris Park (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 70,
+    "ppsf_pctchange": 0.234,
+    "dom_diff": 13,
+    "stribID": 282,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Near North",
+    "FullName": "Near North (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 42,
+    "ppsf_pctchange": 0.297,
+    "dom_diff": -7,
+    "stribID": 283,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Nicollet Island - East Bank",
+    "FullName": "Nicollet Island - East Bank (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 59,
+    "ppsf_pctchange": 0.131,
+    "dom_diff": 11.5,
+    "stribID": 284,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "North End",
+    "FullName": "North End (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 215,
+    "ppsf_pctchange": 0.314,
+    "dom_diff": -4,
+    "stribID": 285,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "North Loop",
+    "FullName": "North Loop (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 141,
+    "ppsf_pctchange": 0.139,
+    "dom_diff": 28.5,
+    "stribID": 286,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Northeast Park",
+    "FullName": "Northeast Park (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 7,
+    "ppsf_pctchange": 0.033,
+    "stribID": 287,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Northrop",
+    "FullName": "Northrop (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 62,
+    "ppsf_pctchange": 0.114,
+    "dom_diff": 5.5,
+    "stribID": 288,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Page",
+    "FullName": "Page (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 26,
+    "ppsf_pctchange": 0.119,
+    "dom_diff": -51,
+    "stribID": 289,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Payne-Phalen",
+    "FullName": "Payne-Phalen (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 305,
+    "ppsf_pctchange": 0.28,
+    "dom_diff": -3,
+    "stribID": 290,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Phillips West",
+    "FullName": "Phillips West (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 12,
+    "ppsf_pctchange": 0.251,
+    "dom_diff": -75,
+    "stribID": 291,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Powderhorn Park",
+    "FullName": "Powderhorn Park (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 57,
+    "ppsf_pctchange": 0.168,
+    "dom_diff": 8,
+    "stribID": 292,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Prospect Park - E River Rd",
+    "FullName": "Prospect Park - East River Road (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 33,
+    "ppsf_pctchange": 0.132,
+    "dom_diff": 81,
+    "stribID": 293,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Regina",
+    "FullName": "Regina (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 57,
+    "ppsf_pctchange": 0.206,
+    "dom_diff": -2,
+    "stribID": 294,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Seward",
+    "FullName": "Seward (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 38,
+    "ppsf_pctchange": 0.372,
+    "dom_diff": -0.5,
+    "stribID": 295,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Sheridan",
+    "FullName": "Sheridan (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 19,
+    "ppsf_pctchange": 0.253,
+    "dom_diff": 9.5,
+    "stribID": 296,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Shingle Creek",
+    "FullName": "Shingle Creek (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 58,
+    "ppsf_pctchange": 0.258,
+    "dom_diff": -38.5,
+    "stribID": 297,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "St. Anthony East",
+    "FullName": "St. Anthony East (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 18,
+    "ppsf_pctchange": 0.274,
+    "stribID": 298,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "St. Anthony Park",
+    "FullName": "St. Anthony Park (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 73,
+    "ppsf_pctchange": 0.195,
+    "dom_diff": -25,
+    "stribID": 299,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "St. Anthony West",
+    "FullName": "St. Anthony West (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 13,
+    "ppsf_pctchange": 0.056,
+    "dom_diff": -0.5,
+    "stribID": 300,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Standish",
+    "FullName": "Standish (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 119,
+    "ppsf_pctchange": 0.292,
+    "dom_diff": 5,
+    "stribID": 301,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Stevens Square - Loring Heights",
+    "FullName": "Stevens Square - Loring Heights (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 48,
+    "ppsf_pctchange": 0.291,
+    "dom_diff": 13.5,
+    "stribID": 302,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Summit Hill",
+    "FullName": "Summit Hill (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 97,
+    "ppsf_pctchange": 0.11,
+    "dom_diff": 0,
+    "stribID": 303,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Summit-University",
+    "FullName": "Summit-University (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 223,
+    "ppsf_pctchange": 0.184,
+    "dom_diff": -20.5,
+    "stribID": 304,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Sumner-Glenwood",
+    "FullName": "Sumner-Glenwood (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 12,
+    "ppsf_pctchange": 0.092,
+    "stribID": 305,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Battle Creek - Highwood",
+    "FullName": "Sunray-Battlecreek-Highwood (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 246,
+    "ppsf_pctchange": 0.215,
+    "dom_diff": -24.5,
+    "stribID": 306,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Tangletown",
+    "FullName": "Tangletown (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 57,
+    "ppsf_pctchange": 0.081,
+    "dom_diff": -1,
+    "stribID": 307,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Thomas-Dale (Frogtown)",
+    "FullName": "Thomas Dale (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 100,
+    "ppsf_pctchange": 0.3,
+    "dom_diff": 4,
+    "stribID": 308,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Merriam Park / Lexington-Hamline",
+    "FullName": "Union Park (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 144,
+    "ppsf_pctchange": 0.184,
+    "dom_diff": 15,
+    "stribID": 309,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Ventura Village",
+    "FullName": "Ventura Village (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 18,
+    "ppsf_pctchange": 0.17,
+    "stribID": 310,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Victory",
+    "FullName": "Victory (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 87,
+    "ppsf_pctchange": 0.303,
+    "dom_diff": -6,
+    "stribID": 311,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Waite Park",
+    "FullName": "Waite Park (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 129,
+    "ppsf_pctchange": 0.174,
+    "dom_diff": 1,
+    "stribID": 312,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Webber-Camden",
+    "FullName": "Webber-Camden (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 97,
+    "ppsf_pctchange": 0.462,
+    "dom_diff": -7.5,
+    "stribID": 313,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Wenonah",
+    "FullName": "Wenonah (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 79,
+    "ppsf_pctchange": 0.278,
+    "dom_diff": 34,
+    "stribID": 314,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "West Calhoun",
+    "FullName": "West Calhoun (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 45,
+    "ppsf_pctchange": 0.075,
+    "dom_diff": 19.5,
+    "stribID": 315,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "West Seventh",
+    "FullName": "West Seventh (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 156,
+    "ppsf_pctchange": 0.307,
+    "dom_diff": 1,
+    "stribID": 316,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "West Side",
+    "FullName": "West Side (St. Paul)",
+    "CityName": "St. Paul",
+    "location": "neighborhood",
+    "COUNTY": "Ramsey",
+    "STATE": "MN",
+    "cs_curr": 153,
+    "ppsf_pctchange": 0.213,
+    "dom_diff": -3.5,
+    "stribID": 317,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Whittier",
+    "FullName": "Whittier (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 65,
+    "ppsf_pctchange": 0.129,
+    "dom_diff": 19,
+    "stribID": 318,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Willard-Hay",
+    "FullName": "Willard-Hay (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 103,
+    "ppsf_pctchange": 0.434,
+    "dom_diff": 2.5,
+    "stribID": 319,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Windom",
+    "FullName": "Windom (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 58,
+    "ppsf_pctchange": 0.199,
+    "dom_diff": -3.5,
+    "stribID": 320,
+    "type": "neighborhood"
+  },
+  {
+    "Place": "Windom Park",
+    "FullName": "Windom Park (Minneapolis)",
+    "CityName": "Minneapolis",
+    "location": "neighborhood",
+    "COUNTY": "Hennepin",
+    "STATE": "MN",
+    "cs_curr": 58,
+    "ppsf_pctchange": 0.118,
+    "dom_diff": -2,
+    "stribID": 321,
+    "type": "neighborhood"
   }
 ]

@@ -1,11 +1,26 @@
 
 {#each $data as d, i}
-	<rect class="chart-column" data-id="{ i }" x="{ x0(d) }" y="{ $yGet(d) }" width="{ width(d) }" height="{ height(d) }"></rect>
+	<rect
+    class="chart-column { opts.isHighlight && opts.isHighlight(d) ? 'highlight' : '' }"
+    data-id="{ i }"
+    x="{ x0(d) }"
+    y="{ $yGet(d) }"
+    width="{ width(d) }"
+    height="{ height(d) }"
+    on:click="updatePlace(d, event)"
+  ></rect>
 {/each}
 
 <script>
   export default {
     namespace: "svg",
+
+    methods: {
+      updatePlace(data, event) {
+        console.log(this);
+      }
+    },
+
     computed: {
       x0: ({ $xGet }) => {
         return d => {

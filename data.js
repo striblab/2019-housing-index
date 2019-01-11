@@ -39,17 +39,21 @@ function indexData() {
   // TODO: Fix this in data
   areas.push({
     Place: 'Minneapolis-St. Paul Metro Area',
-    geoid2: '2733460'
+    geoid2: '2733460',
+    stribID: 220
   });
 
   let parsed = _.map(areas, a => {
     let p = {
+      id: a.stribID || a.geoid2,
       geoid2: a.geoid2,
       name: a.Place,
       // a.FullName
-      locationType: a.location,
+      location: a.location,
+      placeType: a.type,
       county: a.COUNTY,
       state: a.STATE,
+      city: a.CityName,
       index: a.index_score,
       rank: a.index_rank,
       rankPrevious: a.LastRank,
@@ -76,7 +80,7 @@ function indexData() {
     "ppsf": 123.08,
     "inventory": 50
     */
-    let matched = _.filter(timeseries, { geoid2: p.geoid2 });
+    let matched = _.filter(timeseries, { stribID: p.id });
     _.each(matched, m => {
       let year = parseInt(m.variable, 10);
 
