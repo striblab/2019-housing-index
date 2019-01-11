@@ -19,17 +19,10 @@
     oncreate() {
       let p = this.get();
 
-      // Create layer cake store
-      const layercake = new LayerCake({
-        x: ["min", "max"],
-        xDomain: p.xDomain,
-        y: "count",
-        yDomain: p.yDomain,
-        data: p.data,
-        target: this.refs.chart,
-        padding: { top: 10, right: 10, bottom: 50, left: 50 }
-      }).svgLayers([
-        {
+      // LAyer cake compoents
+      let svgLayers = [];
+      if (p.xAxis !== false) {
+        svgLayers.push({
           component: AxisX,
           opts: {
             gridlines: true,
@@ -38,19 +31,33 @@
             label: p.xLabel,
             formatTick: p.formatTick
           }
-        },
-        {
+        });
+      }
+      if (p.yAxis !== false) {
+        svgLayers.push({
           component: AxisY,
           opts: {
             gridlines: true,
             label: p.yLabel
           }
-        },
-        {
-          component: Column,
-          opts: {}
-        }
-      ]);
+        });
+      }
+
+      svgLayers.push({
+        component: Column,
+        opts: {}
+      });
+
+      // Create layer cake store
+      const layercake = new LayerCake({
+        x: p.x || ["min", "max"],
+        xDomain: p.xDomain,
+        y: p.y || "count",
+        yDomain: p.yDomain,
+        data: p.data,
+        target: this.refs.chart,
+        padding: p.padding || { top: 10, right: 10, bottom: 50, left: 50 }
+      }).svgLayers(svgLayers);
 
       layercake.render();
       this.set({ layercake });

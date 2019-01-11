@@ -3,10 +3,14 @@
   <h3>{ name }</h3>
 
   <div class="place-index">
-    <figure>
-      <div class="placeholder placeholder-chart">Index chart</div>
-      <figcaption>Caption...</figcaption>
-    </figure>
+      <Histogram
+        data="{ ranked }"
+        x="{ [a => a.i, a => a.i + 1] }"
+        y="index"
+        yDomain="{ [0, padMax(ranked, 'index')] }"
+        title="Metro area cities ranked by hot housing index"
+        xAxis="{ false }"
+      />
   </div>
 
   <div class="row">
@@ -135,7 +139,7 @@
 <script>
   import Histogram from "./_chart-histogram.svelte.html";
   import Line from "./_chart-line.svelte.html";
-  import { isNumber } from "lodash";
+  import { isNumber, maxBy } from "lodash";
 
   export default {
     components: {
@@ -146,6 +150,12 @@
     oncreate() {},
 
     helpers: {
+      // Max with some padding
+      padMax(collection, prop) {
+        let f = maxBy(collection, prop);
+        return f ? Math.floor(f[prop] * 1.2) : undefined;
+      },
+
       formatPercent(input) {
         if (!isNumber(input)) {
           return "-";

@@ -83,7 +83,8 @@
       <Place
         {...place}
         index="{ index }"
-        metro="{ metro }" />
+        metro="{ metro }"
+        ranked="{ ranked }" />
     {:else}
       <p class="no-place-note">Search above for a city or neighborhood in the Twin Cities.</p>
     {/if}
@@ -92,7 +93,7 @@
 
 <script>
   import Place from "./shared/_place.svelte.html";
-  import { find } from "lodash";
+  import { find, orderBy } from "lodash";
 
   export default {
     components: {
@@ -106,6 +107,29 @@
     computed: {
       metro({ index }) {
         return find(index.areas, { geoid2: "2733460" });
+      },
+
+      ranked({ index }) {
+        let r = orderBy(
+          index.areas
+            .filter(a => {
+              return a.rank;
+            })
+            .map(a => {
+              return {
+                name: a.name,
+                rank: a.rank,
+                index: a.index
+              };
+            }),
+          ["rank"],
+          ["desc"]
+        ).map((a, ai) => {
+          a.i = ai;
+          return a;
+        });
+
+        return r;
       },
 
       place({ index, placeSearch }) {
