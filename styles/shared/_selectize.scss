@@ -1,0 +1,61 @@
+.selectize-control {
+  @include font-styles("benton-sans");
+
+  font-size: 1em;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  //vertical-align: middle;
+  width: 100%;
+}
+
+.selectize-input {
+  //font-size: 1.15em;
+  width: 100%;
+  //padding: 0.35em 0.75em;
+  //vertical-align: middle;
+
+  input[type="select-one"] {
+    width: 100%;
+    //margin: 0;
+    //font-size: 1em;
+    //padding: 0.15em 0.5em !important;
+  }
+
+  .item {
+    background-color: map-get($grays, "lightest");
+    padding: 0.15em 0.5em;
+  }
+}
+
+.selectize-dropdown-content {
+  max-height: 25em;
+}
+
+.selectize-dropdown {
+  position: absolute;
+
+  .option {
+    font-size: 1.15em;
+    padding: 0.35em 0.75em;
+
+    // For some reason multiple things get selected
+    &.selected {
+      //background-color: map-get($grays, "lighter");
+      background-color: transparent;
+    }
+
+    &.active {
+      background-color: map-get($grays, "lightest");
+    }
+
+    &:hover {
+      cursor: pointer;
+      background-color: map-get($grays, "lightest");
+    }
+  }
+
+  .highlight {
+    padding: 0.25em 0.1em;
+  }
+}

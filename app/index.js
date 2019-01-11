@@ -2,7 +2,7 @@
  * Main JS file for project.
  */
 
-// /* global _ */
+// /* global $ */
 
 // Dependencies
 import utils from './shared/utils.js';
@@ -14,10 +14,26 @@ import index from '../assets/data/housing-index.json';
 // Mark page with note about development or staging
 utils.environmentNoting();
 
-// Main component
-const app = new Content({
-  target: document.querySelector('.article-lcd-body-content'),
-  data: {
-    index
-  }
+// ...
+$(document).ready(() => {
+  // Hack to get share back
+  let $share = $('.share-placeholder').size()
+    ? $('.share-placeholder')
+      .children()
+      .detach()
+    : undefined;
+  let attachShare = !$share
+    ? undefined
+    : () => {
+      $('.share-placeholder').append($share);
+    };
+
+  // Main component
+  const app = new Content({
+    target: document.querySelector('.article-lcd-body-content'),
+    data: {
+      index,
+      attachShare
+    }
+  });
 });

@@ -65,7 +65,13 @@
       <div class="form-item form-item-input">
         <label class="sr-only" for="place-search">Search places</label>
 
-        <input bind:value="placeSearch" id="place-search" type="text" placeholder="Search for a place in the metro area" aria-describedby="place-search-help">
+        <select ref:placeSelect  id="place-search" bind:value="placeSearch"  placeholder="Search for a place in the metro area" aria-describedby="place-search-help">
+          <option value="">Select place</option>
+
+          {#each placesByName as p}
+            <option value="{ p.id }">{ p.name }</option>
+          {/each}
+        </select>
 
         <small id="place-search-help">
           Start typing to find places in the Twin Cities metro area.
@@ -92,6 +98,7 @@
 </div>
 
 <script>
+  /* global $ */
   import Place from "./shared/_place.svelte.html";
   import { find, orderBy, isObject } from "lodash";
 
@@ -101,7 +108,18 @@
     },
 
     oncreate() {
-      console.log(this.get().index);
+      // Selectize
+      // if ($ && $.fn.selectize) {
+      //   $(this.refs.placeSelect).selectize({
+      //     create: false,
+      //     maxOptions: 1800,
+      //     maxItems: 1,
+      //     closeAfterSelect: true,
+      //     onChange: value => {
+      //       this.set({ placeSearch: value });
+      //     }
+      //   });
+      // }
     },
 
     methods: {
@@ -124,6 +142,10 @@
       metro({ index }) {
         console.log(find(index.areas, { geoid2: "2733460" }));
         return find(index.areas, { geoid2: "2733460" });
+      },
+
+      placesByName({ index }) {
+        return orderBy(index.areas, ["name"], ["asc"]);
       },
 
       ranked({ index }) {
@@ -155,8 +177,8 @@
           return;
         }
 
-        console.log(find(index.areas, { name: placeSearch }));
-        return find(index.areas, { name: placeSearch });
+        console.log(find(index.areas, { id: placeSearch }));
+        return find(index.areas, { id: placeSearch });
       }
     },
 

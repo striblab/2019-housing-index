@@ -65,6 +65,10 @@
       this.set({ layercake });
     },
 
+    onupdate() {
+      console.log(arguments);
+    },
+
     data() {
       return {
         id: `component-id-${Math.round(Math.random() * 100000)}`,
