@@ -10,95 +10,140 @@
 </div>
 
 <script>
-  import LayerCake from "layercake";
-  import AxisX from "./_axis-x.svelte.html";
-  import AxisY from "./_axis-y.svelte.html";
-  import Line from "./_line.svelte.html";
-  import { isArray, flatten, omit } from "lodash";
+  import { isNaN } from "lodash";
 
+  /* global d3, c3 */
   export default {
     oncreate() {
-      let p = this.get();
-
-      // Create layer cake store
-      let lc = this.updateCreateCake();
-
-      // Add layers
-      lc.svgLayers(
-        [
-          {
-            component: AxisX,
-            opts: {
-              gridlines: true,
-              baseline: true,
-              textAnchor: "start",
-              label: p.xLabel,
-              formatTick: p.formatTick
-            }
-          },
-          {
-            component: AxisY,
-            opts: {
-              gridlines: true,
-              label: p.yLabel
-            }
-          }
-        ].concat(
-          p.data.map((d, di) => {
-            return {
-              component: Line,
-              opts: {
-                data: d,
-                identifier: di
-              }
-            };
-          })
-        )
-      );
-
-      // Render
-      lc.render();
+      this.drawChart();
     },
 
-    // On state change
-    onstate({ changed, current, previous }) {
-      // let lc = this.get().layercake;
-      // if (changed.data && lc) {
-      //   lc.set({ data: this.get().data });
-      // }
+    onupdate({ changed, current, previous }) {
+      if (changed.data || changed.dataConfig) {
+        this.drawChart();
+      }
+    },
+
+    ondestroy() {
+      if (this.get().chart) {
+        this.set({ chart: this.get().chart.destroy() });
+      }
     },
 
     methods: {
-      updateCreateCake() {
-        let p = this.get();
-        let cakeOptions = {
-          x: p.x || "year",
-          xDomain: p.xDomain,
-          y: p.y || "data",
-          yDomain: p.yDomain,
-          data: p.data,
-          flatData: flatten(p.data),
-          target: this.refs.chart,
-          padding: { top: 5, right: 5, bottom: 50, left: 50 }
-        };
+      drawChart() {
+        let chart = this.get().chart;
 
-        if (p.layercake) {
-          console.log(2, omit(cakeOptions, ["target", "padding"]));
-          p.layercake.set(omit(cakeOptions, ["target", "padding"]));
-        } else {
-          console.log(1, cakeOptions);
-          this.set({ layercake: new LayerCake(cakeOptions) });
+        if (chart) {
+          // Update
+          //chart.unload();
+          chart.load({
+            columns: this.get().dataConfig
+              ? this.get().dataConfig.columns
+              : [this.get().xData, this.get().yData]
+          });
+
+          return;
         }
 
-        return this.get().layercake;
+        chart = c3.generate({
+          bindto: this.refs.chart,
+          color: {
+            pattern: this.get().colors
+          },
+          padding: {
+            right: 10,
+            bottom: 5
+          },
+          data: this.get().dataConfig
+            ? this.get().dataConfig
+            : {
+                x: this.get().xLabel,
+                columns: [this.get().xData, this.get().yData]
+              },
+          point: {
+            r: 4
+          },
+          axis: {
+            x: {
+              min: this.parseNumber(this.get().xMin),
+              max: this.parseNumber(this.get().xMax),
+              tick: {
+                outer: false
+              },
+              padding: {
+                left: 0,
+                right: 0
+              }
+            },
+            y: {
+              min: this.parseNumber(this.get().yMin),
+              max: this.parseNumber(this.get().yMax),
+              padding: 0,
+              label: {
+                text: this.get().yLabel,
+                position: "outer-middle"
+              },
+              tick: {
+                outer: false
+              }
+            }
+          },
+          grid: {
+            x: {
+              show: true
+            },
+            y: {
+              show: true
+            }
+          },
+          legend: {
+            show: true
+          },
+          tooltip: {
+            show: false
+          }
+        });
+        this.set({ chart });
+      },
+
+      parseNumber(input) {
+        if (isNaN(parseFloat(input))) {
+          return undefined;
+        }
+
+        return parseFloat(input);
+      }
+    },
+
+    computed: {
+      xData({ data, xLabel, xProp }) {
+        return [xLabel].concat(data.map(d => d[xProp]));
+      },
+      yData({ data, yLabel, yProp }) {
+        return [yLabel].concat(data.map(d => d[yProp]));
       }
     },
 
     data() {
       return {
-        id: `component-id-${Math.round(Math.random() * 100000)}`,
-        title: "Needs title"
+        data: [
+          { x: 1, y: 2 },
+          { x: 2, y: 8 },
+          { x: 3, y: 2 },
+          { x: 4, y: 3 },
+          { x: 5, y: 2.8 },
+          { x: 6, y: 7.008 },
+          { x: 7, y: 1 },
+          { x: 8, y: 9 }
+        ],
+        xProp: "x",
+        yProp: "y",
+        xLabel: "XXXXXX",
+        yLabel: "YYYYYY",
+        colors: ["#857aaa", "#5bbf48"]
       };
     }
   };
 </script>
+

@@ -2,8 +2,8 @@
  * Chart styles
  */
 
-$metro-color: map-get($theme, "yellow-dark");
-$place-color: map-get($theme, "blue-dark");
+$metroColor: map-get($theme, "yellow-dark");
+$placeColor: map-get($theme, "blue-dark");
 
 .chart {
   //@include aspect-ratio(4, 3);
@@ -15,66 +15,49 @@ $place-color: map-get($theme, "blue-dark");
     font-size: 0.725em;
     font-weight: 200;
     stroke-width: 2;
+
+    line {
+      //stroke: map-get($grays, "light");
+    }
+
+    text {
+      fill: map-get($grays, "light");
+    }
   }
 
-  line,
-  .tick line {
+  .c3-ygrid,
+  .c3-xgrid {
     stroke: map-get($grays, "light");
     stroke-dasharray: 2;
     stroke-width: 2;
   }
 
-  .tick text {
-    fill: map-get($grays, "light");
-  }
+  .c3-chart-lines {
+    path {
+      stroke-width: 2;
+      fill: none;
+    }
 
-  .baseline {
-    stroke: map-get($grays, "dark");
-    stroke-width: 2;
-    stroke-dasharray: 0;
-  }
-
-  .tick.tick-0 line {
-    stroke-dasharray: 0;
-  }
-
-  .axis-label {
-    text-anchor: middle;
-    font-size: 0.85em;
-  }
-
-  .axis-y .axis-label {
-    text-anchor: middle;
-  }
-
-  .chart-column {
-    fill: $metro-color;
-  }
-
-  &.chart-histogram .chart-column {
-    stroke-width: 1;
-    stroke: $color-white;
-  }
-
-  .chart-line {
-    fill: none;
-    stroke-linejoin: round;
-    stroke-linecap: round;
-    stroke-width: 2;
-    stroke: $place-color;
-
-    &.chart-line-1 {
-      stroke: $metro-color;
+    .c3-circles {
+      display: none;
     }
   }
-}
 
-.metro-index-chart {
-  .chart {
-    height: 7.5em;
+  .c3-chart-bar {
+    path {
+      stroke-width: 1;
+      stroke: $color-white !important;
+    }
   }
 
-  .chart-column.highlight {
-    fill: $place-color;
+  .annotation-line-group {
+    line {
+      stroke-width: 2;
+      stroke: $placeColor;
+    }
+
+    text {
+      font-size: 0.85em;
+    }
   }
 }

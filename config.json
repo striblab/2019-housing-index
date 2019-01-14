@@ -27,7 +27,10 @@
     "globals": [
       "https://cdn.polyfill.io/v2/polyfill.min.js",
       "https://code.jquery.com/jquery-1.12.4.min.js",
-      "http://static.startribune.com/assets/libs/selectizejs/0.12.6/js/standalone/selectize.min.js"
+      "http://static.startribune.com/assets/libs/selectizejs/0.12.6/js/standalone/selectize.min.js",
+      "http://static.startribune.com/assets/libs/d3/5.7.0/d3.min.js",
+      "http://static.startribune.com/assets/libs/c3/0.6.7/c3.min.js",
+      "http://static.startribune.com/assets/libs/d3-annotation/2.3.0/d3-annotation.js"
     ]
   },
   "publishToken": "b4cf55a49e8e4c3c0aa31caba272921a",

@@ -5,16 +5,26 @@
   <div class="place-index">
       <Histogram
         figureClass="metro-index-chart"
-        data="{ ranked }"
-        x="{ [a => a.i, a => a.i + 1] }"
-        y="index"
-        yDomain="{ [0, padMax(ranked, 'index')] }"
         title="Metro area cities ranked by hot housing index"
-        xAxis="{ false }"
-        isHighlight="{ d => d.id === id }"
         noLabel="{ true }"
         noCaption="{ true }"
-        padding="{ { top: 10, right: 10, bottom: 10, left: 10 } }"
+        xLabel="Ranking"
+        yLabel="Index"
+        yMin="0"
+        colors="{ [metroColor, placeColor] }"
+        dataConfig="{{
+          xs: {
+            'Index': 'Ranking',
+            'Place': 'Ranking'
+          },
+          columns: [
+            ['Ranking'].concat(ranked.map(d => d.i)),
+            ['Index'].concat(ranked.map(d => d.index))
+          ],
+          color: indexChartColorWrapper(id, ranked, metroColor, placeColor),
+          type: 'bar'
+        }}"
+        redraw="{ true }"
       >Chart showing each city in the Twin Cities area metro and where they fall on the Star Tribune Hot Housing Index.</Histogram>
   </div>
 
@@ -22,29 +32,43 @@
     <div class="col col-66">
       <p class="data-copy">
         Located in <span>{ county } County</span>,
-        <span>{ name }</span> ranked <span><strong>{ rank }</strong></span> on the Star Tribune's Hot Housing Index for 2018.
+        <span>{ name }</span>
 
-        Average price per square foot was
-        {#if pricePerSqFtChange === 0}
-          about the same
+        {#if rank}
+          ranked <span><strong>{ rank }</strong></span> on the Star Tribune's Hot Housing Index for 2018.
         {:else}
-          { pricePerSqFtChange > 0 ? 'up' : 'down' }
-          <span>{ formatPercent(pricePerSqFtChange) } percent</span>
-        {/if}
-        compared to previous four-year average.
-
-        Houses sold, on average,
-        {#if daysOnMarketChange === 0}
-          about the same when compared to the previous year.
-        {:else}
-          <span>{  Math.round(daysOnMarketChange) } days</span>
-          { daysOnMarketChange > 0 ? 'faster' : 'slower' }
-          than the previous year.
+          <span><strong>was not included</strong></span> in the Star Tribune's Hot Housing Index for 2018 due to an insufficent number of sales.
         {/if}
 
-        Sellers got, on average, <span>{ formatPercent(perPriceRecieved) } percent</span> of their original list price.
+        {#if pricePerSqFtChange || pricePerSqFtChange === 0}
+          Average price per square foot was
+          {#if pricePerSqFtChange === 0}
+            about the same
+          {:else}
+            { pricePerSqFtChange > 0 ? 'up' : 'down' }
+            <span>{ formatPercent(pricePerSqFtChange) } percent</span>
+          {/if}
+          compared to previous four-year average.
+        {/if}
 
-        About <span>{ formatPercent(perNewConstruction) } percent</span> of the <span>{ closedSales.toLocaleString() }</span> sales were from new construction and <span>{ formatPercent(perDistressed) }</span> where short sales or foreclosures.
+        {#if daysOnMarketChange || daysOnMarketChange === 0}
+          Houses sold, on average,
+          {#if daysOnMarketChange === 0}
+            about the same when compared to the previous year.
+          {:else}
+            <span>{  Math.round(daysOnMarketChange) } days</span>
+            { daysOnMarketChange > 0 ? 'faster' : 'slower' }
+            than the previous year.
+          {/if}
+        {/if}
+
+        {#if perPriceRecieved || perPriceRecieved === 0}
+          Sellers got, on average, <span>{ formatPercent(perPriceRecieved) } percent</span> of their original list price.
+        {/if}
+
+        {#if perNewConstruction || perNewConstruction === 0}
+          About <span>{ formatPercent(perNewConstruction) } percent</span> of the <span>{ closedSales.toLocaleString() }</span> sales were from new construction and <span>{ formatPercent(perDistressed) }</span> where short sales or foreclosures.
+        {/if}
       </p>
     </div>
 
@@ -61,41 +85,83 @@
   <div class="row">
     <div class="col col-50">
       <Line
-        data="{ [ closedPerYear ] }"
-        title="Closed sales by year"
+        title="Price per square foot"
+        xLabel="Year"
+        yLabel="Price per square foot"
+        yMin="0"
+        colors="{ [placeColor, metroColor] }"
+        dataConfig="{{
+          xs: {
+            'Place': 'Year',
+            'Metro': 'Year'
+          },
+          columns: [
+            ['Year'].concat(pricePerSqFtPerYear.map(d => d.year)),
+            ['Place'].concat(pricePerSqFtPerYear.map(d => d.data)),
+            ['Metro'].concat(metro.pricePerSqFtPerYear.map(d => d.data))
+          ]
+        }}"
+      />
+    </div>
+
+    <div class="col col-50">
+      <Line
+        title="Days on market"
+        xLabel="Year"
+        yLabel="Days on market"
+        yMin="0"
+        colors="{ [placeColor, metroColor] }"
+        dataConfig="{{
+          xs: {
+            'Place': 'Year',
+            'Metro': 'Year'
+          },
+          columns: [
+            ['Year'].concat(daysOnMarketPerYear.map(d => d.year)),
+            ['Place'].concat(daysOnMarketPerYear.map(d => d.data)),
+            ['Metro'].concat(metro.daysOnMarketPerYear.map(d => d.data))
+          ]
+        }}"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col col-50">
+      <Line
+        title="Closed sales by year for { name }"
         xLabel="Year"
         yLabel="Closed sales"
-        yDomain="{ [0, Math.floor(index.stats.closedPerYear.max * 1.2)] }"
+        yMin="0"
+        colors="{ [placeColor, metroColor] }"
+        dataConfig="{{
+          xs: {
+            'Closed sales': 'Year'
+          },
+          columns: [
+            ['Year'].concat(closedPerYear.map(d => d.year)),
+            ['Closed sales'].concat(closedPerYear.map(d => d.data))
+          ]
+        }}"
       />
     </div>
 
     <div class="col col-50">
       <Line
-        data="{ [ pricePerSqFtPerYear, metro.pricePerSqFtPerYear ] }"
-        title="Price per square feet by year"
-        xLabel="Year"
-        yLabel="Price"
-        yDomain="{ [0, Math.floor(index.stats.pricePerSqFtPerYear.max * 1.2)] }"
-      />
-    </div>
-
-    <div class="col col-50">
-      <Line
-        data="{ [ daysOnMarketPerYear, metro.daysOnMarketPerYear ] }"
-        title="Days on market by year"
-        xLabel="Year"
-        yLabel="Days"
-        yDomain="{ [0, Math.floor(index.stats.daysOnMarketPerYear.max * 1.2)] }"
-      />
-    </div>
-
-    <div class="col col-50">
-      <Line
-        data="{ [ inventoryPerYear ] }"
-        title="Inventory by year"
+        title="Inventory for { name }"
         xLabel="Year"
         yLabel="Inventory"
-        yDomain="{ [0, Math.floor(index.stats.inventoryPerYear.max * 1.2)] }"
+        yMin="0"
+        colors="{ [placeColor, metroColor] }"
+        dataConfig="{{
+          xs: {
+            'Inventory': 'Year'
+          },
+          columns: [
+            ['Year'].concat(inventoryPerYear.map(d => d.year)),
+            ['Inventory'].concat(inventoryPerYear.map(d => d.data))
+          ]
+        }}"
       />
     </div>
   </div>
@@ -105,38 +171,154 @@
   <div class="row">
     <div class="col col-50">
       <Histogram
-        data="{ index.stats.medianHomeValue.histogram }"
-        xLabel="Median value"
-        yLabel="Number of places"
         title="Median value of owner-occupied homes"
-        formatTick="{ d => { return `$${Math.round(d / 1000)}k`; }}"/>
+        xLabel="Median home value"
+        yLabel="Number of places"
+        yMin="0"
+        yMax="{ maxBy(index.stats.medianHomeValue.histogram, 'count').count * 1.15 }"
+        colors="{ [metroColor, placeColor] }"
+        dataConfig="{{
+          xs: {
+            'Number of places': 'Median home value'
+          },
+          columns: [
+            ['Median home value'].concat(index.stats.medianHomeValue.histogram.map(d => (d.min + d.max) / 2)),
+            ['Number of places'].concat(index.stats.medianHomeValue.histogram.map(d => d.count))
+          ],
+          type: 'bar'
+        }}"
+        xTickFormat="{ d => { return `$${Math.round(d / 1000)}k`; }}"
+        lineAnnotationOptions="{ medianHomeValue ? (chart) => {
+          return {
+            x1: chart.internal.x(medianHomeValue),
+            y1: chart.internal.y(maxBy(index.stats.medianHomeValue.histogram, 'count').count * 1.15),
+            x2: chart.internal.x(medianHomeValue),
+            y2: chart.internal.y(0),
+            textx: chart.internal.x(medianHomeValue * 1.07),
+            texty: chart.internal.y(maxBy(index.stats.medianHomeValue.histogram, 'count').count * 1),
+            text: name
+          }
+        } : undefined }"
+        redraw="{ true }"
+      >
+        {#if medianHomeValue}
+          Median home value in { name } is ${ medianHomeValue.toLocaleString() }
+        {/if}
+      </Histogram>
     </div>
 
     <div class="col col-50">
       <Histogram
-        data="{ index.stats.medianHouseholdIncome.histogram }"
+        title="Median household income"
         xLabel="Median household income"
         yLabel="Number of places"
-        title="Median household income"
-        formatTick="{ d => { return `$${Math.round(d / 1000)}k`; }}"/>
+        yMin="0"
+        yMax="{ maxBy(index.stats.medianHouseholdIncome.histogram, 'count').count * 1.15 }"
+        colors="{ [metroColor, placeColor] }"
+        dataConfig="{{
+          xs: {
+            'Number of places': 'Median household income'
+          },
+          columns: [
+            ['Median household income'].concat(index.stats.medianHouseholdIncome.histogram.map(d => (d.min + d.max) / 2)),
+            ['Number of places'].concat(index.stats.medianHouseholdIncome.histogram.map(d => d.count))
+          ],
+          type: 'bar'
+        }}"
+        xTickFormat="{ d => { return `$${Math.round(d / 1000)}k`; }}"
+        lineAnnotationOptions="{ medianHouseholdIncome ? (chart) => {
+          return {
+            x1: chart.internal.x(medianHouseholdIncome),
+            y1: chart.internal.y(maxBy(index.stats.medianHouseholdIncome.histogram, 'count').count * 1.15),
+            x2: chart.internal.x(medianHouseholdIncome),
+            y2: chart.internal.y(0),
+            textx: chart.internal.x(medianHouseholdIncome * 1.07),
+            texty: chart.internal.y(maxBy(index.stats.medianHouseholdIncome.histogram, 'count').count * 1),
+            text: name
+          }
+        } : undefined }"
+        redraw="{ true }"
+      >
+        {#if medianHouseholdIncome}
+          Median household income in { name } is ${ medianHouseholdIncome.toLocaleString() }
+        {/if}
+      </Histogram>
     </div>
 
     <div class="col col-50">
       <Histogram
-        data="{ index.stats.perOwnerOccupied.histogram }"
+        title="Percent owner-occupied homes"
         xLabel="Percent owner-occupied homes"
         yLabel="Number of places"
-        title="Percent owner-occupied homes"
-        formatTick="{ d => { return `${Math.round(d * 10000) / 100}%`; }}"/>
+        yMin="0"
+        yMax="{ maxBy(index.stats.perOwnerOccupied.histogram, 'count').count * 1.15 }"
+        colors="{ [metroColor, placeColor] }"
+        dataConfig="{{
+          xs: {
+            'Number of places': 'Percent owner-occupied homes'
+          },
+          columns: [
+            ['Percent owner-occupied homes'].concat(index.stats.perOwnerOccupied.histogram.map(d => (d.min + d.max) / 2)),
+            ['Number of places'].concat(index.stats.perOwnerOccupied.histogram.map(d => d.count))
+          ],
+          type: 'bar'
+        }}"
+        xTickFormat="{ d => { return `${Math.round(d * 10000) / 100}%`; }}"
+        lineAnnotationOptions="{ perOwnerOccupied ? (chart) => {
+          return {
+            x1: chart.internal.x(perOwnerOccupied),
+            y1: chart.internal.y(maxBy(index.stats.perOwnerOccupied.histogram, 'count').count * 1.15),
+            x2: chart.internal.x(perOwnerOccupied),
+            y2: chart.internal.y(0),
+            textx: chart.internal.x(perOwnerOccupied * 1.07),
+            texty: chart.internal.y(maxBy(index.stats.perOwnerOccupied.histogram, 'count').count * 1),
+            text: name
+          }
+        } : undefined }"
+        redraw="{ true }"
+      >
+        {#if perOwnerOccupied}
+          Percent owner-occupied homes in { name } is { Math.round(perOwnerOccupied * 10000) / 100 }%
+        {/if}
+      </Histogram>
     </div>
 
     <div class="col col-50">
       <Histogram
-        data="{ index.stats.perCostBurdened.histogram }"
+        title="Percent cost-burdened owners"
         xLabel="Percent cost-burdened owners"
         yLabel="Number of places"
-        title="Percent cost-burdened owners"
-        formatTick="{ d => { return `${Math.round(d * 10000) / 100}%`; }}"/>
+        yMin="0"
+        yMax="{ maxBy(index.stats.perCostBurdened.histogram, 'count').count * 1.15 }"
+        colors="{ [metroColor, placeColor] }"
+        dataConfig="{{
+          xs: {
+            'Number of places': 'Percent cost-burdened owners'
+          },
+          columns: [
+            ['Percent cost-burdened owners'].concat(index.stats.perCostBurdened.histogram.map(d => (d.min + d.max) / 2)),
+            ['Number of places'].concat(index.stats.perCostBurdened.histogram.map(d => d.count))
+          ],
+          type: 'bar'
+        }}"
+        xTickFormat="{ d => { return `${Math.round(d * 10000) / 100}%`; }}"
+        lineAnnotationOptions="{ perCostBurdened ? (chart) => {
+          return {
+            x1: chart.internal.x(perCostBurdened),
+            y1: chart.internal.y(maxBy(index.stats.perCostBurdened.histogram, 'count').count * 1.15),
+            x2: chart.internal.x(perCostBurdened),
+            y2: chart.internal.y(0),
+            textx: chart.internal.x(perCostBurdened * 1.05),
+            texty: chart.internal.y(maxBy(index.stats.perCostBurdened.histogram, 'count').count * 1.1),
+            text: name
+          }
+        } : undefined }"
+        redraw="{ true }"
+      >
+        {#if perCostBurdened}
+          Percent cost-burdened owners in { name } is { Math.round(perCostBurdened * 10000) / 100 }%
+        {/if}
+      </Histogram>
     </div>
   </div>
 </div>
@@ -155,6 +337,8 @@
     oncreate() {},
 
     helpers: {
+      maxBy,
+
       // Max with some padding
       padMax(collection, prop) {
         let f = maxBy(collection, prop);
@@ -174,7 +358,23 @@
         }
 
         return Math.round(input);
+      },
+
+      indexChartColorWrapper(id, ranked, metroColor, placeColor) {
+        return (c, d, a) => {
+          return ranked[d.index] && ranked[d.index].id === id
+            ? placeColor
+            : metroColor;
+        };
       }
+    },
+
+    data() {
+      return {
+        // https://striblab.github.io/strib-styles/pages/content/colors.html
+        placeColor: "#1d78af",
+        metroColor: "#ccc900"
+      };
     }
   };
 </script>
