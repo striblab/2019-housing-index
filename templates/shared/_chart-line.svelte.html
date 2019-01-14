@@ -14,27 +14,17 @@
   import AxisX from "./_axis-x.svelte.html";
   import AxisY from "./_axis-y.svelte.html";
   import Line from "./_line.svelte.html";
-  import { isArray, flatten } from "lodash";
+  import { isArray, flatten, omit } from "lodash";
 
   export default {
     oncreate() {
       let p = this.get();
 
-      // Turn data into array
-      p.data = isArray(p.data[0]) ? p.data : [p.data];
-      this.set({ data: p.data });
-
       // Create layer cake store
-      const layercake = new LayerCake({
-        x: p.x || "year",
-        xDomain: p.xDomain,
-        y: p.y || "data",
-        yDomain: p.yDomain,
-        data: p.data,
-        flatData: flatten(p.data),
-        target: this.refs.chart,
-        padding: { top: 5, right: 5, bottom: 50, left: 50 }
-      }).svgLayers(
+      let lc = this.updateCreateCake();
+
+      // Add layers
+      lc.svgLayers(
         [
           {
             component: AxisX,
@@ -66,8 +56,42 @@
         )
       );
 
-      layercake.render();
-      this.set({ layercake });
+      // Render
+      lc.render();
+    },
+
+    // On state change
+    onstate({ changed, current, previous }) {
+      // let lc = this.get().layercake;
+      // if (changed.data && lc) {
+      //   lc.set({ data: this.get().data });
+      // }
+    },
+
+    methods: {
+      updateCreateCake() {
+        let p = this.get();
+        let cakeOptions = {
+          x: p.x || "year",
+          xDomain: p.xDomain,
+          y: p.y || "data",
+          yDomain: p.yDomain,
+          data: p.data,
+          flatData: flatten(p.data),
+          target: this.refs.chart,
+          padding: { top: 5, right: 5, bottom: 50, left: 50 }
+        };
+
+        if (p.layercake) {
+          console.log(2, omit(cakeOptions, ["target", "padding"]));
+          p.layercake.set(omit(cakeOptions, ["target", "padding"]));
+        } else {
+          console.log(1, cakeOptions);
+          this.set({ layercake: new LayerCake(cakeOptions) });
+        }
+
+        return this.get().layercake;
+      }
     },
 
     data() {

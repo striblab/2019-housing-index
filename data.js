@@ -47,7 +47,7 @@ function indexData() {
     let p = {
       id: a.stribID || a.geoid2,
       geoid2: a.geoid2,
-      name: a.Place,
+      name: a.type && a.type.match(/neighborhood/i) ? a.FullName : a.Place,
       // a.FullName
       location: a.location,
       placeType: a.type,
