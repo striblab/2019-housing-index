@@ -63,6 +63,7 @@
             pattern: this.get().colors
           },
           padding: {
+            left: this.get().yHide ? 0 : undefined,
             right: 10,
             bottom: 5
           },
@@ -81,6 +82,7 @@
           },
           axis: {
             x: {
+              show: this.get().xHide ? false : true,
               min: this.parseNumber(this.get().xMin),
               max: this.parseNumber(this.get().xMax),
               tick: {
@@ -94,6 +96,7 @@
               }
             },
             y: {
+              show: this.get().yHide ? false : true,
               min: this.parseNumber(this.get().yMin),
               max: this.parseNumber(this.get().yMax),
               padding: 0,
