@@ -47,7 +47,10 @@ function indexData() {
     let p = {
       id: a.stribID || a.geoid2,
       geoid2: a.geoid2,
-      name: a.type && a.type.match(/neighborhood/i) ? a.FullName : a.Place,
+      name: (a.type && a.type.match(/neighborhood/i)
+        ? a.FullName
+        : a.Place
+      ).replace(/saint/i, 'St.'),
       // a.FullName
       location: a.location,
       placeType: a.type,
@@ -104,6 +107,18 @@ function indexData() {
         p.daysOnMarketPerYear.push({ year, data: m.dom });
       }
     });
+
+    return p;
+  });
+
+  // Connect neighborhoods
+  parsed = _.map(parsed, p => {
+    if (p.city) {
+      let c = _.find(parsed, { name: p.city });
+      if (c) {
+        p.cityId = c.id;
+      }
+    }
 
     return p;
   });

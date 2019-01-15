@@ -128,11 +128,15 @@
           event.preventDefault();
         }
 
+        if (!this.get().index) {
+          return;
+        }
+
         id = isObject(id) ? id.id : id;
-        let p = find(this.get().index, { id });
+        let p = find(this.get().index.areas, { id });
         if (p) {
           this.set({
-            placeSearch: p.name
+            placeSearch: p.id
           });
         }
       }

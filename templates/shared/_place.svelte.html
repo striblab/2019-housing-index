@@ -56,8 +56,7 @@
           {#if daysOnMarketChange === 0}
             about the same when compared to the previous year.
           {:else}
-            <span>{  Math.round(daysOnMarketChange) } days</span>
-            { daysOnMarketChange > 0 ? 'faster' : 'slower' }
+            <span>{  Math.abs(Math.round(daysOnMarketChange)) } days { daysOnMarketChange > 0 ? 'slower' : 'faster' }</span>
             than the previous year.
           {/if}
         {/if}
@@ -67,9 +66,20 @@
         {/if}
 
         {#if perNewConstruction || perNewConstruction === 0}
-          About <span>{ formatPercent(perNewConstruction) } percent</span> of the <span>{ closedSales.toLocaleString() }</span> sales were from new construction and <span>{ formatPercent(perDistressed) }</span> where short sales or foreclosures.
+          About <span>{ formatPercent(perNewConstruction) } percent</span> of the <span>{ closedSales.toLocaleString() }</span> sales were from new construction and <span>{ formatPercent(perDistressed) } percent</span> were short sales or foreclosures.
         {/if}
       </p>
+
+      {#if cityId && cityId !== id}
+        <p class="data-copy">Located in <a href="#place-{ cityId }" on:click="goToPlace(cityId, event)">{ placeName(cityId, index) }</a></p>
+      {/if}
+
+      {#if neighborhoods && neighborhoods.length}
+        Includes neighborhoods:
+        {#each neighborhoods as n, ni (n.id)}
+          <a href="#place-{ n.id }" on:click="goToPlace(n.id, event)">{ placeName(n.id, index, name) }</a>{#if ni < neighborhoods.length - 1}<span>, </span>{/if}
+        {/each}
+      {/if}
     </div>
 
     <div class="col col-33">
@@ -326,7 +336,7 @@
 <script>
   import Histogram from "./_chart-histogram.svelte.html";
   import Line from "./_chart-line.svelte.html";
-  import { isNumber, maxBy } from "lodash";
+  import { isNumber, maxBy, find, filter } from "lodash";
 
   export default {
     components: {
@@ -335,6 +345,30 @@
     },
 
     oncreate() {},
+
+    methods: {
+      goToPlace(placeId, event) {
+        if (event && event.preventDefault) {
+          event.preventDefault();
+        }
+
+        if (this.root && this.root.setPlace) {
+          this.root.setPlace(placeId);
+        }
+      }
+    },
+
+    computed: {
+      neighborhoods({ id, index }) {
+        if (!id || !index || !index.areas) {
+          return;
+        }
+
+        return filter(index.areas, a => {
+          return a.cityId === id && a.cityId !== a.id;
+        });
+      }
+    },
 
     helpers: {
       maxBy,
@@ -366,6 +400,18 @@
             ? placeColor
             : metroColor;
         };
+      },
+
+      placeName(placeId, index, name) {
+        if (!placeId || !index || !index.areas) {
+          return "";
+        }
+
+        let a = find(index.areas, { id: placeId });
+        if (a) {
+          console.log(a.name, name);
+          return name ? a.name.replace(`(${name})`, "").trim() : a.name;
+        }
       }
     },
 
