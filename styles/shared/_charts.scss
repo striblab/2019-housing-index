@@ -5,6 +5,10 @@
 $metroColor: map-get($theme, "yellow-dark");
 $placeColor: map-get($theme, "blue-dark");
 
+.label {
+  font-size: 0.9em;
+}
+
 .chart {
   //@include aspect-ratio(4, 3);
   width: 100%;
@@ -12,7 +16,7 @@ $placeColor: map-get($theme, "blue-dark");
   //padding: 1em 3em 2em 1em;
 
   .tick {
-    font-size: 0.725em;
+    font-size: 0.7em;
     font-weight: 200;
     stroke-width: 2;
 
@@ -29,7 +33,7 @@ $placeColor: map-get($theme, "blue-dark");
   .c3-xgrid {
     stroke: map-get($grays, "light");
     stroke-dasharray: 2;
-    stroke-width: 2;
+    stroke-width: 0.5;
   }
 
   .c3-chart-lines {
@@ -50,6 +54,11 @@ $placeColor: map-get($theme, "blue-dark");
     }
   }
 
+  .c3-axis-y-label,
+  .c3-legend-item text {
+    font-size: 0.75em;
+  }
+
   .annotation-line-group {
     line {
       stroke-width: 2;
@@ -57,7 +66,7 @@ $placeColor: map-get($theme, "blue-dark");
     }
 
     text {
-      font-size: 0.85em;
+      font-size: 0.7em;
     }
   }
 }
