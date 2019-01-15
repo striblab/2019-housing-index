@@ -20,7 +20,12 @@
     },
 
     onupdate({ changed, current, previous }) {
-      if (changed.data || changed.dataConfig) {
+      if (
+        changed.data ||
+        changed.dataConfig ||
+        changed.lineAnnotationOptions ||
+        changed.annoitations
+      ) {
         this.drawChart();
       }
     },
@@ -71,7 +76,7 @@
 
           bar: {
             width: {
-              ratio: 0.98
+              ratio: 0.925
             }
           },
           axis: {
@@ -80,7 +85,8 @@
               max: this.parseNumber(this.get().xMax),
               tick: {
                 format: this.get().xTickFormat,
-                outer: false
+                outer: false,
+                count: this.get().xTickCount
               },
               padding: {
                 left: 0,
@@ -110,10 +116,13 @@
           },
           legend: {
             position: "bottom",
-            show: true
+            show: false
           },
           tooltip: {
             show: false
+          },
+          interaction: {
+            enabled: this.get().interactive || false
           },
           onrendered: () => {
             setTimeout(() => {
@@ -188,12 +197,14 @@
           .attr("y2", lineAnnotationOptions.y2);
 
         // Add label
-        lineAnnotation
-          .append("text")
-          .attr("class", "annotation-line-group-text")
-          .attr("x", lineAnnotationOptions.textx)
-          .attr("y", lineAnnotationOptions.texty)
-          .text(lineAnnotationOptions.text);
+        if (lineAnnotationOptions.text) {
+          lineAnnotation
+            .append("text")
+            .attr("class", "annotation-line-group-text")
+            .attr("x", lineAnnotationOptions.textx)
+            .attr("y", lineAnnotationOptions.texty)
+            .text(lineAnnotationOptions.text);
+        }
 
         // Set to component
         this.set({ lineAnnotation });
@@ -210,29 +221,15 @@
 
     computed: {
       xData({ data, xLabel, xProp }) {
-        return [xLabel].concat(data.map(d => d[xProp]));
+        return data ? [xLabel].concat(data.map(d => d[xProp])) : [];
       },
       yData({ data, yLabel, yProp }) {
-        return [yLabel].concat(data.map(d => d[yProp]));
+        return data ? [yLabel].concat(data.map(d => d[yProp])) : [];
       }
     },
 
     data() {
       return {
-        data: [
-          { x: 1, y: 2 },
-          { x: 2, y: 8 },
-          { x: 3, y: 2 },
-          { x: 4, y: 3 },
-          { x: 5, y: 2.8 },
-          { x: 6, y: 7.008 },
-          { x: 7, y: 1 },
-          { x: 8, y: 9 }
-        ],
-        xProp: "x",
-        yProp: "y",
-        xLabel: "XXXXXX",
-        yLabel: "YYYYYY",
         colors: ["#857aaa", "#5bbf48"]
       };
     }

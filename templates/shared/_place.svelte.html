@@ -71,13 +71,13 @@
       </p>
 
       {#if cityId && cityId !== id}
-        <p class="data-copy">Located in <a href="#place-{ cityId }" on:click="goToPlace(cityId, event)">{ placeName(cityId, index) }</a></p>
+        <p class="data-copy">Located in <a href="#place-{ cityId }" on:click="goToPlace(cityId, event)">{ placeName(cityId, places) }</a></p>
       {/if}
 
       {#if neighborhoods && neighborhoods.length}
         Includes neighborhoods:
         {#each neighborhoods as n, ni (n.id)}
-          <a href="#place-{ n.id }" on:click="goToPlace(n.id, event)">{ placeName(n.id, index, name) }</a>{#if ni < neighborhoods.length - 1}<span>, </span>{/if}
+          <a href="#place-{ n.id }" on:click="goToPlace(n.id, event)">{ placeName(n.id, places, name) }</a>{#if ni < neighborhoods.length - 1},{@html "&#32;"}{/if}
         {/each}
       {/if}
     </div>
@@ -178,165 +178,187 @@
 
   <h4>About this place</h4>
 
-  <div class="row">
-    <div class="col col-50">
-      <Histogram
-        title="Median value of owner-occupied homes"
-        xLabel="Median home value"
-        yLabel="Number of places"
-        yMin="0"
-        yMax="{ maxBy(index.stats.medianHomeValue.histogram, 'count').count * 1.15 }"
-        colors="{ [metroColor, placeColor] }"
-        dataConfig="{{
-          xs: {
-            'Number of places': 'Median home value'
-          },
-          columns: [
-            ['Median home value'].concat(index.stats.medianHomeValue.histogram.map(d => (d.min + d.max) / 2)),
-            ['Number of places'].concat(index.stats.medianHomeValue.histogram.map(d => d.count))
-          ],
-          type: 'bar'
-        }}"
-        xTickFormat="{ d => { return `$${Math.round(d / 1000)}k`; }}"
-        lineAnnotationOptions="{ medianHomeValue ? (chart) => {
-          return {
-            x1: chart.internal.x(medianHomeValue),
-            y1: chart.internal.y(maxBy(index.stats.medianHomeValue.histogram, 'count').count * 1.15),
-            x2: chart.internal.x(medianHomeValue),
-            y2: chart.internal.y(0),
-            textx: chart.internal.x(medianHomeValue * 1.07),
-            texty: chart.internal.y(maxBy(index.stats.medianHomeValue.histogram, 'count').count * 1),
-            text: name
-          }
-        } : undefined }"
-        redraw="{ true }"
-      >
+  {#if !medianHomeValue && !medianHouseholdIncome && !perOwnerOccupied && !perCostBurdened}
+    <p>Demographic and Census data not available for this area.</p>
+  {/if}
+
+  {#if stats}
+    <div class="row">
+      <div class="col col-100 col-md-50">
         {#if medianHomeValue}
-          Median home value in { name } is ${ medianHomeValue.toLocaleString() }
+          <Histogram
+            title="Median value of owner-occupied homes"
+            xLabel="Median home value"
+            yLabel="Number of places"
+            yMin="0"
+            yMax="{ maxBy(stats.medianHomeValue.histogram, 'count').count * 1.15 }"
+            xMin="0"
+            xMax="{ stats.medianHomeValue.max * 1.05 }"
+            colors="{ [metroColor, placeColor] }"
+            dataConfig="{{
+              xs: {
+                'Number of places': 'Median home value'
+              },
+              columns: [
+                ['Median home value'].concat(stats.medianHomeValue.histogram.map(d => (d.min + d.max) / 2)),
+                ['Number of places'].concat(stats.medianHomeValue.histogram.map(d => d.count))
+              ],
+              type: 'bar'
+            }}"
+            xTickFormat="{ d => { return `$${Math.round(d / 1000).toLocaleString()}k`; }}"
+            lineAnnotationOptions="{ medianHomeValue ? (chart) => {
+              return {
+                x1: chart.internal.x(medianHomeValue),
+                y1: chart.internal.y(maxBy(stats.medianHomeValue.histogram, 'count').count * 1.15),
+                x2: chart.internal.x(medianHomeValue),
+                y2: chart.internal.y(0),
+                textx: chart.internal.x(medianHomeValue) + 3,
+                texty: chart.internal.y(maxBy(stats.medianHomeValue.histogram, 'count').count * 1.05),
+                // text: name
+              }
+            } : undefined }"
+            redraw="{ true }"
+          >
+            {#if medianHomeValue}
+              Median home value in { name } is ${ medianHomeValue.toLocaleString() }
+            {/if}
+          </Histogram>
         {/if}
-      </Histogram>
-    </div>
+      </div>
 
-    <div class="col col-50">
-      <Histogram
-        title="Median household income"
-        xLabel="Median household income"
-        yLabel="Number of places"
-        yMin="0"
-        yMax="{ maxBy(index.stats.medianHouseholdIncome.histogram, 'count').count * 1.15 }"
-        colors="{ [metroColor, placeColor] }"
-        dataConfig="{{
-          xs: {
-            'Number of places': 'Median household income'
-          },
-          columns: [
-            ['Median household income'].concat(index.stats.medianHouseholdIncome.histogram.map(d => (d.min + d.max) / 2)),
-            ['Number of places'].concat(index.stats.medianHouseholdIncome.histogram.map(d => d.count))
-          ],
-          type: 'bar'
-        }}"
-        xTickFormat="{ d => { return `$${Math.round(d / 1000)}k`; }}"
-        lineAnnotationOptions="{ medianHouseholdIncome ? (chart) => {
-          return {
-            x1: chart.internal.x(medianHouseholdIncome),
-            y1: chart.internal.y(maxBy(index.stats.medianHouseholdIncome.histogram, 'count').count * 1.15),
-            x2: chart.internal.x(medianHouseholdIncome),
-            y2: chart.internal.y(0),
-            textx: chart.internal.x(medianHouseholdIncome * 1.07),
-            texty: chart.internal.y(maxBy(index.stats.medianHouseholdIncome.histogram, 'count').count * 1),
-            text: name
-          }
-        } : undefined }"
-        redraw="{ true }"
-      >
+      <div class="col col-100 col-md-50">
         {#if medianHouseholdIncome}
-          Median household income in { name } is ${ medianHouseholdIncome.toLocaleString() }
+          <Histogram
+            title="Median household income"
+            xLabel="Median household income"
+            yLabel="Number of places"
+            yMin="0"
+            yMax="{ maxBy(stats.medianHouseholdIncome.histogram, 'count').count * 1.15 }"
+            xMin="{ stats.medianHouseholdIncome.min * 0.95 }"
+            xMax="{ stats.medianHouseholdIncome.max * 1.05 }"
+            colors="{ [metroColor, placeColor] }"
+            dataConfig="{{
+              xs: {
+                'Number of places': 'Median household income'
+              },
+              columns: [
+                ['Median household income'].concat(stats.medianHouseholdIncome.histogram.map(d => (d.min + d.max) / 2)),
+                ['Number of places'].concat(stats.medianHouseholdIncome.histogram.map(d => d.count))
+              ],
+              type: 'bar'
+            }}"
+            xTickFormat="{ d => { return `$${Math.round(d / 1000)}k`; }}"
+            lineAnnotationOptions="{ medianHouseholdIncome ? (chart) => {
+              return {
+                x1: chart.internal.x(medianHouseholdIncome),
+                y1: chart.internal.y(maxBy(stats.medianHouseholdIncome.histogram, 'count').count * 1.15),
+                x2: chart.internal.x(medianHouseholdIncome),
+                y2: chart.internal.y(0),
+                textx: chart.internal.x(medianHouseholdIncome) + 3,
+                texty: chart.internal.y(maxBy(stats.medianHouseholdIncome.histogram, 'count').count * 1.05),
+                //text: name
+              }
+            } : undefined }"
+            redraw="{ true }"
+          >
+            {#if medianHouseholdIncome}
+              Median household income in { name } is ${ medianHouseholdIncome.toLocaleString() }
+            {/if}
+          </Histogram>
         {/if}
-      </Histogram>
-    </div>
+      </div>
 
-    <div class="col col-50">
-      <Histogram
-        title="Percent owner-occupied homes"
-        xLabel="Percent owner-occupied homes"
-        yLabel="Number of places"
-        yMin="0"
-        yMax="{ maxBy(index.stats.perOwnerOccupied.histogram, 'count').count * 1.15 }"
-        colors="{ [metroColor, placeColor] }"
-        dataConfig="{{
-          xs: {
-            'Number of places': 'Percent owner-occupied homes'
-          },
-          columns: [
-            ['Percent owner-occupied homes'].concat(index.stats.perOwnerOccupied.histogram.map(d => (d.min + d.max) / 2)),
-            ['Number of places'].concat(index.stats.perOwnerOccupied.histogram.map(d => d.count))
-          ],
-          type: 'bar'
-        }}"
-        xTickFormat="{ d => { return `${Math.round(d * 10000) / 100}%`; }}"
-        lineAnnotationOptions="{ perOwnerOccupied ? (chart) => {
-          return {
-            x1: chart.internal.x(perOwnerOccupied),
-            y1: chart.internal.y(maxBy(index.stats.perOwnerOccupied.histogram, 'count').count * 1.15),
-            x2: chart.internal.x(perOwnerOccupied),
-            y2: chart.internal.y(0),
-            textx: chart.internal.x(perOwnerOccupied * 1.07),
-            texty: chart.internal.y(maxBy(index.stats.perOwnerOccupied.histogram, 'count').count * 1),
-            text: name
-          }
-        } : undefined }"
-        redraw="{ true }"
-      >
+      <div class="col col-100 col-md-50">
         {#if perOwnerOccupied}
-          Percent owner-occupied homes in { name } is { Math.round(perOwnerOccupied * 10000) / 100 }%
+          <Histogram
+            title="Percent owner-occupied homes"
+            xLabel="Percent owner-occupied homes"
+            yLabel="Number of places"
+            yMin="0"
+            yMax="{ maxBy(stats.perOwnerOccupied.histogram, 'count').count * 1.15 }"
+            xMin="0"
+            xMax="1"
+            colors="{ [metroColor, placeColor] }"
+            dataConfig="{{
+              xs: {
+                'Number of places': 'Percent owner-occupied homes'
+              },
+              columns: [
+                ['Percent owner-occupied homes'].concat(stats.perOwnerOccupied.histogram.map(d => (d.min + d.max) / 2)),
+                ['Number of places'].concat(stats.perOwnerOccupied.histogram.map(d => d.count))
+              ],
+              type: 'bar'
+            }}"
+            xTickFormat="{ d => { return `${Math.round(d * 100)}%`; }}"
+            lineAnnotationOptions="{ perOwnerOccupied ? (chart) => {
+              return {
+                x1: chart.internal.x(perOwnerOccupied),
+                y1: chart.internal.y(maxBy(stats.perOwnerOccupied.histogram, 'count').count * 1.15),
+                x2: chart.internal.x(perOwnerOccupied),
+                y2: chart.internal.y(0),
+                textx: chart.internal.x(perOwnerOccupied) + 3,
+                texty: chart.internal.y(maxBy(stats.perOwnerOccupied.histogram, 'count').count * 1.05),
+                //text: name
+              }
+            } : undefined }"
+            redraw="{ true }"
+          >
+            {#if perOwnerOccupied}
+              Percent owner-occupied homes in { name } is { Math.round(perOwnerOccupied * 10000) / 100 }%
+            {/if}
+          </Histogram>
         {/if}
-      </Histogram>
-    </div>
+      </div>
 
-    <div class="col col-50">
-      <Histogram
-        title="Percent cost-burdened owners"
-        xLabel="Percent cost-burdened owners"
-        yLabel="Number of places"
-        yMin="0"
-        yMax="{ maxBy(index.stats.perCostBurdened.histogram, 'count').count * 1.15 }"
-        colors="{ [metroColor, placeColor] }"
-        dataConfig="{{
-          xs: {
-            'Number of places': 'Percent cost-burdened owners'
-          },
-          columns: [
-            ['Percent cost-burdened owners'].concat(index.stats.perCostBurdened.histogram.map(d => (d.min + d.max) / 2)),
-            ['Number of places'].concat(index.stats.perCostBurdened.histogram.map(d => d.count))
-          ],
-          type: 'bar'
-        }}"
-        xTickFormat="{ d => { return `${Math.round(d * 10000) / 100}%`; }}"
-        lineAnnotationOptions="{ perCostBurdened ? (chart) => {
-          return {
-            x1: chart.internal.x(perCostBurdened),
-            y1: chart.internal.y(maxBy(index.stats.perCostBurdened.histogram, 'count').count * 1.15),
-            x2: chart.internal.x(perCostBurdened),
-            y2: chart.internal.y(0),
-            textx: chart.internal.x(perCostBurdened * 1.05),
-            texty: chart.internal.y(maxBy(index.stats.perCostBurdened.histogram, 'count').count * 1.1),
-            text: name
-          }
-        } : undefined }"
-        redraw="{ true }"
-      >
+      <div class="col col-100 col-md-50">
         {#if perCostBurdened}
-          Percent cost-burdened owners in { name } is { Math.round(perCostBurdened * 10000) / 100 }%
+          <Histogram
+            title="Percent cost-burdened owners"
+            xLabel="Percent cost-burdened owners"
+            yLabel="Number of places"
+            yMin="0"
+            yMax="{ maxBy(stats.perCostBurdened.histogram, 'count').count * 1.15 }"
+            xMin="0"
+            xMax="{ stats.perCostBurdened.max * 1.1 }"
+            colors="{ [metroColor, placeColor] }"
+            dataConfig="{{
+              xs: {
+                'Number of places': 'Percent cost-burdened owners'
+              },
+              columns: [
+                ['Percent cost-burdened owners'].concat(stats.perCostBurdened.histogram.map(d => (d.min + d.max) / 2)),
+                ['Number of places'].concat(stats.perCostBurdened.histogram.map(d => d.count))
+              ],
+              type: 'bar'
+            }}"
+            xTickFormat="{ d => { return `${Math.round(d * 100)}%`; }}"
+            lineAnnotationOptions="{ perCostBurdened ? (chart) => {
+              return {
+                x1: chart.internal.x(perCostBurdened),
+                y1: chart.internal.y(maxBy(stats.perCostBurdened.histogram, 'count').count * 1.15),
+                x2: chart.internal.x(perCostBurdened),
+                y2: chart.internal.y(0),
+                textx: chart.internal.x(perCostBurdened) + 3,
+                texty: chart.internal.y(maxBy(stats.perCostBurdened.histogram, 'count').count * 1.05),
+                //text: name
+              }
+            } : undefined }"
+            redraw="{ true }"
+          >
+            {#if perCostBurdened}
+              Percent cost-burdened owners in { name } is { Math.round(perCostBurdened * 10000) / 100 }%
+            {/if}
+          </Histogram>
         {/if}
-      </Histogram>
+      </div>
     </div>
-  </div>
+  {/if}
 </div>
 
 <script>
   import Histogram from "./_chart-histogram.svelte.html";
   import Line from "./_chart-line.svelte.html";
-  import { isNumber, maxBy, find, filter } from "lodash";
+  import { isNumber, maxBy, find, filter, minBy } from "lodash";
 
   export default {
     components: {
@@ -359,12 +381,12 @@
     },
 
     computed: {
-      neighborhoods({ id, index }) {
-        if (!id || !index || !index.areas) {
+      neighborhoods({ id, places }) {
+        if (!id || !places) {
           return;
         }
 
-        return filter(index.areas, a => {
+        return filter(places, a => {
           return a.cityId === id && a.cityId !== a.id;
         });
       }
@@ -372,6 +394,7 @@
 
     helpers: {
       maxBy,
+      minBy,
 
       // Max with some padding
       padMax(collection, prop) {
@@ -402,14 +425,13 @@
         };
       },
 
-      placeName(placeId, index, name) {
-        if (!placeId || !index || !index.areas) {
+      placeName(placeId, places, name) {
+        if (!placeId || !places) {
           return "";
         }
 
-        let a = find(index.areas, { id: placeId });
+        let a = find(places, { id: placeId });
         if (a) {
-          console.log(a.name, name);
           return name ? a.name.replace(`(${name})`, "").trim() : a.name;
         }
       }

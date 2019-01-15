@@ -88,7 +88,8 @@
     {#if place}
       <Place
         {...place}
-        index="{ index }"
+        places="{ index.areas }"
+        stats="{ index.stats }"
         metro="{ metro }"
         ranked="{ ranked }" />
     {:else}
