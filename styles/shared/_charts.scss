@@ -36,6 +36,12 @@ $placeColor: map-get($theme, "blue-dark");
     stroke-width: 0.5;
   }
 
+  &.chart-line .c3-ygrid:first-child {
+    stroke: map-get($grays, "dark");
+    stroke-dasharray: 0;
+    stroke-width: 1;
+  }
+
   .c3-chart-lines {
     path {
       stroke-width: 2;
