@@ -29,31 +29,89 @@
   <div class="container-lg aggregate-charts">
     <div class="row">
       <div class="col col-50">
-        <figure>
-          <div class="placeholder placeholder-chart">Aggregate chart</div>
-          <figcaption>Caption...</figcaption>
-        </figure>
+        <Line
+          title="Median days on market"
+          xLabel="Year"
+          yLabel="Median days on market"
+          yMin="0"
+          hideLegend="{ true }"
+          interactive="{ false }"
+          colors="{ [metroColor] }"
+          dataConfig="{{
+            xs: {
+              'Metro': 'Year'
+            },
+            columns: [
+              ['Year'].concat(metroTotals.medianDaysOnMarket.map(d => d.year)),
+              ['Metro'].concat(metroTotals.medianDaysOnMarket.map(d => d.data))
+            ]
+          }}"
+        >Caption?</Line>
       </div>
 
       <div class="col col-50">
-        <figure>
-          <div class="placeholder placeholder-chart">Aggregate chart</div>
-          <figcaption>Caption...</figcaption>
-        </figure>
+        <Line
+          title="Percent new construction"
+          xLabel="Year"
+          yLabel="Percent new construction"
+          yMin="0"
+          hideLegend="{ true }"
+          interactive="{ false }"
+          colors="{ [metroColor] }"
+          yTickFormat="{ (d) => d || d === 0 ? `${Math.round(d * 100).toLocaleString()}k` : '-' }"
+          dataConfig="{{
+            xs: {
+              'Metro': 'Year'
+            },
+            columns: [
+              ['Year'].concat(metroTotals.perNewConstruction.map(d => d.year)),
+              ['Metro'].concat(metroTotals.perNewConstruction.map(d => d.data))
+            ]
+          }}"
+        >Caption?</Line>
       </div>
 
       <div class="col col-50">
-        <figure>
-          <div class="placeholder placeholder-chart">Aggregate chart</div>
-          <figcaption>Caption...</figcaption>
-        </figure>
+        <Line
+          title="Median sale price"
+          xLabel="Year"
+          yLabel="Median sale price"
+          yMin="0"
+          hideLegend="{ true }"
+          interactive="{ false }"
+          colors="{ [metroColor] }"
+          yTickFormat="{ (d) => d || d === 0 ? `$${Math.round(d / 1000).toLocaleString()}%` : '-' }"
+          dataConfig="{{
+            xs: {
+              'Metro': 'Year'
+            },
+            columns: [
+              ['Year'].concat(metroTotals.medianSalePrice.map(d => d.year)),
+              ['Metro'].concat(metroTotals.medianSalePrice.map(d => d.data))
+            ]
+          }}"
+        >Caption?</Line>
       </div>
 
       <div class="col col-50">
-        <figure>
-          <div class="placeholder placeholder-chart">Aggregate chart</div>
-          <figcaption>Caption...</figcaption>
-        </figure>
+        <Line
+          title="Inventory"
+          xLabel="Year"
+          yLabel="Inventory"
+          yMin="0"
+          hideLegend="{ true }"
+          interactive="{ false }"
+          colors="{ [metroColor] }"
+          dataConfig="{{
+            xs: {
+              'Metro': 'Year'
+            },
+            columns: [
+              ['Year'].concat(metroTotals.inventoryPerYear.map(d => d.year)),
+              ['Metro'].concat(metroTotals.inventoryPerYear.map(d => d.data))
+            ]
+          }}"
+        >Caption?</Line>
       </div>
     </div>
   </div>
@@ -91,7 +149,9 @@
         places="{ index.areas }"
         stats="{ index.stats }"
         metro="{ metro }"
-        ranked="{ ranked }" />
+        ranked="{ ranked }"
+        placeColor="{ placeColor }"
+        metroColor="{ metroColor }" />
     {:else}
       <p class="no-place-note">Search above for a city or neighborhood in the Twin Cities.</p>
     {/if}
@@ -101,11 +161,13 @@
 <script>
   /* global $ */
   import Place from "./shared/_place.svelte.html";
+  import Line from "./shared/_chart-line.svelte.html";
   import { find, orderBy, isObject } from "lodash";
 
   export default {
     components: {
-      Place
+      Place,
+      Line
     },
 
     oncreate() {
@@ -189,7 +251,9 @@
 
     data() {
       return {
-        placeSearch: "Bloomington"
+        // https://striblab.github.io/strib-styles/pages/content/colors.html
+        placeColor: "#1d78af",
+        metroColor: "#ccc900"
       };
     }
   };
