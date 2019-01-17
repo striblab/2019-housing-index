@@ -58,7 +58,7 @@
           hideLegend="{ true }"
           interactive="{ false }"
           colors="{ [metroColor] }"
-          yTickFormat="{ (d) => d || d === 0 ? `${Math.round(d * 100).toLocaleString()}k` : '-' }"
+          yTickFormat="{ (d) => d || d === 0 ? `${Math.round(d * 100).toLocaleString()}%` : '-' }"
           dataConfig="{{
             xs: {
               'Metro': 'Year'
@@ -80,7 +80,7 @@
           hideLegend="{ true }"
           interactive="{ false }"
           colors="{ [metroColor] }"
-          yTickFormat="{ (d) => d || d === 0 ? `$${Math.round(d / 1000).toLocaleString()}%` : '-' }"
+          yTickFormat="{ (d) => d || d === 0 ? `$${Math.round(d / 1000).toLocaleString()}k` : '-' }"
           dataConfig="{{
             xs: {
               'Metro': 'Year'
