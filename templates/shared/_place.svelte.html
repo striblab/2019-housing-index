@@ -91,12 +91,12 @@
     </div>
   </div>
 
-  <h4>Real-estate market data</h4>
+  <h4 class="market-hed">Real-estate market data</h4>
 
   <div class="row">
     <div class="col col-50">
       <Line
-        title="Price per square foot"
+        title="Average price per square foot"
         xLabel="Year"
         yLabel="Price per square foot"
         yMin="0"
@@ -117,7 +117,7 @@
 
     <div class="col col-50">
       <Line
-        title="Days on market"
+        title="Average days on market"
         xLabel="Year"
         yLabel="Days on market"
         yMin="0"
@@ -179,7 +179,7 @@
     </div>
   </div>
 
-  <h4>About this place</h4>
+  <h4 class="about-hed">About this place</h4>
 
   {#if !medianHomeValue && !medianHouseholdIncome && !perOwnerOccupied && !perCostBurdened}
     <p>Demographic and Census data not available for this area.</p>

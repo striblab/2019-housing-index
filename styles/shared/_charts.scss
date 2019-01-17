@@ -5,6 +5,10 @@
 $metroColor: map-get($theme, "yellow-dark");
 $placeColor: map-get($theme, "blue-dark");
 
+.chart-figure {
+  margin-bottom: 1.5em;
+}
+
 .label {
   font-size: 0.9em;
 }
@@ -13,7 +17,7 @@ $placeColor: map-get($theme, "blue-dark");
   //@include aspect-ratio(4, 3);
   width: 100%;
   height: 15em;
-  //padding: 1em 3em 2em 1em;
+  padding-top: 0.5em;
 
   .tick {
     font-size: 0.7em;
@@ -31,9 +35,9 @@ $placeColor: map-get($theme, "blue-dark");
 
   .c3-ygrid,
   .c3-xgrid {
-    stroke: map-get($grays, "light");
+    stroke: map-get($grays, "lighter");
     stroke-dasharray: 2;
-    stroke-width: 0.5;
+    stroke-width: 1;
   }
 
   &.chart-line .c3-ygrid:first-child {
