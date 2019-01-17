@@ -204,5 +204,54 @@ module.exports = {
   index: {
     data: indexData(),
     local: 'housing-index.json'
+  },
+  metroTotals: {
+    source: './sources/metro-totals.test.csv',
+    type: 'csv',
+    local: 'metro-totals.json',
+    postprocess: data => {
+      /*
+    { year: '2014',
+      pct_new_construct: '0.0707',
+      median_sale_price: '205000 ',
+      median_dom: '46',
+      inventory: ' 13,007 ' }
+    */
+      let parsed = data.map(d => {
+        return {
+          year: parseInt(d.year, 10),
+          perNewConstruction: parseFloat(d.pct_new_construct),
+          medianSalePrice: parseFloat(d.median_sale_price),
+          medianDaysOnMarket: parseFloat(d.median_dom),
+          inventoryPerYear: parseFloat(d.inventory)
+        };
+      });
+
+      let collected = {};
+      parsed.forEach(d => {
+        collected.perNewConstruction = collected.perNewConstruction || [];
+        collected.perNewConstruction.push({
+          year: d.year,
+          data: d.perNewConstruction ? d.perNewConstruction : null
+        });
+        collected.medianSalePrice = collected.medianSalePrice || [];
+        collected.medianSalePrice.push({
+          year: d.year,
+          data: d.medianSalePrice ? d.medianSalePrice : null
+        });
+        collected.medianDaysOnMarket = collected.medianDaysOnMarket || [];
+        collected.medianDaysOnMarket.push({
+          year: d.year,
+          data: d.medianDaysOnMarket ? d.medianDaysOnMarket : null
+        });
+        collected.inventoryPerYear = collected.inventoryPerYear || [];
+        collected.inventoryPerYear.push({
+          year: d.year,
+          data: d.inventoryPerYear ? d.inventoryPerYear : null
+        });
+      });
+
+      return collected;
+    }
   }
 };

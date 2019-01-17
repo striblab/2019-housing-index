@@ -10,6 +10,9 @@ import Content from '../templates/_index-content.svelte.html';
 
 // Data
 import index from '../assets/data/housing-index.json';
+import metroTotals from '../assets/data/metro-totals.json';
+
+console.log(metroTotals);
 
 // Mark page with note about development or staging
 utils.environmentNoting();
@@ -33,6 +36,7 @@ $(document).ready(() => {
     target: document.querySelector('.article-lcd-body-content'),
     data: {
       index,
+      metroTotals,
       attachShare
     }
   });

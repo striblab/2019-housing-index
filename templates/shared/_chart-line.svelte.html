@@ -69,6 +69,7 @@
               min: this.parseNumber(this.get().xMin),
               max: this.parseNumber(this.get().xMax),
               tick: {
+                format: this.get().xTickFormat,
                 outer: false
               },
               padding: {
@@ -85,6 +86,7 @@
                 position: "outer-middle"
               },
               tick: {
+                format: this.get().yTickFormat,
                 outer: false
               }
             }
