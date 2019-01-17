@@ -2,33 +2,6 @@
 <div class="place-details">
   <h3>{ name }</h3>
 
-  <div class="place-index">
-      <Histogram
-        figureClass="metro-index-chart"
-        title="Metro area cities ranked by hot housing index"
-        noLabel="{ true }"
-        noCaption="{ true }"
-        xHide="{ true }"
-        xLabel="Ranking"
-        yLabel="Index"
-        yMin="0"
-        colors="{ [metroColor, placeColor] }"
-        dataConfig="{{
-          xs: {
-            'Index': 'Ranking',
-            'Place': 'Ranking'
-          },
-          columns: [
-            ['Ranking'].concat(ranked.map(d => d.i)),
-            ['Index'].concat(ranked.map(d => d.index))
-          ],
-          color: indexChartColorWrapper(id, ranked, metroColor, placeColor),
-          type: 'bar'
-        }}"
-        redraw="{ true }"
-      >Chart showing each city in the Twin Cities area metro and where they fall on the Star Tribune Hot Housing Index.</Histogram>
-  </div>
-
   <div class="row">
     <div class="col col-66">
       <p class="data-copy">
@@ -93,6 +66,8 @@
 
   <h4 class="market-hed">Real-estate market data</h4>
 
+  <p class="data-copy">Maybe some bit abit about these charts and why these charts.</p>
+
   <div class="row">
     <div class="col col-50">
       <Line
@@ -101,6 +76,7 @@
         yLabel="Price per square foot"
         yMin="0"
         colors="{ [placeColor, metroColor] }"
+        yTickFormat="{ d => d ? `$${d.toLocaleString()}` : '-' }"
         dataConfig="{{
           xs: {
             'Place': 'Year',
@@ -110,7 +86,11 @@
             ['Year'].concat(pricePerSqFtPerYear.map(d => d.year)),
             ['Place'].concat(pricePerSqFtPerYear.map(d => d.data)),
             ['Metro'].concat(metro.pricePerSqFtPerYear.map(d => d.data))
-          ]
+          ],
+          names: {
+            Place: name,
+            Metro: 'Metro area'
+          }
         }}"
       />
     </div>
@@ -122,6 +102,7 @@
         yLabel="Days on market"
         yMin="0"
         colors="{ [placeColor, metroColor] }"
+        yTickFormat="{ d => d ? d.toLocaleString() : '-' }"
         dataConfig="{{
           xs: {
             'Place': 'Year',
@@ -131,7 +112,11 @@
             ['Year'].concat(daysOnMarketPerYear.map(d => d.year)),
             ['Place'].concat(daysOnMarketPerYear.map(d => d.data)),
             ['Metro'].concat(metro.daysOnMarketPerYear.map(d => d.data))
-          ]
+          ],
+          names: {
+            Place: name,
+            Metro: 'Metro area'
+          }
         }}"
       />
     </div>
@@ -146,6 +131,7 @@
         hideLegend="{ true }"
         yMin="0"
         colors="{ [placeColor, metroColor] }"
+        yTickFormat="{ d => d ? d.toLocaleString() : '-' }"
         dataConfig="{{
           xs: {
             'Closed sales': 'Year'
@@ -166,6 +152,7 @@
         hideLegend="{ true }"
         yMin="0"
         colors="{ [placeColor, metroColor] }"
+        yTickFormat="{ d => d ? d.toLocaleString() : '-' }"
         dataConfig="{{
           xs: {
             'Inventory': 'Year'
@@ -180,6 +167,8 @@
   </div>
 
   <h4 class="about-hed">About this place</h4>
+
+  <p class="data-copy">Maybe some bit abit about these charts and why these charts.</p>
 
   {#if !medianHomeValue && !medianHouseholdIncome && !perOwnerOccupied && !perCostBurdened}
     <p>Demographic and Census data not available for this area.</p>

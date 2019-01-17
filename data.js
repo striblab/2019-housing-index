@@ -220,10 +220,10 @@ module.exports = {
       let parsed = data.map(d => {
         return {
           year: parseInt(d.year, 10),
-          perNewConstruction: parseFloat(d.pct_new_construct),
-          medianSalePrice: parseFloat(d.median_sale_price),
-          medianDaysOnMarket: parseFloat(d.median_dom),
-          inventoryPerYear: parseFloat(d.inventory)
+          perNewConstruction: parseFlowt(d.pct_new_construct),
+          medianSalePrice: parseFlowt(d.median_sale_price),
+          medianDaysOnMarket: parseFlowt(d.median_dom),
+          inventoryPerYear: parseFlowt(d.inventory)
         };
       });
 
@@ -255,3 +255,13 @@ module.exports = {
     }
   }
 };
+
+// Parsing number
+function parseFlowt(input) {
+  let i = _.isNumber(input)
+    ? input
+    : _.isString(input)
+      ? parseFloat(input.replace(/,/g, '').trim())
+      : NaN;
+  return _.isNaN(i) ? null : i;
+}

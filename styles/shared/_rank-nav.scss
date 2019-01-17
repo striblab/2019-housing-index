@@ -1,0 +1,49 @@
+.rank-bar {
+  height: 2em;
+  display: flex;
+}
+
+.rank-bar-wrapper {
+  padding-top: 3em;
+}
+
+.ranked-place {
+  flex: 1;
+  height: 2em;
+  border-right: 0.5px solid $color-white;
+  background-color: $metroColor;
+  cursor: pointer;
+  position: relative;
+
+  .ranked-place-tooltip {
+    opacity: 0;
+    transition: opacity 0.333s;
+    position: absolute;
+    top: -2em;
+    font-size: 0.85em;
+    width: 17em;
+  }
+
+  &.left-side {
+    text-align: left;
+    left: 0;
+  }
+
+  &.right-side {
+    text-align: right;
+    right: 0;
+  }
+
+  &:hover {
+    background-color: darken($metroColor, 15);
+
+    .ranked-place-tooltip {
+      opacity: 1;
+      transition: opacity 0.333s;
+    }
+  }
+}
+
+.highlighted-place {
+  background-color: $placeColor;
+}

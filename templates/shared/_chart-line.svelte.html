@@ -2,10 +2,11 @@
   <div class="label" id="label-{ id }">{ title }</div>
 
   <figure aria-labelledby="label-{ id }">
-    <div class="chart chart-line" ref:chart role="img" title="{ title }"></div>
-    <figcaption>
+    <figcaption class="figcaption-top">
       <slot>Needs caption slot</slot>
     </figcaption>
+
+    <div class="chart chart-line" ref:chart role="img" title="{ title }"></div>
   </figure>
 </div>
 

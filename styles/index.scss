@@ -25,9 +25,11 @@ $selector-wrapper: ".strib-styles.ssa.ssb.ssc";
 // Project specific styles.  Split styles into files per component
 #{$selector-wrapper} {
   // Split your styles into multiple files so its easier to understand and change
+  @import "shared/_variables";
   @import "shared/_selectize";
   @import "shared/_charts";
   @import "shared/_search";
+  @import "shared/_rank-nav";
   @import "shared/_place";
   @import "shared/_project";
 }

@@ -19,3 +19,7 @@
 .data-copy {
   @include font-styles("benton-sans");
 }
+
+.bottom-space-extra {
+  margin-bottom: 2em;
+}

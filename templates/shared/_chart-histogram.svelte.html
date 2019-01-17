@@ -2,10 +2,11 @@
   <div class="label { noLabel ? 'sr-only' : '' }" id="label-{ id }">{ title }</div>
 
   <figure aria-labelledby="label-{ id }">
-    <div class="chart chart-histogram" ref:chart role="img" title="{ title }"></div>
-    <figcaption class="{ noCaption ? 'sr-only' : '' }">
+    <figcaption class="figcaption-top { noCaption ? 'sr-only' : '' }">
       <slot>Needs caption slot</slot>
     </figcaption>
+
+    <div class="chart chart-histogram" ref:chart role="img" title="{ title }"></div>
   </figure>
 </div>
 

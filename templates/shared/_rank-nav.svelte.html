@@ -1,0 +1,55 @@
+<div class="rank-nav">
+
+  <div class="rank-bar-wrapper">
+    <div class="rank-bar">
+      {#each ranked as r, i (r.id)}
+        <div
+          on:click="goToPlace(r.id, event)"
+          class="ranked-place { isHiglighted(r, highlighted) ? 'highlighted-place' : '' } { i < ranked.length / 2 ? 'left-side' : 'right-side' }"
+        >
+          <div class="ranked-place-tooltip">
+            <div class="">{ r.rank }: { r.name }</div>
+          </div>
+        </div>
+      {/each}
+    </div>
+  </div>
+</div>
+
+<script>
+  import { find, orderBy, isObject } from "lodash";
+
+  export default {
+    methods: {
+      goToPlace(placeId, event) {
+        if (event && event.preventDefault) {
+          event.preventDefault();
+        }
+
+        if (this.root && this.root.setPlace) {
+          this.root.setPlace(placeId);
+        }
+      }
+    },
+
+    helpers: {
+      isHiglighted(place, highlighted) {
+        if (!highlighted || !place) {
+          return;
+        }
+
+        return place.id === highlighted.id;
+      }
+    },
+
+    computed: {
+      highlighted({ ranked, highlight }) {
+        if (!ranked || !highlight) {
+          return;
+        }
+
+        return find(ranked, { id: highlight });
+      }
+    }
+  };
+</script>
