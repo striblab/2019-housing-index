@@ -71,7 +71,10 @@
               max: this.parseNumber(this.get().xMax),
               tick: {
                 format: this.get().xTickFormat,
-                outer: false
+                outer: false,
+                culling: {
+                  max: this.get().xTickMax
+                }
               },
               padding: {
                 left: 0,
@@ -88,7 +91,8 @@
               },
               tick: {
                 format: this.get().yTickFormat,
-                outer: false
+                outer: false,
+                count: this.get().yTickCount
               }
             }
           },

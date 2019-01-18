@@ -6,6 +6,7 @@
         <div
           on:click="goToPlace(r.id, event)"
           class="ranked-place { isHiglighted(r, highlighted) ? 'highlighted-place' : '' } { i < ranked.length / 2 ? 'left-side' : 'right-side' }"
+          data-place-id="{ r.id }"
         >
           <div class="tooltip-pole">
             <div class="ranked-place-tooltip">
@@ -17,20 +18,34 @@
     </div>
   </div>
 
+  <div class="rank-nav-label">Navigate the { ranked.length } communities on the Hot Housing Index</div>
+
   <div class="rank-nav-buttons">
-    <a href="#place-{ ranked[0].id }" on:click="goToPlace(ranked[0].id, event)">Rank 1</a>
+    <a href="#place-{ ranked[0].id }" on:click="goToPlace(ranked[0].id, event)">
+      <i class="material-icons">first_page</i>
+      <span>First</span>
+    </a>
 
     {#if highlightedIndex || highlightedIndex === 0}
       {#if highlightedIndex !== 0}
-        <a href="#place-{ ranked[highlightedIndex - 1].id }" on:click="goToPlace(ranked[highlightedIndex - 1].id, event)">Up</a>
+        <a href="#place-{ ranked[highlightedIndex - 1].id }" on:click="goToPlace(ranked[highlightedIndex - 1].id, event)">
+          <i class="material-icons">keyboard_arrow_up</i>
+          <span>Up</span>
+        </a>
       {/if}
 
       {#if highlightedIndex < ranked.length - 1}
-        <a href="#place-{ ranked[highlightedIndex + 1].id }" on:click="goToPlace(ranked[highlightedIndex + 1].id, event)">Down</a>
+        <a href="#place-{ ranked[highlightedIndex + 1].id }" on:click="goToPlace(ranked[highlightedIndex + 1].id, event)">
+          <i class="material-icons">keyboard_arrow_down</i>
+          <span>Down</span>
+        </a>
       {/if}
     {/if}
 
-    <a href="#place-{ ranked[ranked.length - 1].id }" on:click="goToPlace(ranked[ranked.length - 1].id, event)">Rank Last</a>
+    <a href="#place-{ ranked[ranked.length - 1].id }" on:click="goToPlace(ranked[ranked.length - 1].id, event)">
+      <i class="material-icons">last_page</i>
+      <span>Last</span>
+    </a>
   </div>
 </div>
 
