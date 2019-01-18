@@ -1,9 +1,9 @@
 .place-search-form {
-  background-color: map-get($grays, "lighter");
-  padding: 1em;
   margin-bottom: 2em;
 
   .form-compact {
+    background-color: map-get($grays, "lighter");
+    padding: 1em;
     margin-bottom: 0;
   }
 

@@ -26,7 +26,7 @@
       <span>First</span>
     </a>
 
-    {#if highlightedIndex || highlightedIndex === 0}
+    {#if (highlightedIndex || highlightedIndex === 0) && highlightedIndex >= 0}
       {#if highlightedIndex !== 0}
         <a href="#place-{ ranked[highlightedIndex - 1].id }" on:click="goToPlace(ranked[highlightedIndex - 1].id, event)">
           <i class="material-icons">keyboard_arrow_up</i>

@@ -54,7 +54,7 @@ function indexData() {
       // a.FullName
       location: a.location,
       placeType: a.type,
-      county: a.COUNTY,
+      counties: a.COUNTY ? a.COUNTY.split(',').map(d => d.trim()) : undefined,
       state: a.STATE,
       city: a.CityName,
       index: a.index_score,
@@ -108,6 +108,12 @@ function indexData() {
       }
     });
 
+    // Median day on markey has unreliable data before 2007
+    p.daysOnMarketPerYear = p.daysOnMarketPerYear.map(d => {
+      d.data = d.year < 2007 ? null : d.data;
+      return d;
+    });
+
     return p;
   });
 
@@ -130,9 +136,9 @@ function indexData() {
   let stats = {};
   _.each(
     [
-      'closedSales',
-      'pricePerSqFtChange',
-      'daysOnMarketChange',
+      //'closedSales',
+      //'pricePerSqFtChange',
+      //'daysOnMarketChange',
       'medianHomeValue',
       'medianHouseholdIncome',
       'perOwnerOccupied',
@@ -249,6 +255,12 @@ module.exports = {
           year: d.year,
           data: d.inventoryPerYear ? d.inventoryPerYear : null
         });
+      });
+
+      // Median day on markey has unreliable data before 2007
+      collected.medianDaysOnMarket = collected.medianDaysOnMarket.map(d => {
+        d.data = d.year < 2007 ? null : d.data;
+        return d;
       });
 
       return collected;
