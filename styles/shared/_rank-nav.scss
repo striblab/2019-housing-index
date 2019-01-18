@@ -1,6 +1,7 @@
 .rank-bar {
   height: 2em;
   display: flex;
+  margin-bottom: 0.5em;
 }
 
 .rank-bar-wrapper {
@@ -15,27 +16,38 @@
   cursor: pointer;
   position: relative;
 
+  .tooltip-pole {
+    position: absolute;
+    top: -1.75em;
+    pointer-events: none;
+  }
+
   .ranked-place-tooltip {
     opacity: 0;
     transition: opacity 0.333s;
     position: absolute;
-    top: -2em;
+    top: 0;
     font-size: 0.85em;
     width: 17em;
   }
 
   &.left-side {
-    text-align: left;
-    left: 0;
+    .ranked-place-tooltip {
+      text-align: left;
+      left: 0;
+    }
   }
 
   &.right-side {
-    text-align: right;
-    right: 0;
+    .ranked-place-tooltip {
+      text-align: right;
+      right: 0;
+    }
   }
 
   &:hover {
     background-color: darken($metroColor, 15);
+    width: 5em;
 
     .ranked-place-tooltip {
       opacity: 1;
@@ -46,4 +58,33 @@
 
 .highlighted-place {
   background-color: $placeColor;
+  flex-grow: 2;
+
+  .ranked-place-tooltip {
+    opacity: 1;
+    transition: opacity 0.333s;
+  }
+
+  &:hover {
+    flex-grow: 2;
+  }
+}
+
+.rank-bar:hover {
+  .highlighted-place .ranked-place-tooltip {
+    opacity: 0;
+  }
+
+  .highlighted-place:hover .ranked-place-tooltip {
+    opacity: 1;
+  }
+}
+
+.rank-nav-buttons {
+  text-align: center;
+
+  a {
+    display: inline-block;
+    padding: 0.5em 1em;
+  }
 }

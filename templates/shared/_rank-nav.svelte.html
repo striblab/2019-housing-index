@@ -7,17 +7,35 @@
           on:click="goToPlace(r.id, event)"
           class="ranked-place { isHiglighted(r, highlighted) ? 'highlighted-place' : '' } { i < ranked.length / 2 ? 'left-side' : 'right-side' }"
         >
-          <div class="ranked-place-tooltip">
-            <div class="">{ r.rank }: { r.name }</div>
+          <div class="tooltip-pole">
+            <div class="ranked-place-tooltip">
+              <div class="">{ r.rank }: { r.name }</div>
+            </div>
           </div>
         </div>
       {/each}
     </div>
   </div>
+
+  <div class="rank-nav-buttons">
+    <a href="#place-{ ranked[0].id }" on:click="goToPlace(ranked[0].id, event)">Rank 1</a>
+
+    {#if highlightedIndex || highlightedIndex === 0}
+      {#if highlightedIndex !== 0}
+        <a href="#place-{ ranked[highlightedIndex - 1].id }" on:click="goToPlace(ranked[highlightedIndex - 1].id, event)">Up</a>
+      {/if}
+
+      {#if highlightedIndex < ranked.length - 1}
+        <a href="#place-{ ranked[highlightedIndex + 1].id }" on:click="goToPlace(ranked[highlightedIndex + 1].id, event)">Down</a>
+      {/if}
+    {/if}
+
+    <a href="#place-{ ranked[ranked.length - 1].id }" on:click="goToPlace(ranked[ranked.length - 1].id, event)">Rank Last</a>
+  </div>
 </div>
 
 <script>
-  import { find, orderBy, isObject } from "lodash";
+  import { find, findIndex, orderBy, isObject } from "lodash";
 
   export default {
     methods: {
@@ -49,6 +67,14 @@
         }
 
         return find(ranked, { id: highlight });
+      },
+
+      highlightedIndex({ ranked, highlight }) {
+        if (!ranked || !highlight) {
+          return;
+        }
+
+        return findIndex(ranked, { id: highlight });
       }
     }
   };
