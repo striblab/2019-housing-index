@@ -35,7 +35,7 @@
       drawChart() {
         let chart = this.get().chart;
 
-        if (chart) {
+        if (chart && !this.get().redraw) {
           // Update
           //chart.unload();
           chart.load({
@@ -44,7 +44,12 @@
               : [this.get().xData, this.get().yData]
           });
 
+          //this.drawAnnotation();
+          //this.drawLineAnnotation();
+
           return;
+        } else if (chart && this.get().redraw) {
+          chart.destroy();
         }
 
         chart = c3.generate({

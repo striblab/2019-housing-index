@@ -21,28 +21,28 @@
   <div class="rank-nav-label">Navigate the { ranked.length } communities on the Hot Housing Index</div>
 
   <div class="rank-nav-buttons">
-    <a href="#place-{ ranked[0].id }" on:click="goToPlace(ranked[0].id, event)">
+    <a href="#place-{ ranked[0].id }">
       <i class="material-icons">first_page</i>
       <span>First</span>
     </a>
 
     {#if (highlightedIndex || highlightedIndex === 0) && highlightedIndex >= 0}
       {#if highlightedIndex !== 0}
-        <a href="#place-{ ranked[highlightedIndex - 1].id }" on:click="goToPlace(ranked[highlightedIndex - 1].id, event)">
+        <a href="#place-{ ranked[highlightedIndex - 1].id }">
           <i class="material-icons">keyboard_arrow_up</i>
           <span>Up</span>
         </a>
       {/if}
 
       {#if highlightedIndex < ranked.length - 1}
-        <a href="#place-{ ranked[highlightedIndex + 1].id }" on:click="goToPlace(ranked[highlightedIndex + 1].id, event)">
+        <a href="#place-{ ranked[highlightedIndex + 1].id }">
           <i class="material-icons">keyboard_arrow_down</i>
           <span>Down</span>
         </a>
       {/if}
     {/if}
 
-    <a href="#place-{ ranked[ranked.length - 1].id }" on:click="goToPlace(ranked[ranked.length - 1].id, event)">
+    <a href="#place-{ ranked[ranked.length - 1].id }">
       <i class="material-icons">last_page</i>
       <span>Last</span>
     </a>

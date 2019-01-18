@@ -5,8 +5,8 @@
 /* global window, document */
 
 // Dependencies
-import queryString from 'query-string';
-import _ from 'lodash';
+const queryString = require('query-string');
+const _ = require('lodash');
 
 /**
  * Enable pym.
@@ -470,7 +470,7 @@ function gaEvent({ category, action, label, value, nonInteraction }) {
 }
 
 // Export a generator for the class.
-export default {
+module.exports = {
   enablePym,
   autoEnablePym,
   environment,
