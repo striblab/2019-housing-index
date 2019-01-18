@@ -147,11 +147,6 @@
           Type the name of your city in the 13-county metro area or your neighborhood in <a href="#place-ID" on:click="setPlace(5, event)">Minneapolis</a> or <a href="#place-ID" on:click="setPlace(5, event)">St. Paul</a> to see real estate trends going back to 2003. For cities with 75 sales or more last year, you can also see how it ranked in the Star Tribune's Hot Housing Index.
         </small>
       </div>
-
-      <!-- this seems to automatically populate -- perhaps just the browser I'm using -- but if it's auto, do we need a Search button? -->
-      <div class="form-item">
-        <button type="submit">Search</button>
-      </div>
     <form>
   </div>
 
@@ -227,17 +222,17 @@
 
     oncreate() {
       // Selectize
-      // if ($ && $.fn.selectize) {
-      //   $(this.refs.placeSelect).selectize({
-      //     create: false,
-      //     maxOptions: 1800,
-      //     maxItems: 1,
-      //     closeAfterSelect: true,
-      //     onChange: value => {
-      //       this.set({ placeSearch: value });
-      //     }
-      //   });
-      // }
+      if ($ && $.fn.selectize) {
+        $(this.refs.placeSelect).selectize({
+          create: false,
+          maxOptions: 50,
+          maxItems: 1,
+          closeAfterSelect: true,
+          onChange: value => {
+            this.set({ placeSearch: value ? parseInt(value, 10) : undefined });
+          }
+        });
+      }
     },
 
     methods: {

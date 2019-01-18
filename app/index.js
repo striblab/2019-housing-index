@@ -12,8 +12,6 @@ import Content from '../templates/_index-content.svelte.html';
 import index from '../assets/data/housing-index.json';
 import metroTotals from '../assets/data/metro-totals.json';
 
-console.log(metroTotals);
-
 // Mark page with note about development or staging
 utils.environmentNoting();
 

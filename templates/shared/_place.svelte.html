@@ -305,7 +305,7 @@
           >
             Most cities in the metro area have a housing stock that is dominated by owner-occupied homes, with a relatively small share of rental units.
             {#if perOwnerOccupied}
-              In { name }, about { Math.round(perOwnerOccupied) }% of the housing units are owner-occupied.
+              In { name }, about { Math.round(perOwnerOccupied * 100) }% of the housing units are owner-occupied.
             {/if}
           </Histogram>
         {/if}
@@ -348,7 +348,7 @@
             redraw="{ true }"
           >Households that spend 30 percent or more of their income on housing costs are considered "cost-burdened". The chart shows that there are some cities in the metro with as much as one-third of homeowners who are cost-burdened.
             {#if perCostBurdened}
-              In { name }, about { Math.round(perCostBurdened) }% of homeowners are cost-burdened.
+              In { name }, about { Math.round(perCostBurdened * 100) }% of homeowners are cost-burdened.
             {/if}
           </Histogram>
         {/if}

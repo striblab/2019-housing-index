@@ -5,15 +5,20 @@
   text-align: left;
   position: relative;
   display: inline-block;
-  //vertical-align: middle;
+  vertical-align: middle;
   width: 100%;
+  margin-bottom: 0.5em;
+
+  &.single {
+    min-height: auto;
+  }
 }
 
 .selectize-input {
-  //font-size: 1.15em;
+  font-size: 1em;
   width: 100%;
   //padding: 0.35em 0.75em;
-  //vertical-align: middle;
+  vertical-align: middle;
 
   input[type="select-one"] {
     width: 100%;

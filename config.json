@@ -21,7 +21,10 @@
   },
 
   "styles": {
-    "globals": ["https://fonts.googleapis.com/icon?family=Material+Icons"]
+    "globals": [
+      "https://fonts.googleapis.com/icon?family=Material+Icons",
+      "http://static.startribune.com/assets/libs/selectizejs/0.12.6/css/selectize.css"
+    ]
   },
   "js": {
     "globals": [
