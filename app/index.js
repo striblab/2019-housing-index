@@ -15,6 +15,21 @@ import metroTotals from '../assets/data/metro-totals.json';
 // Mark page with note about development or staging
 utils.environmentNoting();
 
+// Intialize google analytics
+function initializeGa() {
+  window.dataLayer = window.dataLayer || [];
+  window.gaId = 'UA-114906116-1';
+
+  window.gtag = function() {
+    window.dataLayer.push(arguments);
+  };
+
+  window.gtag('js', new Date());
+  window.gtag('config', window.gaId);
+  return window.gtag;
+}
+initializeGa();
+
 // ...
 $(document).ready(() => {
   // Hack to get share back
