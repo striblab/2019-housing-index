@@ -87,25 +87,40 @@ function indexData() {
     _.each(matched, m => {
       let year = parseInt(m.variable, 10);
 
-      p.pricePerSqFtPerYear = p.pricePerSqFtPerYear || [];
+      p.pricePerSqFtPerYear = p.pricePerSqFtPerYear || {};
       if (m.ppsf || m.ppsf === 0) {
-        p.pricePerSqFtPerYear.push({ year, data: m.ppsf });
+        p.pricePerSqFtPerYear[year] = { year, data: m.ppsf || null };
       }
 
-      p.inventoryPerYear = p.inventoryPerYear || [];
+      p.inventoryPerYear = p.inventoryPerYear || {};
       if (m.inventory || m.inventory === 0) {
-        p.inventoryPerYear.push({ year, data: m.inventory });
+        p.inventoryPerYear[year] = { year, data: m.inventory };
       }
 
-      p.closedPerYear = p.closedPerYear || [];
+      p.closedPerYear = p.closedPerYear || {};
       if (m.closed || m.closed === 0) {
-        p.closedPerYear.push({ year, data: m.closed });
+        p.closedPerYear[year] = { year, data: m.closed };
       }
 
-      p.daysOnMarketPerYear = p.daysOnMarketPerYear || [];
+      p.daysOnMarketPerYear = p.daysOnMarketPerYear || {};
       if (m.dom || m.dom === 0) {
-        p.daysOnMarketPerYear.push({ year, data: m.dom });
+        p.daysOnMarketPerYear[year] = { year, data: m.dom || null };
       }
+    });
+
+    // Fill in years
+    let years = _.range(2003, 2019, 1);
+    [
+      'pricePerSqFtPerYear',
+      'inventoryPerYear',
+      'closedPerYear',
+      'daysOnMarketPerYear'
+    ].forEach(set => {
+      years.forEach(y => {
+        p[set][y] = p[set][y] || { year: y, data: null };
+      });
+
+      p[set] = _.sortBy(p[set], 'year');
     });
 
     // Median day on markey has unreliable data before 2007

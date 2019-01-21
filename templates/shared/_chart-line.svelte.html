@@ -54,6 +54,9 @@
 
         chart = c3.generate({
           bindto: this.refs.chart,
+          line: {
+            connectNull: true
+          },
           color: {
             pattern: this.get().colors
           },
