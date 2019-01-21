@@ -29,22 +29,22 @@
     {#if (highlightedIndex || highlightedIndex === 0) && highlightedIndex >= 0}
       {#if highlightedIndex !== 0}
         <a href="#place-{ ranked[highlightedIndex - 1].id }">
-          <i class="material-icons">keyboard_arrow_up</i>
-          <span>Up</span>
+          <i class="material-icons">chevron_left</i>
+          <span>Previous</span>
         </a>
       {/if}
 
       {#if highlightedIndex < ranked.length - 1}
         <a href="#place-{ ranked[highlightedIndex + 1].id }">
-          <i class="material-icons">keyboard_arrow_down</i>
-          <span>Down</span>
+          <span>Next</span>
+          <i class="material-icons">chevron_right</i>
         </a>
       {/if}
     {/if}
 
     <a href="#place-{ ranked[ranked.length - 1].id }">
-      <i class="material-icons">last_page</i>
       <span>Last</span>
+      <i class="material-icons">last_page</i>
     </a>
   </div>
 </div>

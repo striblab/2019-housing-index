@@ -3,7 +3,7 @@
 <div class="strib-styles ssa ssb ssc">
   <div class="container-md">
     <div class="hero">
-      <h1>Housing index</h1>
+      <h1>Ranking the hottest housing markets in the Twin Cities</h1>
 
       <p class="lead container-sm">Here's a lead-in paragraph to let you know what about to happen.</p>
 
@@ -48,6 +48,7 @@
           yLabel="Median days on market"
           yMin="0"
           xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
+          xTickValues="{ defaultXAxisYear }"
           hideLegend="{ true }"
           interactive="{ false }"
           colors="{ [metroColor] }"
@@ -75,6 +76,7 @@
           colors="{ [metroColor] }"
           yTickFormat="{ (d) => d || d === 0 ? `${Math.round(d * 100).toLocaleString()}%` : '-' }"
           xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
+          xTickValues="{ defaultXAxisYear }"
           dataConfig="{{
             xs: {
               'Metro': 'Year'
@@ -101,6 +103,7 @@
           colors="{ [metroColor] }"
           yTickFormat="{ (d) => d || d === 0 ? `$${Math.round(d / 1000).toLocaleString()}k` : '-' }"
           xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
+          xTickValues="{ defaultXAxisYear }"
           dataConfig="{{
             xs: {
               'Metro': 'Year'
@@ -125,6 +128,7 @@
           colors="{ [metroColor] }"
           yTickFormat="{ (d) => d || d === 0 ? `${Math.round(d / 1000).toLocaleString()}k` : '-' }"
           xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
+          xTickValues="{ defaultXAxisYear }"
           dataConfig="{{
             xs: {
               'Metro': 'Year'
@@ -397,7 +401,9 @@
         placeSearch: 25,
         // https://striblab.github.io/strib-styles/pages/content/colors.html
         placeColor: "#1d78af",
-        metroColor: "#ccc900"
+        metroColor: "#ccc900",
+        // Default years for axis
+        defaultXAxisYear: [2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018]
       };
     }
   };
