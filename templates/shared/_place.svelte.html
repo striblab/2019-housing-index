@@ -1,377 +1,375 @@
 
-<div class="place-details">
-  <div class="container-copy">
-    <h3>{ name }</h3>
+<div class="container-copy place-details">
+  <h3>{ name }</h3>
 
-    <p class="data-copy">
-      Located in <span>{ nameJoiner(counties) } { counties && counties.length > 1 ? 'counties' : 'County' }</span>,
-      <span>{ name }</span>
+  <p class="data-copy">
+    Located in <span>{ nameJoiner(counties) } { counties && counties.length > 1 ? 'counties' : 'County' }</span>,
+    <span>{ name }</span>
 
-      {#if rank}
-        ranked <span><strong>{ rank }</strong></span> on the Star Tribune's Hot Housing Index for 2018.
-      {:else}
-        <span><strong>was not included</strong></span> in the Star Tribune's Hot Housing Index for 2018 due to an insufficent number of sales.
-      {/if}
-
-      {#if pricePerSqFtChange || pricePerSqFtChange === 0}
-        Average price per square foot was
-        {#if pricePerSqFtChange === 0}
-          about the same
-        {:else}
-          { pricePerSqFtChange > 0 ? 'up' : 'down' }
-          <span>{ formatPercent(pricePerSqFtChange) } percent</span>
-        {/if}
-        compared to previous four-year average.
-      {/if}
-
-      {#if daysOnMarketChange || daysOnMarketChange === 0}
-        Houses sold, on average,
-        {#if daysOnMarketChange === 0}
-          about the same when compared to the previous year.
-        {:else}
-          <span>{  Math.abs(Math.round(daysOnMarketChange)) } days { daysOnMarketChange > 0 ? 'slower' : 'faster' }</span>
-          than the previous year.
-        {/if}
-      {/if}
-
-      {#if perPriceRecieved || perPriceRecieved === 0}
-        Sellers got, on average, <span>{ formatPercent(perPriceRecieved) } percent</span> of their original list price.
-      {/if}
-
-      {#if perNewConstruction || perNewConstruction === 0}
-        About <span>{ formatPercent(perNewConstruction) } percent</span> of the <span>{ closedSales.toLocaleString() }</span> sales were from new construction and <span>{ formatPercent(perDistressed) } percent</span> were short sales or foreclosures.
-      {/if}
-    </p>
-
-    {#if cityId && cityId !== id}
-      <div class="place-connections">
-        <p class="data-copy">Located in <a href="#place-{ cityId }" on:click="goToPlace(cityId, event)">{ placeName(cityId, places) }</a></p>
-      </div>
-    {/if}
-
-    {#if neighborhoods && neighborhoods.length}
-      <div class="place-connections">
-        <p class="data-copy">
-          Includes neighborhoods:
-          {#each neighborhoods as n, ni (n.id)}
-            <a href="#place-{ n.id }" on:click="goToPlace(n.id, event)">{ placeName(n.id, places, name) }</a>{#if ni < neighborhoods.length - 1},{@html "&#32;"}{/if}
-          {/each}
-        </p>
-      </div>
-    {/if}
-  </div>
-
-  <div class="container-lg">
-    <h4 class="market-hed">Historical real estate trends in { name }</h4>
-
-    <p class="data-copy">These key metrics provide a glimpse into how this real estate market has changed, particularly since the recession that lasted from December 2007 to June 2009.</p>
-
-    <div class="row">
-      <div class="col col-100 col-md-50">
-        <Line
-          figureClass="place-days-market"
-          redraw="{ true }"
-          title="Median days on market"
-          xLabel="Year"
-          yLabel="Days on market"
-          yMin="0"
-          colors="{ [placeColor, metroColor] }"
-          yTickFormat="{ d => d || d === 0 ? d.toLocaleString() : '-' }"
-          xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
-          xTickValues="{ defaultXAxisYear }"
-          dataConfig="{{
-            xs: {
-              'Place': 'Year',
-              'Metro': 'Year'
-            },
-            columns: [
-              ['Year'].concat(daysOnMarketPerYear.map(d => d.year)),
-              ['Place'].concat(daysOnMarketPerYear.map(d => d.data)),
-              ['Metro'].concat(metro.daysOnMarketPerYear.map(d => d.data))
-            ],
-            names: {
-              Place: name,
-              Metro: 'Metro area'
-            }
-          }}"
-        >The median number of days it took to sell a house in this community compared with the 13-county metro as a whole.  Data prior to 2007 not available</Line>
-      </div>
-
-      <div class="col col-100 col-md-50">
-        <Line
-          figureClass="place-price-per-foot"
-          redraw="{ true }"
-          title="Median sale price per square foot"
-          xLabel="Year"
-          yLabel="Price per sq. ft."
-          yMin="0"
-          colors="{ [placeColor, metroColor] }"
-          yTickFormat="{ d => d || d === 0 ? `$${d.toLocaleString()}` : '-' }"
-          xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
-          xTickValues="{ defaultXAxisYear }"
-          dataConfig="{{
-            xs: {
-              'Place': 'Year',
-              'Metro': 'Year'
-            },
-            columns: [
-              ['Year'].concat(pricePerSqFtPerYear.map(d => d.year)),
-              ['Place'].concat(pricePerSqFtPerYear.map(d => d.data)),
-              ['Metro'].concat(metro.pricePerSqFtPerYear.map(d => d.data))
-            ],
-            names: {
-              Place: name,
-              Metro: 'Metro area'
-            }
-          }}"
-        >Prices in this community compared to the 13-county metro as a whole.</Line>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col col-100 col-md-50">
-        <Line
-          figureClass="place-closed-sales"
-          redraw="{ true }"
-          title="Annual closed sales"
-          xLabel="Year"
-          yLabel="Closed sales"
-          hideLegend="{ true }"
-          yMin="0"
-          yMax="{ Math.max(maxBy(closedPerYear, 'data').data, 10) }"
-          colors="{ [placeColor, metroColor] }"
-          yTickFormat="{ d => d || d === 0 ? d.toLocaleString() : '-' }"
-          xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
-          xTickValues="{ defaultXAxisYear }"
-          dataConfig="{{
-            xs: {
-              'Closed sales': 'Year'
-            },
-            columns: [
-              ['Year'].concat(closedPerYear.map(d => d.year)),
-              ['Closed sales'].concat(closedPerYear.map(d => d.data))
-            ]
-          }}"
-        >During 2018 there was a decline in home sales in most metro communities because of a lack of options for buyers.</Line>
-      </div>
-
-      <div class="col col-100 col-md-50">
-        <Line
-          figureClass="place-inventory"
-          redraw="{ true }"
-          title="Homes for sale"
-          xLabel="Year"
-          yLabel="Inventory"
-          hideLegend="{ true }"
-          yMin="0"
-          yMax="{ Math.max(maxBy(inventoryPerYear, 'data').data, 10) }"
-          colors="{ [placeColor, metroColor] }"
-          yTickFormat="{ d => d || d === 0 ? d.toLocaleString() : '-' }"
-          xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
-          xTickValues="{ defaultXAxisYear }"
-          dataConfig="{{
-            xs: {
-              'Inventory': 'Year'
-            },
-            columns: [
-              ['Year'].concat(inventoryPerYear.map(d => d.year)),
-              ['Inventory'].concat(inventoryPerYear.map(d => d.data))
-            ]
-          }}"
-        >Active house listings by the end of each year.</Line>
-      </div>
-    </div>
-
-    <h4 class="about-hed">How { name } compares to the rest of the metro</h4>
-
-    {#if !medianHomeValue && !medianHouseholdIncome && !perOwnerOccupied && !perCostBurdened}
-      <p class="no-data-note">Demographic and Census data not available for this area.</p>
+    {#if rank}
+      ranked <span><strong>{ rank }</strong></span> on the Star Tribune's Hot Housing Index for 2018.
     {:else}
-      <p class="data-copy">The histogram charts below use U.S. Census data to show where this city (noted by the blue lines) falls in relation to other cities in the 13-county metro area on key measures regarding all of its housing and household incomes.</p>
+      <span><strong>was not included</strong></span> in the Star Tribune's Hot Housing Index for 2018 due to an insufficent number of sales.
     {/if}
 
-    {#if stats}
-      <div class="row">
-        <div class="col col-100 col-md-50">
-          {#if medianHomeValue}
-            <Histogram
-              figureClass="place-histo-home-value"
-              title="Median value of owner-occupied homes"
-              xLabel="Value (in thousands)"
-              yLabel="Number of places"
-              yHide="{ true }"
-              yMin="0"
-              yMax="{ maxBy(stats.medianHomeValue.histogram, 'count').count * 1.15 }"
-              xMin="0"
-              xMax="{ stats.medianHomeValue.max * 1.05 }"
-              colors="{ [metroColor, placeColor] }"
-              dataConfig="{{
-                xs: {
-                  'Number of places': 'Median home value'
-                },
-                columns: [
-                  ['Median home value'].concat(stats.medianHomeValue.histogram.map(d => (d.min + d.max) / 2)),
-                  ['Number of places'].concat(stats.medianHomeValue.histogram.map(d => d.count))
-                ],
-                type: 'bar'
-              }}"
-              xTickFormat="{ d => { return `$${Math.round(d / 1000).toLocaleString()}k`; }}"
-              lineAnnotationOptions="{ medianHomeValue ? (chart) => {
-                return {
-                  x1: chart.internal.x(medianHomeValue),
-                  y1: chart.internal.y(maxBy(stats.medianHomeValue.histogram, 'count').count * 1.15),
-                  x2: chart.internal.x(medianHomeValue),
-                  y2: chart.internal.y(0),
-                  textx: chart.internal.x(medianHomeValue) + 3,
-                  texty: chart.internal.y(maxBy(stats.medianHomeValue.histogram, 'count').count * 1.05),
-                  // text: name
-                }
-              } : undefined }"
-              redraw="{ true }"
-            >
-              Most metro cities have a median value of about $210,000.
-              {#if medianHomeValue}
-                The median in { name } is ${ medianHomeValue.toLocaleString() }
-              {/if}
-            </Histogram>
-          {/if}
-        </div>
-
-        <div class="col col-100 col-md-50">
-          {#if medianHouseholdIncome}
-            <Histogram
-              figureClass="place-histo-home-income"
-              title="Median household income"
-              xLabel="Income (in thousands)"
-              yLabel="Number of places"
-              yHide="{ true }"
-              yMin="0"
-              yMax="{ maxBy(stats.medianHouseholdIncome.histogram, 'count').count * 1.15 }"
-              xMin="{ stats.medianHouseholdIncome.min * 0.95 }"
-              xMax="{ stats.medianHouseholdIncome.max * 1.05 }"
-              colors="{ [metroColor, placeColor] }"
-              dataConfig="{{
-                xs: {
-                  'Number of places': 'Median household income'
-                },
-                columns: [
-                  ['Median household income'].concat(stats.medianHouseholdIncome.histogram.map(d => (d.min + d.max) / 2)),
-                  ['Number of places'].concat(stats.medianHouseholdIncome.histogram.map(d => d.count))
-                ],
-                type: 'bar'
-              }}"
-              xTickFormat="{ d => { return `$${Math.round(d / 1000)}k`; }}"
-              lineAnnotationOptions="{ medianHouseholdIncome ? (chart) => {
-                return {
-                  x1: chart.internal.x(medianHouseholdIncome),
-                  y1: chart.internal.y(maxBy(stats.medianHouseholdIncome.histogram, 'count').count * 1.15),
-                  x2: chart.internal.x(medianHouseholdIncome),
-                  y2: chart.internal.y(0),
-                  textx: chart.internal.x(medianHouseholdIncome) + 3,
-                  texty: chart.internal.y(maxBy(stats.medianHouseholdIncome.histogram, 'count').count * 1.05),
-                  //text: name
-                }
-              } : undefined }"
-              redraw="{ true }"
-            >There are cities in the Twin Cities that have median household incomes as low as $35,000 or as high as $195,000.
-              {#if medianHouseholdIncome}
-                The median in { name } is ${ medianHouseholdIncome.toLocaleString() }
-              {/if}
-            </Histogram>
-          {/if}
-        </div>
-
-        <div class="col col-100 col-md-50">
-          {#if perOwnerOccupied}
-            <Histogram
-              figureClass="place-histo-owner-occupied"
-              title="Percent owner-occupied homes"
-              xLabel="Percent homes"
-              yLabel="Number of places"
-              yHide="{ true }"
-              yMin="0"
-              yMax="{ maxBy(stats.perOwnerOccupied.histogram, 'count').count * 1.15 }"
-              xMin="0"
-              xMax="1"
-              colors="{ [metroColor, placeColor] }"
-              dataConfig="{{
-                xs: {
-                  'Number of places': 'Percent owner-occupied homes'
-                },
-                columns: [
-                  ['Percent owner-occupied homes'].concat(stats.perOwnerOccupied.histogram.map(d => (d.min + d.max) / 2)),
-                  ['Number of places'].concat(stats.perOwnerOccupied.histogram.map(d => d.count))
-                ],
-                type: 'bar'
-              }}"
-              xTickFormat="{ d => { return `${Math.round(d * 100)}%`; }}"
-              lineAnnotationOptions="{ perOwnerOccupied ? (chart) => {
-                return {
-                  x1: chart.internal.x(perOwnerOccupied),
-                  y1: chart.internal.y(maxBy(stats.perOwnerOccupied.histogram, 'count').count * 1.15),
-                  x2: chart.internal.x(perOwnerOccupied),
-                  y2: chart.internal.y(0),
-                  textx: chart.internal.x(perOwnerOccupied) + 3,
-                  texty: chart.internal.y(maxBy(stats.perOwnerOccupied.histogram, 'count').count * 1.05),
-                  //text: name
-                }
-              } : undefined }"
-              redraw="{ true }"
-            >
-              Most cities in the metro area have a housing stock that is dominated by owner-occupied homes, with a relatively small share of rental units.
-              {#if perOwnerOccupied}
-                In { name }, about { Math.round(perOwnerOccupied * 100) }% of the housing units are owner-occupied.
-              {/if}
-            </Histogram>
-          {/if}
-        </div>
-
-        <div class="col col-100 col-md-50">
-          {#if perCostBurdened}
-            <Histogram
-              figureClass="place-histo-cost-burdened"
-              title="Percent cost-burdened owners"
-              xLabel="Percent owners"
-              yLabel="Number of places"
-              yHide="{ true }"
-              yMin="0"
-              yMax="{ maxBy(stats.perCostBurdened.histogram, 'count').count * 1.15 }"
-              xMin="0"
-              xMax="{ stats.perCostBurdened.max * 1.1 }"
-              colors="{ [metroColor, placeColor] }"
-              dataConfig="{{
-                xs: {
-                  'Number of places': 'Percent cost-burdened owners'
-                },
-                columns: [
-                  ['Percent cost-burdened owners'].concat(stats.perCostBurdened.histogram.map(d => (d.min + d.max) / 2)),
-                  ['Number of places'].concat(stats.perCostBurdened.histogram.map(d => d.count))
-                ],
-                type: 'bar'
-              }}"
-              xTickFormat="{ d => { return `${Math.round(d * 100)}%`; }}"
-              lineAnnotationOptions="{ perCostBurdened ? (chart) => {
-                return {
-                  x1: chart.internal.x(perCostBurdened),
-                  y1: chart.internal.y(maxBy(stats.perCostBurdened.histogram, 'count').count * 1.15),
-                  x2: chart.internal.x(perCostBurdened),
-                  y2: chart.internal.y(0),
-                  textx: chart.internal.x(perCostBurdened) + 3,
-                  texty: chart.internal.y(maxBy(stats.perCostBurdened.histogram, 'count').count * 1.05),
-                  //text: name
-                }
-              } : undefined }"
-              redraw="{ true }"
-            >Households that spend 30 percent or more of their income on housing costs are considered "cost-burdened". The chart shows that there are some cities in the metro with as much as one-third of homeowners who are cost-burdened.
-              {#if perCostBurdened}
-                In { name }, about { Math.round(perCostBurdened * 100) }% of homeowners are cost-burdened.
-              {/if}
-            </Histogram>
-          {/if}
-        </div>
-      </div>
+    {#if pricePerSqFtChange || pricePerSqFtChange === 0}
+      Average price per square foot was
+      {#if pricePerSqFtChange === 0}
+        about the same
+      {:else}
+        { pricePerSqFtChange > 0 ? 'up' : 'down' }
+        <span>{ formatPercent(pricePerSqFtChange) } percent</span>
+      {/if}
+      compared to previous four-year average.
     {/if}
+
+    {#if daysOnMarketChange || daysOnMarketChange === 0}
+      Houses sold, on average,
+      {#if daysOnMarketChange === 0}
+        about the same when compared to the previous year.
+      {:else}
+        <span>{  Math.abs(Math.round(daysOnMarketChange)) } days { daysOnMarketChange > 0 ? 'slower' : 'faster' }</span>
+        than the previous year.
+      {/if}
+    {/if}
+
+    {#if perPriceRecieved || perPriceRecieved === 0}
+      Sellers got, on average, <span>{ formatPercent(perPriceRecieved) } percent</span> of their original list price.
+    {/if}
+
+    {#if perNewConstruction || perNewConstruction === 0}
+      About <span>{ formatPercent(perNewConstruction) } percent</span> of the <span>{ closedSales.toLocaleString() }</span> sales were from new construction and <span>{ formatPercent(perDistressed) } percent</span> were short sales or foreclosures.
+    {/if}
+  </p>
+
+  {#if cityId && cityId !== id}
+    <div class="place-connections">
+      <p class="data-copy">Located in <a href="#place-{ cityId }" on:click="goToPlace(cityId, event)">{ placeName(cityId, places) }</a></p>
+    </div>
+  {/if}
+
+  {#if neighborhoods && neighborhoods.length}
+    <div class="place-connections">
+      <p class="data-copy">
+        Includes neighborhoods:
+        {#each neighborhoods as n, ni (n.id)}
+          <a href="#place-{ n.id }" on:click="goToPlace(n.id, event)">{ placeName(n.id, places, name) }</a>{#if ni < neighborhoods.length - 1},{@html "&#32;"}{/if}
+        {/each}
+      </p>
+    </div>
+  {/if}
+</div>
+
+<div class="container-lg">
+  <h4 class="market-hed">Historical real estate trends in { name }</h4>
+
+  <p class="data-copy">These key metrics provide a glimpse into how this real estate market has changed, particularly since the recession that lasted from December 2007 to June 2009.</p>
+
+  <div class="row">
+    <div class="col col-100 col-md-50">
+      <Line
+        figureClass="place-days-market"
+        redraw="{ true }"
+        title="Median days on market"
+        xLabel="Year"
+        yLabel="Days on market"
+        yMin="0"
+        colors="{ [placeColor, metroColor] }"
+        yTickFormat="{ d => d || d === 0 ? d.toLocaleString() : '-' }"
+        xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
+        xTickValues="{ defaultXAxisYear }"
+        dataConfig="{{
+          xs: {
+            'Place': 'Year',
+            'Metro': 'Year'
+          },
+          columns: [
+            ['Year'].concat(daysOnMarketPerYear.map(d => d.year)),
+            ['Place'].concat(daysOnMarketPerYear.map(d => d.data)),
+            ['Metro'].concat(metro.daysOnMarketPerYear.map(d => d.data))
+          ],
+          names: {
+            Place: name,
+            Metro: 'Metro area'
+          }
+        }}"
+      >The median number of days it took to sell a house in this community compared with the 13-county metro as a whole.  Data prior to 2007 not available</Line>
+    </div>
+
+    <div class="col col-100 col-md-50">
+      <Line
+        figureClass="place-price-per-foot"
+        redraw="{ true }"
+        title="Median sale price per square foot"
+        xLabel="Year"
+        yLabel="Price per sq. ft."
+        yMin="0"
+        colors="{ [placeColor, metroColor] }"
+        yTickFormat="{ d => d || d === 0 ? `$${d.toLocaleString()}` : '-' }"
+        xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
+        xTickValues="{ defaultXAxisYear }"
+        dataConfig="{{
+          xs: {
+            'Place': 'Year',
+            'Metro': 'Year'
+          },
+          columns: [
+            ['Year'].concat(pricePerSqFtPerYear.map(d => d.year)),
+            ['Place'].concat(pricePerSqFtPerYear.map(d => d.data)),
+            ['Metro'].concat(metro.pricePerSqFtPerYear.map(d => d.data))
+          ],
+          names: {
+            Place: name,
+            Metro: 'Metro area'
+          }
+        }}"
+      >Prices in this community compared to the 13-county metro as a whole.</Line>
+    </div>
   </div>
+
+  <div class="row">
+    <div class="col col-100 col-md-50">
+      <Line
+        figureClass="place-closed-sales"
+        redraw="{ true }"
+        title="Annual closed sales"
+        xLabel="Year"
+        yLabel="Closed sales"
+        hideLegend="{ true }"
+        yMin="0"
+        yMax="{ Math.max(maxBy(closedPerYear, 'data').data, 10) }"
+        colors="{ [placeColor, metroColor] }"
+        yTickFormat="{ d => d || d === 0 ? d.toLocaleString() : '-' }"
+        xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
+        xTickValues="{ defaultXAxisYear }"
+        dataConfig="{{
+          xs: {
+            'Closed sales': 'Year'
+          },
+          columns: [
+            ['Year'].concat(closedPerYear.map(d => d.year)),
+            ['Closed sales'].concat(closedPerYear.map(d => d.data))
+          ]
+        }}"
+      >During 2018 there was a decline in home sales in most metro communities because of a lack of options for buyers.</Line>
+    </div>
+
+    <div class="col col-100 col-md-50">
+      <Line
+        figureClass="place-inventory"
+        redraw="{ true }"
+        title="Homes for sale"
+        xLabel="Year"
+        yLabel="Inventory"
+        hideLegend="{ true }"
+        yMin="0"
+        yMax="{ Math.max(maxBy(inventoryPerYear, 'data').data, 10) }"
+        colors="{ [placeColor, metroColor] }"
+        yTickFormat="{ d => d || d === 0 ? d.toLocaleString() : '-' }"
+        xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
+        xTickValues="{ defaultXAxisYear }"
+        dataConfig="{{
+          xs: {
+            'Inventory': 'Year'
+          },
+          columns: [
+            ['Year'].concat(inventoryPerYear.map(d => d.year)),
+            ['Inventory'].concat(inventoryPerYear.map(d => d.data))
+          ]
+        }}"
+      >Active house listings by the end of each year.</Line>
+    </div>
+  </div>
+
+  <h4 class="about-hed">How { name } compares to the rest of the metro</h4>
+
+  {#if !medianHomeValue && !medianHouseholdIncome && !perOwnerOccupied && !perCostBurdened}
+    <p class="no-data-note">Demographic and Census data not available for this area.</p>
+  {:else}
+    <p class="data-copy">The histogram charts below use U.S. Census data to show where this city (noted by the blue lines) falls in relation to other cities in the 13-county metro area on key measures regarding all of its housing and household incomes.</p>
+  {/if}
+
+  {#if stats}
+    <div class="row">
+      <div class="col col-100 col-md-50">
+        {#if medianHomeValue}
+          <Histogram
+            figureClass="place-histo-home-value"
+            title="Median value of owner-occupied homes"
+            xLabel="Value (in thousands)"
+            yLabel="Number of places"
+            yHide="{ true }"
+            yMin="0"
+            yMax="{ maxBy(stats.medianHomeValue.histogram, 'count').count * 1.15 }"
+            xMin="0"
+            xMax="{ stats.medianHomeValue.max * 1.05 }"
+            colors="{ [metroColor, placeColor] }"
+            dataConfig="{{
+              xs: {
+                'Number of places': 'Median home value'
+              },
+              columns: [
+                ['Median home value'].concat(stats.medianHomeValue.histogram.map(d => (d.min + d.max) / 2)),
+                ['Number of places'].concat(stats.medianHomeValue.histogram.map(d => d.count))
+              ],
+              type: 'bar'
+            }}"
+            xTickFormat="{ d => { return `$${Math.round(d / 1000).toLocaleString()}k`; }}"
+            lineAnnotationOptions="{ medianHomeValue ? (chart) => {
+              return {
+                x1: chart.internal.x(medianHomeValue),
+                y1: chart.internal.y(maxBy(stats.medianHomeValue.histogram, 'count').count * 1.15),
+                x2: chart.internal.x(medianHomeValue),
+                y2: chart.internal.y(0),
+                textx: chart.internal.x(medianHomeValue) + 3,
+                texty: chart.internal.y(maxBy(stats.medianHomeValue.histogram, 'count').count * 1.05),
+                // text: name
+              }
+            } : undefined }"
+            redraw="{ true }"
+          >
+            Most metro cities have a median value of about $210,000.
+            {#if medianHomeValue}
+              The median in { name } is ${ medianHomeValue.toLocaleString() }
+            {/if}
+          </Histogram>
+        {/if}
+      </div>
+
+      <div class="col col-100 col-md-50">
+        {#if medianHouseholdIncome}
+          <Histogram
+            figureClass="place-histo-home-income"
+            title="Median household income"
+            xLabel="Income (in thousands)"
+            yLabel="Number of places"
+            yHide="{ true }"
+            yMin="0"
+            yMax="{ maxBy(stats.medianHouseholdIncome.histogram, 'count').count * 1.15 }"
+            xMin="{ stats.medianHouseholdIncome.min * 0.95 }"
+            xMax="{ stats.medianHouseholdIncome.max * 1.05 }"
+            colors="{ [metroColor, placeColor] }"
+            dataConfig="{{
+              xs: {
+                'Number of places': 'Median household income'
+              },
+              columns: [
+                ['Median household income'].concat(stats.medianHouseholdIncome.histogram.map(d => (d.min + d.max) / 2)),
+                ['Number of places'].concat(stats.medianHouseholdIncome.histogram.map(d => d.count))
+              ],
+              type: 'bar'
+            }}"
+            xTickFormat="{ d => { return `$${Math.round(d / 1000)}k`; }}"
+            lineAnnotationOptions="{ medianHouseholdIncome ? (chart) => {
+              return {
+                x1: chart.internal.x(medianHouseholdIncome),
+                y1: chart.internal.y(maxBy(stats.medianHouseholdIncome.histogram, 'count').count * 1.15),
+                x2: chart.internal.x(medianHouseholdIncome),
+                y2: chart.internal.y(0),
+                textx: chart.internal.x(medianHouseholdIncome) + 3,
+                texty: chart.internal.y(maxBy(stats.medianHouseholdIncome.histogram, 'count').count * 1.05),
+                //text: name
+              }
+            } : undefined }"
+            redraw="{ true }"
+          >There are cities in the Twin Cities that have median household incomes as low as $35,000 or as high as $195,000.
+            {#if medianHouseholdIncome}
+              The median in { name } is ${ medianHouseholdIncome.toLocaleString() }
+            {/if}
+          </Histogram>
+        {/if}
+      </div>
+
+      <div class="col col-100 col-md-50">
+        {#if perOwnerOccupied}
+          <Histogram
+            figureClass="place-histo-owner-occupied"
+            title="Percent owner-occupied homes"
+            xLabel="Percent homes"
+            yLabel="Number of places"
+            yHide="{ true }"
+            yMin="0"
+            yMax="{ maxBy(stats.perOwnerOccupied.histogram, 'count').count * 1.15 }"
+            xMin="0"
+            xMax="1"
+            colors="{ [metroColor, placeColor] }"
+            dataConfig="{{
+              xs: {
+                'Number of places': 'Percent owner-occupied homes'
+              },
+              columns: [
+                ['Percent owner-occupied homes'].concat(stats.perOwnerOccupied.histogram.map(d => (d.min + d.max) / 2)),
+                ['Number of places'].concat(stats.perOwnerOccupied.histogram.map(d => d.count))
+              ],
+              type: 'bar'
+            }}"
+            xTickFormat="{ d => { return `${Math.round(d * 100)}%`; }}"
+            lineAnnotationOptions="{ perOwnerOccupied ? (chart) => {
+              return {
+                x1: chart.internal.x(perOwnerOccupied),
+                y1: chart.internal.y(maxBy(stats.perOwnerOccupied.histogram, 'count').count * 1.15),
+                x2: chart.internal.x(perOwnerOccupied),
+                y2: chart.internal.y(0),
+                textx: chart.internal.x(perOwnerOccupied) + 3,
+                texty: chart.internal.y(maxBy(stats.perOwnerOccupied.histogram, 'count').count * 1.05),
+                //text: name
+              }
+            } : undefined }"
+            redraw="{ true }"
+          >
+            Most cities in the metro area have a housing stock that is dominated by owner-occupied homes, with a relatively small share of rental units.
+            {#if perOwnerOccupied}
+              In { name }, about { Math.round(perOwnerOccupied * 100) }% of the housing units are owner-occupied.
+            {/if}
+          </Histogram>
+        {/if}
+      </div>
+
+      <div class="col col-100 col-md-50">
+        {#if perCostBurdened}
+          <Histogram
+            figureClass="place-histo-cost-burdened"
+            title="Percent cost-burdened owners"
+            xLabel="Percent owners"
+            yLabel="Number of places"
+            yHide="{ true }"
+            yMin="0"
+            yMax="{ maxBy(stats.perCostBurdened.histogram, 'count').count * 1.15 }"
+            xMin="0"
+            xMax="{ stats.perCostBurdened.max * 1.1 }"
+            colors="{ [metroColor, placeColor] }"
+            dataConfig="{{
+              xs: {
+                'Number of places': 'Percent cost-burdened owners'
+              },
+              columns: [
+                ['Percent cost-burdened owners'].concat(stats.perCostBurdened.histogram.map(d => (d.min + d.max) / 2)),
+                ['Number of places'].concat(stats.perCostBurdened.histogram.map(d => d.count))
+              ],
+              type: 'bar'
+            }}"
+            xTickFormat="{ d => { return `${Math.round(d * 100)}%`; }}"
+            lineAnnotationOptions="{ perCostBurdened ? (chart) => {
+              return {
+                x1: chart.internal.x(perCostBurdened),
+                y1: chart.internal.y(maxBy(stats.perCostBurdened.histogram, 'count').count * 1.15),
+                x2: chart.internal.x(perCostBurdened),
+                y2: chart.internal.y(0),
+                textx: chart.internal.x(perCostBurdened) + 3,
+                texty: chart.internal.y(maxBy(stats.perCostBurdened.histogram, 'count').count * 1.05),
+                //text: name
+              }
+            } : undefined }"
+            redraw="{ true }"
+          >Households that spend 30 percent or more of their income on housing costs are considered "cost-burdened". The chart shows that there are some cities in the metro with as much as one-third of homeowners who are cost-burdened.
+            {#if perCostBurdened}
+              In { name }, about { Math.round(perCostBurdened * 100) }% of homeowners are cost-burdened.
+            {/if}
+          </Histogram>
+        {/if}
+      </div>
+    </div>
+  {/if}
 </div>
 
 <script>
