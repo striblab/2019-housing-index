@@ -2,6 +2,11 @@
  * Project specific styling.
  */
 
+// Bug in strib styles
+h4 {
+  font-size: 1.5em;
+}
+
 .placeholder {
   background-color: map-get($grays, "lighter");
   min-height: 3em;
