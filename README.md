@@ -1,12 +1,10 @@
 # 2019 Housing Index
 
- 2018 analysis of housing in the Twin Cities 
-
-
+2018 analysis of housing in the Twin Cities
 
 ## Application data
 
-_<Describe data and where it comes from.>_
+Data from American Community Survey 2017 and Minneapolis Area Association of Realtors (MAAR).
 
 See [docs/application-data.md](./docs/application-data.md).
 
