@@ -45,14 +45,20 @@
       </p>
 
       {#if cityId && cityId !== id}
-        <p class="data-copy">Located in <a href="#place-{ cityId }" on:click="goToPlace(cityId, event)">{ placeName(cityId, places) }</a></p>
+        <div class="place-connections">
+          <p class="data-copy">Located in <a href="#place-{ cityId }" on:click="goToPlace(cityId, event)">{ placeName(cityId, places) }</a></p>
+        </div>
       {/if}
 
       {#if neighborhoods && neighborhoods.length}
-        Includes neighborhoods:
-        {#each neighborhoods as n, ni (n.id)}
-          <a href="#place-{ n.id }" on:click="goToPlace(n.id, event)">{ placeName(n.id, places, name) }</a>{#if ni < neighborhoods.length - 1},{@html "&#32;"}{/if}
-        {/each}
+        <div class="place-connections">
+          <p class="data-copy">
+            Includes neighborhoods:
+            {#each neighborhoods as n, ni (n.id)}
+              <a href="#place-{ n.id }" on:click="goToPlace(n.id, event)">{ placeName(n.id, places, name) }</a>{#if ni < neighborhoods.length - 1},{@html "&#32;"}{/if}
+            {/each}
+          </p>
+        </div>
       {/if}
     </div>
 
@@ -180,10 +186,10 @@
 
   <h4 class="about-hed">How { name } compares to the rest of the metro</h4>
 
-  <p class="data-copy">The histogram charts below use U.S. Census data to show where this city (noted by the blue lines) falls in relation to other cities in the 13-county metro area on key measures regarding all of its housing and household incomes.</p>
-
   {#if !medianHomeValue && !medianHouseholdIncome && !perOwnerOccupied && !perCostBurdened}
     <p class="no-data-note">Demographic and Census data not available for this area.</p>
+  {:else}
+    <p class="data-copy">The histogram charts below use U.S. Census data to show where this city (noted by the blue lines) falls in relation to other cities in the 13-county metro area on key measures regarding all of its housing and household incomes.</p>
   {/if}
 
   {#if stats}
