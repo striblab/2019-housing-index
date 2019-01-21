@@ -1,73 +1,64 @@
 
 <div class="place-details">
-  <h3>{ name }</h3>
+  <div class="container-copy">
+    <h3>{ name }</h3>
 
-  <div class="row">
-    <div class="col col-66">
-      <p class="data-copy">
-        Located in <span>{ nameJoiner(counties) } { counties && counties.length > 1 ? 'counties' : 'County' }</span>,
-        <span>{ name }</span>
+    <p class="data-copy">
+      Located in <span>{ nameJoiner(counties) } { counties && counties.length > 1 ? 'counties' : 'County' }</span>,
+      <span>{ name }</span>
 
-        {#if rank}
-          ranked <span><strong>{ rank }</strong></span> on the Star Tribune's Hot Housing Index for 2018.
+      {#if rank}
+        ranked <span><strong>{ rank }</strong></span> on the Star Tribune's Hot Housing Index for 2018.
+      {:else}
+        <span><strong>was not included</strong></span> in the Star Tribune's Hot Housing Index for 2018 due to an insufficent number of sales.
+      {/if}
+
+      {#if pricePerSqFtChange || pricePerSqFtChange === 0}
+        Average price per square foot was
+        {#if pricePerSqFtChange === 0}
+          about the same
         {:else}
-          <span><strong>was not included</strong></span> in the Star Tribune's Hot Housing Index for 2018 due to an insufficent number of sales.
+          { pricePerSqFtChange > 0 ? 'up' : 'down' }
+          <span>{ formatPercent(pricePerSqFtChange) } percent</span>
         {/if}
-
-        {#if pricePerSqFtChange || pricePerSqFtChange === 0}
-          Average price per square foot was
-          {#if pricePerSqFtChange === 0}
-            about the same
-          {:else}
-            { pricePerSqFtChange > 0 ? 'up' : 'down' }
-            <span>{ formatPercent(pricePerSqFtChange) } percent</span>
-          {/if}
-          compared to previous four-year average.
-        {/if}
-
-        {#if daysOnMarketChange || daysOnMarketChange === 0}
-          Houses sold, on average,
-          {#if daysOnMarketChange === 0}
-            about the same when compared to the previous year.
-          {:else}
-            <span>{  Math.abs(Math.round(daysOnMarketChange)) } days { daysOnMarketChange > 0 ? 'slower' : 'faster' }</span>
-            than the previous year.
-          {/if}
-        {/if}
-
-        {#if perPriceRecieved || perPriceRecieved === 0}
-          Sellers got, on average, <span>{ formatPercent(perPriceRecieved) } percent</span> of their original list price.
-        {/if}
-
-        {#if perNewConstruction || perNewConstruction === 0}
-          About <span>{ formatPercent(perNewConstruction) } percent</span> of the <span>{ closedSales.toLocaleString() }</span> sales were from new construction and <span>{ formatPercent(perDistressed) } percent</span> were short sales or foreclosures.
-        {/if}
-      </p>
-
-      {#if cityId && cityId !== id}
-        <div class="place-connections">
-          <p class="data-copy">Located in <a href="#place-{ cityId }" on:click="goToPlace(cityId, event)">{ placeName(cityId, places) }</a></p>
-        </div>
+        compared to previous four-year average.
       {/if}
 
-      {#if neighborhoods && neighborhoods.length}
-        <div class="place-connections">
-          <p class="data-copy">
-            Includes neighborhoods:
-            {#each neighborhoods as n, ni (n.id)}
-              <a href="#place-{ n.id }" on:click="goToPlace(n.id, event)">{ placeName(n.id, places, name) }</a>{#if ni < neighborhoods.length - 1},{@html "&#32;"}{/if}
-            {/each}
-          </p>
-        </div>
+      {#if daysOnMarketChange || daysOnMarketChange === 0}
+        Houses sold, on average,
+        {#if daysOnMarketChange === 0}
+          about the same when compared to the previous year.
+        {:else}
+          <span>{  Math.abs(Math.round(daysOnMarketChange)) } days { daysOnMarketChange > 0 ? 'slower' : 'faster' }</span>
+          than the previous year.
+        {/if}
       {/if}
-    </div>
 
-    <div class="col col-33">
-      <figure>
-        <div class="placeholder placeholder-chart">Locator map</div>
-        <figcaption>Caption...</figcaption>
-      </figure>
-    </div>
+      {#if perPriceRecieved || perPriceRecieved === 0}
+        Sellers got, on average, <span>{ formatPercent(perPriceRecieved) } percent</span> of their original list price.
+      {/if}
+
+      {#if perNewConstruction || perNewConstruction === 0}
+        About <span>{ formatPercent(perNewConstruction) } percent</span> of the <span>{ closedSales.toLocaleString() }</span> sales were from new construction and <span>{ formatPercent(perDistressed) } percent</span> were short sales or foreclosures.
+      {/if}
+    </p>
+
+    {#if cityId && cityId !== id}
+      <div class="place-connections">
+        <p class="data-copy">Located in <a href="#place-{ cityId }" on:click="goToPlace(cityId, event)">{ placeName(cityId, places) }</a></p>
+      </div>
+    {/if}
+
+    {#if neighborhoods && neighborhoods.length}
+      <div class="place-connections">
+        <p class="data-copy">
+          Includes neighborhoods:
+          {#each neighborhoods as n, ni (n.id)}
+            <a href="#place-{ n.id }" on:click="goToPlace(n.id, event)">{ placeName(n.id, places, name) }</a>{#if ni < neighborhoods.length - 1},{@html "&#32;"}{/if}
+          {/each}
+        </p>
+      </div>
+    {/if}
   </div>
 
   <h4 class="market-hed">Historical real estate trends in { name }</h4>
