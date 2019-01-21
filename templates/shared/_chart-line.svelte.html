@@ -1,4 +1,4 @@
-<div class="chart-figure">
+<div class="chart-figure { figureClass ? figureClass : '' }">
   <div class="label" id="label-{ id }">{ title }</div>
 
   <figure aria-labelledby="label-{ id }">
@@ -142,7 +142,8 @@
 
     data() {
       return {
-        colors: ["#857aaa", "#5bbf48"]
+        colors: ["#857aaa", "#5bbf48"],
+        id: Math.floor(Math.random() * 100000)
       };
     }
   };

@@ -2204,7 +2204,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 125
+    "ppsf": 125.21
   },
   {
     "Place": "Hilltop",
@@ -4417,7 +4417,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 132
+    "ppsf": 132.48
   },
   {
     "Place": "Hilltop",
@@ -6630,7 +6630,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 138
+    "ppsf": 138.17
   },
   {
     "Place": "Hilltop",
@@ -8844,7 +8844,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 138
+    "ppsf": 137.97
   },
   {
     "Place": "Hilltop",
@@ -11057,7 +11057,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 132
+    "ppsf": 132.14
   },
   {
     "Place": "Hilltop",
@@ -13267,7 +13267,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 113
+    "ppsf": 113.38
   },
   {
     "Place": "Hilltop",
@@ -15476,7 +15476,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 98
+    "ppsf": 98.32
   },
   {
     "Place": "Hilltop",
@@ -17689,7 +17689,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 96
+    "ppsf": 96.93
   },
   {
     "Place": "Hilltop",
@@ -19900,7 +19900,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 86
+    "ppsf": 86.15
   },
   {
     "Place": "Hilltop",
@@ -22113,7 +22113,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 93
+    "ppsf": 93.25
   },
   {
     "Place": "Hilltop",
@@ -24327,7 +24327,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 105
+    "ppsf": 105.67
   },
   {
     "Place": "Hilltop",
@@ -26535,13 +26535,13 @@
   {
     "Place": "Minneapolis-St. Paul Metro Area",
     "variable": "2014",
-    "dom": 47,
+    "dom": 46,
     "type": "city",
     "stribID": 220,
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 111
+    "ppsf": 111.95
   },
   {
     "Place": "Hilltop",
@@ -28747,7 +28747,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 117
+    "ppsf": 117.02
   },
   {
     "Place": "Hilltop",
@@ -28771,7 +28771,8 @@
     "FullName": "Mendota, MN",
     "location": "inner suburbs",
     "ppsf": 130.3066,
-    "closed": 1
+    "closed": 1,
+    "inventory": 0
   },
   {
     "Place": "Miesville",
@@ -28827,7 +28828,7 @@
   {
     "Place": "Delano",
     "variable": "2016",
-    "dom": 45,
+    "dom": 46,
     "type": "city",
     "stribID": 37,
     "geoid2": "2715454",
@@ -28926,7 +28927,7 @@
     "location": "outer suburbs",
     "ppsf": 118.1486,
     "closed": 1345,
-    "inventory": 188
+    "inventory": 189
   },
   {
     "Place": "Coon Rapids",
@@ -29094,7 +29095,8 @@
     "FullName": "Lexington, MN",
     "location": "outer suburbs",
     "ppsf": 122.7241,
-    "closed": 20
+    "closed": 20,
+    "inventory": 0
   },
   {
     "Place": "Loretto",
@@ -29118,8 +29120,8 @@
     "geoid2": "2743000",
     "FullName": "Minneapolis, MN",
     "location": "core cities",
-    "ppsf": 168.9815,
-    "closed": 5717,
+    "ppsf": 168.942,
+    "closed": 5719,
     "inventory": 651
   },
   {
@@ -29172,7 +29174,7 @@
     "location": "outer suburbs",
     "ppsf": 126.3035,
     "closed": 380,
-    "inventory": 55
+    "inventory": 54
   },
   {
     "Place": "Shakopee",
@@ -29250,7 +29252,7 @@
     "location": "Exurbs",
     "ppsf": 82.2295,
     "closed": 65,
-    "inventory": 8
+    "inventory": 9
   },
   {
     "Place": "Albertville",
@@ -29287,8 +29289,8 @@
     "geoid2": "2730140",
     "FullName": "Hopkins, MN",
     "location": "inner suburbs",
-    "ppsf": 134.6025,
-    "closed": 271,
+    "ppsf": 135,
+    "closed": 272,
     "inventory": 36
   },
   {
@@ -29313,8 +29315,8 @@
     "geoid2": "2755852",
     "FullName": "Roseville, MN",
     "location": "inner suburbs",
-    "ppsf": 128.9474,
-    "closed": 516,
+    "ppsf": 129.0291,
+    "closed": 517,
     "inventory": 78
   },
   {
@@ -29380,7 +29382,7 @@
     "location": "Exurbs",
     "ppsf": 107.9568,
     "closed": 414,
-    "inventory": 58
+    "inventory": 59
   },
   {
     "Place": "Columbus",
@@ -29456,9 +29458,9 @@
     "geoid2": "2718674",
     "FullName": "Elk River, MN",
     "location": "Exurbs",
-    "ppsf": 105.7602,
-    "closed": 499,
-    "inventory": 80
+    "ppsf": 105.7828,
+    "closed": 500,
+    "inventory": 81
   },
   {
     "Place": "Maple Grove",
@@ -29483,8 +29485,8 @@
     "FullName": "Plymouth, MN",
     "location": "inner suburbs",
     "ppsf": 134.5186,
-    "closed": 1511,
-    "inventory": 223
+    "closed": 1512,
+    "inventory": 224
   },
   {
     "Place": "Shoreview",
@@ -29521,9 +29523,9 @@
     "geoid2": "2735180",
     "FullName": "Lakeville, MN",
     "location": "outer suburbs",
-    "ppsf": 122.4003,
-    "closed": 1354,
-    "inventory": 257
+    "ppsf": 122.3958,
+    "closed": 1357,
+    "inventory": 258
   },
   {
     "Place": "Hugo",
@@ -29692,7 +29694,7 @@
     "location": "Core cities",
     "ppsf": 129.543,
     "closed": 3905,
-    "inventory": 542
+    "inventory": 545
   },
   {
     "Place": "Savage",
@@ -29770,12 +29772,12 @@
     "location": "inner suburbs",
     "ppsf": 115.6842,
     "closed": 337,
-    "inventory": 53
+    "inventory": 54
   },
   {
     "Place": "Chanhassen",
     "variable": "2016",
-    "dom": 36,
+    "dom": 37,
     "type": "city",
     "stribID": 33,
     "geoid2": "2710918",
@@ -29952,7 +29954,7 @@
     "location": "outer suburbs",
     "ppsf": 108.3159,
     "closed": 405,
-    "inventory": 63
+    "inventory": 64
   },
   {
     "Place": "Maplewood",
@@ -29991,7 +29993,7 @@
     "location": "outer suburbs",
     "ppsf": 136.0989,
     "closed": 209,
-    "inventory": 69
+    "inventory": 70
   },
   {
     "Place": "Cambridge",
@@ -30004,7 +30006,7 @@
     "location": "Exurbs",
     "ppsf": 97.3195,
     "closed": 273,
-    "inventory": 52
+    "inventory": 53
   },
   {
     "Place": "Waconia",
@@ -30139,14 +30141,14 @@
   {
     "Place": "Prior Lake",
     "variable": "2016",
-    "dom": 39.5,
+    "dom": 40,
     "type": "city",
     "stribID": 159,
     "geoid2": "2752594",
     "FullName": "Prior Lake, MN",
     "location": "outer suburbs",
-    "ppsf": 125.6529,
-    "closed": 640,
+    "ppsf": 125.6573,
+    "closed": 641,
     "inventory": 115
   },
   {
@@ -30277,7 +30279,7 @@
     "location": "outer suburbs",
     "ppsf": 152.4602,
     "closed": 190,
-    "inventory": 72
+    "inventory": 73
   },
   {
     "Place": "Lindstrom",
@@ -30328,7 +30330,8 @@
     "FullName": "Medicine Lake, MN",
     "location": "inner suburbs",
     "ppsf": 262.5938,
-    "closed": 2
+    "closed": 2,
+    "inventory": 0
   },
   {
     "Place": "Maple Lake",
@@ -30380,7 +30383,7 @@
     "location": "inner suburbs",
     "ppsf": 217.2081,
     "closed": 28,
-    "inventory": 6
+    "inventory": 7
   },
   {
     "Place": "Mahtomedi",
@@ -30445,7 +30448,7 @@
     "location": "Exurbs",
     "ppsf": 103.8783,
     "closed": 297,
-    "inventory": 55
+    "inventory": 56
   },
   {
     "Place": "Watertown",
@@ -30653,7 +30656,7 @@
     "location": "outer suburbs",
     "ppsf": 148.0552,
     "closed": 50,
-    "inventory": 19
+    "inventory": 24
   },
   {
     "Place": "Lakeland",
@@ -30692,7 +30695,7 @@
     "location": "Exurbs",
     "ppsf": 99.3072,
     "closed": 59,
-    "inventory": 12
+    "inventory": 17
   },
   {
     "Place": "Woodland",
@@ -30801,11 +30804,14 @@
   {
     "Place": "New Trier",
     "variable": "2016",
+    "dom": 0,
     "type": "city",
     "stribID": 54,
     "geoid2": "2746024",
     "FullName": "New Trier, MN",
-    "location": "outer suburbs"
+    "location": "outer suburbs",
+    "ppsf": 0,
+    "closed": 0
   },
   {
     "Place": "South Haven",
@@ -30818,7 +30824,7 @@
     "location": "Exurbs",
     "ppsf": 142.1664,
     "closed": 27,
-    "inventory": 18
+    "inventory": 28
   },
   {
     "Place": "Pine Springs",
@@ -30875,11 +30881,14 @@
   {
     "Place": "Coates",
     "variable": "2016",
+    "dom": 0,
     "type": "city",
     "stribID": 62,
     "geoid2": "2712376",
     "FullName": "Coates, MN",
-    "location": "outer suburbs"
+    "location": "outer suburbs",
+    "ppsf": 0,
+    "closed": 0
   },
   {
     "Place": "Greenfield",
@@ -30892,7 +30901,7 @@
     "location": "outer suburbs",
     "ppsf": 131.8739,
     "closed": 35,
-    "inventory": 14
+    "inventory": 15
   },
   {
     "Place": "Sunfish Lake",
@@ -30918,7 +30927,7 @@
     "location": "Exurbs",
     "ppsf": 109.3788,
     "closed": 78,
-    "inventory": 20
+    "inventory": 33
   },
   {
     "Place": "Hamburg",
@@ -30955,7 +30964,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 124
+    "ppsf": 123.95
   },
   {
     "Place": "Hilltop",
@@ -30972,11 +30981,15 @@
   {
     "Place": "Mendota",
     "variable": "2017",
+    "dom": 0,
     "type": "city",
     "stribID": 57,
     "geoid2": "2741678",
     "FullName": "Mendota, MN",
-    "location": "inner suburbs"
+    "location": "inner suburbs",
+    "ppsf": 0,
+    "closed": 0,
+    "inventory": 0
   },
   {
     "Place": "Miesville",
@@ -31013,7 +31026,8 @@
     "FullName": "Lakeland Shores, MN",
     "location": "outer suburbs",
     "ppsf": 288.2883,
-    "closed": 1
+    "closed": 1,
+    "inventory": 0
   },
   {
     "Place": "Birchwood Village",
@@ -31039,7 +31053,7 @@
     "location": "Exurbs",
     "ppsf": 135.0051,
     "closed": 169,
-    "inventory": 37
+    "inventory": 39
   },
   {
     "Place": "Richfield",
@@ -31078,7 +31092,7 @@
     "location": "inner suburbs",
     "ppsf": 132.1275,
     "closed": 1020,
-    "inventory": 106
+    "inventory": 116
   },
   {
     "Place": "Otsego",
@@ -31090,8 +31104,8 @@
     "FullName": "Otsego, MN",
     "location": "Exurbs",
     "ppsf": 125.5743,
-    "closed": 511,
-    "inventory": 80
+    "closed": 512,
+    "inventory": 83
   },
   {
     "Place": "New Germany",
@@ -31116,8 +31130,8 @@
     "FullName": "Anoka, MN",
     "location": "outer suburbs",
     "ppsf": 115.3561,
-    "closed": 279,
-    "inventory": 24
+    "closed": 280,
+    "inventory": 26
   },
   {
     "Place": "Blaine",
@@ -31129,8 +31143,8 @@
     "FullName": "Blaine, MN",
     "location": "outer suburbs",
     "ppsf": 127.0358,
-    "closed": 1301,
-    "inventory": 137
+    "closed": 1302,
+    "inventory": 148
   },
   {
     "Place": "Coon Rapids",
@@ -31143,7 +31157,7 @@
     "location": "outer suburbs",
     "ppsf": 116.5595,
     "closed": 1131,
-    "inventory": 75
+    "inventory": 77
   },
   {
     "Place": "Spring Lake Park",
@@ -31168,8 +31182,8 @@
     "FullName": "Bloomington, MN",
     "location": "inner suburbs",
     "ppsf": 136.8159,
-    "closed": 1258,
-    "inventory": 84
+    "closed": 1259,
+    "inventory": 92
   },
   {
     "Place": "Brooklyn Center",
@@ -31182,7 +31196,7 @@
     "location": "inner suburbs",
     "ppsf": 106.9032,
     "closed": 480,
-    "inventory": 32
+    "inventory": 39
   },
   {
     "Place": "Centerville",
@@ -31207,8 +31221,8 @@
     "FullName": "New Hope, MN",
     "location": "inner suburbs",
     "ppsf": 127.264,
-    "closed": 328,
-    "inventory": 27
+    "closed": 329,
+    "inventory": 28
   },
   {
     "Place": "North Saint Paul",
@@ -31221,7 +31235,7 @@
     "location": "inner suburbs",
     "ppsf": 126.3918,
     "closed": 181,
-    "inventory": 13
+    "inventory": 14
   },
   {
     "Place": "Oakdale",
@@ -31234,7 +31248,7 @@
     "location": "inner suburbs",
     "ppsf": 123.8971,
     "closed": 516,
-    "inventory": 35
+    "inventory": 38
   },
   {
     "Place": "White Bear Lake",
@@ -31247,7 +31261,7 @@
     "location": "inner suburbs",
     "ppsf": 137.1065,
     "closed": 394,
-    "inventory": 24
+    "inventory": 26
   },
   {
     "Place": "Brooklyn Park",
@@ -31259,8 +31273,8 @@
     "FullName": "Brooklyn Park, MN",
     "location": "inner suburbs",
     "ppsf": 117.837,
-    "closed": 1275,
-    "inventory": 96
+    "closed": 1277,
+    "inventory": 112
   },
   {
     "Place": "Champlin",
@@ -31273,7 +31287,7 @@
     "location": "inner suburbs",
     "ppsf": 126.3952,
     "closed": 455,
-    "inventory": 44
+    "inventory": 45
   },
   {
     "Place": "Burnsville",
@@ -31286,7 +31300,7 @@
     "location": "inner suburbs",
     "ppsf": 118.4651,
     "closed": 1071,
-    "inventory": 64
+    "inventory": 72
   },
   {
     "Place": "Lexington",
@@ -31298,7 +31312,8 @@
     "FullName": "Lexington, MN",
     "location": "outer suburbs",
     "ppsf": 121.32,
-    "closed": 18
+    "closed": 18,
+    "inventory": 0
   },
   {
     "Place": "Loretto",
@@ -31323,8 +31338,8 @@
     "FullName": "Minneapolis, MN",
     "location": "core cities",
     "ppsf": 179.7057,
-    "closed": 5664,
-    "inventory": 486
+    "closed": 5671,
+    "inventory": 542
   },
   {
     "Place": "Saint Paul Park",
@@ -31337,7 +31352,7 @@
     "location": "inner suburbs",
     "ppsf": 121.7185,
     "closed": 93,
-    "inventory": 11
+    "inventory": 12
   },
   {
     "Place": "Apple Valley",
@@ -31349,8 +31364,8 @@
     "FullName": "Apple Valley, MN",
     "location": "inner suburbs",
     "ppsf": 125.9352,
-    "closed": 1108,
-    "inventory": 79
+    "closed": 1109,
+    "inventory": 93
   },
   {
     "Place": "Fridley",
@@ -31363,7 +31378,7 @@
     "location": "outer suburbs",
     "ppsf": 118.4358,
     "closed": 383,
-    "inventory": 24
+    "inventory": 28
   },
   {
     "Place": "Lino Lakes",
@@ -31388,8 +31403,8 @@
     "FullName": "Shakopee, MN",
     "location": "outer suburbs",
     "ppsf": 121.9956,
-    "closed": 807,
-    "inventory": 59
+    "closed": 808,
+    "inventory": 65
   },
   {
     "Place": "Andover",
@@ -31402,7 +31417,7 @@
     "location": "outer suburbs",
     "ppsf": 126.114,
     "closed": 567,
-    "inventory": 70
+    "inventory": 72
   },
   {
     "Place": "Mounds View",
@@ -31415,7 +31430,7 @@
     "location": "inner suburbs",
     "ppsf": 128.7117,
     "closed": 135,
-    "inventory": 12
+    "inventory": 16
   },
   {
     "Place": "Circle Pines",
@@ -31441,7 +31456,7 @@
     "location": "Exurbs",
     "ppsf": 121.2305,
     "closed": 266,
-    "inventory": 31
+    "inventory": 33
   },
   {
     "Place": "Rush City",
@@ -31454,7 +31469,7 @@
     "location": "Exurbs",
     "ppsf": 120,
     "closed": 61,
-    "inventory": 14
+    "inventory": 16
   },
   {
     "Place": "Albertville",
@@ -31467,7 +31482,7 @@
     "location": "Exurbs",
     "ppsf": 119.5367,
     "closed": 148,
-    "inventory": 17
+    "inventory": 18
   },
   {
     "Place": "Cottage Grove",
@@ -31478,9 +31493,9 @@
     "geoid2": "2713456",
     "FullName": "Cottage Grove, MN",
     "location": "outer suburbs",
-    "ppsf": 128.6365,
-    "closed": 681,
-    "inventory": 51
+    "ppsf": 128.6206,
+    "closed": 683,
+    "inventory": 54
   },
   {
     "Place": "Hopkins",
@@ -31492,8 +31507,8 @@
     "FullName": "Hopkins, MN",
     "location": "inner suburbs",
     "ppsf": 137.5186,
-    "closed": 274,
-    "inventory": 18
+    "closed": 275,
+    "inventory": 20
   },
   {
     "Place": "Norwood Young America",
@@ -31506,7 +31521,7 @@
     "location": "outer suburbs",
     "ppsf": 105.5411,
     "closed": 84,
-    "inventory": 39
+    "inventory": 40
   },
   {
     "Place": "Roseville",
@@ -31519,7 +31534,7 @@
     "location": "inner suburbs",
     "ppsf": 134.2857,
     "closed": 517,
-    "inventory": 48
+    "inventory": 55
   },
   {
     "Place": "Saint Louis Park",
@@ -31531,8 +31546,8 @@
     "FullName": "St. Louis Park, MN",
     "location": "inner suburbs",
     "ppsf": 167.8851,
-    "closed": 957,
-    "inventory": 72
+    "closed": 960,
+    "inventory": 80
   },
   {
     "Place": "West Saint Paul",
@@ -31545,7 +31560,7 @@
     "location": "inner suburbs",
     "ppsf": 125,
     "closed": 318,
-    "inventory": 13
+    "inventory": 17
   },
   {
     "Place": "Wyoming",
@@ -31558,7 +31573,7 @@
     "location": "Exurbs",
     "ppsf": 118.7493,
     "closed": 134,
-    "inventory": 25
+    "inventory": 27
   },
   {
     "Place": "Hanover",
@@ -31583,8 +31598,8 @@
     "FullName": "Big Lake, MN",
     "location": "Exurbs",
     "ppsf": 113.2517,
-    "closed": 412,
-    "inventory": 32
+    "closed": 413,
+    "inventory": 37
   },
   {
     "Place": "Columbus",
@@ -31597,7 +31612,7 @@
     "location": "outer suburbs",
     "ppsf": 139.8374,
     "closed": 49,
-    "inventory": 11
+    "inventory": 12
   },
   {
     "Place": "Farmington",
@@ -31609,8 +31624,8 @@
     "FullName": "Farmington, MN",
     "location": "outer suburbs",
     "ppsf": 123.0015,
-    "closed": 600,
-    "inventory": 44
+    "closed": 601,
+    "inventory": 47
   },
   {
     "Place": "Columbia Heights",
@@ -31623,7 +31638,7 @@
     "location": "inner suburbs",
     "ppsf": 118.3252,
     "closed": 373,
-    "inventory": 22
+    "inventory": 24
   },
   {
     "Place": "Woodbury",
@@ -31635,8 +31650,8 @@
     "FullName": "Woodbury, MN",
     "location": "inner suburbs",
     "ppsf": 131.5113,
-    "closed": 1546,
-    "inventory": 175
+    "closed": 1547,
+    "inventory": 185
   },
   {
     "Place": "Crystal",
@@ -31648,8 +31663,8 @@
     "FullName": "Crystal, MN",
     "location": "inner suburbs",
     "ppsf": 123.6141,
-    "closed": 500,
-    "inventory": 27
+    "closed": 501,
+    "inventory": 29
   },
   {
     "Place": "Elk River",
@@ -31660,9 +31675,9 @@
     "geoid2": "2718674",
     "FullName": "Elk River, MN",
     "location": "Exurbs",
-    "ppsf": 114.5594,
-    "closed": 593,
-    "inventory": 54
+    "ppsf": 114.4692,
+    "closed": 595,
+    "inventory": 58
   },
   {
     "Place": "Maple Grove",
@@ -31675,7 +31690,7 @@
     "location": "inner suburbs",
     "ppsf": 131.8182,
     "closed": 1512,
-    "inventory": 152
+    "inventory": 167
   },
   {
     "Place": "Plymouth",
@@ -31687,8 +31702,8 @@
     "FullName": "Plymouth, MN",
     "location": "inner suburbs",
     "ppsf": 143.8579,
-    "closed": 1466,
-    "inventory": 178
+    "closed": 1469,
+    "inventory": 198
   },
   {
     "Place": "Shoreview",
@@ -31701,7 +31716,7 @@
     "location": "inner suburbs",
     "ppsf": 134.8691,
     "closed": 457,
-    "inventory": 38
+    "inventory": 41
   },
   {
     "Place": "Arden Hills",
@@ -31714,7 +31729,7 @@
     "location": "inner suburbs",
     "ppsf": 136.3589,
     "closed": 122,
-    "inventory": 10
+    "inventory": 12
   },
   {
     "Place": "Lakeville",
@@ -31726,8 +31741,8 @@
     "FullName": "Lakeville, MN",
     "location": "outer suburbs",
     "ppsf": 129.9508,
-    "closed": 1297,
-    "inventory": 213
+    "closed": 1301,
+    "inventory": 227
   },
   {
     "Place": "Hugo",
@@ -31740,7 +31755,7 @@
     "location": "outer suburbs",
     "ppsf": 124.6286,
     "closed": 425,
-    "inventory": 52
+    "inventory": 55
   },
   {
     "Place": "Maple Plain",
@@ -31766,7 +31781,7 @@
     "location": "inner suburbs",
     "ppsf": 129.6521,
     "closed": 304,
-    "inventory": 12
+    "inventory": 13
   },
   {
     "Place": "Newport",
@@ -31779,7 +31794,7 @@
     "location": "inner suburbs",
     "ppsf": 123.2115,
     "closed": 50,
-    "inventory": 2
+    "inventory": 3
   },
   {
     "Place": "North Branch",
@@ -31791,8 +31806,8 @@
     "FullName": "North Branch, MN",
     "location": "Exurbs",
     "ppsf": 111.1111,
-    "closed": 263,
-    "inventory": 28
+    "closed": 264,
+    "inventory": 33
   },
   {
     "Place": "Ramsey",
@@ -31805,7 +31820,7 @@
     "location": "outer suburbs",
     "ppsf": 118.438,
     "closed": 567,
-    "inventory": 60
+    "inventory": 64
   },
   {
     "Place": "Rosemount",
@@ -31817,8 +31832,8 @@
     "FullName": "Rosemount, MN",
     "location": "outer suburbs",
     "ppsf": 128.4934,
-    "closed": 504,
-    "inventory": 51
+    "closed": 506,
+    "inventory": 59
   },
   {
     "Place": "Belle Plaine",
@@ -31831,7 +31846,7 @@
     "location": "Exurbs",
     "ppsf": 110.8386,
     "closed": 183,
-    "inventory": 22
+    "inventory": 23
   },
   {
     "Place": "East Bethel",
@@ -31870,7 +31885,7 @@
     "location": "Exurbs",
     "ppsf": 111.8148,
     "closed": 227,
-    "inventory": 25
+    "inventory": 27
   },
   {
     "Place": "Monticello",
@@ -31883,7 +31898,7 @@
     "location": "Exurbs",
     "ppsf": 115.6198,
     "closed": 349,
-    "inventory": 30
+    "inventory": 33
   },
   {
     "Place": "Saint Paul",
@@ -31894,9 +31909,9 @@
     "geoid2": "2758000",
     "FullName": "St. Paul, MN",
     "location": "Core cities",
-    "ppsf": 139.2253,
-    "closed": 3844,
-    "inventory": 366
+    "ppsf": 139.218,
+    "closed": 3849,
+    "inventory": 408
   },
   {
     "Place": "Savage",
@@ -31908,8 +31923,8 @@
     "FullName": "Savage, MN",
     "location": "outer suburbs",
     "ppsf": 128.6848,
-    "closed": 627,
-    "inventory": 110
+    "closed": 630,
+    "inventory": 117
   },
   {
     "Place": "Chaska",
@@ -31921,8 +31936,8 @@
     "FullName": "Chaska, MN",
     "location": "outer suburbs",
     "ppsf": 128.1025,
-    "closed": 540,
-    "inventory": 56
+    "closed": 541,
+    "inventory": 62
   },
   {
     "Place": "Inver Grove Heights",
@@ -31934,8 +31949,8 @@
     "FullName": "Inver Grove Heights, MN",
     "location": "inner suburbs",
     "ppsf": 128.9699,
-    "closed": 560,
-    "inventory": 73
+    "closed": 563,
+    "inventory": 82
   },
   {
     "Place": "Osseo",
@@ -31948,7 +31963,7 @@
     "location": "inner suburbs",
     "ppsf": 115.9501,
     "closed": 26,
-    "inventory": 1
+    "inventory": 3
   },
   {
     "Place": "Robbinsdale",
@@ -31961,7 +31976,7 @@
     "location": "inner suburbs",
     "ppsf": 125.7829,
     "closed": 322,
-    "inventory": 23
+    "inventory": 24
   },
   {
     "Place": "South Saint Paul",
@@ -31974,7 +31989,7 @@
     "location": "inner suburbs",
     "ppsf": 122.3529,
     "closed": 359,
-    "inventory": 22
+    "inventory": 26
   },
   {
     "Place": "Chanhassen",
@@ -31987,7 +32002,7 @@
     "location": "outer suburbs",
     "ppsf": 146.8429,
     "closed": 545,
-    "inventory": 82
+    "inventory": 92
   },
   {
     "Place": "Mayer",
@@ -32000,7 +32015,7 @@
     "location": "outer suburbs",
     "ppsf": 130.6076,
     "closed": 68,
-    "inventory": 23
+    "inventory": 24
   },
   {
     "Place": "Vadnais Heights",
@@ -32012,8 +32027,8 @@
     "FullName": "Vadnais Heights, MN",
     "location": "inner suburbs",
     "ppsf": 129.9419,
-    "closed": 227,
-    "inventory": 21
+    "closed": 228,
+    "inventory": 25
   },
   {
     "Place": "Montrose",
@@ -32039,7 +32054,7 @@
     "location": "outer suburbs",
     "ppsf": 115.303,
     "closed": 50,
-    "inventory": 2
+    "inventory": 3
   },
   {
     "Place": "Saint Michael",
@@ -32051,8 +32066,8 @@
     "FullName": "St. Michael, MN",
     "location": "Exurbs",
     "ppsf": 119.1391,
-    "closed": 383,
-    "inventory": 43
+    "closed": 384,
+    "inventory": 45
   },
   {
     "Place": "Elko New Market",
@@ -32065,7 +32080,7 @@
     "location": "outer suburbs",
     "ppsf": 121.4486,
     "closed": 107,
-    "inventory": 20
+    "inventory": 22
   },
   {
     "Place": "Lilydale",
@@ -32091,7 +32106,7 @@
     "location": "inner suburbs",
     "ppsf": 154.3847,
     "closed": 961,
-    "inventory": 126
+    "inventory": 153
   },
   {
     "Place": "Rogers",
@@ -32104,7 +32119,7 @@
     "location": "outer suburbs",
     "ppsf": 126.9147,
     "closed": 210,
-    "inventory": 28
+    "inventory": 30
   },
   {
     "Place": "Falcon Heights",
@@ -32129,8 +32144,8 @@
     "FullName": "Buffalo, MN",
     "location": "Exurbs",
     "ppsf": 113.2184,
-    "closed": 326,
-    "inventory": 45
+    "closed": 327,
+    "inventory": 49
   },
   {
     "Place": "Golden Valley",
@@ -32142,8 +32157,8 @@
     "FullName": "Golden Valley, MN",
     "location": "inner suburbs",
     "ppsf": 147.9202,
-    "closed": 422,
-    "inventory": 55
+    "closed": 423,
+    "inventory": 57
   },
   {
     "Place": "Hastings",
@@ -32155,8 +32170,8 @@
     "FullName": "Hastings, MN",
     "location": "outer suburbs",
     "ppsf": 115.2558,
-    "closed": 428,
-    "inventory": 29
+    "closed": 429,
+    "inventory": 33
   },
   {
     "Place": "Maplewood",
@@ -32169,7 +32184,7 @@
     "location": "inner suburbs",
     "ppsf": 122.7199,
     "closed": 623,
-    "inventory": 34
+    "inventory": 40
   },
   {
     "Place": "Saint Mary's Point",
@@ -32194,8 +32209,8 @@
     "FullName": "Victoria, MN",
     "location": "outer suburbs",
     "ppsf": 147.1162,
-    "closed": 262,
-    "inventory": 64
+    "closed": 263,
+    "inventory": 67
   },
   {
     "Place": "Cambridge",
@@ -32208,7 +32223,7 @@
     "location": "Exurbs",
     "ppsf": 105.7103,
     "closed": 317,
-    "inventory": 36
+    "inventory": 41
   },
   {
     "Place": "Waconia",
@@ -32220,8 +32235,8 @@
     "FullName": "Waconia, MN",
     "location": "outer suburbs",
     "ppsf": 130.6452,
-    "closed": 275,
-    "inventory": 34
+    "closed": 276,
+    "inventory": 35
   },
   {
     "Place": "Zimmerman",
@@ -32233,8 +32248,8 @@
     "FullName": "Zimmerman, MN",
     "location": "Exurbs",
     "ppsf": 112.1619,
-    "closed": 348,
-    "inventory": 43
+    "closed": 350,
+    "inventory": 45
   },
   {
     "Place": "Becker",
@@ -32247,7 +32262,7 @@
     "location": "Exurbs",
     "ppsf": 105.8474,
     "closed": 153,
-    "inventory": 28
+    "inventory": 30
   },
   {
     "Place": "Stacy",
@@ -32273,7 +32288,7 @@
     "location": "inner suburbs",
     "ppsf": 146.6263,
     "closed": 178,
-    "inventory": 26
+    "inventory": 32
   },
   {
     "Place": "Corcoran",
@@ -32285,7 +32300,7 @@
     "FullName": "Corcoran, MN",
     "location": "outer suburbs",
     "ppsf": 145.4209,
-    "closed": 91,
+    "closed": 92,
     "inventory": 10
   },
   {
@@ -32298,8 +32313,8 @@
     "FullName": "Eden Prairie, MN",
     "location": "inner suburbs",
     "ppsf": 143.2168,
-    "closed": 1211,
-    "inventory": 146
+    "closed": 1212,
+    "inventory": 157
   },
   {
     "Place": "Oak Grove",
@@ -32325,7 +32340,7 @@
     "location": "outer suburbs",
     "ppsf": 131.5464,
     "closed": 134,
-    "inventory": 20
+    "inventory": 23
   },
   {
     "Place": "Willernie",
@@ -32337,7 +32352,8 @@
     "FullName": "Willernie, MN",
     "location": "inner suburbs",
     "ppsf": 140.1885,
-    "closed": 14
+    "closed": 14,
+    "inventory": 0
   },
   {
     "Place": "Prior Lake",
@@ -32349,8 +32365,8 @@
     "FullName": "Prior Lake, MN",
     "location": "outer suburbs",
     "ppsf": 131.1471,
-    "closed": 592,
-    "inventory": 98
+    "closed": 593,
+    "inventory": 110
   },
   {
     "Place": "Ham Lake",
@@ -32363,7 +32379,7 @@
     "location": "outer suburbs",
     "ppsf": 126.952,
     "closed": 234,
-    "inventory": 32
+    "inventory": 36
   },
   {
     "Place": "Hampton",
@@ -32389,7 +32405,7 @@
     "location": "Exurbs",
     "ppsf": 114.5568,
     "closed": 68,
-    "inventory": 3
+    "inventory": 4
   },
   {
     "Place": "Somerset",
@@ -32415,7 +32431,7 @@
     "location": "inner suburbs",
     "ppsf": 121.8919,
     "closed": 145,
-    "inventory": 10
+    "inventory": 11
   },
   {
     "Place": "Stillwater",
@@ -32427,8 +32443,8 @@
     "FullName": "Stillwater, MN",
     "location": "outer suburbs",
     "ppsf": 142.4591,
-    "closed": 406,
-    "inventory": 78
+    "closed": 407,
+    "inventory": 85
   },
   {
     "Place": "Edina",
@@ -32439,9 +32455,9 @@
     "geoid2": "2718188",
     "FullName": "Edina, MN",
     "location": "inner suburbs",
-    "ppsf": 185.27,
-    "closed": 1034,
-    "inventory": 174
+    "ppsf": 185.2459,
+    "closed": 1035,
+    "inventory": 187
   },
   {
     "Place": "Dayton",
@@ -32453,8 +32469,8 @@
     "FullName": "Dayton, MN",
     "location": "Exurbs",
     "ppsf": 155.1233,
-    "closed": 154,
-    "inventory": 58
+    "closed": 155,
+    "inventory": 60
   },
   {
     "Place": "Forest Lake",
@@ -32467,7 +32483,7 @@
     "location": "Exurbs",
     "ppsf": 124.5527,
     "closed": 415,
-    "inventory": 44
+    "inventory": 46
   },
   {
     "Place": "Lake Elmo",
@@ -32479,8 +32495,8 @@
     "FullName": "Lake Elmo, MN",
     "location": "outer suburbs",
     "ppsf": 158.1555,
-    "closed": 246,
-    "inventory": 68
+    "closed": 248,
+    "inventory": 69
   },
   {
     "Place": "Lindstrom",
@@ -32493,7 +32509,7 @@
     "location": "Exurbs",
     "ppsf": 119.6143,
     "closed": 129,
-    "inventory": 27
+    "inventory": 30
   },
   {
     "Place": "Bethel",
@@ -32505,7 +32521,8 @@
     "FullName": "Bethel, MN",
     "location": "Exurbs",
     "ppsf": 109.8258,
-    "closed": 8
+    "closed": 8,
+    "inventory": 0
   },
   {
     "Place": "Excelsior",
@@ -32544,7 +32561,7 @@
     "location": "Exurbs",
     "ppsf": 117.6471,
     "closed": 99,
-    "inventory": 6
+    "inventory": 8
   },
   {
     "Place": "Hudson",
@@ -32556,8 +32573,8 @@
     "FullName": "Hudson, WI",
     "location": "Exurbs",
     "ppsf": 130.4613,
-    "closed": 580,
-    "inventory": 115
+    "closed": 581,
+    "inventory": 118
   },
   {
     "Place": "Minnetonka Beach",
@@ -32570,7 +32587,7 @@
     "location": "inner suburbs",
     "ppsf": 349.5311,
     "closed": 11,
-    "inventory": 4
+    "inventory": 5
   },
   {
     "Place": "Tonka Bay",
@@ -32583,7 +32600,7 @@
     "location": "inner suburbs",
     "ppsf": 219.3548,
     "closed": 29,
-    "inventory": 10
+    "inventory": 11
   },
   {
     "Place": "Mahtomedi",
@@ -32596,7 +32613,7 @@
     "location": "inner suburbs",
     "ppsf": 159.5955,
     "closed": 119,
-    "inventory": 16
+    "inventory": 20
   },
   {
     "Place": "Mound",
@@ -32609,7 +32626,7 @@
     "location": "outer suburbs",
     "ppsf": 146.724,
     "closed": 257,
-    "inventory": 27
+    "inventory": 29
   },
   {
     "Place": "Princeton",
@@ -32622,7 +32639,7 @@
     "location": "Exurbs",
     "ppsf": 107.1998,
     "closed": 238,
-    "inventory": 32
+    "inventory": 34
   },
   {
     "Place": "Shorewood",
@@ -32635,7 +32652,7 @@
     "location": "inner suburbs",
     "ppsf": 160.6756,
     "closed": 124,
-    "inventory": 20
+    "inventory": 30
   },
   {
     "Place": "River Falls",
@@ -32648,7 +32665,7 @@
     "location": "Exurbs",
     "ppsf": 114.8021,
     "closed": 287,
-    "inventory": 51
+    "inventory": 53
   },
   {
     "Place": "Watertown",
@@ -32661,7 +32678,7 @@
     "location": "Exurbs",
     "ppsf": 118.9128,
     "closed": 105,
-    "inventory": 20
+    "inventory": 21
   },
   {
     "Place": "Deephaven",
@@ -32674,7 +32691,7 @@
     "location": "inner suburbs",
     "ppsf": 221.4882,
     "closed": 71,
-    "inventory": 21
+    "inventory": 22
   },
   {
     "Place": "Bayport",
@@ -32699,8 +32716,8 @@
     "FullName": "North Oaks, MN",
     "location": "inner suburbs",
     "ppsf": 172.8723,
-    "closed": 107,
-    "inventory": 35
+    "closed": 108,
+    "inventory": 40
   },
   {
     "Place": "Jordan",
@@ -32713,7 +32730,7 @@
     "location": "outer suburbs",
     "ppsf": 121.3235,
     "closed": 114,
-    "inventory": 19
+    "inventory": 23
   },
   {
     "Place": "Lauderdale",
@@ -32738,8 +32755,8 @@
     "FullName": "New Richmond, WI",
     "location": "Exurbs",
     "ppsf": 112.2307,
-    "closed": 306,
-    "inventory": 68
+    "closed": 307,
+    "inventory": 70
   },
   {
     "Place": "Medina",
@@ -32752,7 +32769,7 @@
     "location": "outer suburbs",
     "ppsf": 161.0806,
     "closed": 126,
-    "inventory": 55
+    "inventory": 64
   },
   {
     "Place": "Long Lake",
@@ -32791,7 +32808,7 @@
     "location": "Exurbs",
     "ppsf": 96.7395,
     "closed": 51,
-    "inventory": 16
+    "inventory": 18
   },
   {
     "Place": "Nowthen",
@@ -32817,7 +32834,7 @@
     "location": "outer suburbs",
     "ppsf": 144.6979,
     "closed": 51,
-    "inventory": 11
+    "inventory": 12
   },
   {
     "Place": "Wayzata",
@@ -32830,7 +32847,7 @@
     "location": "inner suburbs",
     "ppsf": 313.9665,
     "closed": 103,
-    "inventory": 32
+    "inventory": 36
   },
   {
     "Place": "Scandia",
@@ -32843,7 +32860,7 @@
     "location": "Exurbs",
     "ppsf": 146.773,
     "closed": 48,
-    "inventory": 17
+    "inventory": 16
   },
   {
     "Place": "Independence",
@@ -32856,7 +32873,7 @@
     "location": "outer suburbs",
     "ppsf": 156.3042,
     "closed": 50,
-    "inventory": 18
+    "inventory": 19
   },
   {
     "Place": "Lakeland",
@@ -32869,7 +32886,7 @@
     "location": "outer suburbs",
     "ppsf": 144.6677,
     "closed": 34,
-    "inventory": 4
+    "inventory": 5
   },
   {
     "Place": "Spring Park",
@@ -32882,7 +32899,7 @@
     "location": "inner suburbs",
     "ppsf": 245.4395,
     "closed": 23,
-    "inventory": 2
+    "inventory": 3
   },
   {
     "Place": "Clearwater",
@@ -32895,7 +32912,7 @@
     "location": "Exurbs",
     "ppsf": 95.7464,
     "closed": 56,
-    "inventory": 4
+    "inventory": 13
   },
   {
     "Place": "Woodland",
@@ -32921,7 +32938,7 @@
     "location": "outer suburbs",
     "ppsf": 152.6784,
     "closed": 177,
-    "inventory": 47
+    "inventory": 54
   },
   {
     "Place": "Annandale",
@@ -32934,7 +32951,7 @@
     "location": "Exurbs",
     "ppsf": 132.4909,
     "closed": 126,
-    "inventory": 21
+    "inventory": 25
   },
   {
     "Place": "Lake Saint Croix Beach",
@@ -32947,19 +32964,20 @@
     "location": "outer suburbs",
     "ppsf": 133.4634,
     "closed": 18,
-    "inventory": 2
+    "inventory": 3
   },
   {
     "Place": "Randolph",
     "variable": "2017",
-    "dom": 52,
+    "dom": 47.5,
     "type": "city",
     "stribID": 53,
     "geoid2": "2753098",
     "FullName": "Randolph, MN",
     "location": "outer suburbs",
-    "ppsf": 148.0638,
-    "closed": 7
+    "ppsf": 148.8374,
+    "closed": 8,
+    "inventory": 0
   },
   {
     "Place": "Afton",
@@ -32972,7 +32990,7 @@
     "location": "outer suburbs",
     "ppsf": 173.0638,
     "closed": 35,
-    "inventory": 13
+    "inventory": 17
   },
   {
     "Place": "Grant",
@@ -32985,7 +33003,7 @@
     "location": "outer suburbs",
     "ppsf": 153.4549,
     "closed": 42,
-    "inventory": 16
+    "inventory": 18
   },
   {
     "Place": "Greenwood",
@@ -32998,7 +33016,7 @@
     "location": "inner suburbs",
     "ppsf": 357.6402,
     "closed": 10,
-    "inventory": 5
+    "inventory": 6
   },
   {
     "Place": "New Trier",
@@ -33023,7 +33041,7 @@
     "location": "Exurbs",
     "ppsf": 177.9306,
     "closed": 33,
-    "inventory": 7
+    "inventory": 18
   },
   {
     "Place": "Pine Springs",
@@ -33049,7 +33067,7 @@
     "location": "outer suburbs",
     "ppsf": 189.4135,
     "closed": 204,
-    "inventory": 70
+    "inventory": 76
   },
   {
     "Place": "Gem Lake",
@@ -33075,7 +33093,7 @@
     "location": "inner suburbs",
     "ppsf": 146.6833,
     "closed": 24,
-    "inventory": 5
+    "inventory": 8
   },
   {
     "Place": "Coates",
@@ -33100,7 +33118,7 @@
     "location": "outer suburbs",
     "ppsf": 147.0508,
     "closed": 38,
-    "inventory": 13
+    "inventory": 15
   },
   {
     "Place": "Sunfish Lake",
@@ -33113,7 +33131,7 @@
     "location": "inner suburbs",
     "ppsf": 175.1294,
     "closed": 7,
-    "inventory": 7
+    "inventory": 8
   },
   {
     "Place": "Clear Lake",
@@ -33126,7 +33144,7 @@
     "location": "Exurbs",
     "ppsf": 119.855,
     "closed": 78,
-    "inventory": 5
+    "inventory": 12
   },
   {
     "Place": "Hamburg",
@@ -33152,7 +33170,7 @@
     "location": "outer suburbs",
     "ppsf": 178.0538,
     "closed": 15,
-    "inventory": 10
+    "inventory": 11
   },
   {
     "Place": "Minneapolis-St. Paul Metro Area",
@@ -33163,7 +33181,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 132
+    "ppsf": 132.27
   },
   {
     "Place": "Hilltop",
@@ -33175,8 +33193,7 @@
     "FullName": "Hilltop, MN",
     "location": "outer suburbs",
     "ppsf": 73.7628,
-    "closed": 1,
-    "inventory": 1
+    "closed": 1
   },
   {
     "Place": "Mendota",
@@ -33189,7 +33206,7 @@
     "location": "inner suburbs",
     "ppsf": 157.5719,
     "closed": 3,
-    "inventory": 4
+    "inventory": 3
   },
   {
     "Place": "Miesville",
@@ -33227,33 +33244,33 @@
     "location": "outer suburbs",
     "ppsf": 267.9787,
     "closed": 2,
-    "inventory": 2
+    "inventory": 1
   },
   {
     "Place": "Birchwood Village",
     "variable": "2018",
-    "dom": 12.5,
+    "dom": 14,
     "type": "city",
     "stribID": 205,
     "geoid2": "2706058",
     "FullName": "Birchwood Village, MN",
     "location": "outer suburbs",
-    "ppsf": 140.7211,
-    "closed": 10,
-    "inventory": 1
+    "ppsf": 139.2529,
+    "closed": 11,
+    "inventory": 0
   },
   {
     "Place": "Delano",
     "variable": "2018",
-    "dom": 47,
+    "dom": 44.5,
     "type": "city",
     "stribID": 37,
     "geoid2": "2715454",
     "FullName": "Delano, MN",
     "location": "Exurbs",
-    "ppsf": 137.3185,
-    "closed": 156,
-    "inventory": 34
+    "ppsf": 137.6066,
+    "closed": 163,
+    "inventory": 33
   },
   {
     "Place": "Richfield",
@@ -33264,48 +33281,48 @@
     "geoid2": "2754214",
     "FullName": "Richfield, MN",
     "location": "inner suburbs",
-    "ppsf": 157.071,
-    "closed": 488,
-    "inventory": 39
+    "ppsf": 156.3448,
+    "closed": 529,
+    "inventory": 31
   },
   {
     "Place": "Saint Anthony",
     "variable": "2018",
-    "dom": 19,
+    "dom": 20,
     "type": "city",
     "stribID": 108,
     "geoid2": "2756680",
     "FullName": "St. Anthony, MN",
     "location": "inner suburbs",
-    "ppsf": 154.7696,
-    "closed": 125,
-    "inventory": 17
+    "ppsf": 154.1893,
+    "closed": 134,
+    "inventory": 14
   },
   {
     "Place": "Eagan",
     "variable": "2018",
-    "dom": 18,
+    "dom": 19,
     "type": "city",
     "stribID": 61,
     "geoid2": "2717288",
     "FullName": "Eagan, MN",
     "location": "inner suburbs",
-    "ppsf": 140.5284,
-    "closed": 996,
-    "inventory": 110
+    "ppsf": 140.2106,
+    "closed": 1070,
+    "inventory": 77
   },
   {
     "Place": "Otsego",
     "variable": "2018",
-    "dom": 18,
+    "dom": 19,
     "type": "city",
     "stribID": 25,
     "geoid2": "2749138",
     "FullName": "Otsego, MN",
     "location": "Exurbs",
-    "ppsf": 138.5646,
-    "closed": 493,
-    "inventory": 102
+    "ppsf": 138.8503,
+    "closed": 537,
+    "inventory": 92
   },
   {
     "Place": "New Germany",
@@ -33318,72 +33335,72 @@
     "location": "outer suburbs",
     "ppsf": 119.0476,
     "closed": 15,
-    "inventory": 4
+    "inventory": 2
   },
   {
     "Place": "Anoka",
     "variable": "2018",
-    "dom": 16,
+    "dom": 17,
     "type": "city",
     "stribID": 16,
     "geoid2": "2701720",
     "FullName": "Anoka, MN",
     "location": "outer suburbs",
-    "ppsf": 130.0931,
-    "closed": 234,
-    "inventory": 24
+    "ppsf": 129.7523,
+    "closed": 252,
+    "inventory": 21
   },
   {
     "Place": "Blaine",
     "variable": "2018",
-    "dom": 18,
+    "dom": 19,
     "type": "city",
     "stribID": 15,
     "geoid2": "2706382",
     "FullName": "Blaine, MN",
     "location": "outer suburbs",
-    "ppsf": 135.8992,
-    "closed": 1223,
-    "inventory": 163
+    "ppsf": 135.7899,
+    "closed": 1306,
+    "inventory": 149
   },
   {
     "Place": "Coon Rapids",
     "variable": "2018",
-    "dom": 17,
+    "dom": 18,
     "type": "city",
     "stribID": 11,
     "geoid2": "2713114",
     "FullName": "Coon Rapids, MN",
     "location": "outer suburbs",
-    "ppsf": 127.5344,
-    "closed": 1014,
-    "inventory": 102
+    "ppsf": 127.8265,
+    "closed": 1101,
+    "inventory": 75
   },
   {
     "Place": "Spring Lake Park",
     "variable": "2018",
-    "dom": 15,
+    "dom": 18.5,
     "type": "city",
     "stribID": 22,
     "geoid2": "2761996",
     "FullName": "Spring Lake Park, MN",
     "location": "inner suburbs",
-    "ppsf": 126.7049,
-    "closed": 105,
-    "inventory": 12
+    "ppsf": 125.7796,
+    "closed": 114,
+    "inventory": 7
   },
   {
     "Place": "Bloomington",
     "variable": "2018",
-    "dom": 18,
+    "dom": 19,
     "type": "city",
     "stribID": 107,
     "geoid2": "2706616",
     "FullName": "Bloomington, MN",
     "location": "inner suburbs",
-    "ppsf": 146.9789,
-    "closed": 1184,
-    "inventory": 134
+    "ppsf": 146.2341,
+    "closed": 1275,
+    "inventory": 94
   },
   {
     "Place": "Brooklyn Center",
@@ -33394,35 +33411,35 @@
     "geoid2": "2707948",
     "FullName": "Brooklyn Center, MN",
     "location": "inner suburbs",
-    "ppsf": 118.1818,
-    "closed": 407,
-    "inventory": 43
+    "ppsf": 117.2414,
+    "closed": 442,
+    "inventory": 37
   },
   {
     "Place": "Centerville",
     "variable": "2018",
-    "dom": 22,
+    "dom": 22.5,
     "type": "city",
     "stribID": 24,
     "geoid2": "2710648",
     "FullName": "Centerville, MN",
     "location": "outer suburbs",
-    "ppsf": 145.2432,
-    "closed": 54,
-    "inventory": 6
+    "ppsf": 143.9547,
+    "closed": 56,
+    "inventory": 8
   },
   {
     "Place": "New Hope",
     "variable": "2018",
-    "dom": 17.5,
+    "dom": 18,
     "type": "city",
     "stribID": 81,
     "geoid2": "2745628",
     "FullName": "New Hope, MN",
     "location": "inner suburbs",
     "ppsf": 134.5411,
-    "closed": 290,
-    "inventory": 24
+    "closed": 307,
+    "inventory": 9
   },
   {
     "Place": "North Saint Paul",
@@ -33433,35 +33450,35 @@
     "geoid2": "2747221",
     "FullName": "North St. Paul, MN",
     "location": "inner suburbs",
-    "ppsf": 135,
-    "closed": 176,
+    "ppsf": 135.1431,
+    "closed": 183,
     "inventory": 15
   },
   {
     "Place": "Oakdale",
     "variable": "2018",
-    "dom": 19,
+    "dom": 20,
     "type": "city",
     "stribID": 194,
     "geoid2": "2747680",
     "FullName": "Oakdale, MN",
     "location": "inner suburbs",
-    "ppsf": 136.8225,
-    "closed": 426,
-    "inventory": 29
+    "ppsf": 136.9681,
+    "closed": 469,
+    "inventory": 17
   },
   {
     "Place": "White Bear Lake",
     "variable": "2018",
-    "dom": 15,
+    "dom": 16,
     "type": "city",
     "stribID": 155,
     "geoid2": "2769970",
     "FullName": "White Bear Lake, MN",
     "location": "inner suburbs",
-    "ppsf": 144.1242,
-    "closed": 419,
-    "inventory": 30
+    "ppsf": 144.8894,
+    "closed": 443,
+    "inventory": 20
   },
   {
     "Place": "Brooklyn Park",
@@ -33472,22 +33489,22 @@
     "geoid2": "2707966",
     "FullName": "Brooklyn Park, MN",
     "location": "inner suburbs",
-    "ppsf": 127.7054,
-    "closed": 1162,
-    "inventory": 140
+    "ppsf": 127.6446,
+    "closed": 1247,
+    "inventory": 119
   },
   {
     "Place": "Champlin",
     "variable": "2018",
-    "dom": 18,
+    "dom": 19,
     "type": "city",
     "stribID": 104,
     "geoid2": "2710846",
     "FullName": "Champlin, MN",
     "location": "inner suburbs",
-    "ppsf": 134.0174,
-    "closed": 383,
-    "inventory": 57
+    "ppsf": 134.5692,
+    "closed": 417,
+    "inventory": 39
   },
   {
     "Place": "Burnsville",
@@ -33499,8 +33516,8 @@
     "FullName": "Burnsville, MN",
     "location": "inner suburbs",
     "ppsf": 127.907,
-    "closed": 953,
-    "inventory": 88
+    "closed": 1027,
+    "inventory": 65
   },
   {
     "Place": "Lexington",
@@ -33526,20 +33543,20 @@
     "location": "outer suburbs",
     "ppsf": 143.7126,
     "closed": 16,
-    "inventory": 2
+    "inventory": 1
   },
   {
     "Place": "Minneapolis",
     "variable": "2018",
-    "dom": 19,
+    "dom": 20,
     "type": "city",
     "stribID": 86,
     "geoid2": "2743000",
     "FullName": "Minneapolis, MN",
     "location": "core cities",
-    "ppsf": 197.0645,
-    "closed": 5119,
-    "inventory": 834
+    "ppsf": 195.9316,
+    "closed": 5558,
+    "inventory": 667
   },
   {
     "Place": "Saint Paul Park",
@@ -33550,74 +33567,74 @@
     "geoid2": "2758018",
     "FullName": "St. Paul Park, MN",
     "location": "inner suburbs",
-    "ppsf": 123.7638,
-    "closed": 90,
-    "inventory": 13
+    "ppsf": 123.4694,
+    "closed": 95,
+    "inventory": 12
   },
   {
     "Place": "Apple Valley",
     "variable": "2018",
-    "dom": 17,
+    "dom": 18,
     "type": "city",
     "stribID": 64,
     "geoid2": "2701900",
     "FullName": "Apple Valley, MN",
     "location": "inner suburbs",
-    "ppsf": 134.4721,
-    "closed": 951,
-    "inventory": 101
+    "ppsf": 134.4118,
+    "closed": 1011,
+    "inventory": 78
   },
   {
     "Place": "Fridley",
     "variable": "2018",
-    "dom": 15,
+    "dom": 17,
     "type": "city",
     "stribID": 9,
     "geoid2": "2722814",
     "FullName": "Fridley, MN",
     "location": "outer suburbs",
-    "ppsf": 128.1232,
-    "closed": 392,
-    "inventory": 38
+    "ppsf": 127.7922,
+    "closed": 422,
+    "inventory": 29
   },
   {
     "Place": "Lino Lakes",
     "variable": "2018",
-    "dom": 20,
+    "dom": 22,
     "type": "city",
     "stribID": 5,
     "geoid2": "2737322",
     "FullName": "Lino Lakes, MN",
     "location": "outer suburbs",
-    "ppsf": 144.1753,
-    "closed": 355,
-    "inventory": 59
+    "ppsf": 146.0469,
+    "closed": 391,
+    "inventory": 54
   },
   {
     "Place": "Shakopee",
     "variable": "2018",
-    "dom": 19,
+    "dom": 21,
     "type": "city",
     "stribID": 157,
     "geoid2": "2759350",
     "FullName": "Shakopee, MN",
     "location": "outer suburbs",
-    "ppsf": 131.3488,
-    "closed": 719,
-    "inventory": 97
+    "ppsf": 131.0073,
+    "closed": 768,
+    "inventory": 82
   },
   {
     "Place": "Andover",
     "variable": "2018",
-    "dom": 22,
+    "dom": 24,
     "type": "city",
     "stribID": 1,
     "geoid2": "2701486",
     "FullName": "Andover, MN",
     "location": "outer suburbs",
-    "ppsf": 133.6032,
-    "closed": 435,
-    "inventory": 80
+    "ppsf": 133.1898,
+    "closed": 464,
+    "inventory": 63
   },
   {
     "Place": "Mounds View",
@@ -33628,35 +33645,35 @@
     "geoid2": "2744530",
     "FullName": "Mounds View, MN",
     "location": "inner suburbs",
-    "ppsf": 137.1245,
-    "closed": 123,
-    "inventory": 25
+    "ppsf": 139.5833,
+    "closed": 138,
+    "inventory": 19
   },
   {
     "Place": "Circle Pines",
     "variable": "2018",
-    "dom": 15.5,
+    "dom": 18,
     "type": "city",
     "stribID": 14,
     "geoid2": "2711494",
     "FullName": "Circle Pines, MN",
     "location": "outer suburbs",
-    "ppsf": 131.6145,
-    "closed": 104,
-    "inventory": 8
+    "ppsf": 132.7614,
+    "closed": 111,
+    "inventory": 4
   },
   {
     "Place": "Isanti",
     "variable": "2018",
-    "dom": 21,
+    "dom": 23,
     "type": "city",
     "stribID": 112,
     "geoid2": "2731328",
     "FullName": "Isanti, MN",
     "location": "Exurbs",
-    "ppsf": 127.4526,
-    "closed": 272,
-    "inventory": 54
+    "ppsf": 126.3311,
+    "closed": 291,
+    "inventory": 45
   },
   {
     "Place": "Rush City",
@@ -33669,124 +33686,124 @@
     "location": "Exurbs",
     "ppsf": 108.3424,
     "closed": 82,
-    "inventory": 15
+    "inventory": 17
   },
   {
     "Place": "Albertville",
     "variable": "2018",
-    "dom": 21,
+    "dom": 22,
     "type": "city",
     "stribID": 219,
     "geoid2": "2700730",
     "FullName": "Albertville, MN",
     "location": "Exurbs",
-    "ppsf": 124.5079,
-    "closed": 134,
-    "inventory": 15
+    "ppsf": 123.9534,
+    "closed": 142,
+    "inventory": 26
   },
   {
     "Place": "Cottage Grove",
     "variable": "2018",
-    "dom": 20,
+    "dom": 21,
     "type": "city",
     "stribID": 204,
     "geoid2": "2713456",
     "FullName": "Cottage Grove, MN",
     "location": "outer suburbs",
-    "ppsf": 137.1332,
-    "closed": 632,
-    "inventory": 96
+    "ppsf": 136.7937,
+    "closed": 671,
+    "inventory": 79
   },
   {
     "Place": "Hopkins",
     "variable": "2018",
-    "dom": 17,
+    "dom": 18,
     "type": "city",
     "stribID": 94,
     "geoid2": "2730140",
     "FullName": "Hopkins, MN",
     "location": "inner suburbs",
-    "ppsf": 149.0142,
-    "closed": 217,
-    "inventory": 18
+    "ppsf": 151.8975,
+    "closed": 239,
+    "inventory": 22
   },
   {
     "Place": "Norwood Young America",
     "variable": "2018",
-    "dom": 32,
+    "dom": 35,
     "type": "city",
     "stribID": 28,
     "geoid2": "2747520",
     "FullName": "Norwood Young America, MN",
     "location": "outer suburbs",
-    "ppsf": 118.3779,
-    "closed": 79,
-    "inventory": 34
+    "ppsf": 120.1983,
+    "closed": 85,
+    "inventory": 33
   },
   {
     "Place": "Roseville",
     "variable": "2018",
-    "dom": 18,
+    "dom": 19,
     "type": "city",
     "stribID": 142,
     "geoid2": "2755852",
     "FullName": "Roseville, MN",
     "location": "inner suburbs",
-    "ppsf": 143.1403,
-    "closed": 466,
-    "inventory": 67
+    "ppsf": 144.1465,
+    "closed": 500,
+    "inventory": 56
   },
   {
     "Place": "Saint Louis Park",
     "variable": "2018",
-    "dom": 18,
+    "dom": 19,
     "type": "city",
     "stribID": 73,
     "geoid2": "2757220",
     "FullName": "St. Louis Park, MN",
     "location": "inner suburbs",
-    "ppsf": 182.1265,
-    "closed": 888,
-    "inventory": 120
+    "ppsf": 181.7657,
+    "closed": 947,
+    "inventory": 87
   },
   {
     "Place": "West Saint Paul",
     "variable": "2018",
-    "dom": 18,
+    "dom": 20,
     "type": "city",
     "stribID": 153,
     "geoid2": "2769700",
     "FullName": "West St. Paul, MN",
     "location": "inner suburbs",
-    "ppsf": 135.1909,
-    "closed": 261,
-    "inventory": 28
+    "ppsf": 136.7144,
+    "closed": 283,
+    "inventory": 21
   },
   {
     "Place": "Wyoming",
     "variable": "2018",
-    "dom": 25.5,
+    "dom": 26,
     "type": "city",
     "stribID": 17,
     "geoid2": "2772022",
     "FullName": "Wyoming, MN",
     "location": "Exurbs",
-    "ppsf": 129.0761,
-    "closed": 124,
-    "inventory": 26
+    "ppsf": 129.9985,
+    "closed": 133,
+    "inventory": 23
   },
   {
     "Place": "Hanover",
     "variable": "2018",
-    "dom": 21,
+    "dom": 24,
     "type": "city",
     "stribID": 110,
     "geoid2": "2726990",
     "FullName": "Hanover, MN",
     "location": "Exurbs",
     "ppsf": 133.953,
-    "closed": 49,
-    "inventory": 14
+    "closed": 51,
+    "inventory": 13
   },
   {
     "Place": "Big Lake",
@@ -33797,48 +33814,48 @@
     "geoid2": "2705752",
     "FullName": "Big Lake, MN",
     "location": "Exurbs",
-    "ppsf": 122.5352,
-    "closed": 370,
-    "inventory": 62
+    "ppsf": 122.8916,
+    "closed": 393,
+    "inventory": 63
   },
   {
     "Place": "Columbus",
     "variable": "2018",
-    "dom": 19,
+    "dom": 16.5,
     "type": "city",
     "stribID": 12,
     "geoid2": "2712718",
     "FullName": "Columbus, MN",
     "location": "outer suburbs",
-    "ppsf": 143.0818,
-    "closed": 34,
-    "inventory": 12
+    "ppsf": 150.3548,
+    "closed": 36,
+    "inventory": 13
   },
   {
     "Place": "Farmington",
     "variable": "2018",
-    "dom": 20,
+    "dom": 22,
     "type": "city",
     "stribID": 60,
     "geoid2": "2720618",
     "FullName": "Farmington, MN",
     "location": "outer suburbs",
     "ppsf": 129.6886,
-    "closed": 489,
-    "inventory": 66
+    "closed": 529,
+    "inventory": 52
   },
   {
     "Place": "Columbia Heights",
     "variable": "2018",
-    "dom": 15,
+    "dom": 17,
     "type": "city",
     "stribID": 13,
     "geoid2": "2712700",
     "FullName": "Columbia Heights, MN",
     "location": "inner suburbs",
-    "ppsf": 132.4608,
-    "closed": 294,
-    "inventory": 33
+    "ppsf": 132.3773,
+    "closed": 321,
+    "inventory": 28
   },
   {
     "Place": "Woodbury",
@@ -33849,87 +33866,87 @@
     "geoid2": "2771428",
     "FullName": "Woodbury, MN",
     "location": "inner suburbs",
-    "ppsf": 139.3275,
-    "closed": 1429,
-    "inventory": 271
+    "ppsf": 139.5124,
+    "closed": 1552,
+    "inventory": 236
   },
   {
     "Place": "Crystal",
     "variable": "2018",
-    "dom": 14,
+    "dom": 15,
     "type": "city",
     "stribID": 102,
     "geoid2": "2714158",
     "FullName": "Crystal, MN",
     "location": "inner suburbs",
-    "ppsf": 138.2306,
-    "closed": 405,
-    "inventory": 39
+    "ppsf": 137.6702,
+    "closed": 435,
+    "inventory": 27
   },
   {
     "Place": "Elk River",
     "variable": "2018",
-    "dom": 23,
+    "dom": 24,
     "type": "city",
     "stribID": 23,
     "geoid2": "2718674",
     "FullName": "Elk River, MN",
     "location": "Exurbs",
-    "ppsf": 122.4788,
-    "closed": 521,
-    "inventory": 120
+    "ppsf": 123.4133,
+    "closed": 552,
+    "inventory": 109
   },
   {
     "Place": "Maple Grove",
     "variable": "2018",
-    "dom": 22,
+    "dom": 24,
     "type": "city",
     "stribID": 90,
     "geoid2": "2740166",
     "FullName": "Maple Grove, MN",
     "location": "inner suburbs",
-    "ppsf": 139.8561,
-    "closed": 1398,
-    "inventory": 204
+    "ppsf": 140.03,
+    "closed": 1490,
+    "inventory": 157
   },
   {
     "Place": "Plymouth",
     "variable": "2018",
-    "dom": 25,
+    "dom": 26,
     "type": "city",
     "stribID": 78,
     "geoid2": "2751730",
     "FullName": "Plymouth, MN",
     "location": "inner suburbs",
-    "ppsf": 151.9269,
-    "closed": 1387,
-    "inventory": 244
+    "ppsf": 151.9148,
+    "closed": 1499,
+    "inventory": 209
   },
   {
     "Place": "Shoreview",
     "variable": "2018",
-    "dom": 15.5,
+    "dom": 16,
     "type": "city",
     "stribID": 141,
     "geoid2": "2759998",
     "FullName": "Shoreview, MN",
     "location": "inner suburbs",
-    "ppsf": 147.3186,
-    "closed": 399,
-    "inventory": 47
+    "ppsf": 147.2321,
+    "closed": 428,
+    "inventory": 38
   },
   {
     "Place": "Arden Hills",
     "variable": "2018",
-    "dom": 17,
+    "dom": 19,
     "type": "city",
     "stribID": 152,
     "geoid2": "2702026",
     "FullName": "Arden Hills, MN",
     "location": "inner suburbs",
-    "ppsf": 149.6395,
-    "closed": 109,
-    "inventory": 18
+    "ppsf": 150.2768,
+    "closed": 118,
+    "inventory": 15
   },
   {
     "Place": "Lakeville",
@@ -33940,152 +33957,152 @@
     "geoid2": "2735180",
     "FullName": "Lakeville, MN",
     "location": "outer suburbs",
-    "ppsf": 137.3898,
-    "closed": 1215,
-    "inventory": 273
+    "ppsf": 137.5534,
+    "closed": 1325,
+    "inventory": 256
   },
   {
     "Place": "Hugo",
     "variable": "2018",
-    "dom": 19,
+    "dom": 20,
     "type": "city",
     "stribID": 202,
     "geoid2": "2730392",
     "FullName": "Hugo, MN",
     "location": "outer suburbs",
-    "ppsf": 133.4877,
-    "closed": 385,
-    "inventory": 54
+    "ppsf": 134.6274,
+    "closed": 422,
+    "inventory": 47
   },
   {
     "Place": "Maple Plain",
     "variable": "2018",
-    "dom": 87,
+    "dom": 71,
     "type": "city",
     "stribID": 89,
     "geoid2": "2740256",
     "FullName": "Maple Plain, MN",
     "location": "outer suburbs",
     "ppsf": 138.9784,
-    "closed": 16,
-    "inventory": 6
+    "closed": 18,
+    "inventory": 5
   },
   {
     "Place": "New Brighton",
     "variable": "2018",
-    "dom": 15,
+    "dom": 16,
     "type": "city",
     "stribID": 145,
     "geoid2": "2745430",
     "FullName": "New Brighton, MN",
     "location": "inner suburbs",
-    "ppsf": 141.7352,
-    "closed": 252,
-    "inventory": 24
+    "ppsf": 140.4787,
+    "closed": 270,
+    "inventory": 11
   },
   {
     "Place": "Newport",
     "variable": "2018",
-    "dom": 20,
+    "dom": 21,
     "type": "city",
     "stribID": 195,
     "geoid2": "2745790",
     "FullName": "Newport, MN",
     "location": "inner suburbs",
-    "ppsf": 148.4026,
-    "closed": 48,
-    "inventory": 13
+    "ppsf": 149.8551,
+    "closed": 55,
+    "inventory": 10
   },
   {
     "Place": "North Branch",
     "variable": "2018",
-    "dom": 32,
+    "dom": 31.5,
     "type": "city",
     "stribID": 45,
     "geoid2": "2746798",
     "FullName": "North Branch, MN",
     "location": "Exurbs",
-    "ppsf": 123.2492,
-    "closed": 224,
-    "inventory": 55
+    "ppsf": 124.3932,
+    "closed": 242,
+    "inventory": 46
   },
   {
     "Place": "Ramsey",
     "variable": "2018",
-    "dom": 20,
+    "dom": 21,
     "type": "city",
     "stribID": 2,
     "geoid2": "2753026",
     "FullName": "Ramsey, MN",
     "location": "outer suburbs",
-    "ppsf": 127.7748,
-    "closed": 549,
-    "inventory": 70
+    "ppsf": 128.6701,
+    "closed": 592,
+    "inventory": 63
   },
   {
     "Place": "Rosemount",
     "variable": "2018",
-    "dom": 21,
+    "dom": 22,
     "type": "city",
     "stribID": 52,
     "geoid2": "2755726",
     "FullName": "Rosemount, MN",
     "location": "outer suburbs",
-    "ppsf": 136.4651,
-    "closed": 439,
-    "inventory": 83
+    "ppsf": 136.8922,
+    "closed": 469,
+    "inventory": 71
   },
   {
     "Place": "Belle Plaine",
     "variable": "2018",
-    "dom": 19,
+    "dom": 21,
     "type": "city",
     "stribID": 162,
     "geoid2": "2704834",
     "FullName": "Belle Plaine, MN",
     "location": "Exurbs",
-    "ppsf": 119.8738,
-    "closed": 134,
-    "inventory": 37
+    "ppsf": 119.2469,
+    "closed": 146,
+    "inventory": 28
   },
   {
     "Place": "East Bethel",
     "variable": "2018",
-    "dom": 20.5,
+    "dom": 21,
     "type": "city",
     "stribID": 10,
     "geoid2": "2717486",
     "FullName": "East Bethel, MN",
     "location": "outer suburbs",
-    "ppsf": 134.7433,
-    "closed": 153,
-    "inventory": 23
+    "ppsf": 134.8972,
+    "closed": 165,
+    "inventory": 22
   },
   {
     "Place": "Oak Park Heights",
     "variable": "2018",
-    "dom": 18.5,
+    "dom": 21,
     "type": "city",
     "stribID": 193,
     "geoid2": "2747914",
     "FullName": "Oak Park Heights, MN",
     "location": "outer suburbs",
-    "ppsf": 131.8627,
-    "closed": 39,
-    "inventory": 9
+    "ppsf": 132.2133,
+    "closed": 44,
+    "inventory": 7
   },
   {
     "Place": "Saint Francis",
     "variable": "2018",
-    "dom": 20.5,
+    "dom": 22,
     "type": "city",
     "stribID": 20,
     "geoid2": "2756950",
     "FullName": "St. Francis, MN",
     "location": "Exurbs",
-    "ppsf": 126.956,
-    "closed": 154,
-    "inventory": 26
+    "ppsf": 126.4929,
+    "closed": 169,
+    "inventory": 25
   },
   {
     "Place": "Monticello",
@@ -34096,22 +34113,22 @@
     "geoid2": "2743774",
     "FullName": "Monticello, MN",
     "location": "Exurbs",
-    "ppsf": 123.7843,
-    "closed": 285,
-    "inventory": 48
+    "ppsf": 124.0964,
+    "closed": 309,
+    "inventory": 40
   },
   {
     "Place": "Saint Paul",
     "variable": "2018",
-    "dom": 18,
+    "dom": 19,
     "type": "city",
     "stribID": 154,
     "geoid2": "2758000",
     "FullName": "St. Paul, MN",
     "location": "Core cities",
-    "ppsf": 154.4824,
-    "closed": 3458,
-    "inventory": 549
+    "ppsf": 153.5088,
+    "closed": 3749,
+    "inventory": 432
   },
   {
     "Place": "Savage",
@@ -34122,9 +34139,9 @@
     "geoid2": "2758738",
     "FullName": "Savage, MN",
     "location": "outer suburbs",
-    "ppsf": 137.9203,
-    "closed": 577,
-    "inventory": 116
+    "ppsf": 137.4082,
+    "closed": 615,
+    "inventory": 111
   },
   {
     "Place": "Chaska",
@@ -34135,22 +34152,22 @@
     "geoid2": "2710972",
     "FullName": "Chaska, MN",
     "location": "outer suburbs",
-    "ppsf": 138.173,
-    "closed": 440,
-    "inventory": 73
+    "ppsf": 139.5349,
+    "closed": 473,
+    "inventory": 66
   },
   {
     "Place": "Inver Grove Heights",
     "variable": "2018",
-    "dom": 21,
+    "dom": 22,
     "type": "city",
     "stribID": 65,
     "geoid2": "2731076",
     "FullName": "Inver Grove Heights, MN",
     "location": "inner suburbs",
     "ppsf": 138.4127,
-    "closed": 488,
-    "inventory": 55
+    "closed": 526,
+    "inventory": 47
   },
   {
     "Place": "Osseo",
@@ -34161,74 +34178,74 @@
     "geoid2": "2749012",
     "FullName": "Osseo, MN",
     "location": "inner suburbs",
-    "ppsf": 133.945,
-    "closed": 23,
-    "inventory": 4
+    "ppsf": 133.0144,
+    "closed": 25,
+    "inventory": 1
   },
   {
     "Place": "Robbinsdale",
     "variable": "2018",
-    "dom": 15,
+    "dom": 15.5,
     "type": "city",
     "stribID": 76,
     "geoid2": "2754808",
     "FullName": "Robbinsdale, MN",
     "location": "inner suburbs",
     "ppsf": 132.3529,
-    "closed": 272,
-    "inventory": 27
+    "closed": 294,
+    "inventory": 14
   },
   {
     "Place": "South Saint Paul",
     "variable": "2018",
-    "dom": 18,
+    "dom": 19,
     "type": "city",
     "stribID": 51,
     "geoid2": "2761492",
     "FullName": "South St. Paul, MN",
     "location": "inner suburbs",
-    "ppsf": 134.1912,
-    "closed": 354,
-    "inventory": 39
+    "ppsf": 132.4597,
+    "closed": 382,
+    "inventory": 30
   },
   {
     "Place": "Chanhassen",
     "variable": "2018",
-    "dom": 24,
+    "dom": 25,
     "type": "city",
     "stribID": 33,
     "geoid2": "2710918",
     "FullName": "Chanhassen, MN",
     "location": "outer suburbs",
-    "ppsf": 151.675,
-    "closed": 470,
-    "inventory": 100
+    "ppsf": 152.4198,
+    "closed": 509,
+    "inventory": 87
   },
   {
     "Place": "Mayer",
     "variable": "2018",
-    "dom": 32,
+    "dom": 36,
     "type": "city",
     "stribID": 30,
     "geoid2": "2741138",
     "FullName": "Mayer, MN",
     "location": "outer suburbs",
-    "ppsf": 130.1786,
-    "closed": 55,
-    "inventory": 24
+    "ppsf": 128.3151,
+    "closed": 60,
+    "inventory": 21
   },
   {
     "Place": "Vadnais Heights",
     "variable": "2018",
-    "dom": 16,
+    "dom": 17,
     "type": "city",
     "stribID": 140,
     "geoid2": "2766460",
     "FullName": "Vadnais Heights, MN",
     "location": "inner suburbs",
-    "ppsf": 137.5858,
-    "closed": 219,
-    "inventory": 31
+    "ppsf": 137.7155,
+    "closed": 242,
+    "inventory": 22
   },
   {
     "Place": "Montrose",
@@ -34239,35 +34256,35 @@
     "geoid2": "2743810",
     "FullName": "Montrose, MN",
     "location": "Exurbs",
-    "ppsf": 119.4281,
-    "closed": 121,
-    "inventory": 25
+    "ppsf": 119.7938,
+    "closed": 126,
+    "inventory": 30
   },
   {
     "Place": "Saint Bonifacius",
     "variable": "2018",
-    "dom": 15,
+    "dom": 15.5,
     "type": "city",
     "stribID": 74,
     "geoid2": "2756770",
     "FullName": "St. Bonifacius, MN",
     "location": "outer suburbs",
-    "ppsf": 121.4286,
-    "closed": 50,
-    "inventory": 9
+    "ppsf": 120.7494,
+    "closed": 52,
+    "inventory": 6
   },
   {
     "Place": "Saint Michael",
     "variable": "2018",
-    "dom": 25,
+    "dom": 26,
     "type": "city",
     "stribID": 210,
     "geoid2": "2757346",
     "FullName": "St. Michael, MN",
     "location": "Exurbs",
-    "ppsf": 128.0789,
-    "closed": 330,
-    "inventory": 60
+    "ppsf": 129.07,
+    "closed": 353,
+    "inventory": 52
   },
   {
     "Place": "Elko New Market",
@@ -34279,8 +34296,8 @@
     "FullName": "Elko New Market, MN",
     "location": "outer suburbs",
     "ppsf": 124.9632,
-    "closed": 106,
-    "inventory": 23
+    "closed": 110,
+    "inventory": 16
   },
   {
     "Place": "Lilydale",
@@ -34293,46 +34310,46 @@
     "location": "inner suburbs",
     "ppsf": 183.6991,
     "closed": 16,
-    "inventory": 3
+    "inventory": 1
   },
   {
     "Place": "Minnetonka",
     "variable": "2018",
-    "dom": 24,
+    "dom": 26,
     "type": "city",
     "stribID": 85,
     "geoid2": "2743252",
     "FullName": "Minnetonka, MN",
     "location": "inner suburbs",
-    "ppsf": 162.093,
-    "closed": 828,
-    "inventory": 180
+    "ppsf": 161.7464,
+    "closed": 891,
+    "inventory": 149
   },
   {
     "Place": "Rogers",
     "variable": "2018",
-    "dom": 22.5,
+    "dom": 24,
     "type": "city",
     "stribID": 75,
     "geoid2": "2755186",
     "FullName": "Rogers, MN",
     "location": "outer suburbs",
-    "ppsf": 136.0082,
-    "closed": 235,
-    "inventory": 47
+    "ppsf": 136.5969,
+    "closed": 256,
+    "inventory": 42
   },
   {
     "Place": "Falcon Heights",
     "variable": "2018",
-    "dom": 17,
+    "dom": 20,
     "type": "city",
     "stribID": 151,
     "geoid2": "2720420",
     "FullName": "Falcon Heights, MN",
     "location": "inner suburbs",
-    "ppsf": 162.5514,
-    "closed": 55,
-    "inventory": 10
+    "ppsf": 162.1098,
+    "closed": 65,
+    "inventory": 6
   },
   {
     "Place": "Buffalo",
@@ -34343,9 +34360,9 @@
     "geoid2": "2708452",
     "FullName": "Buffalo, MN",
     "location": "Exurbs",
-    "ppsf": 120.6434,
-    "closed": 340,
-    "inventory": 58
+    "ppsf": 120.5245,
+    "closed": 370,
+    "inventory": 47
   },
   {
     "Place": "Golden Valley",
@@ -34356,9 +34373,9 @@
     "geoid2": "2724308",
     "FullName": "Golden Valley, MN",
     "location": "inner suburbs",
-    "ppsf": 155.4007,
-    "closed": 376,
-    "inventory": 63
+    "ppsf": 155.0194,
+    "closed": 401,
+    "inventory": 51
   },
   {
     "Place": "Hastings",
@@ -34369,48 +34386,48 @@
     "geoid2": "2727530",
     "FullName": "Hastings, MN",
     "location": "outer suburbs",
-    "ppsf": 121.5819,
-    "closed": 390,
-    "inventory": 55
+    "ppsf": 121.0191,
+    "closed": 414,
+    "inventory": 46
   },
   {
     "Place": "Maplewood",
     "variable": "2018",
-    "dom": 18,
+    "dom": 19,
     "type": "city",
     "stribID": 147,
     "geoid2": "2740382",
     "FullName": "Maplewood, MN",
     "location": "inner suburbs",
-    "ppsf": 130.0125,
-    "closed": 527,
-    "inventory": 55
+    "ppsf": 130.3094,
+    "closed": 555,
+    "inventory": 44
   },
   {
     "Place": "Saint Mary's Point",
     "variable": "2018",
-    "dom": 47,
+    "dom": 82.5,
     "type": "city",
     "stribID": 191,
     "geoid2": "2757292",
     "FullName": "St. Marys Point, MN",
     "location": "outer suburbs",
-    "ppsf": 158.4262,
-    "closed": 5,
-    "inventory": 1
+    "ppsf": 141.5748,
+    "closed": 6,
+    "inventory": 0
   },
   {
     "Place": "Victoria",
     "variable": "2018",
-    "dom": 28.5,
+    "dom": 28,
     "type": "city",
     "stribID": 27,
     "geoid2": "2767036",
     "FullName": "Victoria, MN",
     "location": "outer suburbs",
-    "ppsf": 147.3061,
-    "closed": 241,
-    "inventory": 63
+    "ppsf": 147.7594,
+    "closed": 255,
+    "inventory": 64
   },
   {
     "Place": "Cambridge",
@@ -34421,74 +34438,74 @@
     "geoid2": "2709370",
     "FullName": "Cambridge, MN",
     "location": "Exurbs",
-    "ppsf": 117.8997,
-    "closed": 269,
-    "inventory": 50
+    "ppsf": 118.0092,
+    "closed": 291,
+    "inventory": 48
   },
   {
     "Place": "Waconia",
     "variable": "2018",
-    "dom": 20,
+    "dom": 21,
     "type": "city",
     "stribID": 26,
     "geoid2": "2767432",
     "FullName": "Waconia, MN",
     "location": "outer suburbs",
-    "ppsf": 137.6174,
-    "closed": 259,
-    "inventory": 34
+    "ppsf": 137.103,
+    "closed": 273,
+    "inventory": 28
   },
   {
     "Place": "Zimmerman",
     "variable": "2018",
-    "dom": 26,
+    "dom": 27,
     "type": "city",
     "stribID": 166,
     "geoid2": "2772238",
     "FullName": "Zimmerman, MN",
     "location": "Exurbs",
-    "ppsf": 126.7286,
-    "closed": 273,
-    "inventory": 56
+    "ppsf": 126.345,
+    "closed": 290,
+    "inventory": 45
   },
   {
     "Place": "Becker",
     "variable": "2018",
-    "dom": 27.5,
+    "dom": 29,
     "type": "city",
     "stribID": 165,
     "geoid2": "2704618",
     "FullName": "Becker, MN",
     "location": "Exurbs",
-    "ppsf": 113.3749,
-    "closed": 149,
-    "inventory": 34
+    "ppsf": 114.3326,
+    "closed": 160,
+    "inventory": 31
   },
   {
     "Place": "Stacy",
     "variable": "2018",
-    "dom": 19,
+    "dom": 22,
     "type": "city",
     "stribID": 18,
     "geoid2": "2762320",
     "FullName": "Stacy, MN",
     "location": "Exurbs",
-    "ppsf": 133.2363,
-    "closed": 52,
-    "inventory": 12
+    "ppsf": 133.3312,
+    "closed": 59,
+    "inventory": 13
   },
   {
     "Place": "Mendota Heights",
     "variable": "2018",
-    "dom": 27.5,
+    "dom": 29,
     "type": "city",
     "stribID": 56,
     "geoid2": "2741696",
     "FullName": "Mendota Heights, MN",
     "location": "inner suburbs",
-    "ppsf": 154.0921,
-    "closed": 175,
-    "inventory": 30
+    "ppsf": 153.4065,
+    "closed": 188,
+    "inventory": 22
   },
   {
     "Place": "Corcoran",
@@ -34500,60 +34517,60 @@
     "FullName": "Corcoran, MN",
     "location": "outer suburbs",
     "ppsf": 154.6056,
-    "closed": 54,
-    "inventory": 23
+    "closed": 59,
+    "inventory": 20
   },
   {
     "Place": "Eden Prairie",
     "variable": "2018",
-    "dom": 25,
+    "dom": 26,
     "type": "city",
     "stribID": 100,
     "geoid2": "2718116",
     "FullName": "Eden Prairie, MN",
     "location": "inner suburbs",
-    "ppsf": 151.6418,
-    "closed": 1063,
-    "inventory": 184
+    "ppsf": 151.4065,
+    "closed": 1144,
+    "inventory": 129
   },
   {
     "Place": "Oak Grove",
     "variable": "2018",
-    "dom": 29,
+    "dom": 32,
     "type": "city",
     "stribID": 3,
     "geoid2": "2747690",
     "FullName": "Oak Grove, MN",
     "location": "outer suburbs",
-    "ppsf": 138.9171,
-    "closed": 108,
-    "inventory": 27
+    "ppsf": 139.5658,
+    "closed": 117,
+    "inventory": 20
   },
   {
     "Place": "Carver",
     "variable": "2018",
-    "dom": 24.5,
+    "dom": 25,
     "type": "city",
     "stribID": 32,
     "geoid2": "2710144",
     "FullName": "Carver, MN",
     "location": "outer suburbs",
-    "ppsf": 140.2821,
-    "closed": 120,
-    "inventory": 29
+    "ppsf": 140.0114,
+    "closed": 126,
+    "inventory": 30
   },
   {
     "Place": "Willernie",
     "variable": "2018",
-    "dom": 22,
+    "dom": 19.5,
     "type": "city",
     "stribID": 188,
     "geoid2": "2770366",
     "FullName": "Willernie, MN",
     "location": "inner suburbs",
-    "ppsf": 140.678,
-    "closed": 9,
-    "inventory": 1
+    "ppsf": 137.368,
+    "closed": 10,
+    "inventory": 2
   },
   {
     "Place": "Prior Lake",
@@ -34564,22 +34581,22 @@
     "geoid2": "2752594",
     "FullName": "Prior Lake, MN",
     "location": "outer suburbs",
-    "ppsf": 141.0772,
-    "closed": 546,
-    "inventory": 137
+    "ppsf": 140.4726,
+    "closed": 590,
+    "inventory": 127
   },
   {
     "Place": "Ham Lake",
     "variable": "2018",
-    "dom": 32,
+    "dom": 33,
     "type": "city",
     "stribID": 8,
     "geoid2": "2726738",
     "FullName": "Ham Lake, MN",
     "location": "outer suburbs",
     "ppsf": 132.6867,
-    "closed": 185,
-    "inventory": 48
+    "closed": 199,
+    "inventory": 43
   },
   {
     "Place": "Hampton",
@@ -34603,35 +34620,35 @@
     "geoid2": "2755006",
     "FullName": "Rockford, MN",
     "location": "Exurbs",
-    "ppsf": 117.0275,
-    "closed": 51,
-    "inventory": 9
+    "ppsf": 117.2137,
+    "closed": 53,
+    "inventory": 10
   },
   {
     "Place": "Somerset",
     "variable": "2018",
-    "dom": 48,
+    "dom": 49,
     "type": "city",
     "stribID": 176,
     "geoid2": "5574675",
     "FullName": "Somerset, WI",
     "location": "Exurbs",
-    "ppsf": 138.0971,
-    "closed": 105,
-    "inventory": 40
+    "ppsf": 140.0794,
+    "closed": 115,
+    "inventory": 34
   },
   {
     "Place": "Little Canada",
     "variable": "2018",
-    "dom": 23,
+    "dom": 25,
     "type": "city",
     "stribID": 148,
     "geoid2": "2737502",
     "FullName": "Little Canada, MN",
     "location": "inner suburbs",
-    "ppsf": 138.5743,
-    "closed": 124,
-    "inventory": 21
+    "ppsf": 137.1398,
+    "closed": 133,
+    "inventory": 13
   },
   {
     "Place": "Stillwater",
@@ -34642,35 +34659,35 @@
     "geoid2": "2762824",
     "FullName": "Stillwater, MN",
     "location": "outer suburbs",
-    "ppsf": 148.6847,
-    "closed": 375,
-    "inventory": 90
+    "ppsf": 149.4883,
+    "closed": 401,
+    "inventory": 84
   },
   {
     "Place": "Edina",
     "variable": "2018",
-    "dom": 29,
+    "dom": 33,
     "type": "city",
     "stribID": 99,
     "geoid2": "2718188",
     "FullName": "Edina, MN",
     "location": "inner suburbs",
-    "ppsf": 191.1905,
-    "closed": 875,
-    "inventory": 251
+    "ppsf": 191.3876,
+    "closed": 947,
+    "inventory": 226
   },
   {
     "Place": "Dayton",
     "variable": "2018",
-    "dom": 18.5,
+    "dom": 17,
     "type": "city",
     "stribID": 111,
     "geoid2": "2715022",
     "FullName": "Dayton, MN",
     "location": "Exurbs",
-    "ppsf": 156.7671,
-    "closed": 170,
-    "inventory": 41
+    "ppsf": 156.5836,
+    "closed": 183,
+    "inventory": 42
   },
   {
     "Place": "Forest Lake",
@@ -34681,21 +34698,21 @@
     "geoid2": "2721770",
     "FullName": "Forest Lake, MN",
     "location": "Exurbs",
-    "ppsf": 136.2069,
-    "closed": 334,
-    "inventory": 82
+    "ppsf": 134.6723,
+    "closed": 360,
+    "inventory": 64
   },
   {
     "Place": "Lake Elmo",
     "variable": "2018",
-    "dom": 23,
+    "dom": 25,
     "type": "city",
     "stribID": 201,
     "geoid2": "2734244",
     "FullName": "Lake Elmo, MN",
     "location": "outer suburbs",
-    "ppsf": 168.6181,
-    "closed": 255,
+    "ppsf": 170.205,
+    "closed": 279,
     "inventory": 130
   },
   {
@@ -34707,9 +34724,9 @@
     "geoid2": "2737304",
     "FullName": "Lindstrom, MN",
     "location": "Exurbs",
-    "ppsf": 126.7086,
-    "closed": 125,
-    "inventory": 23
+    "ppsf": 126.5136,
+    "closed": 127,
+    "inventory": 20
   },
   {
     "Place": "Bethel",
@@ -34727,38 +34744,40 @@
   {
     "Place": "Excelsior",
     "variable": "2018",
-    "dom": 27,
+    "dom": 28,
     "type": "city",
     "stribID": 98,
     "geoid2": "2720078",
     "FullName": "Excelsior, MN",
     "location": "inner suburbs",
-    "ppsf": 303.9497,
-    "closed": 19,
-    "inventory": 15
+    "ppsf": 311.0811,
+    "closed": 21,
+    "inventory": 12
   },
   {
     "Place": "Medicine Lake",
     "variable": "2018",
+    "dom": 0,
     "type": "city",
     "stribID": 88,
     "geoid2": "2741462",
     "FullName": "Medicine Lake, MN",
     "location": "inner suburbs",
+    "ppsf": 0,
     "closed": 0,
     "inventory": 2
   },
   {
     "Place": "Maple Lake",
     "variable": "2018",
-    "dom": 26,
+    "dom": 27.5,
     "type": "city",
     "stribID": 213,
     "geoid2": "2740220",
     "FullName": "Maple Lake, MN",
     "location": "Exurbs",
-    "ppsf": 130.8244,
-    "closed": 65,
+    "ppsf": 132.8468,
+    "closed": 68,
     "inventory": 14
   },
   {
@@ -34770,9 +34789,9 @@
     "geoid2": "5536250",
     "FullName": "Hudson, WI",
     "location": "Exurbs",
-    "ppsf": 137.0462,
-    "closed": 527,
-    "inventory": 140
+    "ppsf": 137.7018,
+    "closed": 562,
+    "inventory": 132
   },
   {
     "Place": "Minnetonka Beach",
@@ -34784,73 +34803,73 @@
     "FullName": "Minnetonka Beach, MN",
     "location": "inner suburbs",
     "ppsf": 331.5971,
-    "closed": 18,
-    "inventory": 1
+    "closed": 20,
+    "inventory": 2
   },
   {
     "Place": "Tonka Bay",
     "variable": "2018",
-    "dom": 56.5,
+    "dom": 50,
     "type": "city",
     "stribID": 70,
     "geoid2": "2765164",
     "FullName": "Tonka Bay, MN",
     "location": "inner suburbs",
-    "ppsf": 257.6146,
-    "closed": 27,
-    "inventory": 11
+    "ppsf": 216.9274,
+    "closed": 30,
+    "inventory": 9
   },
   {
     "Place": "Mahtomedi",
     "variable": "2018",
-    "dom": 29,
+    "dom": 30,
     "type": "city",
     "stribID": 197,
     "geoid2": "2739428",
     "FullName": "Mahtomedi, MN",
     "location": "inner suburbs",
-    "ppsf": 154.9472,
-    "closed": 129,
-    "inventory": 23
+    "ppsf": 154.9561,
+    "closed": 136,
+    "inventory": 18
   },
   {
     "Place": "Mound",
     "variable": "2018",
-    "dom": 28.5,
+    "dom": 30,
     "type": "city",
     "stribID": 82,
     "geoid2": "2744476",
     "FullName": "Mound, MN",
     "location": "outer suburbs",
-    "ppsf": 150.6849,
-    "closed": 210,
-    "inventory": 47
+    "ppsf": 152.89,
+    "closed": 226,
+    "inventory": 39
   },
   {
     "Place": "Princeton",
     "variable": "2018",
-    "dom": 27,
+    "dom": 28,
     "type": "city",
     "stribID": 113,
     "geoid2": "2752522",
     "FullName": "Princeton, MN",
     "location": "Exurbs",
-    "ppsf": 116.4959,
-    "closed": 242,
-    "inventory": 53
+    "ppsf": 117.8796,
+    "closed": 261,
+    "inventory": 48
   },
   {
     "Place": "Shorewood",
     "variable": "2018",
-    "dom": 37,
+    "dom": 35.5,
     "type": "city",
     "stribID": 72,
     "geoid2": "2760016",
     "FullName": "Shorewood, MN",
     "location": "inner suburbs",
-    "ppsf": 180.6321,
-    "closed": 127,
-    "inventory": 51
+    "ppsf": 181.0398,
+    "closed": 139,
+    "inventory": 49
   },
   {
     "Place": "River Falls",
@@ -34861,61 +34880,61 @@
     "geoid2": "5568275",
     "FullName": "River Falls, WI",
     "location": "Exurbs",
-    "ppsf": 120.5972,
-    "closed": 255,
-    "inventory": 55
+    "ppsf": 120.4361,
+    "closed": 278,
+    "inventory": 39
   },
   {
     "Place": "Watertown",
     "variable": "2018",
-    "dom": 33,
+    "dom": 31.5,
     "type": "city",
     "stribID": 36,
     "geoid2": "2768548",
     "FullName": "Watertown, MN",
     "location": "Exurbs",
-    "ppsf": 127.2224,
-    "closed": 97,
-    "inventory": 28
+    "ppsf": 125.8734,
+    "closed": 110,
+    "inventory": 29
   },
   {
     "Place": "Deephaven",
     "variable": "2018",
-    "dom": 86,
+    "dom": 85,
     "type": "city",
     "stribID": 101,
     "geoid2": "2715148",
     "FullName": "Deephaven, MN",
     "location": "inner suburbs",
-    "ppsf": 272.4237,
-    "closed": 61,
-    "inventory": 26
+    "ppsf": 270.5452,
+    "closed": 65,
+    "inventory": 21
   },
   {
     "Place": "Bayport",
     "variable": "2018",
-    "dom": 12,
+    "dom": 11,
     "type": "city",
     "stribID": 206,
     "geoid2": "2704114",
     "FullName": "Bayport, MN",
     "location": "outer suburbs",
-    "ppsf": 161.6379,
-    "closed": 53,
+    "ppsf": 162.434,
+    "closed": 62,
     "inventory": 11
   },
   {
     "Place": "North Oaks",
     "variable": "2018",
-    "dom": 55,
+    "dom": 54,
     "type": "city",
     "stribID": 144,
     "geoid2": "2747104",
     "FullName": "North Oaks, MN",
     "location": "inner suburbs",
     "ppsf": 161.2479,
-    "closed": 92,
-    "inventory": 39
+    "closed": 96,
+    "inventory": 36
   },
   {
     "Place": "Jordan",
@@ -34927,21 +34946,21 @@
     "FullName": "Jordan, MN",
     "location": "outer suburbs",
     "ppsf": 129.1913,
-    "closed": 115,
-    "inventory": 26
+    "closed": 123,
+    "inventory": 25
   },
   {
     "Place": "Lauderdale",
     "variable": "2018",
-    "dom": 21,
+    "dom": 22,
     "type": "city",
     "stribID": 149,
     "geoid2": "2735738",
     "FullName": "Lauderdale, MN",
     "location": "inner suburbs",
-    "ppsf": 159.2573,
-    "closed": 28,
-    "inventory": 3
+    "ppsf": 157.4372,
+    "closed": 32,
+    "inventory": 2
   },
   {
     "Place": "New Richmond",
@@ -34952,35 +34971,35 @@
     "geoid2": "5557100",
     "FullName": "New Richmond, WI",
     "location": "Exurbs",
-    "ppsf": 122.479,
-    "closed": 267,
+    "ppsf": 124.2949,
+    "closed": 285,
     "inventory": 99
   },
   {
     "Place": "Medina",
     "variable": "2018",
-    "dom": 74,
+    "dom": 73,
     "type": "city",
     "stribID": 87,
     "geoid2": "2741480",
     "FullName": "Medina, MN",
     "location": "outer suburbs",
-    "ppsf": 170.7048,
-    "closed": 135,
-    "inventory": 60
+    "ppsf": 171.5053,
+    "closed": 145,
+    "inventory": 49
   },
   {
     "Place": "Long Lake",
     "variable": "2018",
-    "dom": 58,
+    "dom": 57,
     "type": "city",
     "stribID": 92,
     "geoid2": "2738006",
     "FullName": "Long Lake, MN",
     "location": "outer suburbs",
-    "ppsf": 159.5874,
-    "closed": 20,
-    "inventory": 6
+    "ppsf": 155.7513,
+    "closed": 23,
+    "inventory": 5
   },
   {
     "Place": "Hammond",
@@ -34991,22 +35010,22 @@
     "geoid2": "5532325",
     "FullName": "Hammond, WI",
     "location": "Exurbs",
-    "ppsf": 111.7607,
-    "closed": 57,
-    "inventory": 20
+    "ppsf": 111.2116,
+    "closed": 63,
+    "inventory": 16
   },
   {
     "Place": "Cokato",
     "variable": "2018",
-    "dom": 59,
+    "dom": 63,
     "type": "city",
     "stribID": 215,
     "geoid2": "2712430",
     "FullName": "Cokato, MN",
     "location": "Exurbs",
-    "ppsf": 103.5711,
-    "closed": 62,
-    "inventory": 25
+    "ppsf": 98.7037,
+    "closed": 68,
+    "inventory": 27
   },
   {
     "Place": "Nowthen",
@@ -35017,9 +35036,9 @@
     "geoid2": "2747536",
     "FullName": "Nowthen, MN",
     "location": "outer suburbs",
-    "ppsf": 135.9735,
-    "closed": 31,
-    "inventory": 9
+    "ppsf": 135.9234,
+    "closed": 34,
+    "inventory": 8
   },
   {
     "Place": "Cologne",
@@ -35030,22 +35049,22 @@
     "geoid2": "2712664",
     "FullName": "Cologne, MN",
     "location": "outer suburbs",
-    "ppsf": 139.9333,
-    "closed": 65,
+    "ppsf": 138.8551,
+    "closed": 71,
     "inventory": 13
   },
   {
     "Place": "Wayzata",
     "variable": "2018",
-    "dom": 34.5,
+    "dom": 36,
     "type": "city",
     "stribID": 69,
     "geoid2": "2768818",
     "FullName": "Wayzata, MN",
     "location": "inner suburbs",
-    "ppsf": 261.067,
-    "closed": 95,
-    "inventory": 48
+    "ppsf": 256.0976,
+    "closed": 101,
+    "inventory": 38
   },
   {
     "Place": "Scandia",
@@ -35057,21 +35076,21 @@
     "FullName": "Scandia, MN",
     "location": "Exurbs",
     "ppsf": 156.9133,
-    "closed": 54,
-    "inventory": 21
+    "closed": 58,
+    "inventory": 16
   },
   {
     "Place": "Independence",
     "variable": "2018",
-    "dom": 86,
+    "dom": 91,
     "type": "city",
     "stribID": 93,
     "geoid2": "2730842",
     "FullName": "Independence, MN",
     "location": "outer suburbs",
     "ppsf": 172.229,
-    "closed": 42,
-    "inventory": 22
+    "closed": 46,
+    "inventory": 24
   },
   {
     "Place": "Lakeland",
@@ -35084,7 +35103,7 @@
     "location": "outer suburbs",
     "ppsf": 144.7517,
     "closed": 23,
-    "inventory": 5
+    "inventory": 4
   },
   {
     "Place": "Spring Park",
@@ -35108,35 +35127,35 @@
     "geoid2": "2711800",
     "FullName": "Clearwater, MN",
     "location": "Exurbs",
-    "ppsf": 109.7613,
-    "closed": 57,
-    "inventory": 15
+    "ppsf": 108.9866,
+    "closed": 61,
+    "inventory": 12
   },
   {
     "Place": "Woodland",
     "variable": "2018",
-    "dom": 319,
+    "dom": 284.5,
     "type": "city",
     "stribID": 68,
     "geoid2": "2771500",
     "FullName": "Woodland, MN",
     "location": "inner suburbs",
-    "ppsf": 234.4159,
-    "closed": 8,
-    "inventory": 6
+    "ppsf": 206.0029,
+    "closed": 11,
+    "inventory": 4
   },
   {
     "Place": "Minnetrista",
     "variable": "2018",
-    "dom": 57,
+    "dom": 56,
     "type": "city",
     "stribID": 83,
     "geoid2": "2743306",
     "FullName": "Minnetrista, MN",
     "location": "outer suburbs",
-    "ppsf": 153.0984,
-    "closed": 145,
-    "inventory": 71
+    "ppsf": 155.5598,
+    "closed": 160,
+    "inventory": 60
   },
   {
     "Place": "Annandale",
@@ -35147,9 +35166,9 @@
     "geoid2": "2701684",
     "FullName": "Annandale, MN",
     "location": "Exurbs",
-    "ppsf": 145.6997,
-    "closed": 117,
-    "inventory": 19
+    "ppsf": 142.4979,
+    "closed": 131,
+    "inventory": 14
   },
   {
     "Place": "Lake Saint Croix Beach",
@@ -35161,34 +35180,34 @@
     "FullName": "Lake St. Croix Beach, MN",
     "location": "outer suburbs",
     "ppsf": 166.4307,
-    "closed": 11,
-    "inventory": 2
+    "closed": 12,
+    "inventory": 1
   },
   {
     "Place": "Randolph",
     "variable": "2018",
-    "dom": 35,
+    "dom": 22,
     "type": "city",
     "stribID": 53,
     "geoid2": "2753098",
     "FullName": "Randolph, MN",
     "location": "outer suburbs",
-    "ppsf": 116.4375,
-    "closed": 4,
-    "inventory": 0
+    "ppsf": 118.0341,
+    "closed": 6,
+    "inventory": 3
   },
   {
     "Place": "Afton",
     "variable": "2018",
-    "dom": 58,
+    "dom": 63,
     "type": "city",
     "stribID": 207,
     "geoid2": "2700316",
     "FullName": "Afton, MN",
     "location": "outer suburbs",
-    "ppsf": 165.4544,
-    "closed": 41,
-    "inventory": 18
+    "ppsf": 166.1104,
+    "closed": 44,
+    "inventory": 15
   },
   {
     "Place": "Grant",
@@ -35200,20 +35219,20 @@
     "FullName": "Grant, MN",
     "location": "outer suburbs",
     "ppsf": 180.1849,
-    "closed": 45,
-    "inventory": 22
+    "closed": 47,
+    "inventory": 18
   },
   {
     "Place": "Greenwood",
     "variable": "2018",
-    "dom": 88,
+    "dom": 82,
     "type": "city",
     "stribID": 95,
     "geoid2": "2725918",
     "FullName": "Greenwood, MN",
     "location": "inner suburbs",
     "ppsf": 412.1864,
-    "closed": 17,
+    "closed": 19,
     "inventory": 2
   },
   {
@@ -35231,76 +35250,78 @@
   {
     "Place": "South Haven",
     "variable": "2018",
-    "dom": 27,
+    "dom": 29,
     "type": "city",
     "stribID": 209,
     "geoid2": "2761402",
     "FullName": "South Haven, MN",
     "location": "Exurbs",
-    "ppsf": 165.3196,
-    "closed": 33,
-    "inventory": 16
+    "ppsf": 167.4598,
+    "closed": 34,
+    "inventory": 15
   },
   {
     "Place": "Pine Springs",
     "variable": "2018",
-    "dom": 54.5,
+    "dom": 95,
     "type": "city",
     "stribID": 192,
     "geoid2": "2751316",
     "FullName": "Pine Springs, MN",
     "location": "inner suburbs",
-    "ppsf": 181.2977,
-    "closed": 6,
-    "inventory": 1
+    "ppsf": 159.359,
+    "closed": 7,
+    "inventory": 0
   },
   {
     "Place": "Orono",
     "variable": "2018",
-    "dom": 59,
+    "dom": 60,
     "type": "city",
     "stribID": 80,
     "geoid2": "2748580",
     "FullName": "Orono, MN",
     "location": "outer suburbs",
-    "ppsf": 203.5689,
-    "closed": 177,
-    "inventory": 76
+    "ppsf": 206.7046,
+    "closed": 190,
+    "inventory": 61
   },
   {
     "Place": "Gem Lake",
     "variable": "2018",
-    "dom": 102,
+    "dom": 42,
     "type": "city",
     "stribID": 150,
     "geoid2": "2723318",
     "FullName": "Gem Lake, MN",
     "location": "inner suburbs",
-    "ppsf": 158.3687,
-    "closed": 4,
-    "inventory": 9
+    "ppsf": 186.0119,
+    "closed": 5,
+    "inventory": 7
   },
   {
     "Place": "Dellwood",
     "variable": "2018",
-    "dom": 61,
+    "dom": 63,
     "type": "city",
     "stribID": 156,
     "geoid2": "2715616",
     "FullName": "Dellwood, MN",
     "location": "inner suburbs",
-    "ppsf": 170.9299,
+    "ppsf": 174.4565,
     "closed": 16,
     "inventory": 5
   },
   {
     "Place": "Coates",
     "variable": "2018",
+    "dom": 0,
     "type": "city",
     "stribID": 62,
     "geoid2": "2712376",
     "FullName": "Coates, MN",
     "location": "outer suburbs",
+    "ppsf": 0,
     "closed": 0
   },
   {
@@ -35312,9 +35333,9 @@
     "geoid2": "2725622",
     "FullName": "Greenfield, MN",
     "location": "outer suburbs",
-    "ppsf": 133.1203,
-    "closed": 45,
-    "inventory": 19
+    "ppsf": 133.3382,
+    "closed": 47,
+    "inventory": 18
   },
   {
     "Place": "Sunfish Lake",
@@ -35327,7 +35348,7 @@
     "location": "inner suburbs",
     "ppsf": 182.1116,
     "closed": 11,
-    "inventory": 9
+    "inventory": 5
   },
   {
     "Place": "Clear Lake",
@@ -35339,21 +35360,21 @@
     "FullName": "Clear Lake, MN",
     "location": "Exurbs",
     "ppsf": 121.519,
-    "closed": 57,
-    "inventory": 27
+    "closed": 62,
+    "inventory": 22
   },
   {
     "Place": "Hamburg",
     "variable": "2018",
-    "dom": 20,
+    "dom": 36,
     "type": "city",
     "stribID": 35,
     "geoid2": "2726666",
     "FullName": "Hamburg, MN",
     "location": "Exurbs",
-    "ppsf": 82.2917,
-    "closed": 5,
-    "inventory": 2
+    "ppsf": 110.687,
+    "closed": 7,
+    "inventory": 3
   },
   {
     "Place": "Marine on Saint Croix",
@@ -35366,7 +35387,7 @@
     "location": "outer suburbs",
     "ppsf": 171.7805,
     "closed": 23,
-    "inventory": 9
+    "inventory": 6
   },
   {
     "Place": "Minneapolis-St. Paul Metro Area",
@@ -35377,7 +35398,7 @@
     "geoid2": "2733460",
     "FullName": "Minneapolis-St. Paul Metro Area",
     "location": "Metro",
-    "ppsf": 141
+    "ppsf": 141.79
   },
   {
     "Place": "Armatage",
@@ -52183,7 +52204,7 @@
   {
     "Place": "Audubon Park",
     "variable": "2016",
-    "dom": 35.5,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 222,
     "FullName": "Audubon Park (Minneapolis)",
@@ -52196,7 +52217,7 @@
   {
     "Place": "Bancroft",
     "variable": "2016",
-    "dom": 63,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 223,
     "FullName": "Bancroft (Minneapolis)",
@@ -52209,7 +52230,7 @@
   {
     "Place": "Battle Creek - Highwood",
     "variable": "2016",
-    "dom": 25,
+    "dom": 31,
     "type": "neighborhood",
     "stribID": 306,
     "FullName": "Sunray-Battlecreek-Highwood (St. Paul)",
@@ -52235,7 +52256,7 @@
   {
     "Place": "Bottineau",
     "variable": "2016",
-    "dom": 44,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 225,
     "FullName": "Bottineau (Minneapolis)",
@@ -52248,7 +52269,7 @@
   {
     "Place": "Bryant",
     "variable": "2016",
-    "dom": 20,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 226,
     "FullName": "Bryant (Minneapolis)",
@@ -52261,7 +52282,7 @@
   {
     "Place": "Bryn Mawr",
     "variable": "2016",
-    "dom": 64.5,
+    "dom": 48,
     "type": "neighborhood",
     "stribID": 227,
     "FullName": "Bryn Mawr (Minneapolis)",
@@ -52274,7 +52295,7 @@
   {
     "Place": "Calhoun (CARAG)",
     "variable": "2016",
-    "dom": 36,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 228,
     "FullName": "Calhoun (CARAG) (Minneapolis)",
@@ -52287,7 +52308,7 @@
   {
     "Place": "Cedar - Isles - Dean",
     "variable": "2016",
-    "dom": 31,
+    "dom": 36,
     "type": "neighborhood",
     "stribID": 229,
     "FullName": "Cedar - Isles - Dean (Minneapolis)",
@@ -52307,12 +52328,13 @@
     "location": "neighborhood",
     "neighborhoodname": "Cedar Riverside",
     "ppsf": 153.0631,
-    "closed": 27
+    "closed": 27,
+    "inventory": 0
   },
   {
     "Place": "Central",
     "variable": "2016",
-    "dom": 15,
+    "dom": 24,
     "type": "neighborhood",
     "stribID": 231,
     "FullName": "Central (Minneapolis)",
@@ -52325,20 +52347,20 @@
   {
     "Place": "Cleveland",
     "variable": "2016",
-    "dom": 38,
+    "dom": 31,
     "type": "neighborhood",
     "stribID": 232,
     "FullName": "Cleveland (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Cleveland",
-    "ppsf": 110.2891,
-    "closed": 94,
+    "ppsf": 110.3104,
+    "closed": 95,
     "inventory": 13
   },
   {
     "Place": "Columbia Park",
     "variable": "2016",
-    "dom": 17,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 233,
     "FullName": "Columbia Park (Minneapolis)",
@@ -52351,7 +52373,7 @@
   {
     "Place": "Como Park",
     "variable": "2016",
-    "dom": 17.5,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 235,
     "FullName": "Como (St. Paul)",
@@ -52364,7 +52386,7 @@
   {
     "Place": "Cooper",
     "variable": "2016",
-    "dom": 30,
+    "dom": 20,
     "type": "neighborhood",
     "stribID": 236,
     "FullName": "Cooper (Minneapolis)",
@@ -52377,19 +52399,20 @@
   {
     "Place": "Corcoran Neighborhood",
     "variable": "2016",
-    "dom": 19.5,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 237,
     "FullName": "Corcoran (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Corcoran",
     "ppsf": 148.6437,
-    "closed": 61
+    "closed": 61,
+    "inventory": 0
   },
   {
     "Place": "Dayton's Bluff",
     "variable": "2016",
-    "dom": 41,
+    "dom": 34,
     "type": "neighborhood",
     "stribID": 238,
     "FullName": "Dayton's Bluff (St. Paul)",
@@ -52402,7 +52425,7 @@
   {
     "Place": "Diamond Lake",
     "variable": "2016",
-    "dom": 28,
+    "dom": 26,
     "type": "neighborhood",
     "stribID": 239,
     "FullName": "Diamond Lake (Minneapolis)",
@@ -52415,7 +52438,7 @@
   {
     "Place": "Downtown",
     "variable": "2016",
-    "dom": 81,
+    "dom": 54,
     "type": "neighborhood",
     "stribID": 240,
     "FullName": "Downtown (St. Paul)",
@@ -52428,7 +52451,7 @@
   {
     "Place": "Downtown East",
     "variable": "2016",
-    "dom": 14,
+    "dom": 19.5,
     "type": "neighborhood",
     "stribID": 241,
     "FullName": "Downtown East (Minneapolis)",
@@ -52441,7 +52464,7 @@
   {
     "Place": "Downtown West",
     "variable": "2016",
-    "dom": 18,
+    "dom": 30,
     "type": "neighborhood",
     "stribID": 242,
     "FullName": "Downtown West (Minneapolis)",
@@ -52467,7 +52490,7 @@
   {
     "Place": "East Harriet",
     "variable": "2016",
-    "dom": 31,
+    "dom": 30,
     "type": "neighborhood",
     "stribID": 244,
     "FullName": "East Harriet (Minneapolis)",
@@ -52480,7 +52503,7 @@
   {
     "Place": "East Isles",
     "variable": "2016",
-    "dom": 19,
+    "dom": 31,
     "type": "neighborhood",
     "stribID": 245,
     "FullName": "East Isles (Minneapolis)",
@@ -52493,7 +52516,7 @@
   {
     "Place": "East Phillips",
     "variable": "2016",
-    "dom": 24,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 246,
     "FullName": "East Phillips (Minneapolis)",
@@ -52506,7 +52529,7 @@
   {
     "Place": "Elliot Park",
     "variable": "2016",
-    "dom": 43,
+    "dom": 27,
     "type": "neighborhood",
     "stribID": 247,
     "FullName": "Elliot Park (Minneapolis)",
@@ -52519,7 +52542,7 @@
   {
     "Place": "Ericsson",
     "variable": "2016",
-    "dom": 18.5,
+    "dom": 14.5,
     "type": "neighborhood",
     "stribID": 248,
     "FullName": "Ericsson (Minneapolis)",
@@ -52532,7 +52555,7 @@
   {
     "Place": "Field",
     "variable": "2016",
-    "dom": 28,
+    "dom": 19,
     "type": "neighborhood",
     "stribID": 249,
     "FullName": "Field (Minneapolis)",
@@ -52545,7 +52568,7 @@
   {
     "Place": "Folwell",
     "variable": "2016",
-    "dom": 27,
+    "dom": 57.5,
     "type": "neighborhood",
     "stribID": 250,
     "FullName": "Folwell (Minneapolis)",
@@ -52558,7 +52581,7 @@
   {
     "Place": "Fulton",
     "variable": "2016",
-    "dom": 59.5,
+    "dom": 28,
     "type": "neighborhood",
     "stribID": 251,
     "FullName": "Fulton (Minneapolis)",
@@ -52571,7 +52594,7 @@
   {
     "Place": "Greater East Side",
     "variable": "2016",
-    "dom": 28,
+    "dom": 30,
     "type": "neighborhood",
     "stribID": 252,
     "FullName": "Greater East Side (St. Paul)",
@@ -52584,7 +52607,7 @@
   {
     "Place": "Hale",
     "variable": "2016",
-    "dom": 15,
+    "dom": 26,
     "type": "neighborhood",
     "stribID": 253,
     "FullName": "Hale (Minneapolis)",
@@ -52597,7 +52620,7 @@
   {
     "Place": "Hamline-Midway",
     "variable": "2016",
-    "dom": 19,
+    "dom": 20,
     "type": "neighborhood",
     "stribID": 254,
     "FullName": "Hamline-Midway (St. Paul)",
@@ -52610,7 +52633,7 @@
   {
     "Place": "Harrison",
     "variable": "2016",
-    "dom": 27.5,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 255,
     "FullName": "Harrison (Minneapolis)",
@@ -52623,7 +52646,7 @@
   {
     "Place": "Hawthorne",
     "variable": "2016",
-    "dom": 128.5,
+    "dom": 45,
     "type": "neighborhood",
     "stribID": 256,
     "FullName": "Hawthorne (Minneapolis)",
@@ -52636,7 +52659,7 @@
   {
     "Place": "Hiawatha",
     "variable": "2016",
-    "dom": 12.5,
+    "dom": 15,
     "type": "neighborhood",
     "stribID": 257,
     "FullName": "Hiawatha (Minneapolis)",
@@ -52649,7 +52672,7 @@
   {
     "Place": "Highland Park",
     "variable": "2016",
-    "dom": 34,
+    "dom": 27,
     "type": "neighborhood",
     "stribID": 258,
     "FullName": "Highland Park (St. Paul)",
@@ -52662,7 +52685,7 @@
   {
     "Place": "Holland",
     "variable": "2016",
-    "dom": 23.5,
+    "dom": 14,
     "type": "neighborhood",
     "stribID": 259,
     "FullName": "Holland (Minneapolis)",
@@ -52675,7 +52698,7 @@
   {
     "Place": "Howe",
     "variable": "2016",
-    "dom": 20,
+    "dom": 15,
     "type": "neighborhood",
     "stribID": 260,
     "FullName": "Howe (Minneapolis)",
@@ -52688,7 +52711,7 @@
   {
     "Place": "Jordan Neighborhood",
     "variable": "2016",
-    "dom": 114.5,
+    "dom": 53,
     "type": "neighborhood",
     "stribID": 261,
     "FullName": "Jordan (Minneapolis)",
@@ -52701,7 +52724,7 @@
   {
     "Place": "Keewaydin",
     "variable": "2016",
-    "dom": 12,
+    "dom": 14,
     "type": "neighborhood",
     "stribID": 262,
     "FullName": "Keewaydin (Minneapolis)",
@@ -52714,7 +52737,7 @@
   {
     "Place": "Kenny",
     "variable": "2016",
-    "dom": 15,
+    "dom": 19.5,
     "type": "neighborhood",
     "stribID": 263,
     "FullName": "Kenny (Minneapolis)",
@@ -52727,7 +52750,7 @@
   {
     "Place": "Kenwood",
     "variable": "2016",
-    "dom": 100.5,
+    "dom": 47,
     "type": "neighborhood",
     "stribID": 264,
     "FullName": "Kenwood (Minneapolis)",
@@ -52740,7 +52763,7 @@
   {
     "Place": "King Field",
     "variable": "2016",
-    "dom": 24.5,
+    "dom": 20,
     "type": "neighborhood",
     "stribID": 265,
     "FullName": "King Field (Minneapolis)",
@@ -52753,7 +52776,7 @@
   {
     "Place": "Lind-Bohanon",
     "variable": "2016",
-    "dom": 25,
+    "dom": 35,
     "type": "neighborhood",
     "stribID": 266,
     "FullName": "Lind-Bohanon (Minneapolis)",
@@ -52766,7 +52789,7 @@
   {
     "Place": "Linden Hills",
     "variable": "2016",
-    "dom": 34.5,
+    "dom": 41,
     "type": "neighborhood",
     "stribID": 267,
     "FullName": "Linden Hills (Minneapolis)",
@@ -52779,19 +52802,20 @@
   {
     "Place": "Logan Park",
     "variable": "2016",
-    "dom": 18,
+    "dom": 25,
     "type": "neighborhood",
     "stribID": 268,
     "FullName": "Logan Park (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Logan Park",
     "ppsf": 179.3299,
-    "closed": 19
+    "closed": 19,
+    "inventory": 0
   },
   {
     "Place": "Longfellow",
     "variable": "2016",
-    "dom": 37.5,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 269,
     "FullName": "Longfellow (Minneapolis)",
@@ -52804,7 +52828,7 @@
   {
     "Place": "Loring Park",
     "variable": "2016",
-    "dom": 70,
+    "dom": 48,
     "type": "neighborhood",
     "stribID": 270,
     "FullName": "Loring Park (Minneapolis)",
@@ -52817,7 +52841,7 @@
   {
     "Place": "Lowry Hill",
     "variable": "2016",
-    "dom": 314,
+    "dom": 64,
     "type": "neighborhood",
     "stribID": 271,
     "FullName": "Lowry Hill (Minneapolis)",
@@ -52830,7 +52854,7 @@
   {
     "Place": "Lowry Hill East",
     "variable": "2016",
-    "dom": 24,
+    "dom": 35,
     "type": "neighborhood",
     "stribID": 272,
     "FullName": "Lowry Hill East (Minneapolis)",
@@ -52843,7 +52867,7 @@
   {
     "Place": "Lyndale",
     "variable": "2016",
-    "dom": 27,
+    "dom": 34,
     "type": "neighborhood",
     "stribID": 273,
     "FullName": "Lyndale (Minneapolis)",
@@ -52856,7 +52880,7 @@
   {
     "Place": "Lynnhurst",
     "variable": "2016",
-    "dom": 50.5,
+    "dom": 46,
     "type": "neighborhood",
     "stribID": 274,
     "FullName": "Lynnhurst (Minneapolis)",
@@ -52869,7 +52893,7 @@
   {
     "Place": "Macalester-Groveland",
     "variable": "2016",
-    "dom": 13,
+    "dom": 25,
     "type": "neighborhood",
     "stribID": 275,
     "FullName": "Macalester-Groveland (St. Paul)",
@@ -52882,7 +52906,7 @@
   {
     "Place": "Marcy Holmes",
     "variable": "2016",
-    "dom": 24.5,
+    "dom": 33,
     "type": "neighborhood",
     "stribID": 276,
     "FullName": "Marcy Holmes (Minneapolis)",
@@ -52895,7 +52919,7 @@
   {
     "Place": "Marshall Terrace",
     "variable": "2016",
-    "dom": 10,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 277,
     "FullName": "Marshall Terrace (Minneapolis)",
@@ -52908,7 +52932,7 @@
   {
     "Place": "McKinley",
     "variable": "2016",
-    "dom": 33,
+    "dom": 48,
     "type": "neighborhood",
     "stribID": 278,
     "FullName": "McKinley (Minneapolis)",
@@ -52921,7 +52945,7 @@
   {
     "Place": "Merriam Park / Lexington-Hamline",
     "variable": "2016",
-    "dom": 28.5,
+    "dom": 34,
     "type": "neighborhood",
     "stribID": 309,
     "FullName": "Union Park (St. Paul)",
@@ -52934,7 +52958,7 @@
   {
     "Place": "Mid - City Industrial",
     "variable": "2016",
-    "dom": 51.5,
+    "dom": 62,
     "type": "neighborhood",
     "stribID": 279,
     "FullName": "Mid - City Industrial (Minneapolis)",
@@ -52947,7 +52971,7 @@
   {
     "Place": "Midtown Phillips",
     "variable": "2016",
-    "dom": 23,
+    "dom": 36,
     "type": "neighborhood",
     "stribID": 280,
     "FullName": "Midtown Phillips (Minneapolis)",
@@ -52960,7 +52984,7 @@
   {
     "Place": "Minnehaha",
     "variable": "2016",
-    "dom": 19,
+    "dom": 20.5,
     "type": "neighborhood",
     "stribID": 281,
     "FullName": "Minnehaha (Minneapolis)",
@@ -52973,7 +52997,7 @@
   {
     "Place": "Morris Park",
     "variable": "2016",
-    "dom": 31.5,
+    "dom": 26,
     "type": "neighborhood",
     "stribID": 282,
     "FullName": "Morris Park (Minneapolis)",
@@ -52986,7 +53010,7 @@
   {
     "Place": "Near North",
     "variable": "2016",
-    "dom": 30,
+    "dom": 33,
     "type": "neighborhood",
     "stribID": 283,
     "FullName": "Near North (Minneapolis)",
@@ -52999,7 +53023,7 @@
   {
     "Place": "Nicollet Island - East Bank",
     "variable": "2016",
-    "dom": 29.5,
+    "dom": 36,
     "type": "neighborhood",
     "stribID": 284,
     "FullName": "Nicollet Island - East Bank (Minneapolis)",
@@ -53012,7 +53036,7 @@
   {
     "Place": "North End",
     "variable": "2016",
-    "dom": 32.5,
+    "dom": 34,
     "type": "neighborhood",
     "stribID": 285,
     "FullName": "North End (St. Paul)",
@@ -53025,7 +53049,7 @@
   {
     "Place": "North Loop",
     "variable": "2016",
-    "dom": 24,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 286,
     "FullName": "North Loop (Minneapolis)",
@@ -53038,6 +53062,7 @@
   {
     "Place": "Northeast Park",
     "variable": "2016",
+    "dom": 30,
     "type": "neighborhood",
     "stribID": 287,
     "FullName": "Northeast Park (Minneapolis)",
@@ -53050,7 +53075,7 @@
   {
     "Place": "Northrop",
     "variable": "2016",
-    "dom": 39,
+    "dom": 20,
     "type": "neighborhood",
     "stribID": 288,
     "FullName": "Northrop (Minneapolis)",
@@ -53063,7 +53088,7 @@
   {
     "Place": "Page",
     "variable": "2016",
-    "dom": 47,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 289,
     "FullName": "Page (Minneapolis)",
@@ -53076,7 +53101,7 @@
   {
     "Place": "Payne-Phalen",
     "variable": "2016",
-    "dom": 32,
+    "dom": 38,
     "type": "neighborhood",
     "stribID": 290,
     "FullName": "Payne-Phalen (St. Paul)",
@@ -53089,6 +53114,7 @@
   {
     "Place": "Phillips West",
     "variable": "2016",
+    "dom": 65.5,
     "type": "neighborhood",
     "stribID": 291,
     "FullName": "Phillips West (Minneapolis)",
@@ -53101,7 +53127,7 @@
   {
     "Place": "Powderhorn Park",
     "variable": "2016",
-    "dom": 34,
+    "dom": 26,
     "type": "neighborhood",
     "stribID": 292,
     "FullName": "Powderhorn Park (Minneapolis)",
@@ -53114,7 +53140,7 @@
   {
     "Place": "Prospect Park - E River Rd",
     "variable": "2016",
-    "dom": 16,
+    "dom": 64,
     "type": "neighborhood",
     "stribID": 293,
     "FullName": "Prospect Park - East River Road (Minneapolis)",
@@ -53127,7 +53153,7 @@
   {
     "Place": "Regina",
     "variable": "2016",
-    "dom": 58,
+    "dom": 25.5,
     "type": "neighborhood",
     "stribID": 294,
     "FullName": "Regina (Minneapolis)",
@@ -53140,7 +53166,7 @@
   {
     "Place": "Seward",
     "variable": "2016",
-    "dom": 19,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 295,
     "FullName": "Seward (Minneapolis)",
@@ -53153,19 +53179,20 @@
   {
     "Place": "Sheridan",
     "variable": "2016",
-    "dom": 10,
+    "dom": 19.5,
     "type": "neighborhood",
     "stribID": 296,
     "FullName": "Sheridan (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Sheridan",
     "ppsf": 161.7021,
-    "closed": 18
+    "closed": 18,
+    "inventory": 0
   },
   {
     "Place": "Shingle Creek",
     "variable": "2016",
-    "dom": 46,
+    "dom": 28,
     "type": "neighborhood",
     "stribID": 297,
     "FullName": "Shingle Creek (Minneapolis)",
@@ -53178,7 +53205,7 @@
   {
     "Place": "Southeast Como",
     "variable": "2016",
-    "dom": 70.5,
+    "dom": 48,
     "type": "neighborhood",
     "stribID": 234,
     "FullName": "Como (Minneapolis)",
@@ -53191,7 +53218,7 @@
   {
     "Place": "St. Anthony East",
     "variable": "2016",
-    "dom": 4.5,
+    "dom": 19,
     "type": "neighborhood",
     "stribID": 298,
     "FullName": "St. Anthony East (Minneapolis)",
@@ -53204,7 +53231,7 @@
   {
     "Place": "St. Anthony Park",
     "variable": "2016",
-    "dom": 17,
+    "dom": 37.5,
     "type": "neighborhood",
     "stribID": 299,
     "FullName": "St. Anthony Park (St. Paul)",
@@ -53217,19 +53244,20 @@
   {
     "Place": "St. Anthony West",
     "variable": "2016",
-    "dom": 72.5,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 300,
     "FullName": "St. Anthony West (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "St. Anthony West",
     "ppsf": 188.9535,
-    "closed": 21
+    "closed": 21,
+    "inventory": 0
   },
   {
     "Place": "Standish",
     "variable": "2016",
-    "dom": 19,
+    "dom": 15,
     "type": "neighborhood",
     "stribID": 301,
     "FullName": "Standish (Minneapolis)",
@@ -53255,7 +53283,7 @@
   {
     "Place": "Summit Hill",
     "variable": "2016",
-    "dom": 58,
+    "dom": 60,
     "type": "neighborhood",
     "stribID": 303,
     "FullName": "Summit Hill (St. Paul)",
@@ -53268,7 +53296,7 @@
   {
     "Place": "Summit-University",
     "variable": "2016",
-    "dom": 36,
+    "dom": 48,
     "type": "neighborhood",
     "stribID": 304,
     "FullName": "Summit-University (St. Paul)",
@@ -53281,7 +53309,7 @@
   {
     "Place": "Sumner-Glenwood",
     "variable": "2016",
-    "dom": 26.5,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 305,
     "FullName": "Sumner-Glenwood (Minneapolis)",
@@ -53294,7 +53322,7 @@
   {
     "Place": "Tangletown",
     "variable": "2016",
-    "dom": 32,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 307,
     "FullName": "Tangletown (Minneapolis)",
@@ -53307,7 +53335,7 @@
   {
     "Place": "Thomas-Dale (Frogtown)",
     "variable": "2016",
-    "dom": 18,
+    "dom": 40,
     "type": "neighborhood",
     "stribID": 308,
     "FullName": "Thomas Dale (St. Paul)",
@@ -53320,6 +53348,7 @@
   {
     "Place": "Ventura Village",
     "variable": "2016",
+    "dom": 83,
     "type": "neighborhood",
     "stribID": 310,
     "FullName": "Ventura Village (Minneapolis)",
@@ -53332,7 +53361,7 @@
   {
     "Place": "Victory",
     "variable": "2016",
-    "dom": 35,
+    "dom": 30,
     "type": "neighborhood",
     "stribID": 311,
     "FullName": "Victory (Minneapolis)",
@@ -53345,7 +53374,7 @@
   {
     "Place": "Waite Park",
     "variable": "2016",
-    "dom": 31,
+    "dom": 20,
     "type": "neighborhood",
     "stribID": 312,
     "FullName": "Waite Park (Minneapolis)",
@@ -53358,7 +53387,7 @@
   {
     "Place": "Webber-Camden",
     "variable": "2016",
-    "dom": 38,
+    "dom": 43,
     "type": "neighborhood",
     "stribID": 313,
     "FullName": "Webber-Camden (Minneapolis)",
@@ -53371,7 +53400,7 @@
   {
     "Place": "Wenonah",
     "variable": "2016",
-    "dom": 12,
+    "dom": 20.5,
     "type": "neighborhood",
     "stribID": 314,
     "FullName": "Wenonah (Minneapolis)",
@@ -53384,7 +53413,7 @@
   {
     "Place": "West Calhoun",
     "variable": "2016",
-    "dom": 39,
+    "dom": 39.5,
     "type": "neighborhood",
     "stribID": 315,
     "FullName": "West Calhoun (Minneapolis)",
@@ -53397,7 +53426,7 @@
   {
     "Place": "West Seventh",
     "variable": "2016",
-    "dom": 15,
+    "dom": 27,
     "type": "neighborhood",
     "stribID": 316,
     "FullName": "West Seventh (St. Paul)",
@@ -53410,7 +53439,7 @@
   {
     "Place": "West Side",
     "variable": "2016",
-    "dom": 50,
+    "dom": 34,
     "type": "neighborhood",
     "stribID": 317,
     "FullName": "West Side (St. Paul)",
@@ -53423,7 +53452,7 @@
   {
     "Place": "Whittier",
     "variable": "2016",
-    "dom": 45,
+    "dom": 33.5,
     "type": "neighborhood",
     "stribID": 318,
     "FullName": "Whittier (Minneapolis)",
@@ -53436,7 +53465,7 @@
   {
     "Place": "Willard-Hay",
     "variable": "2016",
-    "dom": 21,
+    "dom": 29,
     "type": "neighborhood",
     "stribID": 319,
     "FullName": "Willard-Hay (Minneapolis)",
@@ -53449,7 +53478,7 @@
   {
     "Place": "Windom",
     "variable": "2016",
-    "dom": 49,
+    "dom": 19,
     "type": "neighborhood",
     "stribID": 320,
     "FullName": "Windom (Minneapolis)",
@@ -53462,7 +53491,7 @@
   {
     "Place": "Windom Park",
     "variable": "2016",
-    "dom": 21.5,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 321,
     "FullName": "Windom Park (Minneapolis)",
@@ -53488,7 +53517,7 @@
   {
     "Place": "Audubon Park",
     "variable": "2017",
-    "dom": 19,
+    "dom": 14,
     "type": "neighborhood",
     "stribID": 222,
     "FullName": "Audubon Park (Minneapolis)",
@@ -53514,7 +53543,7 @@
   {
     "Place": "Battle Creek - Highwood",
     "variable": "2017",
-    "dom": 48,
+    "dom": 25,
     "type": "neighborhood",
     "stribID": 306,
     "FullName": "Sunray-Battlecreek-Highwood (St. Paul)",
@@ -53527,7 +53556,7 @@
   {
     "Place": "Beltrami",
     "variable": "2017",
-    "dom": 22,
+    "dom": 14,
     "type": "neighborhood",
     "stribID": 224,
     "FullName": "Beltrami (Minneapolis)",
@@ -53540,6 +53569,7 @@
   {
     "Place": "Bottineau",
     "variable": "2017",
+    "dom": 15,
     "type": "neighborhood",
     "stribID": 225,
     "FullName": "Bottineau (Minneapolis)",
@@ -53552,7 +53582,7 @@
   {
     "Place": "Bryant",
     "variable": "2017",
-    "dom": 6.5,
+    "dom": 18.5,
     "type": "neighborhood",
     "stribID": 226,
     "FullName": "Bryant (Minneapolis)",
@@ -53565,7 +53595,7 @@
   {
     "Place": "Bryn Mawr",
     "variable": "2017",
-    "dom": 19,
+    "dom": 27,
     "type": "neighborhood",
     "stribID": 227,
     "FullName": "Bryn Mawr (Minneapolis)",
@@ -53578,7 +53608,7 @@
   {
     "Place": "Calhoun (CARAG)",
     "variable": "2017",
-    "dom": 43,
+    "dom": 25,
     "type": "neighborhood",
     "stribID": 228,
     "FullName": "Calhoun (CARAG) (Minneapolis)",
@@ -53591,7 +53621,7 @@
   {
     "Place": "Cedar - Isles - Dean",
     "variable": "2017",
-    "dom": 30,
+    "dom": 48.5,
     "type": "neighborhood",
     "stribID": 229,
     "FullName": "Cedar - Isles - Dean (Minneapolis)",
@@ -53604,18 +53634,20 @@
   {
     "Place": "Cedar-Riverside",
     "variable": "2017",
+    "dom": 23,
     "type": "neighborhood",
     "stribID": 230,
     "FullName": "Cedar Riverside (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Cedar Riverside",
     "ppsf": 159.0909,
-    "closed": 19
+    "closed": 19,
+    "inventory": 0
   },
   {
     "Place": "Central",
     "variable": "2017",
-    "dom": 16.5,
+    "dom": 17,
     "type": "neighborhood",
     "stribID": 231,
     "FullName": "Central (Minneapolis)",
@@ -53628,7 +53660,7 @@
   {
     "Place": "Cleveland",
     "variable": "2017",
-    "dom": 28,
+    "dom": 24,
     "type": "neighborhood",
     "stribID": 232,
     "FullName": "Cleveland (Minneapolis)",
@@ -53641,7 +53673,7 @@
   {
     "Place": "Columbia Park",
     "variable": "2017",
-    "dom": 10,
+    "dom": 15.5,
     "type": "neighborhood",
     "stribID": 233,
     "FullName": "Columbia Park (Minneapolis)",
@@ -53654,7 +53686,7 @@
   {
     "Place": "Como Park",
     "variable": "2017",
-    "dom": 17,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 235,
     "FullName": "Como (St. Paul)",
@@ -53667,7 +53699,7 @@
   {
     "Place": "Cooper",
     "variable": "2017",
-    "dom": 9.5,
+    "dom": 11.5,
     "type": "neighborhood",
     "stribID": 236,
     "FullName": "Cooper (Minneapolis)",
@@ -53680,7 +53712,7 @@
   {
     "Place": "Corcoran Neighborhood",
     "variable": "2017",
-    "dom": 10,
+    "dom": 14,
     "type": "neighborhood",
     "stribID": 237,
     "FullName": "Corcoran (Minneapolis)",
@@ -53693,7 +53725,7 @@
   {
     "Place": "Dayton's Bluff",
     "variable": "2017",
-    "dom": 29.5,
+    "dom": 32,
     "type": "neighborhood",
     "stribID": 238,
     "FullName": "Dayton's Bluff (St. Paul)",
@@ -53706,7 +53738,7 @@
   {
     "Place": "Diamond Lake",
     "variable": "2017",
-    "dom": 14,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 239,
     "FullName": "Diamond Lake (Minneapolis)",
@@ -53719,7 +53751,7 @@
   {
     "Place": "Downtown",
     "variable": "2017",
-    "dom": 55,
+    "dom": 50,
     "type": "neighborhood",
     "stribID": 240,
     "FullName": "Downtown (St. Paul)",
@@ -53732,7 +53764,7 @@
   {
     "Place": "Downtown East",
     "variable": "2017",
-    "dom": 35,
+    "dom": 28,
     "type": "neighborhood",
     "stribID": 241,
     "FullName": "Downtown East (Minneapolis)",
@@ -53740,12 +53772,12 @@
     "neighborhoodname": "Downtown East",
     "ppsf": 383.1817,
     "closed": 74,
-    "inventory": 31
+    "inventory": 32
   },
   {
     "Place": "Downtown West",
     "variable": "2017",
-    "dom": 42,
+    "dom": 31,
     "type": "neighborhood",
     "stribID": 242,
     "FullName": "Downtown West (Minneapolis)",
@@ -53758,7 +53790,7 @@
   {
     "Place": "East Calhoun (ECCO)",
     "variable": "2017",
-    "dom": 30,
+    "dom": 64.5,
     "type": "neighborhood",
     "stribID": 243,
     "FullName": "East Calhoun (ECCO) (Minneapolis)",
@@ -53771,7 +53803,7 @@
   {
     "Place": "East Harriet",
     "variable": "2017",
-    "dom": 35.5,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 244,
     "FullName": "East Harriet (Minneapolis)",
@@ -53784,7 +53816,7 @@
   {
     "Place": "East Isles",
     "variable": "2017",
-    "dom": 36,
+    "dom": 31.5,
     "type": "neighborhood",
     "stribID": 245,
     "FullName": "East Isles (Minneapolis)",
@@ -53797,19 +53829,20 @@
   {
     "Place": "East Phillips",
     "variable": "2017",
-    "dom": 19,
+    "dom": 24,
     "type": "neighborhood",
     "stribID": 246,
     "FullName": "East Phillips (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "East Phillips",
     "ppsf": 130.719,
-    "closed": 31
+    "closed": 31,
+    "inventory": 0
   },
   {
     "Place": "Elliot Park",
     "variable": "2017",
-    "dom": 13,
+    "dom": 40,
     "type": "neighborhood",
     "stribID": 247,
     "FullName": "Elliot Park (Minneapolis)",
@@ -53822,7 +53855,7 @@
   {
     "Place": "Ericsson",
     "variable": "2017",
-    "dom": 20,
+    "dom": 4,
     "type": "neighborhood",
     "stribID": 248,
     "FullName": "Ericsson (Minneapolis)",
@@ -53835,7 +53868,7 @@
   {
     "Place": "Field",
     "variable": "2017",
-    "dom": 42.5,
+    "dom": 16,
     "type": "neighborhood",
     "stribID": 249,
     "FullName": "Field (Minneapolis)",
@@ -53848,7 +53881,7 @@
   {
     "Place": "Folwell",
     "variable": "2017",
-    "dom": 38,
+    "dom": 31,
     "type": "neighborhood",
     "stribID": 250,
     "FullName": "Folwell (Minneapolis)",
@@ -53861,7 +53894,7 @@
   {
     "Place": "Fulton",
     "variable": "2017",
-    "dom": 22,
+    "dom": 21.5,
     "type": "neighborhood",
     "stribID": 251,
     "FullName": "Fulton (Minneapolis)",
@@ -53874,7 +53907,7 @@
   {
     "Place": "Greater East Side",
     "variable": "2017",
-    "dom": 31,
+    "dom": 28,
     "type": "neighborhood",
     "stribID": 252,
     "FullName": "Greater East Side (St. Paul)",
@@ -53887,7 +53920,7 @@
   {
     "Place": "Hale",
     "variable": "2017",
-    "dom": 30.5,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 253,
     "FullName": "Hale (Minneapolis)",
@@ -53900,7 +53933,7 @@
   {
     "Place": "Hamline-Midway",
     "variable": "2017",
-    "dom": 20,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 254,
     "FullName": "Hamline-Midway (St. Paul)",
@@ -53913,7 +53946,7 @@
   {
     "Place": "Harrison",
     "variable": "2017",
-    "dom": 27.5,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 255,
     "FullName": "Harrison (Minneapolis)",
@@ -53926,7 +53959,7 @@
   {
     "Place": "Hawthorne",
     "variable": "2017",
-    "dom": 54.5,
+    "dom": 35,
     "type": "neighborhood",
     "stribID": 256,
     "FullName": "Hawthorne (Minneapolis)",
@@ -53939,7 +53972,7 @@
   {
     "Place": "Hiawatha",
     "variable": "2017",
-    "dom": 28.5,
+    "dom": 10,
     "type": "neighborhood",
     "stribID": 257,
     "FullName": "Hiawatha (Minneapolis)",
@@ -53952,7 +53985,7 @@
   {
     "Place": "Highland Park",
     "variable": "2017",
-    "dom": 25.5,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 258,
     "FullName": "Highland Park (St. Paul)",
@@ -53965,7 +53998,7 @@
   {
     "Place": "Holland",
     "variable": "2017",
-    "dom": 18,
+    "dom": 16,
     "type": "neighborhood",
     "stribID": 259,
     "FullName": "Holland (Minneapolis)",
@@ -53978,7 +54011,7 @@
   {
     "Place": "Howe",
     "variable": "2017",
-    "dom": 22,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 260,
     "FullName": "Howe (Minneapolis)",
@@ -53991,7 +54024,7 @@
   {
     "Place": "Jordan Neighborhood",
     "variable": "2017",
-    "dom": 21,
+    "dom": 27,
     "type": "neighborhood",
     "stribID": 261,
     "FullName": "Jordan (Minneapolis)",
@@ -54004,7 +54037,7 @@
   {
     "Place": "Keewaydin",
     "variable": "2017",
-    "dom": 36,
+    "dom": 9.5,
     "type": "neighborhood",
     "stribID": 262,
     "FullName": "Keewaydin (Minneapolis)",
@@ -54030,20 +54063,20 @@
   {
     "Place": "Kenwood",
     "variable": "2017",
-    "dom": 111,
+    "dom": 97,
     "type": "neighborhood",
     "stribID": 264,
     "FullName": "Kenwood (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Kenwood",
     "ppsf": 240.8478,
-    "closed": 28,
+    "closed": 29,
     "inventory": 13
   },
   {
     "Place": "King Field",
     "variable": "2017",
-    "dom": 14,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 265,
     "FullName": "King Field (Minneapolis)",
@@ -54056,7 +54089,7 @@
   {
     "Place": "Lind-Bohanon",
     "variable": "2017",
-    "dom": 13.5,
+    "dom": 19.5,
     "type": "neighborhood",
     "stribID": 266,
     "FullName": "Lind-Bohanon (Minneapolis)",
@@ -54069,7 +54102,7 @@
   {
     "Place": "Linden Hills",
     "variable": "2017",
-    "dom": 18,
+    "dom": 28,
     "type": "neighborhood",
     "stribID": 267,
     "FullName": "Linden Hills (Minneapolis)",
@@ -54082,18 +54115,20 @@
   {
     "Place": "Logan Park",
     "variable": "2017",
+    "dom": 16,
     "type": "neighborhood",
     "stribID": 268,
     "FullName": "Logan Park (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Logan Park",
     "ppsf": 173.716,
-    "closed": 12
+    "closed": 12,
+    "inventory": 0
   },
   {
     "Place": "Longfellow",
     "variable": "2017",
-    "dom": 21,
+    "dom": 16,
     "type": "neighborhood",
     "stribID": 269,
     "FullName": "Longfellow (Minneapolis)",
@@ -54106,7 +54141,7 @@
   {
     "Place": "Loring Park",
     "variable": "2017",
-    "dom": 19.5,
+    "dom": 27,
     "type": "neighborhood",
     "stribID": 270,
     "FullName": "Loring Park (Minneapolis)",
@@ -54119,7 +54154,7 @@
   {
     "Place": "Lowry Hill",
     "variable": "2017",
-    "dom": 47,
+    "dom": 40,
     "type": "neighborhood",
     "stribID": 271,
     "FullName": "Lowry Hill (Minneapolis)",
@@ -54132,7 +54167,7 @@
   {
     "Place": "Lowry Hill East",
     "variable": "2017",
-    "dom": 23.5,
+    "dom": 25,
     "type": "neighborhood",
     "stribID": 272,
     "FullName": "Lowry Hill East (Minneapolis)",
@@ -54145,7 +54180,7 @@
   {
     "Place": "Lyndale",
     "variable": "2017",
-    "dom": 29.5,
+    "dom": 20,
     "type": "neighborhood",
     "stribID": 273,
     "FullName": "Lyndale (Minneapolis)",
@@ -54158,7 +54193,7 @@
   {
     "Place": "Lynnhurst",
     "variable": "2017",
-    "dom": 16,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 274,
     "FullName": "Lynnhurst (Minneapolis)",
@@ -54171,7 +54206,7 @@
   {
     "Place": "Macalester-Groveland",
     "variable": "2017",
-    "dom": 17,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 275,
     "FullName": "Macalester-Groveland (St. Paul)",
@@ -54184,7 +54219,7 @@
   {
     "Place": "Marcy Holmes",
     "variable": "2017",
-    "dom": 11,
+    "dom": 25,
     "type": "neighborhood",
     "stribID": 276,
     "FullName": "Marcy Holmes (Minneapolis)",
@@ -54197,6 +54232,7 @@
   {
     "Place": "Marshall Terrace",
     "variable": "2017",
+    "dom": 26.5,
     "type": "neighborhood",
     "stribID": 277,
     "FullName": "Marshall Terrace (Minneapolis)",
@@ -54209,7 +54245,7 @@
   {
     "Place": "McKinley",
     "variable": "2017",
-    "dom": 46,
+    "dom": 24,
     "type": "neighborhood",
     "stribID": 278,
     "FullName": "McKinley (Minneapolis)",
@@ -54222,7 +54258,7 @@
   {
     "Place": "Merriam Park / Lexington-Hamline",
     "variable": "2017",
-    "dom": 16,
+    "dom": 20,
     "type": "neighborhood",
     "stribID": 309,
     "FullName": "Union Park (St. Paul)",
@@ -54235,7 +54271,7 @@
   {
     "Place": "Mid - City Industrial",
     "variable": "2017",
-    "dom": 11.5,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 279,
     "FullName": "Mid - City Industrial (Minneapolis)",
@@ -54248,7 +54284,7 @@
   {
     "Place": "Midtown Phillips",
     "variable": "2017",
-    "dom": 32,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 280,
     "FullName": "Midtown Phillips (Minneapolis)",
@@ -54261,7 +54297,7 @@
   {
     "Place": "Minnehaha",
     "variable": "2017",
-    "dom": 25.5,
+    "dom": 19.5,
     "type": "neighborhood",
     "stribID": 281,
     "FullName": "Minnehaha (Minneapolis)",
@@ -54274,7 +54310,7 @@
   {
     "Place": "Morris Park",
     "variable": "2017",
-    "dom": 34,
+    "dom": 17,
     "type": "neighborhood",
     "stribID": 282,
     "FullName": "Morris Park (Minneapolis)",
@@ -54287,7 +54323,7 @@
   {
     "Place": "Near North",
     "variable": "2017",
-    "dom": 21,
+    "dom": 24,
     "type": "neighborhood",
     "stribID": 283,
     "FullName": "Near North (Minneapolis)",
@@ -54300,7 +54336,7 @@
   {
     "Place": "Nicollet Island - East Bank",
     "variable": "2017",
-    "dom": 20,
+    "dom": 27.5,
     "type": "neighborhood",
     "stribID": 284,
     "FullName": "Nicollet Island - East Bank (Minneapolis)",
@@ -54313,7 +54349,7 @@
   {
     "Place": "North End",
     "variable": "2017",
-    "dom": 19,
+    "dom": 28,
     "type": "neighborhood",
     "stribID": 285,
     "FullName": "North End (St. Paul)",
@@ -54326,7 +54362,7 @@
   {
     "Place": "North Loop",
     "variable": "2017",
-    "dom": 20,
+    "dom": 21.5,
     "type": "neighborhood",
     "stribID": 286,
     "FullName": "North Loop (Minneapolis)",
@@ -54339,7 +54375,7 @@
   {
     "Place": "Northeast Park",
     "variable": "2017",
-    "dom": 10,
+    "dom": 15,
     "type": "neighborhood",
     "stribID": 287,
     "FullName": "Northeast Park (Minneapolis)",
@@ -54352,7 +54388,7 @@
   {
     "Place": "Northrop",
     "variable": "2017",
-    "dom": 11,
+    "dom": 12,
     "type": "neighborhood",
     "stribID": 288,
     "FullName": "Northrop (Minneapolis)",
@@ -54365,7 +54401,7 @@
   {
     "Place": "Page",
     "variable": "2017",
-    "dom": 65,
+    "dom": 29,
     "type": "neighborhood",
     "stribID": 289,
     "FullName": "Page (Minneapolis)",
@@ -54378,7 +54414,7 @@
   {
     "Place": "Payne-Phalen",
     "variable": "2017",
-    "dom": 23,
+    "dom": 28,
     "type": "neighborhood",
     "stribID": 290,
     "FullName": "Payne-Phalen (St. Paul)",
@@ -54391,7 +54427,7 @@
   {
     "Place": "Phillips West",
     "variable": "2017",
-    "dom": 118,
+    "dom": 63,
     "type": "neighborhood",
     "stribID": 291,
     "FullName": "Phillips West (Minneapolis)",
@@ -54404,7 +54440,7 @@
   {
     "Place": "Powderhorn Park",
     "variable": "2017",
-    "dom": 6,
+    "dom": 9,
     "type": "neighborhood",
     "stribID": 292,
     "FullName": "Powderhorn Park (Minneapolis)",
@@ -54417,7 +54453,7 @@
   {
     "Place": "Prospect Park - E River Rd",
     "variable": "2017",
-    "dom": 16,
+    "dom": 31,
     "type": "neighborhood",
     "stribID": 293,
     "FullName": "Prospect Park - East River Road (Minneapolis)",
@@ -54430,7 +54466,7 @@
   {
     "Place": "Regina",
     "variable": "2017",
-    "dom": 16,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 294,
     "FullName": "Regina (Minneapolis)",
@@ -54443,7 +54479,7 @@
   {
     "Place": "Seward",
     "variable": "2017",
-    "dom": 11,
+    "dom": 14,
     "type": "neighborhood",
     "stribID": 295,
     "FullName": "Seward (Minneapolis)",
@@ -54456,7 +54492,7 @@
   {
     "Place": "Sheridan",
     "variable": "2017",
-    "dom": 13.5,
+    "dom": 9.5,
     "type": "neighborhood",
     "stribID": 296,
     "FullName": "Sheridan (Minneapolis)",
@@ -54469,7 +54505,7 @@
   {
     "Place": "Shingle Creek",
     "variable": "2017",
-    "dom": 47,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 297,
     "FullName": "Shingle Creek (Minneapolis)",
@@ -54482,7 +54518,7 @@
   {
     "Place": "Southeast Como",
     "variable": "2017",
-    "dom": 69,
+    "dom": 26.5,
     "type": "neighborhood",
     "stribID": 234,
     "FullName": "Como (Minneapolis)",
@@ -54495,7 +54531,7 @@
   {
     "Place": "St. Anthony East",
     "variable": "2017",
-    "dom": 15,
+    "dom": 15.5,
     "type": "neighborhood",
     "stribID": 298,
     "FullName": "St. Anthony East (Minneapolis)",
@@ -54508,7 +54544,7 @@
   {
     "Place": "St. Anthony Park",
     "variable": "2017",
-    "dom": 48,
+    "dom": 40.5,
     "type": "neighborhood",
     "stribID": 299,
     "FullName": "St. Anthony Park (St. Paul)",
@@ -54521,7 +54557,7 @@
   {
     "Place": "St. Anthony West",
     "variable": "2017",
-    "dom": 5,
+    "dom": 12,
     "type": "neighborhood",
     "stribID": 300,
     "FullName": "St. Anthony West (Minneapolis)",
@@ -54547,7 +54583,7 @@
   {
     "Place": "Stevens Square - Loring Heights",
     "variable": "2017",
-    "dom": 16,
+    "dom": 35,
     "type": "neighborhood",
     "stribID": 302,
     "FullName": "Stevens Square - Loring Heights (Minneapolis)",
@@ -54560,7 +54596,7 @@
   {
     "Place": "Summit Hill",
     "variable": "2017",
-    "dom": 28,
+    "dom": 24.5,
     "type": "neighborhood",
     "stribID": 303,
     "FullName": "Summit Hill (St. Paul)",
@@ -54573,7 +54609,7 @@
   {
     "Place": "Summit-University",
     "variable": "2017",
-    "dom": 48.5,
+    "dom": 38,
     "type": "neighborhood",
     "stribID": 304,
     "FullName": "Summit-University (St. Paul)",
@@ -54586,19 +54622,20 @@
   {
     "Place": "Sumner-Glenwood",
     "variable": "2017",
-    "dom": 12,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 305,
     "FullName": "Sumner-Glenwood (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Sumner-Glenwood",
     "ppsf": 246.8808,
-    "closed": 18
+    "closed": 18,
+    "inventory": 0
   },
   {
     "Place": "Tangletown",
     "variable": "2017",
-    "dom": 8,
+    "dom": 24,
     "type": "neighborhood",
     "stribID": 307,
     "FullName": "Tangletown (Minneapolis)",
@@ -54611,7 +54648,7 @@
   {
     "Place": "Thomas-Dale (Frogtown)",
     "variable": "2017",
-    "dom": 15,
+    "dom": 24.5,
     "type": "neighborhood",
     "stribID": 308,
     "FullName": "Thomas Dale (St. Paul)",
@@ -54624,6 +54661,7 @@
   {
     "Place": "Ventura Village",
     "variable": "2017",
+    "dom": 66,
     "type": "neighborhood",
     "stribID": 310,
     "FullName": "Ventura Village (Minneapolis)",
@@ -54636,7 +54674,7 @@
   {
     "Place": "Victory",
     "variable": "2017",
-    "dom": 28.5,
+    "dom": 17.5,
     "type": "neighborhood",
     "stribID": 311,
     "FullName": "Victory (Minneapolis)",
@@ -54662,7 +54700,7 @@
   {
     "Place": "Webber-Camden",
     "variable": "2017",
-    "dom": 26,
+    "dom": 35,
     "type": "neighborhood",
     "stribID": 313,
     "FullName": "Webber-Camden (Minneapolis)",
@@ -54675,7 +54713,7 @@
   {
     "Place": "Wenonah",
     "variable": "2017",
-    "dom": 17,
+    "dom": 14,
     "type": "neighborhood",
     "stribID": 314,
     "FullName": "Wenonah (Minneapolis)",
@@ -54688,7 +54726,7 @@
   {
     "Place": "West Calhoun",
     "variable": "2017",
-    "dom": 24,
+    "dom": 45,
     "type": "neighborhood",
     "stribID": 315,
     "FullName": "West Calhoun (Minneapolis)",
@@ -54701,7 +54739,7 @@
   {
     "Place": "West Seventh",
     "variable": "2017",
-    "dom": 16,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 316,
     "FullName": "West Seventh (St. Paul)",
@@ -54714,7 +54752,7 @@
   {
     "Place": "West Side",
     "variable": "2017",
-    "dom": 22.5,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 317,
     "FullName": "West Side (St. Paul)",
@@ -54727,7 +54765,7 @@
   {
     "Place": "Whittier",
     "variable": "2017",
-    "dom": 18.5,
+    "dom": 35,
     "type": "neighborhood",
     "stribID": 318,
     "FullName": "Whittier (Minneapolis)",
@@ -54740,7 +54778,7 @@
   {
     "Place": "Willard-Hay",
     "variable": "2017",
-    "dom": 25.5,
+    "dom": 28,
     "type": "neighborhood",
     "stribID": 319,
     "FullName": "Willard-Hay (Minneapolis)",
@@ -54753,7 +54791,7 @@
   {
     "Place": "Windom",
     "variable": "2017",
-    "dom": 21,
+    "dom": 19,
     "type": "neighborhood",
     "stribID": 320,
     "FullName": "Windom (Minneapolis)",
@@ -54766,7 +54804,7 @@
   {
     "Place": "Windom Park",
     "variable": "2017",
-    "dom": 14.5,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 321,
     "FullName": "Windom Park (Minneapolis)",
@@ -54779,15 +54817,15 @@
   {
     "Place": "Armatage",
     "variable": "2018",
-    "dom": 17.5,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 221,
     "FullName": "Armatage (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Armatage",
-    "ppsf": 201.2552,
-    "closed": 104,
-    "inventory": 19
+    "ppsf": 201.7296,
+    "closed": 111,
+    "inventory": 17
   },
   {
     "Place": "Audubon Park",
@@ -54798,189 +54836,191 @@
     "FullName": "Audubon Park (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Audubon Park",
-    "ppsf": 185.2513,
-    "closed": 108,
-    "inventory": 6
+    "ppsf": 184.4914,
+    "closed": 111,
+    "inventory": 5
   },
   {
     "Place": "Bancroft",
     "variable": "2018",
-    "dom": 11.5,
+    "dom": 14,
     "type": "neighborhood",
     "stribID": 223,
     "FullName": "Bancroft (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Bancroft",
     "ppsf": 181.25,
-    "closed": 65,
-    "inventory": 9
+    "closed": 67,
+    "inventory": 4
   },
   {
     "Place": "Battle Creek - Highwood",
     "variable": "2018",
-    "dom": 23.5,
+    "dom": 20,
     "type": "neighborhood",
     "stribID": 306,
     "FullName": "Sunray-Battlecreek-Highwood (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Sunray-Battlecreek-Highwood",
-    "ppsf": 129.061,
-    "closed": 246,
-    "inventory": 30
+    "ppsf": 129.1871,
+    "closed": 272,
+    "inventory": 21
   },
   {
     "Place": "Beltrami",
     "variable": "2018",
+    "dom": 17.5,
     "type": "neighborhood",
     "stribID": 224,
     "FullName": "Beltrami (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Beltrami",
-    "ppsf": 174.2105,
-    "closed": 9,
-    "inventory": 2
+    "ppsf": 175.4653,
+    "closed": 10,
+    "inventory": 1
   },
   {
     "Place": "Bottineau",
     "variable": "2018",
-    "dom": 18,
+    "dom": 16.5,
     "type": "neighborhood",
     "stribID": 225,
     "FullName": "Bottineau (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Bottineau",
     "ppsf": 175.9158,
-    "closed": 20
+    "closed": 20,
+    "inventory": 1
   },
   {
     "Place": "Bryant",
     "variable": "2018",
-    "dom": 26.5,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 226,
     "FullName": "Bryant (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Bryant",
-    "ppsf": 167.2862,
-    "closed": 42,
-    "inventory": 6
+    "ppsf": 161.512,
+    "closed": 46,
+    "inventory": 5
   },
   {
     "Place": "Bryn Mawr",
     "variable": "2018",
-    "dom": 28.5,
+    "dom": 30,
     "type": "neighborhood",
     "stribID": 227,
     "FullName": "Bryn Mawr (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Bryn Mawr",
     "ppsf": 228.6854,
-    "closed": 54,
-    "inventory": 7
+    "closed": 59,
+    "inventory": 6
   },
   {
     "Place": "Calhoun (CARAG)",
     "variable": "2018",
-    "dom": 127,
+    "dom": 25,
     "type": "neighborhood",
     "stribID": 228,
     "FullName": "Calhoun (CARAG) (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Calhoun (CARAG)",
-    "ppsf": 209.5323,
-    "closed": 46,
-    "inventory": 6
+    "ppsf": 208.5526,
+    "closed": 51,
+    "inventory": 5
   },
   {
     "Place": "Cedar - Isles - Dean",
     "variable": "2018",
-    "dom": 14,
+    "dom": 42,
     "type": "neighborhood",
     "stribID": 229,
     "FullName": "Cedar - Isles - Dean (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Cedar - Isles - Dean",
     "ppsf": 253.1194,
-    "closed": 80,
+    "closed": 82,
     "inventory": 15
   },
   {
     "Place": "Cedar-Riverside",
     "variable": "2018",
-    "dom": 33,
+    "dom": 24,
     "type": "neighborhood",
     "stribID": 230,
     "FullName": "Cedar Riverside (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Cedar Riverside",
-    "ppsf": 162.4461,
-    "closed": 28,
-    "inventory": 4
+    "ppsf": 160.3454,
+    "closed": 32,
+    "inventory": 2
   },
   {
     "Place": "Central",
     "variable": "2018",
-    "dom": 9,
+    "dom": 15,
     "type": "neighborhood",
     "stribID": 231,
     "FullName": "Central (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Central",
-    "ppsf": 134.1853,
-    "closed": 59,
-    "inventory": 10
+    "ppsf": 133.9286,
+    "closed": 63,
+    "inventory": 8
   },
   {
     "Place": "Cleveland",
     "variable": "2018",
-    "dom": 34,
+    "dom": 20,
     "type": "neighborhood",
     "stribID": 232,
     "FullName": "Cleveland (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Cleveland",
-    "ppsf": 144.3595,
-    "closed": 75,
-    "inventory": 9
+    "ppsf": 144.4647,
+    "closed": 78,
+    "inventory": 5
   },
   {
     "Place": "Columbia Park",
     "variable": "2018",
-    "dom": 11.5,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 233,
     "FullName": "Columbia Park (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Columbia Park",
-    "ppsf": 158.7558,
-    "closed": 30,
-    "inventory": 3
+    "ppsf": 157.0369,
+    "closed": 32,
+    "inventory": 2
   },
   {
     "Place": "Como Park",
     "variable": "2018",
-    "dom": 21,
+    "dom": 15,
     "type": "neighborhood",
     "stribID": 235,
     "FullName": "Como (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Como",
-    "ppsf": 160.8654,
-    "closed": 261,
-    "inventory": 25
+    "ppsf": 159.8513,
+    "closed": 281,
+    "inventory": 16
   },
   {
     "Place": "Cooper",
     "variable": "2018",
-    "dom": 10,
+    "dom": 11.5,
     "type": "neighborhood",
     "stribID": 236,
     "FullName": "Cooper (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Cooper",
-    "ppsf": 220.8163,
-    "closed": 49,
-    "inventory": 7
+    "ppsf": 222.5877,
+    "closed": 54,
+    "inventory": 6
   },
   {
     "Place": "Corcoran Neighborhood",
@@ -54991,217 +55031,217 @@
     "FullName": "Corcoran (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Corcoran",
-    "ppsf": 173.527,
-    "closed": 31,
-    "inventory": 6
+    "ppsf": 173.265,
+    "closed": 35,
+    "inventory": 3
   },
   {
     "Place": "Dayton's Bluff",
     "variable": "2018",
-    "dom": 18,
+    "dom": 23,
     "type": "neighborhood",
     "stribID": 238,
     "FullName": "Dayton's Bluff (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Dayton's Bluff",
-    "ppsf": 121.9512,
-    "closed": 209,
-    "inventory": 28
+    "ppsf": 122.3588,
+    "closed": 222,
+    "inventory": 20
   },
   {
     "Place": "Diamond Lake",
     "variable": "2018",
-    "dom": 44,
+    "dom": 16,
     "type": "neighborhood",
     "stribID": 239,
     "FullName": "Diamond Lake (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Diamond Lake",
-    "ppsf": 182.7644,
-    "closed": 78,
-    "inventory": 15
+    "ppsf": 182.4581,
+    "closed": 83,
+    "inventory": 10
   },
   {
     "Place": "Downtown",
     "variable": "2018",
-    "dom": 57.5,
+    "dom": 48,
     "type": "neighborhood",
     "stribID": 240,
     "FullName": "Downtown (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Downtown",
-    "ppsf": 224.6115,
-    "closed": 148,
-    "inventory": 37
+    "ppsf": 223.6123,
+    "closed": 157,
+    "inventory": 35
   },
   {
     "Place": "Downtown East",
     "variable": "2018",
-    "dom": 43,
+    "dom": 59.5,
     "type": "neighborhood",
     "stribID": 241,
     "FullName": "Downtown East (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Downtown East",
-    "ppsf": 382.7928,
-    "closed": 184,
+    "ppsf": 381.8365,
+    "closed": 220,
     "inventory": 28
   },
   {
     "Place": "Downtown West",
     "variable": "2018",
-    "dom": 2,
+    "dom": 34,
     "type": "neighborhood",
     "stribID": 242,
     "FullName": "Downtown West (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Downtown West",
-    "ppsf": 290.2644,
-    "closed": 129,
-    "inventory": 31
+    "ppsf": 295.6731,
+    "closed": 140,
+    "inventory": 25
   },
   {
     "Place": "East Calhoun (ECCO)",
     "variable": "2018",
-    "dom": 38,
+    "dom": 19,
     "type": "neighborhood",
     "stribID": 243,
     "FullName": "East Calhoun (ECCO) (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "East Calhoun (ECCO)",
-    "ppsf": 241.3651,
-    "closed": 27,
-    "inventory": 7
+    "ppsf": 241.2773,
+    "closed": 28,
+    "inventory": 4
   },
   {
     "Place": "East Harriet",
     "variable": "2018",
-    "dom": 33,
+    "dom": 24.5,
     "type": "neighborhood",
     "stribID": 244,
     "FullName": "East Harriet (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "East Harriet",
     "ppsf": 223.0656,
-    "closed": 58,
-    "inventory": 9
+    "closed": 60,
+    "inventory": 8
   },
   {
     "Place": "East Isles",
     "variable": "2018",
-    "dom": 49,
+    "dom": 37.5,
     "type": "neighborhood",
     "stribID": 245,
     "FullName": "East Isles (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "East Isles",
-    "ppsf": 252.3256,
-    "closed": 50,
-    "inventory": 6
+    "ppsf": 250.8721,
+    "closed": 51,
+    "inventory": 4
   },
   {
     "Place": "East Phillips",
     "variable": "2018",
-    "dom": 29.5,
+    "dom": 25,
     "type": "neighborhood",
     "stribID": 246,
     "FullName": "East Phillips (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "East Phillips",
-    "ppsf": 144.2384,
-    "closed": 23,
-    "inventory": 6
+    "ppsf": 144.6579,
+    "closed": 26,
+    "inventory": 4
   },
   {
     "Place": "Elliot Park",
     "variable": "2018",
-    "dom": 47.5,
+    "dom": 47,
     "type": "neighborhood",
     "stribID": 247,
     "FullName": "Elliot Park (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Elliot Park",
-    "ppsf": 311.2575,
-    "closed": 77,
-    "inventory": 31
+    "ppsf": 309.322,
+    "closed": 85,
+    "inventory": 22
   },
   {
     "Place": "Ericsson",
     "variable": "2018",
-    "dom": 9,
+    "dom": 15,
     "type": "neighborhood",
     "stribID": 248,
     "FullName": "Ericsson (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Ericsson",
-    "ppsf": 196.5812,
-    "closed": 54,
-    "inventory": 6
+    "ppsf": 193.4234,
+    "closed": 57,
+    "inventory": 3
   },
   {
     "Place": "Field",
     "variable": "2018",
-    "dom": 59.5,
+    "dom": 24,
     "type": "neighborhood",
     "stribID": 249,
     "FullName": "Field (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Field",
-    "ppsf": 199.9242,
-    "closed": 40,
+    "ppsf": 195.0244,
+    "closed": 45,
     "inventory": 7
   },
   {
     "Place": "Folwell",
     "variable": "2018",
-    "dom": 19.5,
+    "dom": 22.5,
     "type": "neighborhood",
     "stribID": 250,
     "FullName": "Folwell (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Folwell",
     "ppsf": 116.2791,
-    "closed": 90,
-    "inventory": 9
+    "closed": 103,
+    "inventory": 7
   },
   {
     "Place": "Fulton",
     "variable": "2018",
-    "dom": 15,
+    "dom": 26,
     "type": "neighborhood",
     "stribID": 251,
     "FullName": "Fulton (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Fulton",
-    "ppsf": 253.5494,
-    "closed": 101,
-    "inventory": 21
+    "ppsf": 253.3333,
+    "closed": 108,
+    "inventory": 18
   },
   {
     "Place": "Greater East Side",
     "variable": "2018",
-    "dom": 18.5,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 252,
     "FullName": "Greater East Side (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Greater East Side",
-    "ppsf": 132.7434,
-    "closed": 397,
-    "inventory": 50
+    "ppsf": 132.6041,
+    "closed": 432,
+    "inventory": 35
   },
   {
     "Place": "Hale",
     "variable": "2018",
-    "dom": 27,
+    "dom": 16,
     "type": "neighborhood",
     "stribID": 253,
     "FullName": "Hale (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Hale",
-    "ppsf": 212.953,
-    "closed": 60,
-    "inventory": 4
+    "ppsf": 214.1675,
+    "closed": 63,
+    "inventory": 3
   },
   {
     "Place": "Hamline-Midway",
@@ -55213,181 +55253,182 @@
     "location": "neighborhood",
     "neighborhoodname": "Hamline-Midway",
     "ppsf": 163.9723,
-    "closed": 140,
+    "closed": 152,
     "inventory": 8
   },
   {
     "Place": "Harrison",
     "variable": "2018",
-    "dom": 4,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 255,
     "FullName": "Harrison (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Harrison",
-    "ppsf": 147.3792,
-    "closed": 18,
+    "ppsf": 148.773,
+    "closed": 19,
     "inventory": 1
   },
   {
     "Place": "Hawthorne",
     "variable": "2018",
-    "dom": 8.5,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 256,
     "FullName": "Hawthorne (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Hawthorne",
-    "ppsf": 108.2972,
-    "closed": 32,
+    "ppsf": 106.5438,
+    "closed": 38,
     "inventory": 8
   },
   {
     "Place": "Hiawatha",
     "variable": "2018",
-    "dom": 21,
+    "dom": 17.5,
     "type": "neighborhood",
     "stribID": 257,
     "FullName": "Hiawatha (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Hiawatha",
-    "ppsf": 202.2124,
-    "closed": 100,
-    "inventory": 10
+    "ppsf": 198.2228,
+    "closed": 109,
+    "inventory": 9
   },
   {
     "Place": "Highland Park",
     "variable": "2018",
-    "dom": 21,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 258,
     "FullName": "Highland Park (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Highland Park",
-    "ppsf": 195.4458,
-    "closed": 307,
-    "inventory": 46
+    "ppsf": 196.4432,
+    "closed": 323,
+    "inventory": 38
   },
   {
     "Place": "Holland",
     "variable": "2018",
-    "dom": 33.5,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 259,
     "FullName": "Holland (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Holland",
-    "ppsf": 161.3749,
-    "closed": 44,
-    "inventory": 8
+    "ppsf": 161.2496,
+    "closed": 52,
+    "inventory": 4
   },
   {
     "Place": "Howe",
     "variable": "2018",
-    "dom": 18,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 260,
     "FullName": "Howe (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Howe",
-    "ppsf": 220.3944,
-    "closed": 116,
-    "inventory": 12
+    "ppsf": 217.6256,
+    "closed": 126,
+    "inventory": 4
   },
   {
     "Place": "Jordan Neighborhood",
     "variable": "2018",
-    "dom": 46,
+    "dom": 25,
     "type": "neighborhood",
     "stribID": 261,
     "FullName": "Jordan (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Jordan",
-    "ppsf": 106.654,
-    "closed": 117,
-    "inventory": 17
+    "ppsf": 105.9997,
+    "closed": 128,
+    "inventory": 19
   },
   {
     "Place": "Keewaydin",
     "variable": "2018",
-    "dom": 4,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 262,
     "FullName": "Keewaydin (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Keewaydin",
-    "ppsf": 198.6465,
-    "closed": 55,
-    "inventory": 6
+    "ppsf": 196.7611,
+    "closed": 60,
+    "inventory": 3
   },
   {
     "Place": "Kenny",
     "variable": "2018",
-    "dom": 22,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 263,
     "FullName": "Kenny (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Kenny",
-    "ppsf": 211.1026,
-    "closed": 73,
-    "inventory": 8
+    "ppsf": 208.8905,
+    "closed": 82,
+    "inventory": 5
   },
   {
     "Place": "Kenwood",
     "variable": "2018",
-    "dom": 185,
+    "dom": 139,
     "type": "neighborhood",
     "stribID": 264,
     "FullName": "Kenwood (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Kenwood",
-    "ppsf": 269.629,
-    "closed": 22,
+    "ppsf": 270.846,
+    "closed": 25,
     "inventory": 6
   },
   {
     "Place": "King Field",
     "variable": "2018",
-    "dom": 11.5,
+    "dom": 14,
     "type": "neighborhood",
     "stribID": 265,
     "FullName": "King Field (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "King Field",
-    "ppsf": 211.5122,
-    "closed": 119,
-    "inventory": 20
+    "ppsf": 209.9131,
+    "closed": 130,
+    "inventory": 11
   },
   {
     "Place": "Lind-Bohanon",
     "variable": "2018",
-    "dom": 10.5,
+    "dom": 14,
     "type": "neighborhood",
     "stribID": 266,
     "FullName": "Lind-Bohanon (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Lind-Bohanon",
-    "ppsf": 135.6838,
-    "closed": 132,
-    "inventory": 24
+    "ppsf": 135.1351,
+    "closed": 147,
+    "inventory": 20
   },
   {
     "Place": "Linden Hills",
     "variable": "2018",
-    "dom": 90,
+    "dom": 39.5,
     "type": "neighborhood",
     "stribID": 267,
     "FullName": "Linden Hills (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Linden Hills",
-    "ppsf": 258.3712,
-    "closed": 152,
-    "inventory": 22
+    "ppsf": 257.2754,
+    "closed": 167,
+    "inventory": 17
   },
   {
     "Place": "Logan Park",
     "variable": "2018",
+    "dom": 24,
     "type": "neighborhood",
     "stribID": 268,
     "FullName": "Logan Park (Minneapolis)",
@@ -55395,111 +55436,111 @@
     "neighborhoodname": "Logan Park",
     "ppsf": 255.7154,
     "closed": 11,
-    "inventory": 4
+    "inventory": 2
   },
   {
     "Place": "Longfellow",
     "variable": "2018",
-    "dom": 21,
+    "dom": 12,
     "type": "neighborhood",
     "stribID": 269,
     "FullName": "Longfellow (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Longfellow",
-    "ppsf": 212.0849,
-    "closed": 51,
-    "inventory": 9
+    "ppsf": 204.9567,
+    "closed": 58,
+    "inventory": 7
   },
   {
     "Place": "Loring Park",
     "variable": "2018",
-    "dom": 37.5,
+    "dom": 52,
     "type": "neighborhood",
     "stribID": 270,
     "FullName": "Loring Park (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Loring Park",
-    "ppsf": 221.5337,
-    "closed": 89,
-    "inventory": 30
+    "ppsf": 222.5967,
+    "closed": 97,
+    "inventory": 25
   },
   {
     "Place": "Lowry Hill",
     "variable": "2018",
-    "dom": 49,
+    "dom": 37,
     "type": "neighborhood",
     "stribID": 271,
     "FullName": "Lowry Hill (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Lowry Hill",
     "ppsf": 236.9658,
-    "closed": 82,
-    "inventory": 37
+    "closed": 86,
+    "inventory": 38
   },
   {
     "Place": "Lowry Hill East",
     "variable": "2018",
-    "dom": 45,
+    "dom": 33,
     "type": "neighborhood",
     "stribID": 272,
     "FullName": "Lowry Hill East (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Lowry Hill East",
-    "ppsf": 223.6183,
-    "closed": 52,
-    "inventory": 16
+    "ppsf": 224.3902,
+    "closed": 55,
+    "inventory": 12
   },
   {
     "Place": "Lyndale",
     "variable": "2018",
-    "dom": 8.5,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 273,
     "FullName": "Lyndale (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Lyndale",
-    "ppsf": 204.0816,
-    "closed": 53,
-    "inventory": 8
+    "ppsf": 199.0856,
+    "closed": 57,
+    "inventory": 7
   },
   {
     "Place": "Lynnhurst",
     "variable": "2018",
-    "dom": 36,
+    "dom": 31,
     "type": "neighborhood",
     "stribID": 274,
     "FullName": "Lynnhurst (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Lynnhurst",
-    "ppsf": 242.7601,
-    "closed": 82,
-    "inventory": 20
+    "ppsf": 242.7746,
+    "closed": 87,
+    "inventory": 15
   },
   {
     "Place": "Macalester-Groveland",
     "variable": "2018",
-    "dom": 13.5,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 275,
     "FullName": "Macalester-Groveland (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Macalester-Groveland",
-    "ppsf": 211.8644,
-    "closed": 283,
-    "inventory": 39
+    "ppsf": 211.2313,
+    "closed": 304,
+    "inventory": 37
   },
   {
     "Place": "Marcy Holmes",
     "variable": "2018",
-    "dom": 3,
+    "dom": 17,
     "type": "neighborhood",
     "stribID": 276,
     "FullName": "Marcy Holmes (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Marcy Holmes",
-    "ppsf": 203.156,
-    "closed": 30,
-    "inventory": 10
+    "ppsf": 206.334,
+    "closed": 37,
+    "inventory": 7
   },
   {
     "Place": "Marshall Terrace",
@@ -55512,38 +55553,38 @@
     "neighborhoodname": "Marshall Terrace",
     "ppsf": 173.5776,
     "closed": 15,
-    "inventory": 3
+    "inventory": 5
   },
   {
     "Place": "McKinley",
     "variable": "2018",
-    "dom": 29,
+    "dom": 16,
     "type": "neighborhood",
     "stribID": 278,
     "FullName": "McKinley (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "McKinley",
-    "ppsf": 106.2265,
-    "closed": 49,
-    "inventory": 7
+    "ppsf": 106.7897,
+    "closed": 54,
+    "inventory": 8
   },
   {
     "Place": "Merriam Park / Lexington-Hamline",
     "variable": "2018",
-    "dom": 31,
+    "dom": 19,
     "type": "neighborhood",
     "stribID": 309,
     "FullName": "Union Park (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Union Park",
-    "ppsf": 190.2681,
-    "closed": 144,
-    "inventory": 25
+    "ppsf": 187.402,
+    "closed": 156,
+    "inventory": 22
   },
   {
     "Place": "Mid - City Industrial",
     "variable": "2018",
-    "dom": 33.5,
+    "dom": 28,
     "type": "neighborhood",
     "stribID": 279,
     "FullName": "Mid - City Industrial (Minneapolis)",
@@ -55551,102 +55592,103 @@
     "neighborhoodname": "Mid - City Industrial",
     "ppsf": 243.7835,
     "closed": 22,
-    "inventory": 5
+    "inventory": 4
   },
   {
     "Place": "Midtown Phillips",
     "variable": "2018",
-    "dom": 41,
+    "dom": 24.5,
     "type": "neighborhood",
     "stribID": 280,
     "FullName": "Midtown Phillips (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Midtown Phillips",
-    "ppsf": 139.3511,
-    "closed": 27,
+    "ppsf": 137.505,
+    "closed": 28,
     "inventory": 4
   },
   {
     "Place": "Minnehaha",
     "variable": "2018",
-    "dom": 32,
+    "dom": 18.5,
     "type": "neighborhood",
     "stribID": 281,
     "FullName": "Minnehaha (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Minnehaha",
-    "ppsf": 190.4304,
-    "closed": 89,
-    "inventory": 9
+    "ppsf": 189.5504,
+    "closed": 92,
+    "inventory": 7
   },
   {
     "Place": "Morris Park",
     "variable": "2018",
-    "dom": 47,
+    "dom": 15,
     "type": "neighborhood",
     "stribID": 282,
     "FullName": "Morris Park (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Morris Park",
-    "ppsf": 182.236,
-    "closed": 70,
-    "inventory": 12
+    "ppsf": 183.391,
+    "closed": 75,
+    "inventory": 8
   },
   {
     "Place": "Near North",
     "variable": "2018",
-    "dom": 14,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 283,
     "FullName": "Near North (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Near North",
-    "ppsf": 108.0537,
-    "closed": 42,
-    "inventory": 6
+    "ppsf": 108.5598,
+    "closed": 48,
+    "inventory": 4
   },
   {
     "Place": "Nicollet Island - East Bank",
     "variable": "2018",
-    "dom": 31.5,
+    "dom": 52,
     "type": "neighborhood",
     "stribID": 284,
     "FullName": "Nicollet Island - East Bank (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Nicollet Island - East Bank",
-    "ppsf": 308.607,
-    "closed": 59,
+    "ppsf": 306.5907,
+    "closed": 64,
     "inventory": 18
   },
   {
     "Place": "North End",
     "variable": "2018",
-    "dom": 15,
+    "dom": 17,
     "type": "neighborhood",
     "stribID": 285,
     "FullName": "North End (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "North End",
-    "ppsf": 126.1419,
-    "closed": 215,
-    "inventory": 38
+    "ppsf": 126.4503,
+    "closed": 239,
+    "inventory": 35
   },
   {
     "Place": "North Loop",
     "variable": "2018",
-    "dom": 48.5,
+    "dom": 29.5,
     "type": "neighborhood",
     "stribID": 286,
     "FullName": "North Loop (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "North Loop",
-    "ppsf": 307.8704,
-    "closed": 141,
-    "inventory": 21
+    "ppsf": 307.5665,
+    "closed": 152,
+    "inventory": 16
   },
   {
     "Place": "Northeast Park",
     "variable": "2018",
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 287,
     "FullName": "Northeast Park (Minneapolis)",
@@ -55654,51 +55696,51 @@
     "neighborhoodname": "Northeast Park",
     "ppsf": 150.6923,
     "closed": 7,
-    "inventory": 1
+    "inventory": 2
   },
   {
     "Place": "Northrop",
     "variable": "2018",
-    "dom": 16.5,
+    "dom": 10,
     "type": "neighborhood",
     "stribID": 288,
     "FullName": "Northrop (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Northrop",
-    "ppsf": 189.7627,
-    "closed": 62,
-    "inventory": 8
+    "ppsf": 188.6415,
+    "closed": 67,
+    "inventory": 10
   },
   {
     "Place": "Page",
     "variable": "2018",
-    "dom": 14,
+    "dom": 19,
     "type": "neighborhood",
     "stribID": 289,
     "FullName": "Page (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Page",
     "ppsf": 203.2038,
-    "closed": 26,
-    "inventory": 9
+    "closed": 28,
+    "inventory": 7
   },
   {
     "Place": "Payne-Phalen",
     "variable": "2018",
-    "dom": 20,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 290,
     "FullName": "Payne-Phalen (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Payne-Phalen",
-    "ppsf": 123.7885,
-    "closed": 305,
-    "inventory": 59
+    "ppsf": 123.2192,
+    "closed": 341,
+    "inventory": 33
   },
   {
     "Place": "Phillips West",
     "variable": "2018",
-    "dom": 43,
+    "dom": 16,
     "type": "neighborhood",
     "stribID": 291,
     "FullName": "Phillips West (Minneapolis)",
@@ -55711,59 +55753,59 @@
   {
     "Place": "Powderhorn Park",
     "variable": "2018",
-    "dom": 14,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 292,
     "FullName": "Powderhorn Park (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Powderhorn Park",
     "ppsf": 152.439,
-    "closed": 57,
-    "inventory": 5
+    "closed": 63,
+    "inventory": 3
   },
   {
     "Place": "Prospect Park - E River Rd",
     "variable": "2018",
-    "dom": 97,
+    "dom": 32,
     "type": "neighborhood",
     "stribID": 293,
     "FullName": "Prospect Park - East River Road (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Prospect Park - East River Road",
-    "ppsf": 217.7691,
-    "closed": 33,
-    "inventory": 12
+    "ppsf": 217.4279,
+    "closed": 38,
+    "inventory": 8
   },
   {
     "Place": "Regina",
     "variable": "2018",
-    "dom": 14,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 294,
     "FullName": "Regina (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Regina",
-    "ppsf": 174.232,
-    "closed": 57,
+    "ppsf": 175.0066,
+    "closed": 59,
     "inventory": 4
   },
   {
     "Place": "Seward",
     "variable": "2018",
-    "dom": 10.5,
+    "dom": 18.5,
     "type": "neighborhood",
     "stribID": 295,
     "FullName": "Seward (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Seward",
-    "ppsf": 224.4772,
-    "closed": 38,
-    "inventory": 8
+    "ppsf": 224.4186,
+    "closed": 41,
+    "inventory": 4
   },
   {
     "Place": "Sheridan",
     "variable": "2018",
-    "dom": 23,
+    "dom": 16.5,
     "type": "neighborhood",
     "stribID": 296,
     "FullName": "Sheridan (Minneapolis)",
@@ -55776,58 +55818,59 @@
   {
     "Place": "Shingle Creek",
     "variable": "2018",
-    "dom": 8.5,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 297,
     "FullName": "Shingle Creek (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Shingle Creek",
-    "ppsf": 122.1574,
-    "closed": 58,
-    "inventory": 11
+    "ppsf": 121.4675,
+    "closed": 70,
+    "inventory": 8
   },
   {
     "Place": "Southeast Como",
     "variable": "2018",
-    "dom": 5,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 234,
     "FullName": "Como (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Como",
-    "ppsf": 169.7143,
-    "closed": 28,
-    "inventory": 4
+    "ppsf": 168,
+    "closed": 29,
+    "inventory": 2
   },
   {
     "Place": "St. Anthony East",
     "variable": "2018",
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 298,
     "FullName": "St. Anthony East (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "St. Anthony East",
-    "ppsf": 196,
-    "closed": 18,
-    "inventory": 1
+    "ppsf": 188.8112,
+    "closed": 19,
+    "inventory": 2
   },
   {
     "Place": "St. Anthony Park",
     "variable": "2018",
-    "dom": 23,
+    "dom": 21.5,
     "type": "neighborhood",
     "stribID": 299,
     "FullName": "St. Anthony Park (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "St. Anthony Park",
     "ppsf": 212.8758,
-    "closed": 73,
-    "inventory": 11
+    "closed": 78,
+    "inventory": 7
   },
   {
     "Place": "St. Anthony West",
     "variable": "2018",
-    "dom": 4.5,
+    "dom": 13,
     "type": "neighborhood",
     "stribID": 300,
     "FullName": "St. Anthony West (Minneapolis)",
@@ -55840,41 +55883,41 @@
   {
     "Place": "Standish",
     "variable": "2018",
-    "dom": 17,
+    "dom": 15,
     "type": "neighborhood",
     "stribID": 301,
     "FullName": "Standish (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Standish",
-    "ppsf": 203.6892,
-    "closed": 119,
-    "inventory": 10
+    "ppsf": 203.2967,
+    "closed": 131,
+    "inventory": 6
   },
   {
     "Place": "Stevens Square - Loring Heights",
     "variable": "2018",
-    "dom": 29.5,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 302,
     "FullName": "Stevens Square - Loring Heights (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Stevens Square - Loring Heights",
     "ppsf": 191.3609,
-    "closed": 48,
-    "inventory": 5
+    "closed": 50,
+    "inventory": 3
   },
   {
     "Place": "Summit Hill",
     "variable": "2018",
-    "dom": 28,
+    "dom": 22,
     "type": "neighborhood",
     "stribID": 303,
     "FullName": "Summit Hill (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Summit Hill",
-    "ppsf": 202.9059,
-    "closed": 97,
-    "inventory": 25
+    "ppsf": 199.3274,
+    "closed": 102,
+    "inventory": 21
   },
   {
     "Place": "Summit-University",
@@ -55885,72 +55928,74 @@
     "FullName": "Summit-University (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Summit-University",
-    "ppsf": 177.428,
-    "closed": 223,
-    "inventory": 48
+    "ppsf": 177.551,
+    "closed": 242,
+    "inventory": 38
   },
   {
     "Place": "Sumner-Glenwood",
     "variable": "2018",
+    "dom": 19,
     "type": "neighborhood",
     "stribID": 305,
     "FullName": "Sumner-Glenwood (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Sumner-Glenwood",
     "ppsf": 251.0957,
-    "closed": 12
+    "closed": 12,
+    "inventory": 0
   },
   {
     "Place": "Tangletown",
     "variable": "2018",
-    "dom": 7,
+    "dom": 23.5,
     "type": "neighborhood",
     "stribID": 307,
     "FullName": "Tangletown (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Tangletown",
-    "ppsf": 210.2446,
-    "closed": 57,
-    "inventory": 7
+    "ppsf": 208.781,
+    "closed": 60,
+    "inventory": 3
   },
   {
     "Place": "Thomas-Dale (Frogtown)",
     "variable": "2018",
-    "dom": 19,
+    "dom": 21,
     "type": "neighborhood",
     "stribID": 308,
     "FullName": "Thomas Dale (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "Thomas Dale",
-    "ppsf": 121.684,
-    "closed": 100,
-    "inventory": 25
+    "ppsf": 124.5847,
+    "closed": 115,
+    "inventory": 24
   },
   {
     "Place": "Ventura Village",
     "variable": "2018",
-    "dom": 28,
+    "dom": 24.5,
     "type": "neighborhood",
     "stribID": 310,
     "FullName": "Ventura Village (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Ventura Village",
-    "ppsf": 121.5278,
-    "closed": 18,
-    "inventory": 3
+    "ppsf": 124.5635,
+    "closed": 20,
+    "inventory": 2
   },
   {
     "Place": "Victory",
     "variable": "2018",
-    "dom": 22.5,
+    "dom": 16.5,
     "type": "neighborhood",
     "stribID": 311,
     "FullName": "Victory (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Victory",
-    "ppsf": 139.881,
-    "closed": 87,
-    "inventory": 10
+    "ppsf": 140.108,
+    "closed": 94,
+    "inventory": 7
   },
   {
     "Place": "Waite Park",
@@ -55962,124 +56007,124 @@
     "location": "neighborhood",
     "neighborhoodname": "Waite Park",
     "ppsf": 169.4805,
-    "closed": 129,
-    "inventory": 13
+    "closed": 139,
+    "inventory": 15
   },
   {
     "Place": "Webber-Camden",
     "variable": "2018",
-    "dom": 18.5,
+    "dom": 20,
     "type": "neighborhood",
     "stribID": 313,
     "FullName": "Webber-Camden (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Webber-Camden",
     "ppsf": 125.5687,
-    "closed": 97,
-    "inventory": 14
+    "closed": 103,
+    "inventory": 12
   },
   {
     "Place": "Wenonah",
     "variable": "2018",
-    "dom": 51,
+    "dom": 20,
     "type": "neighborhood",
     "stribID": 314,
     "FullName": "Wenonah (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Wenonah",
-    "ppsf": 184.7762,
-    "closed": 79,
-    "inventory": 6
+    "ppsf": 184.6077,
+    "closed": 88,
+    "inventory": 5
   },
   {
     "Place": "West Calhoun",
     "variable": "2018",
-    "dom": 43.5,
+    "dom": 31,
     "type": "neighborhood",
     "stribID": 315,
     "FullName": "West Calhoun (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "West Calhoun",
     "ppsf": 213.8158,
-    "closed": 45,
-    "inventory": 7
+    "closed": 47,
+    "inventory": 5
   },
   {
     "Place": "West Seventh",
     "variable": "2018",
-    "dom": 17,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 316,
     "FullName": "West Seventh (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "West Seventh",
-    "ppsf": 165.8851,
-    "closed": 156,
-    "inventory": 23
+    "ppsf": 168.3227,
+    "closed": 171,
+    "inventory": 15
   },
   {
     "Place": "West Side",
     "variable": "2018",
-    "dom": 19,
+    "dom": 17.5,
     "type": "neighborhood",
     "stribID": 317,
     "FullName": "West Side (St. Paul)",
     "location": "neighborhood",
     "neighborhoodname": "West Side",
-    "ppsf": 135.2038,
-    "closed": 153,
-    "inventory": 32
+    "ppsf": 135.2459,
+    "closed": 161,
+    "inventory": 27
   },
   {
     "Place": "Whittier",
     "variable": "2018",
-    "dom": 37.5,
+    "dom": 23,
     "type": "neighborhood",
     "stribID": 318,
     "FullName": "Whittier (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Whittier",
     "ppsf": 190.2801,
-    "closed": 65,
+    "closed": 70,
     "inventory": 8
   },
   {
     "Place": "Willard-Hay",
     "variable": "2018",
-    "dom": 28,
+    "dom": 18,
     "type": "neighborhood",
     "stribID": 319,
     "FullName": "Willard-Hay (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Willard-Hay",
-    "ppsf": 116.6181,
-    "closed": 103,
-    "inventory": 19
+    "ppsf": 117.3381,
+    "closed": 112,
+    "inventory": 16
   },
   {
     "Place": "Windom",
     "variable": "2018",
-    "dom": 17.5,
+    "dom": 17,
     "type": "neighborhood",
     "stribID": 320,
     "FullName": "Windom (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Windom",
-    "ppsf": 197.411,
-    "closed": 58,
-    "inventory": 4
+    "ppsf": 198.45,
+    "closed": 61,
+    "inventory": 2
   },
   {
     "Place": "Windom Park",
     "variable": "2018",
-    "dom": 12.5,
+    "dom": 14,
     "type": "neighborhood",
     "stribID": 321,
     "FullName": "Windom Park (Minneapolis)",
     "location": "neighborhood",
     "neighborhoodname": "Windom Park",
     "ppsf": 167.6277,
-    "closed": 58,
-    "inventory": 6
+    "closed": 62,
+    "inventory": 2
   }
 ]

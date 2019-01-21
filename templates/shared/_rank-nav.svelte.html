@@ -5,12 +5,12 @@
       {#each ranked as r, i (r.id)}
         <div
           on:click="goToPlace(r.id, event)"
-          class="ranked-place { isHiglighted(r, highlighted) ? 'highlighted-place' : '' } { i < ranked.length / 2 ? 'left-side' : 'right-side' }"
+          class="ranked-place { isHiglighted(r, highlighted) ? 'highlighted-place' : '' } { i < ranked.length / 2 ? 'left-side' : 'right-side' } { i < ranked.length * 0.25 ? 'far-left-side' : i > ranked.length * 0.75 ?  'far-right-side' : '' }"
           data-place-id="{ r.id }"
         >
           <div class="tooltip-pole">
             <div class="ranked-place-tooltip">
-              <div class="">{ r.rank }: { r.name }</div>
+              <div class=""><span class="rank">{ r.rank }</span>: { r.name }</div>
             </div>
           </div>
         </div>

@@ -29,19 +29,27 @@
     top: 0;
     font-size: 0.85em;
     width: 17em;
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
-  &.left-side {
+  &.far-left-side {
     .ranked-place-tooltip {
       text-align: left;
       left: 0;
+      right: auto;
+      transform: translate(0, 0);
     }
   }
 
-  &.right-side {
+  &.far-right-side {
     .ranked-place-tooltip {
       text-align: right;
       right: 0;
+      left: auto;
+      transform: translate(0, 0);
+      margin-right: -0.65em;
     }
   }
 
@@ -63,6 +71,7 @@
   .ranked-place-tooltip {
     opacity: 1;
     transition: opacity 0.333s;
+    font-weight: bold;
   }
 
   &:hover {

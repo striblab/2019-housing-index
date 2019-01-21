@@ -83,3 +83,35 @@
     height: 9em;
   }
 }
+
+// This should be done with flex box, but its inconsisten and hard to do
+// without a specific dom structure
+@include media-breakpoint-up("md") {
+  .metro-days-market figcaption {
+    min-height: 5.33em; // 4 lines
+  }
+
+  .metro-sale-price figcaption {
+    min-height: 2.8em; // 2 lines
+  }
+
+  .place-price-per-foot figcaption {
+    min-height: 4.05em; // 3 lines
+  }
+
+  .place-price-per-foot figcaption {
+    min-height: 4.1em; // 3 lines
+  }
+
+  .place-inventory figcaption {
+    min-height: 2.8em; // 2 lines
+  }
+
+  .place-histo-home-value figcaption {
+    min-height: 4.05em; // 3 lines
+  }
+
+  .place-histo-owner-occupied figcaption {
+    min-height: 6.8em; // 5 lines
+  }
+}

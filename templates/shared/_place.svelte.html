@@ -71,41 +71,14 @@
   <div class="row">
     <div class="col col-100 col-md-50">
       <Line
-        redraw="{ true }"
-        title="Median sale price per square foot"
-        xLabel="Year"
-        yLabel="Price per sq. ft."
-        yMin="0"
-        colors="{ [placeColor, metroColor] }"
-        yTickFormat="{ d => d ? `$${d.toLocaleString()}` : '-' }"
-        xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
-        dataConfig="{{
-          xs: {
-            'Place': 'Year',
-            'Metro': 'Year'
-          },
-          columns: [
-            ['Year'].concat(pricePerSqFtPerYear.map(d => d.year)),
-            ['Place'].concat(pricePerSqFtPerYear.map(d => d.data)),
-            ['Metro'].concat(metro.pricePerSqFtPerYear.map(d => d.data))
-          ],
-          names: {
-            Place: name,
-            Metro: 'Metro area'
-          }
-        }}"
-      >Prices in this community compared to the 13-county metro as a whole.</Line>
-    </div>
-
-    <div class="col col-100 col-md-50">
-      <Line
+        figureClass="place-days-market"
         redraw="{ true }"
         title="Median days on market"
         xLabel="Year"
         yLabel="Days on market"
         yMin="0"
         colors="{ [placeColor, metroColor] }"
-        yTickFormat="{ d => d ? d.toLocaleString() : '-' }"
+        yTickFormat="{ d => d || d === 0 ? d.toLocaleString() : '-' }"
         xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
         dataConfig="{{
           xs: {
@@ -124,11 +97,41 @@
         }}"
       >The median number of days it took to sell a house in this community compared with the 13-county metro as a whole.  Data prior to 2007 not available</Line>
     </div>
+
+    <div class="col col-100 col-md-50">
+      <Line
+        figureClass="place-price-per-foot"
+        redraw="{ true }"
+        title="Median sale price per square foot"
+        xLabel="Year"
+        yLabel="Price per sq. ft."
+        yMin="0"
+        colors="{ [placeColor, metroColor] }"
+        yTickFormat="{ d => d || d === 0 ? `$${d.toLocaleString()}` : '-' }"
+        xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
+        dataConfig="{{
+          xs: {
+            'Place': 'Year',
+            'Metro': 'Year'
+          },
+          columns: [
+            ['Year'].concat(pricePerSqFtPerYear.map(d => d.year)),
+            ['Place'].concat(pricePerSqFtPerYear.map(d => d.data)),
+            ['Metro'].concat(metro.pricePerSqFtPerYear.map(d => d.data))
+          ],
+          names: {
+            Place: name,
+            Metro: 'Metro area'
+          }
+        }}"
+      >Prices in this community compared to the 13-county metro as a whole.</Line>
+    </div>
   </div>
 
   <div class="row">
     <div class="col col-100 col-md-50">
       <Line
+        figureClass="place-closed-sales"
         redraw="{ true }"
         title="Annual closed sales"
         xLabel="Year"
@@ -136,7 +139,7 @@
         hideLegend="{ true }"
         yMin="0"
         colors="{ [placeColor, metroColor] }"
-        yTickFormat="{ d => d ? d.toLocaleString() : '-' }"
+        yTickFormat="{ d => d || d === 0 ? d.toLocaleString() : '-' }"
         xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
         dataConfig="{{
           xs: {
@@ -152,6 +155,7 @@
 
     <div class="col col-100 col-md-50">
       <Line
+        figureClass="place-inventory"
         redraw="{ true }"
         title="Homes for sale"
         xLabel="Year"
@@ -159,7 +163,7 @@
         hideLegend="{ true }"
         yMin="0"
         colors="{ [placeColor, metroColor] }"
-        yTickFormat="{ d => d ? d.toLocaleString() : '-' }"
+        yTickFormat="{ d => d || d === 0 ? d.toLocaleString() : '-' }"
         xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
         dataConfig="{{
           xs: {
@@ -187,6 +191,7 @@
       <div class="col col-100 col-md-50">
         {#if medianHomeValue}
           <Histogram
+            figureClass="place-histo-home-value"
             title="Median value of owner-occupied homes"
             xLabel="Value (in thousands)"
             yLabel="Number of places"
@@ -231,6 +236,7 @@
       <div class="col col-100 col-md-50">
         {#if medianHouseholdIncome}
           <Histogram
+            figureClass="place-histo-home-income"
             title="Median household income"
             xLabel="Income (in thousands)"
             yLabel="Number of places"
@@ -274,6 +280,7 @@
       <div class="col col-100 col-md-50">
         {#if perOwnerOccupied}
           <Histogram
+            figureClass="place-histo-owner-occupied"
             title="Percent owner-occupied homes"
             xLabel="Percent homes"
             yLabel="Number of places"
@@ -318,6 +325,7 @@
       <div class="col col-100 col-md-50">
         {#if perCostBurdened}
           <Histogram
+            figureClass="place-histo-cost-burdened"
             title="Percent cost-burdened owners"
             xLabel="Percent owners"
             yLabel="Number of places"
