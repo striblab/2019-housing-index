@@ -174,20 +174,21 @@
     />
   </div>
 
-  <div class="container-lg">
-    {#if place}
-      <Place
-        {...place}
-        places="{ index.areas }"
-        stats="{ index.stats }"
-        metro="{ metro }"
-        placeColor="{ placeColor }"
-        metroColor="{ metroColor }"
-        defaultXAxisYear="{ defaultXAxisYear }" />
-    {:else}
+  {#if place}
+    <Place
+      {...place}
+      places="{ index.areas }"
+      stats="{ index.stats }"
+      metro="{ metro }"
+      placeColor="{ placeColor }"
+      metroColor="{ metroColor }"
+      defaultXAxisYear="{ defaultXAxisYear }" />
+  {:else}
+
+    <div class="container-copy">
       <p class="no-place-note"></p>
-    {/if}
-  </div>
+    </div>
+  {/if}
 
   <div class="container-lg">
     <footer class="article-footer">
