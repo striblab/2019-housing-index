@@ -7,8 +7,8 @@ const _ = require('lodash');
 const ss = require('simple-statistics');
 
 // Get data
-const areas = require('./sources/housing-index-areas.test.json');
-const timeseries = require('./sources/housing-index-timeseries.test.json');
+const areas = require('./sources/housing-index-areas.json');
+const timeseries = require('./sources/housing-index-timeseries.json');
 
 // Process data
 function indexData() {
@@ -227,7 +227,7 @@ module.exports = {
     local: 'housing-index.json'
   },
   metroTotals: {
-    source: './sources/metro-totals.test.csv',
+    source: './sources/metro-totals.csv',
     type: 'csv',
     local: 'metro-totals.json',
     postprocess: data => {
