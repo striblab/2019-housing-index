@@ -3,13 +3,20 @@
   <h3>{ name }</h3>
 
   <p class="data-copy">
-    Located in <span>{ nameJoiner(counties) } { counties && counties.length > 1 ? 'counties' : 'County' }</span>,
-    <span>{ name }</span>
+    {#if cityId && cityId !== id}
+      Located in the city of <a href="#place-{ cityId }" on:click="goToPlace(cityId, event)">{ placeName(cityId, places) }</a>,
+    {:else}
+      Located in <span>{ nameJoiner(counties) } { counties && counties.length > 1 ? 'counties' : 'County' }</span>,
+    {/if}
+
+    <span>{ placeName(id, places, placeName(cityId, places)) }</span>
 
     {#if rank}
       ranked <span><strong>{ rank }</strong></span> on the Star Tribune's Hot Housing Index for 2018.
+    {:elseif cityId && cityId !== id}
+      <em>was not included</em> in the Star Tribune's Hot Housing Index for 2018 as only cities were included.
     {:else}
-      <span><strong>was not included</strong></span> in the Star Tribune's Hot Housing Index for 2018 due to an insufficent number of sales.
+      <em>was not included</em> in the Star Tribune's Hot Housing Index for 2018 due to an insufficent number of sales.
     {/if}
 
     {#if pricePerSqFtChange || pricePerSqFtChange === 0}
@@ -41,12 +48,6 @@
       About <span>{ formatPercent(perNewConstruction) } percent</span> of the <span>{ closedSales.toLocaleString() }</span> sales were from new construction and <span>{ formatPercent(perDistressed) } percent</span> were short sales or foreclosures.
     {/if}
   </p>
-
-  {#if cityId && cityId !== id}
-    <div class="place-connections">
-      <p class="data-copy">Located in <a href="#place-{ cityId }" on:click="goToPlace(cityId, event)">{ placeName(cityId, places) }</a></p>
-    </div>
-  {/if}
 
   {#if neighborhoods && neighborhoods.length}
     <div class="place-connections">
