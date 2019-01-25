@@ -129,6 +129,11 @@ function indexData() {
       return d;
     });
 
+    // Otsego has wrong counties
+    if (p.name === 'Otsego') {
+      p.counties = ['Anoka'];
+    }
+
     return p;
   });
 
