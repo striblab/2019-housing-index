@@ -131,7 +131,7 @@ function indexData() {
 
     // Otsego has wrong counties
     if (p.name === 'Otsego') {
-      p.counties = ['Anoka'];
+      p.counties = ['Wright'];
     }
 
     return p;
