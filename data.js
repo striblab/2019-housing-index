@@ -108,8 +108,8 @@ function indexData() {
       }
     });
 
-    // Fill in years
-    let years = _.range(2003, 2019, 1);
+    // Fill in years. This mainly affects the lower charts, but if there is data in the json that includes other years problems will ensue.
+    let years = _.range(2015, 2019, 1);
     [
       'pricePerSqFtPerYear',
       'inventoryPerYear',

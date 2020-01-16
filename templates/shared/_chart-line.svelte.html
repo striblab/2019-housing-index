@@ -33,6 +33,8 @@
 
     methods: {
       drawChart() {
+        console.log(this.get().dataConfig);
+        console.log(this.get().yData);
         let chart = this.get().chart;
 
         if (chart && !this.get().redraw) {
@@ -152,4 +154,3 @@
     }
   };
 </script>
-
