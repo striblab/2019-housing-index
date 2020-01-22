@@ -81,16 +81,16 @@
         xTickValues="{ defaultXAxisYear }"
         dataConfig="{{
           xs: {
-            'Place': 'Year',
+            'place': 'Year',
             'Metro': 'Year'
           },
           columns: [
             ['Year'].concat(daysOnMarketPerYear.map(d => d.year)),
-            ['Place'].concat(daysOnMarketPerYear.map(d => d.data)),
+            ['place'].concat(daysOnMarketPerYear.map(d => d.data)),
             ['Metro'].concat(metro.daysOnMarketPerYear.map(d => d.data))
           ],
           names: {
-            Place: name,
+            place: name,
             Metro: 'Metro area'
           }
         }}"
@@ -111,16 +111,16 @@
         xTickValues="{ defaultXAxisYear }"
         dataConfig="{{
           xs: {
-            'Place': 'Year',
+            'place': 'Year',
             'Metro': 'Year'
           },
           columns: [
             ['Year'].concat(pricePerSqFtPerYear.map(d => d.year)),
-            ['Place'].concat(pricePerSqFtPerYear.map(d => d.data)),
+            ['place'].concat(pricePerSqFtPerYear.map(d => d.data)),
             ['Metro'].concat(metro.pricePerSqFtPerYear.map(d => d.data))
           ],
           names: {
-            Place: name,
+            place: name,
             Metro: 'Metro area'
           }
         }}"

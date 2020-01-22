@@ -15,8 +15,8 @@ function indexData() {
   /*
   FIELDS in the main table:
   GEOID = this is the Census place code (two-digit state FIPS, plus the place FIPS code)
-  Place =  simple place name
-  FullName = place plus state abbreviation (you may want to use this one, since our data crosses into Wisconsin)
+  place =  simple place name
+  full_name = place plus state abbreviation (you may want to use this one, since our data crosses into Wisconsin)
   County =county or counties that this city is located in
   State = state that this city is located in
   Location = my attempt to bucket these cities by “inner suburbs”, “outer suburbs”, etc. (not sure we need this for the data viz)
@@ -29,29 +29,33 @@ function indexData() {
   Index_score = This year’s score on the hot housing index (don’t need to display this, IMO)
   Index_rank = This year’s rank on the hot housing index (this will be blank for communities that weren’t included in the index)
   Last_rank = Where this city ranked on last year’s index (re-run using the new baseline for including communities)
-  PctOwner = percent of housing units that are owner-occupied
-  PctCostBurdenedOwners = Percent of owner-occupied housing units that spent 30 percent or more of their household income on housing costs
-  MedianHHIncome = Median household income
-  MedianValue = Median value of owner-occupied homes
+  pct_owner = percent of housing units that are owner-occupied
+  pct_burden = Percent of owner-occupied housing units that spent 30 percent or more of their household income on housing costs
+  hhincome = Median household income
+  home_value = Median value of owner-occupied homes
   */
 
   // Add entry for metro area
   // TODO: Fix this in data
   areas.push({
-    Place: 'Minneapolis-St. Paul Metro Area',
+    place: 'Minneapolis-St. Paul Metro Area',
     geoid2: '2733460',
-    stribID: 220
+    strib_id: 220
   });
 
   let parsed = _.map(areas, a => {
+    if (a.type) {
+      console.log(a.type, a.full_name, a.place, a.type.match(/neighborhood/i));
+    }
+
     let p = {
-      id: a.stribID || a.geoid2,
+      id: a.strib_id || a.geoid2,
       geoid2: a.geoid2,
       name: (a.type && a.type.match(/neighborhood/i)
-        ? a.FullName
-        : a.Place
+        ? a.full_name
+        : a.place
       ).replace(/saint/i, 'St.'),
-      // a.FullName
+      // a.full_name
       location: a.location,
       placeType: a.type,
       counties: a.COUNTY ? a.COUNTY.split(',').map(d => d.trim()) : undefined,
@@ -63,27 +67,27 @@ function indexData() {
       closedSales: a.cs_curr,
       pricePerSqFtChange: a.ppsf_pctchange,
       daysOnMarketChange: a.dom_diff,
-      medianHomeValue: a.MedianValue,
+      medianHomeValue: a.home_value,
       perPriceRecieved: a.pctorigprice,
       perNewConstruction: a.NewConstruct,
       perDistressed: a.PctDistressed,
-      perOwnerOccupied: a.PctOwner,
-      perCostBurdened: a.PctCostBurdenedOwners,
-      medianHouseholdIncome: a.MedianHHIncome
+      perOwnerOccupied: a.pct_owner,
+      perCostBurdened: a.pct_burden,
+      medianHouseholdIncome: a.hhincome
     };
 
     // Matched time series
     /*
-    "Place": "Somerset",
+    "place": "Somerset",
     "variable": "2003",
     "closed": 116,
     "geoid2": "5574675",
-    "FullName": "Somerset, WI",
+    "full_name": "Somerset, WI",
     "dom": 54.5,
     "ppsf": 123.08,
     "inventory": 50
     */
-    let matched = _.filter(timeseries, { stribID: p.id });
+    let matched = _.filter(timeseries, { strib_id: p.id });
     _.each(matched, m => {
       let year = parseInt(m.variable, 10);
 
