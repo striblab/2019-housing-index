@@ -85,16 +85,16 @@
             'Metro': 'Year'
           },
           columns: [
-            ['Year'].concat(daysOnMarketPerYear.map(d => d.year)),
-            ['place'].concat(daysOnMarketPerYear.map(d => d.data)),
-            ['Metro'].concat(metro.daysOnMarketPerYear.map(d => d.data))
+            ['Year'].concat(daysOnMarket.map(d => d.year)),
+            ['place'].concat(daysOnMarket.map(d => d.data)),
+            ['Metro'].concat(metro.daysOnMarket.map(d => d.data))
           ],
           names: {
             place: name,
             Metro: 'Metro area'
           }
         }}"
-      >The median number of days it took to sell a house in this community compared with the 13-county metro as a whole.  Data prior to 2007 not available</Line>
+      >The median number of days it took to sell a house in this community compared with the 13-county metro as a whole.</Line>
     </div>
 
     <div class="col col-100 col-md-50">

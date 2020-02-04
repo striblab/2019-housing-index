@@ -40,19 +40,19 @@
   "publish": {
     "default": {
       "bucket": "static.startribune.com",
-      "path": "news/projects-staging/all/2019-housing-index",
+      "path": "news/projects-staging/all/2020-housing-index",
       "url": "http://static.startribune.com/news/projects-staging/all/2019-housing-index/",
       "cacheSeconds": 30
     },
     "testing": {
       "bucket": "stribtest-bucket",
-      "path": "news/projects/2019-housing-index",
+      "path": "news/projects/2020-housing-index",
       "url": "https://s3.amazonaws.com/stribtest-bucket/news/projects/2019-housing-index/",
       "cacheSeconds": 30
     },
     "production": {
       "bucket": "static.startribune.com",
-      "path": "news/projects/all/2019-housing-index",
+      "path": "news/projects/all/2020-housing-index",
       "url": "http://static.startribune.com/news/projects/all/2019-housing-index/",
       "cacheSeconds": 600
     }

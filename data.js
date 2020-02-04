@@ -60,7 +60,7 @@ function indexData() {
       placeType: a.type,
       counties: a.COUNTY ? a.COUNTY.split(',').map(d => d.trim()) : undefined,
       state: a.STATE,
-      city: a.CityName,
+      city: a.city_name,
       index: a.index_score,
       rank: a.index_rank,
       rankPrevious: a.LastRank,
@@ -106,9 +106,9 @@ function indexData() {
         p.closedPerYear[year] = { year, data: m.closed };
       }
 
-      p.daysOnMarketPerYear = p.daysOnMarketPerYear || {};
+      p.daysOnMarket = p.daysOnMarket || {};
       if (m.dom || m.dom === 0) {
-        p.daysOnMarketPerYear[year] = { year, data: m.dom || null };
+        p.daysOnMarket[year] = { year, data: m.dom || null };
       }
     });
 
@@ -118,7 +118,7 @@ function indexData() {
       'pricePerSqFtPerYear',
       'inventoryPerYear',
       'closedPerYear',
-      'daysOnMarketPerYear'
+      'daysOnMarket'
     ].forEach(set => {
       years.forEach(y => {
         p[set][y] = p[set][y] || { year: y, data: null };
@@ -128,8 +128,8 @@ function indexData() {
     });
 
     // Median day on markey has unreliable data before 2007
-    p.daysOnMarketPerYear = p.daysOnMarketPerYear.map(d => {
-      d.data = d.year < 2007 ? null : d.data;
+    p.daysOnMarket = p.daysOnMarket.map(d => {
+      d.data = d.year < 2015 ? null : d.data;
       return d;
     });
 
@@ -169,7 +169,7 @@ function indexData() {
       'perCostBurdened',
       // Timeseries
       'closedPerYear',
-      'daysOnMarketPerYear',
+      'daysOnMarket',
       'inventoryPerYear',
       'pricePerSqFtPerYear'
     ],
@@ -252,8 +252,10 @@ module.exports = {
           year: parseInt(d.year, 10),
           perNewConstruction: parseFlowt(d.pct_new_construct),
           medianSalePrice: parseFlowt(d.median_sale_price),
-          medianDaysOnMarket: parseFlowt(d.median_dom),
-          inventoryPerYear: parseFlowt(d.inventory)
+          daysOnMarket: parseFlowt(d.daysOnMarket),
+          inventoryPerYear: parseFlowt(d.inventory),
+          closedsales: parseFlowt(d.closedsales),
+          newlistings: parseFlowt(d.newlistings)
         };
       });
 
@@ -269,20 +271,30 @@ module.exports = {
           year: d.year,
           data: d.medianSalePrice ? d.medianSalePrice : null
         });
-        collected.medianDaysOnMarket = collected.medianDaysOnMarket || [];
-        collected.medianDaysOnMarket.push({
+        collected.daysOnMarket = collected.daysOnMarket || [];
+        collected.daysOnMarket.push({
           year: d.year,
-          data: d.medianDaysOnMarket ? d.medianDaysOnMarket : null
+          data: d.daysOnMarket ? d.daysOnMarket : null
         });
         collected.inventoryPerYear = collected.inventoryPerYear || [];
         collected.inventoryPerYear.push({
           year: d.year,
           data: d.inventoryPerYear ? d.inventoryPerYear : null
         });
+        collected.closedsales = collected.closedsales || [];
+        collected.closedsales.push({
+          year: d.year,
+          data: d.closedsales ? d.closedsales : null
+        });
+        collected.newlistings = collected.newlistings || [];
+        collected.newlistings.push({
+          year: d.year,
+          data: d.newlistings ? d.newlistings : null
+        });
       });
 
       // Median day on markey has unreliable data before 2007
-      collected.medianDaysOnMarket = collected.medianDaysOnMarket.map(d => {
+      collected.daysOnMarket = collected.daysOnMarket.map(d => {
         d.data = d.year < 2007 ? null : d.data;
         return d;
       });

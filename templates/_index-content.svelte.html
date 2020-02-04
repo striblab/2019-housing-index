@@ -12,12 +12,12 @@
           <a rel="author" href="http://startribune.com/jim-buchta/10644536/">Jim Buchta</a>,
           <a rel="author" href="http://startribune.com/maryjo-webster/303594441/">MaryJo Webster</a>
           and
-          <a rel="author" href="http://startribune.com/maryjo-webster/440928273/">Alan Palazzolo</a>
+          <a rel="author" href="http://startribune.com/XXXX">Michael Corey</a>
         </address>
         <span class="spacer"></span>
         Star Tribune
         <span class="spacer-alt"></span>
-        <time pubdate datetime="2019-01-22T10:00:00">January 22, 2019</time>
+        <time pubdate datetime="2019-01-22T10:00:00">February XX, 2020</time>
       </div>
 
       <div class="share-placeholder">
@@ -27,23 +27,52 @@
   </div>
 
   <div class="container-copy bottom-space-extra">
-    <p>With sales down and housing listings up, the <a href="http://startribune.com/home-sales-dipped-in-the-twin-cities-but-prices-reached-a-record-high-in-2018/504704902/">housing market</a> in the Twin Cities during 2018 was less frothy than it was the year before. Unless, of course, you were a first-time buyer or a downsizing Baby Boomer. Entry-level buyers outpaced sellers, and construction costs soared, pushing sale prices across the metro to a record high.</p>
+    <p>Home sales - and prices - are sizzling in a batch of understated inner-ring suburbs where first-time buyers and downsizing empty nesters are finding deals on modest ramblers and sensible split-levels in low-key neighborhoods that offer the kinds of value you can no longer find in many more popular central city neighborhoods. From Circle Pines to Brooklyn Center, these low-key communities offer great schools and easy access to jobs, transportation and shopping.</p>
 
-    <p>To find out which parts of the Twin Cities metro were most feverish, the Star Tribune compiled its third annual Hot Housing Index.  The index ranks communities based on where houses sold more quickly than the year before, prices posted the biggest gains and sellers got closest to their asking price.</p>
+    <p>To find out which cities were most popular last year, the Star Tribune compiled its fourth annual Hot Housing Index, which ranks communities based on where houses sold more quickly than the year before; prices posted the biggest gains; sellers got closest to their asking price and market times fell the most.</p>
 
-    <p>The trends were clear: Markets that fared the best were inner-ring suburbs like Crystal, Richfield and St. Anthony where houses are modest and close to the central cities. A few once-sleepy exurbs also stood out, including Otsego and Dayton where land is cheap and housing construction was unusually robust.</p>
+    <p>The Hot Housing Index combines key housing metrics from year-end data provided by the Minneapolis Area Realtors: change in the median price per square foot; median days on market; percent of list price received by seller; percent of asking price received by seller; and change in closed sales compared to the previous year. We ranked each community on those metrics, then added the rankings together to get an index score. This year, the Star Tribune excluded sales of newly constructed homes because not all new homes are sold through the Multiple Listing Service.</p>
 
-    <p>The Hot Housing Index combines four key housing metrics from year-end data provided by the Minneapolis Area Realtors: change in the median price per square foot; median days on market; percent of list price received by seller and share of all sales that were foreclosures or short sales. We ranked each community on the four metrics, then added the rankings together to get an index score.</p>
-
-    <p>Use the search tool below to see rankings for the 108 cities included in the Hot Housing Index, plus historical real estate sales data for those cities and an additional 62 cities in the 13-county metro area that didn't have enough sales last year to be included in the index. Historical data is also available for Minneapolis and St. Paul neighborhoods.</p>
+    <p>Use the search tool below to see rankings for the more than 100 cities included in the Hot Housing Index, plus historical real estate sales data for those cities and other cities in the 13-county metro area that didn't have enough sales last year to be included in the index. Historical data is also available for Minneapolis and St. Paul neighborhoods.</p>
   </div>
 
   <div class="container-lg aggregate-charts">
     <div class="row">
       <div class="col col-100 col-md-50">
         <Line
+          figureClass="metro-new-construction"
+          title="Sellers are barely keeping pace with buyers"
+          xLabel="Year"
+          yLabel=""
+          yMin="0"
+          hideLegend="{ false }"
+          interactive="{ false }"
+          colors="{ [metroColor, placeColor] }"
+          yTickFormat="{ (d) => d || d === 0 ? `${Math.round(d / 1000).toLocaleString()}k` : '-' }"
+          xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
+          xTickValues="{ defaultXAxisYear }"
+          dataConfig="{{
+            xs: {
+              'newlistings': 'Year',
+              'closedsales': 'Year'
+            },
+            columns: [
+              ['Year'].concat(metroTotals.newlistings.map(d => d.year)),
+              ['newlistings'].concat(metroTotals.newlistings.map(d => d.data)),
+              ['closedsales'].concat(metroTotals.closedsales.map(d => d.data))
+            ],
+            names: {
+              newlistings: 'New listings',
+              closedsales: 'Closed sales'
+            }
+          }}"
+        >Total new listings and closed sales each year in the metro area.</Line>
+      </div>
+
+      <div class="col col-100 col-md-50">
+        <Line
           figureClass="metro-days-market"
-          title="Homes sold faster"
+          title="Houses are selling at break-neck speed"
           xLabel="Year"
           yLabel="Median days on market"
           yMin="0"
@@ -57,36 +86,11 @@
               'Metro': 'Year'
             },
             columns: [
-              ['Year'].concat(metroTotals.medianDaysOnMarket.map(d => d.year)),
-              ['Metro'].concat(metroTotals.medianDaysOnMarket.map(d => d.data))
+              ['Year'].concat(metroTotals.daysOnMarket.map(d => d.year)),
+              ['Metro'].concat(metroTotals.daysOnMarket.map(d => d.data))
             ]
           }}"
-        >The median number of days it took to sell a house in the 13-county metro.  Data not available prior to 2007.</Line>
-      </div>
-
-      <div class="col col-100 col-md-50">
-        <Line
-          figureClass="metro-new-construction"
-          title="Home building is on the rebound"
-          xLabel="Year"
-          yLabel="Percent new construction"
-          yMin="0"
-          hideLegend="{ true }"
-          interactive="{ false }"
-          colors="{ [metroColor] }"
-          yTickFormat="{ (d) => d || d === 0 ? `${Math.round(d * 100).toLocaleString()}%` : '-' }"
-          xTickFormat="{ d => d ? d.toString().replace(/20/, '\'') : '-' }"
-          xTickValues="{ defaultXAxisYear }"
-          dataConfig="{{
-            xs: {
-              'Metro': 'Year'
-            },
-            columns: [
-              ['Year'].concat(metroTotals.perNewConstruction.map(d => d.year)),
-              ['Metro'].concat(metroTotals.perNewConstruction.map(d => d.data))
-            ]
-          }}"
-        >Percentage of newly built homes that were sold through the Multiple Listing Service in the 13-county metro.  Some builders sell directly to buyers, so those sales aren't reported to the MLS</Line>
+        >The median number of days it took to sell a house in the metro area. Data not available prior to 2007.</Line>
       </div>
     </div>
 
@@ -94,7 +98,7 @@
       <div class="col col-100 col-md-50">
         <Line
           figureClass="metro-sale-price"
-          title="Prices reached new highs"
+          title="Sale prices rose to record highs"
           xLabel="Year"
           yLabel="Median sale price (in thousands)"
           yMin="0"
@@ -113,7 +117,7 @@
               ['Metro'].concat(metroTotals.medianSalePrice.map(d => d.data))
             ]
           }}"
-        >Annual median sale price for homes in the 13-county metro.</Line>
+        >Annual median sale price for homes in the metro area.</Line>
       </div>
 
       <div class="col col-100 col-md-50">
@@ -138,7 +142,7 @@
               ['Metro'].concat(metroTotals.inventoryPerYear.map(d => d.data))
             ]
           }}"
-        >Number of homes available for sale at the end of each year in the 13-county metro.</Line>
+        >The number of homes available for sale at the end of each year in the metro area.</Line>
       </div>
     </div>
   </div>
@@ -197,20 +201,20 @@
       <ul class="credits">
         <li>Reporting by <a rel="author" href="http://startribune.com/jim-buchta/10644536/">Jim Buchta</a></li>
         <li>Data analysis by <a rel="author" href="http://startribune.com/maryjo-webster/303594441/">MaryJo Webster</a></li>
-        <li>Design and development by <a rel="author" href="http://startribune.com/maryjo-webster/440928273/">Alan Palazzolo</a></li>
+        <li>Design and development by <a rel="author" href="http://startribune.com/maryjo-webster/440928273/">Alan Palazzolo and Michael Corey</a></li>
       </ul>
 
       <h1>Sources</h1>
 
-      <p>American Community Survey 2017 and <a href="https://www.mplsrealtor.com/" target="_blank" rel="noopener">Minneapolis Area Association of Realtors</a> (MAAR) and RMLS of MN, Inc.  Data deemed reliable but not guaranteed.  Not to be reproduced without MAAR's consent.</p>
+      <p>American Community Survey 2017 and <a href="https://www.mplsrealtor.com/" target="_blank" rel="noopener">Minneapolis Area Realtors</a> (MAAR) and RMLS of MN, Inc.  Data deemed reliable but not guaranteed. Not to be reproduced without MAAR's consent.</p>
 
       <h1>Footnotes</h1>
 
-      <p>The Star Tribune Hot Housing index includes cities from the 13-county metro area that had 75 or more closed sales last year. This is a change from prior years when the Star Tribune only included cities with 100 sales or more.</p>
+      <p>The Star Tribune Hot Housing index includes cities from the 13-county metro area that had 70 or more closed sales last year. This is a change from prior years when the Star Tribune included cities with 100 sales or more.</p>
 
       <h1>Methodology</h1>
 
-      <p>Numerical rankings were assigned to each community on four metrics, then those rankings were added together to create the final index score. We included cities in the 13-county metro area that had 75 or more sales last year. Here's how the rankings worked for the four metrics:</p>
+      <p>Numerical rankings were assigned to each community on four metrics, then those rankings were added together to create the final index score. We included cities in the 13-county metro area that had 70 or more sales last year. It does not include sales of newly constructed homes. Here's how the rankings worked for the four metrics:</p>
 
       <ol>
         <li>We calculated the percentage change between the median price per square foot last year and the average across the previous four years. The change between those two numbers was then ranked. A ranking of 1 represented the lowest change.</li>
@@ -219,7 +223,7 @@
 
         <li>For the percent of original list price received, the community with the lowest percentage got a score of 1. The highest-scoring communities tended to have an average percentage of list price received at or above 99 percent.</li>
 
-        <li>The index also factored in the percentage of distressed sales (foreclosures and short sales). In this case, the community received a ranking of 1 if it had the highest percentage of distressed sales. Communities with low percentages of distressed sales got the highest scores.</li>
+        <li>We calculated the percentage change between the total closed sales last year and the average across the previous four years. The change between those two numbers was then ranked. A ranking of 1 represented the lowest change.</li>
       </ol>
 
       <h1>Corrections</h1>
@@ -413,11 +417,8 @@
         placeColor: "#1d78af",
         metroColor: "#ccc900",
         // Default years for axis
-        defaultXAxisYear: [2004, 2006, 2008, 2010, 2012, 2014, 2016, 2018]
+        defaultXAxisYear: [2005, 2007, 2009, 2011, 2013, 2015, 2017, 2019]
       };
     }
   };
 </script>
-
-
-
