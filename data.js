@@ -58,8 +58,8 @@ function indexData() {
       // a.full_name
       location: a.location,
       placeType: a.type,
-      counties: a.COUNTY ? a.COUNTY.split(',').map(d => d.trim()) : undefined,
-      state: a.STATE,
+      counties: a.county ? a.county.split(',').map(d => d.trim()) : undefined,
+      state: a.state,
       city: a.city_name,
       index: a.index_score,
       rank: a.index_rank,

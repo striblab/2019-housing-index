@@ -12,11 +12,11 @@
     <span>{ placeName(id, places, placeName(cityId, places)) }</span>
 
     {#if rank}
-      ranked <span><strong>{ rank }</strong></span> on the Star Tribune's Hot Housing Index for 2018.
+      ranked <span><strong>{ rank }</strong></span> on the Star Tribune's Hot Housing Index for 2019.
     {:elseif cityId && cityId !== id}
-      <em>was not included</em> in the Star Tribune's Hot Housing Index for 2018 as only cities were included.
+      <em>was not included</em> in the Star Tribune's Hot Housing Index for 2019 as only cities were included.
     {:else}
-      <em>was not included</em> in the Star Tribune's Hot Housing Index for 2018 due to an insufficient number of sales.
+      <em>was not included</em> in the Star Tribune's Hot Housing Index for 2019 due to an insufficient number of sales.
     {/if}
 
     {#if pricePerSqFtChange || pricePerSqFtChange === 0}
@@ -64,7 +64,7 @@
 <div class="container-lg">
   <h4 class="market-hed">Historical real estate trends in { name }</h4>
 
-  <p class="data-copy">These key metrics provide a glimpse into how this real estate market has changed, particularly since the recession that lasted from December 2007 to June 2009.</p>
+  <p class="data-copy">These key metrics provide a glimpse into how this real estate market has changed since 2015.</p>
 
   <div class="row">
     <div class="col col-100 col-md-50">
@@ -152,7 +152,7 @@
             ['Closed sales'].concat(closedPerYear.map(d => d.data))
           ]
         }}"
-      >During 2018 there was a decline in home sales in most metro communities because of a lack of options for buyers.</Line>
+      >During 2019 there was a decline in home sales in most metro communities because of a lack of options for buyers.</Line>
     </div>
 
     <div class="col col-100 col-md-50">

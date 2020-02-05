@@ -87,8 +87,13 @@
 // This should be done with flex box, but its inconsisten and hard to do
 // without a specific dom structure
 @include media-breakpoint-up("md") {
+
+  .metro-new-listings figcaption {
+    min-height: 4.05em; // 4 lines
+  }
+
   .metro-days-market figcaption {
-    min-height: 5.33em; // 4 lines
+    min-height: 4.05em; // 4 lines
   }
 
   .metro-sale-price figcaption {
