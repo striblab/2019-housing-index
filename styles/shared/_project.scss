@@ -7,10 +7,18 @@ h4 {
   font-size: 1.5em;
 }
 
+h3 {
+  font-family: "Benton Sans", Arial, Helvetica, sans-serif;
+}
+
 .hero {
   h1 {
     font-size: 3.666em;
   }
+}
+
+.container-copy {
+  max-width: 650px;
 }
 
 .placeholder {
@@ -24,7 +32,7 @@ h4 {
 }
 
 .aggregate-charts {
-  margin-bottom: 3em;
+  margin-bottom: 6em;
 }
 
 .data-copy {
@@ -43,6 +51,7 @@ h4 {
 
 .article-footer {
   margin-bottom: 4em;
+  padding-top: 3em;
 }
 
 .share-placeholder {

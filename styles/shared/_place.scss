@@ -12,15 +12,20 @@
     }
   }
 
-  .market-hed {
-    padding-top: 1em;
-  }
-
-  .about-hed {
-    padding-top: 3em;
-  }
-
   .place-connections {
     font-size: 0.85em;
   }
+}
+
+.data-copy .legend-thiscity {
+  border-bottom: 4px solid rgb(29, 120, 175);
+}
+
+.data-copy .legend-metro {
+  border-bottom: 4px solid rgb(204, 201, 0);
+}
+
+.market-hed,
+.about-hed {
+  padding-top: 2.5em;
 }
