@@ -90,6 +90,7 @@ function indexData() {
     let matched = _.filter(timeseries, { strib_id: p.id });
     _.each(matched, m => {
       let year = parseInt(m.variable, 10);
+      console.log(m.variable, year)
 
       p.pricePerSqFtPerYear = p.pricePerSqFtPerYear || {};
       if (m.ppsf || m.ppsf === 0) {
@@ -113,7 +114,7 @@ function indexData() {
     });
 
     // Fill in years. This mainly affects the lower charts, but if there is data in the json that includes other years problems will ensue.
-    let years = _.range(2015, 2019, 1);
+    let years = _.range(2016, 2020, 1);
     [
       'pricePerSqFtPerYear',
       'inventoryPerYear',
@@ -127,9 +128,9 @@ function indexData() {
       p[set] = _.sortBy(p[set], 'year');
     });
 
-    // Median day on markey has unreliable data before 2007
+    // Median day on marke has unreliable data before 2007
     p.daysOnMarket = p.daysOnMarket.map(d => {
-      d.data = d.year < 2015 ? null : d.data;
+      d.data = d.year < 2007 ? null : d.data;
       return d;
     });
 
@@ -298,6 +299,8 @@ module.exports = {
         d.data = d.year < 2007 ? null : d.data;
         return d;
       });
+
+      console.log(collected)
 
       return collected;
     }
