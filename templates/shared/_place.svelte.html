@@ -14,10 +14,10 @@
     <span>{ placeName(id, places, placeName(cityId, places)) }</span>
 
     {#if rank} ranked <span><strong>{ rank }</strong></span> on the Star
-    Tribune's 2019 Hot Housing Index. {:elseif cityId && cityId !== id}
-    <em>was not included</em> in the Star Tribune's 2019 Hot Housing Index as
+    Tribune's 2020 Hot Housing Index. {:elseif cityId && cityId !== id}
+    <em>was not included</em> in the Star Tribune's 2020 Hot Housing Index as
     only cities were included. {:else} <em>was not included</em> in the Star
-    Tribune's 2019 Hot Housing Index due to an insufficient number of sales.
+    Tribune's 2020 Hot Housing Index due to an insufficient number of sales.
     {/if} {#if pricePerSqFtChange || pricePerSqFtChange === 0} Average price per
     square foot was {#if pricePerSqFtChange === 0} about the same {:else} {
     pricePerSqFtChange > 0 ? 'up' : 'down' }
@@ -58,7 +58,7 @@
   <p class="data-copy">
     Key metrics provide a glimpse into how
     <span class="legend-thiscity">this real estate market</span> has changed
-    since 2015 compared to <span class="legend-metro">the metro</span>.
+    since 2016 compared to <span class="legend-metro">the metro</span>.
   </p>
 
   <div class="row">
@@ -151,7 +151,7 @@
             ['Closed sales'].concat(closedPerYear.map(d => d.data))
           ]
         }}"
-        >During 2019 there was a decline in home sales in most metro communities
+        >During 2020 there was a decline in home sales in some metro communities
         because of a lack of options for buyers.</Line
       >
     </div>
@@ -237,7 +237,7 @@
             } : undefined }"
         redraw="{ true }"
       >
-        Most metro cities have a median home value of about $210,000. {#if
+        Most metro cities have a median home value of about $250,000. {#if
         medianHomeValue} The median home value in { name } is ${
         medianHomeValue.toLocaleString() }. {/if}
       </Histogram>
@@ -281,7 +281,7 @@
             } : undefined }"
         redraw="{ true }"
         >There are cities in the metro that have median household incomes as low
-        as $35,000 or as high as $195,000. {#if medianHouseholdIncome} The
+        as $36,000 or as high as $250,000. {#if medianHouseholdIncome} The
         median household income in { name } is ${
         medianHouseholdIncome.toLocaleString() }. {/if}
       </Histogram>
@@ -370,7 +370,7 @@
             } : undefined }"
         redraw="{ true }"
         >Households that spend 30% or more of their income on housing costs are
-        considered "cost-burdened." In some metro cities, as much as one-third
+        considered "cost-burdened." In some metro cities, as much as 27%
         of homeowners are cost-burdened. {#if perCostBurdened} In { name },
         about { Math.round(perCostBurdened * 100) }% of homeowners are
         cost-burdened. {/if}

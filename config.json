@@ -23,37 +23,37 @@
   "styles": {
     "globals": [
       "https://fonts.googleapis.com/icon?family=Material+Icons",
-      "http://static.startribune.com/assets/libs/selectizejs/0.12.6/css/selectize.css"
+      "https://static.startribune.com/assets/libs/selectizejs/0.12.6/css/selectize.css"
     ]
   },
   "js": {
     "globals": [
       "https://cdn.polyfill.io/v2/polyfill.min.js",
       "https://code.jquery.com/jquery-1.12.4.min.js",
-      "http://static.startribune.com/assets/libs/selectizejs/0.12.6/js/standalone/selectize.min.js",
-      "http://static.startribune.com/assets/libs/d3/5.7.0/d3.min.js",
-      "http://static.startribune.com/assets/libs/c3/0.6.7/c3.min.js",
-      "http://static.startribune.com/assets/libs/d3-annotation/2.3.0/d3-annotation.js"
+      "https://static.startribune.com/assets/libs/selectizejs/0.12.6/js/standalone/selectize.min.js",
+      "https://static.startribune.com/assets/libs/d3/5.7.0/d3.min.js",
+      "https://static.startribune.com/assets/libs/c3/0.6.7/c3.min.js",
+      "https://static.startribune.com/assets/libs/d3-annotation/2.3.0/d3-annotation.js"
     ]
   },
   "publishToken": "b4cf55a49e8e4c3c0aa31caba272921a",
   "publish": {
     "default": {
       "bucket": "static.startribune.com",
-      "path": "/news/projects/all/2020-housing-index/",
-      "url": "http://static.startribune.com/news/projects-staging/all/2019-housing-index/",
+      "path": "/news/projects/all/2021-housing-index/",
+      "url": "https://static.startribune.com/news/projects-staging/all/2021-housing-index/",
       "cacheSeconds": 30
     },
     "testing": {
       "bucket": "stribtest-bucket",
-      "path": "news/projects/2020-housing-index",
-      "url": "https://s3.amazonaws.com/stribtest-bucket/news/projects/2019-housing-index/",
+      "path": "news/projects/2021-housing-index",
+      "url": "https://s3.amazonaws.com/stribtest-bucket/news/projects/2021-housing-index/",
       "cacheSeconds": 30
     },
     "production": {
       "bucket": "static.startribune.com",
-      "path": "news/projects/all/2020-housing-index",
-      "url": "http://static.startribune.com/news/projects/all/2020-housing-index/",
+      "path": "news/projects/all/2021-housing-index",
+      "url": "https://static.startribune.com/news/projects/all/2021-housing-index/",
       "cacheSeconds": 600
     }
   }

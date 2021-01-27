@@ -90,7 +90,6 @@ function indexData() {
     let matched = _.filter(timeseries, { strib_id: p.id });
     _.each(matched, m => {
       let year = parseInt(m.variable, 10);
-      console.log(m.variable, year)
 
       p.pricePerSqFtPerYear = p.pricePerSqFtPerYear || {};
       if (m.ppsf || m.ppsf === 0) {
@@ -299,8 +298,6 @@ module.exports = {
         d.data = d.year < 2007 ? null : d.data;
         return d;
       });
-
-      console.log(collected)
 
       return collected;
     }
